@@ -10,10 +10,11 @@ Raportteja kirjoittaessa ei saaväittää tehneensä jotain testiä, jota ei oik
 
 #### Free Software Foundation: What is Free Software?
 
+
 ## a)
 
 ## k)
 
 #### Lähteet
-Karvinen, T. 4.6.2004. Raportin kirjoittaminen. Tero Karvinen. Luettavissa: https://terokarvinen.com/2006/raportin-kirjoittaminen-4/. Luettu 15.1.2025.
-
+Tero Karvinen 2004: Raportin kirjoittaminen. Luettavissa: https://terokarvinen.com/2006/raportin-kirjoittaminen-4/
+Free Software Foundation: What is Free Software? Luettavissa: https://www.gnu.org/philosophy/free-sw.html
