@@ -20,7 +20,11 @@ Käyttäjän vapaudella käyttää ohjelmaa haluamallaan tavalla mihin tahansa t
 
 
 ## a)
-Tässä tehtävässä asensin ensimmäistä kertaa koskaan Linuxin virtuaalikoneeseen. 
+Tässä harjoituksessa ansensin Linuxin ensimmäistä kertaa virtuaalikoneeseen Tero Karvisen laatiman yksityiskohtaisen ohjeen mukaisesti. Tein harjoituksen torstaina 2025-01-16 ja koneena oli Lenovon ThinkBook 13s G3 ACN -mallinen kannettava tietokone. Aloitin harjoituksen tekemisen kello XX.XX. 
+
+Olin jo aikaisemmin ladannut tietokoneelle VirtualBoxin, joten pääsin heti aloittamaan itse virtuaalikoneen asentamisen. 
+
+
 
 
 
