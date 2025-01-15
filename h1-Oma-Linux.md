@@ -31,13 +31,15 @@ Olin jo aikaisemmin ladannut tietokoneelle VirtualBoxin, joten pääsin heti alo
 
 #### Lähteet
 
+Free Software Foundation: What is Free Software? Luettavissa: https://www.gnu.org/philosophy/free-sw.html
+
 Tero Karvinen: Install Debian on Virtualbox - Updated 2024. Luettavissa: https://terokarvinen.com/2021/install-debian-on-virtualbox/
 
 Tero Karvinen 2004: Raportin kirjoittaminen. Luettavissa: https://terokarvinen.com/2006/raportin-kirjoittaminen-4/
 
 Tero Karvinen 2025: Tehtävänanto h1. Luettavissa: https://terokarvinen.com/linux-palvelimet/
 
-Free Software Foundation: What is Free Software? Luettavissa: https://www.gnu.org/philosophy/free-sw.html
+
 
 
 
