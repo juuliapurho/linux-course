@@ -9,7 +9,7 @@ Toistettavuudella tarkoitetaan sitä, että toisen henkilön tulisi raportissa t
 Raportteja kirjoittaessa ei saaväittää tehneensä jotain testiä, jota ei oikeasti ole tehnty eli ainoastaan tehdyistä toimenpiteistä ja testeistä saa raportoida. Tämän lisäksi raporteissa luvaton kuvien kopioiminen sekä plagiointi eli toisten tulosten omina esittäminen taikka kopiointi ilman lähteen esittämistä on rangaistavaa. 
 
 #### Free Software Foundation: What is Free Software?
-
+Free Software Foundationin tukeman GNU käyttöjärjestelmän verkkosivuilla julkaistussa artikkelissa kerrotaan vapaasta ohjelmistosta ja vapaan ohjelmiston käyttäjän neljästä olennaisesta vapaudesta. Artikkelissa kerrotaan, että vapaalla ohjelmistolla tarkoitetaan yhteisöä ja yksilön vapautta kunnioittavaa ohjelmistoa, jota käyttäjillä on mahdollisuus käyttää, kopioida, jakaa, tutkia, muuttaa ja kehittää. 
 
 ## a)
 
