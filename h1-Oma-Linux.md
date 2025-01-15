@@ -14,9 +14,10 @@ Free Software Foundationin tukeman GNU käyttöjärjestelmän verkkosivuilla jul
 - Vapaus käyttää ohjelmaa mihin tahansa tarkoitukseen haluamallaan tavalla
 - Vapaus tutkia, miten ohjelma toimii ja muuttaa sitä niin, että se suorittaa laskentaa käyttäjän haluamalla tavalla
 - Vapaus jakaa kopioita auttaakseen muita
-- Vapaus jakaa muille kopioita käyttäjän muokkaamista versioista
+- Vapaus jakaa muille kopioita itse muokkaamistaan versioista
 
-  
+Käyttäjän vapaudella käyttää ohjelmaa haluamallaan tavalla mihin tahansa tarkoitukseen tarkoitetaan sitä, että kenellä tahansa henkilöllä tai organisaatiolla on vapaus käyttää ohjelmaa millä tahansa tietokonejärjestelmällä mihin tahansa tarkoitukseen tai työhön ilman, että käyttäjän tarvitsee kommunioida asiasta ohjelman kehittäjän taikka muun tahon kanssa. Tämä tarkoittaa myös sitä, että jakaessaan vapaan ohjelmiston muille käyttäjille, käyttäjä ei voi velvoittaa muita käyttämään ohjelmaa johonkin tiettyyn haluamaansa tarkoitukseen. Jotta muutoksien tekeminen ohjelman lähdekoodiin sekä muokattujen versioiden jakaminen muille toteutuisivat, käyttäjällä on oltava pääsy ohjelman lähdekoodiin. Tämän vuoksi lähdekoodin saatavuus onkin ehto sille, että ohjelma on vapaa ohjelmisto. Vapaus jakaa kopioita tarkoittaa sitä, että kopiot voivat olla muutettuja tai muuttamattomia, niitä voi jakaa minne tahansa tai kenelle tahansa ja niitä voi jakaa joko maksullisina tai ilmaiseksi. 
+
 
 ## a)
 
