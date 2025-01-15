@@ -36,5 +36,7 @@ Tero Karvinen 2025: Tehtävänanto h1. Luettavissa: https://terokarvinen.com/lin
 Free Software Foundation: What is Free Software? Luettavissa: https://www.gnu.org/philosophy/free-sw.html
 
 
+
+
 Tätä dokumenttia saa kopioida ja muokata GNU General Public License (versio 2 tai uudempi) mukaisesti. http://www.gnu.org/licenses/gpl.html
 Pohjana Tero Karvinen 2025: Linux Palvelimet 2025 alkukevät, http://terokarvinen.com. 
