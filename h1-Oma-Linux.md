@@ -15,6 +15,10 @@ Free Software Foundationin tukeman GNU käyttöjärjestelmän verkkosivuilla jul
 
 ## k)
 
+
+
 #### Lähteet
+
 Tero Karvinen 2004: Raportin kirjoittaminen. Luettavissa: https://terokarvinen.com/2006/raportin-kirjoittaminen-4/
+
 Free Software Foundation: What is Free Software? Luettavissa: https://www.gnu.org/philosophy/free-sw.html
