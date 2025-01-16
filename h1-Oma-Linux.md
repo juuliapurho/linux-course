@@ -26,8 +26,19 @@ Ensimmäiseksi latasin Debian ISO-tiedoston sivustolta https://cdimage.debian.or
 
 Aloitin harjoituksen tekemisen kello 18.20. Olin jo aikaisemmin ladannut tietokoneelle VirtualBoxin, joten pääsin heti aloittamaan itse virtuaalikoneen asentamisen. Aloitin asentamisen avaamalla VirtualBoxin ja valitsemalla valikosta kohdan New. Tästä aukesi uusi Create Virtual Machine -ikkuna. Tämän ikkunan ensimmäisessä välilehdessä mimesin virtuaalikoneen, valitsin lataamani ISO-tiedoston sekä laitoin täpän kohtaan Skip Unattended Installation, jonka jälkeen siirryin eteenpäin klikkaamalla Next-painiketta. Seuraavalla välilehdellä asetin muistin kooksi 4000 MB ja pidin prosessoriydinten määrän yhdessä. Next-painikkeella siirryin seuraavalle välilehdelle, jossa pidin valittuna kohdan Create a Virtual Hard Disk Now ja asetin levyn kooksi ohjeen mukaan 60 GB. Sitten siirryin eteenpäin Next-painikkeella, josta aukesi yhteenveto tekemistäni valinnoista. Tarkistin, että tekemäni valinnat olivat oikein ja painoin sen jälkeen Finish-painiketta. Tämän jälkeen luomani virtuaalikone ilmestyi VirtualBoxin aloitusnäkymään.
 
+KUVAT 1-5
 
+Seuraavaksi kello 18.45 aloitin Debian ISO-tiedosto lisäämisen CD-ROMiksi ohjeen mukaan. Klikkasin ensin luomani virtuaalikoneen kohdalta hiiren vasemalla painikkeella ja valitsemalla avautuneesta valikosta kohdan Settings. Avautuneessa Settings-ikkunassa valitsin vasemmasta laidasta kohdan Storage ja huomasin, että tämä olikin jo tehty aikaisemmassa vaiheessa virtuaalikonetta luotaessa. Siirryin siis harjoituksen seuraavaan vaiheeseen.
 
+KUVA 6
+
+Aloitin boottauksen tekemisen kello 18.53 tuplaklikkaamalla luomani virtualikoneen kohdalta. Virtuaalikone työpöytä näkyin ensin todella pienenä, mutta sain sen suurennettua valitsemalla yläpalkista View -> Virtual Screen 1 -> Scale to 275%. Virtuaalikoneen käynnistyksen jälkeen auenneessa menussa ei näkynyt ohjeessa olevaa vaihtoehtoa, joten valitsin ylimmän vaihtoehdon Live system (amd64). Tästä aukesi virheilmoitus, jossa kerrottiin, että tämä ydin (kernel) tarvitsee x86-64 prosessoriytimen, mutta ainoastaan i686 prosessoriydin havaittiin, jonka vuoksi boottausta ei voitu tehdä.
+
+KUVAT 7-9
+
+Kello 19.15 päätin kokeilla tarkastella luomani virtuaalikoneen asetuksia ja huomasin, että version kohdalla oli Debian (32-bit) eikä ohjeen mukainen Debian (64-bit). Muutin version oikeaksi ja kokeilin sitten kello 19.17 boottausta uudelleen samalla tavalla kuin aikaisemmin. Tällä kertaa boottaus onnistui ja virtuaalikoneen työpöytä aukesi. Testasin verkkoselaimen toimivuutta klikkaamalla työpäydän vasemmassa ylänurkassa olevasta kohdasta Applications ja valitsin avautuneesta valikosta Web Browser. Kirjoitin hakukenttään "Haaga-Helia" ja pääsin sitä kautta siirtymään Haaga-Helian verkkosivuille eli verkkoselain toimi. 
+
+10-11
 
 
 
