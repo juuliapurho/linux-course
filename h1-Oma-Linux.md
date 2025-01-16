@@ -38,7 +38,7 @@ KUVAT 7-9
 
 Kello 19.15 päätin kokeilla tarkastella luomani virtuaalikoneen asetuksia ja huomasin, että version kohdalla oli Debian (32-bit) eikä ohjeen mukainen Debian (64-bit). Muutin version oikeaksi ja kokeilin sitten kello 19.17 boottausta uudelleen samalla tavalla kuin aikaisemmin. Tällä kertaa boottaus onnistui ja virtuaalikoneen työpöytä aukesi. Testasin verkkoselaimen toimivuutta klikkaamalla työpäydän vasemmassa ylänurkassa olevasta kohdasta Applications ja valitsin avautuneesta valikosta Web Browser. Kirjoitin hakukenttään "Haaga-Helia" ja pääsin sitä kautta siirtymään Haaga-Helian verkkosivuille eli verkkoselain toimi. Tämän jälkeen suljin verkkoselaimen. 
 
-10-11
+KUVAT 10-11
 
 Kello 19.39 aloitin Debianin asentamisen. Virtuaalikoneen työpoydällä oli Install Debian -kuvake, jota kklikattuani hetken kuluttua aukesi Debian GNU/Linux Installer -ikkuna. Ensimmäisellä Welcome-välilehdellä valitsin kieleksi American English. Location-välilehdellä valitsin kartalta Suomen. Keyboard-välilehdellä valitsin Keyboard Model -kohdassa ohjeen mukaisesti vaihtoehdon Generic 105-key PC, vasemmanpuoleisesta valikosta Finnish ja oikeanpuoleisesta valikosta Default. Tämän jälkeen testasin vielä, että näppäimistö toimii ja pystyn kirjoittamaan myös ääkkösiä. Partitions-välilehdellä valitsin vaihtoehdon Erase disk. Users-välilehdelle syötin kenttiin pyydetyt tiedot eli oman nimeni, kirjautumiseen käytettävän nimen ja tietokoneen nimen sekä asetin salasanan. Summary-välilehdellä on jälleen yhteenveto tekemistäni valinnoista. Tarkastettuani, että kaikki oli oikein, aloitin asennusen Finish-painikkeella. Asennus kesti hieman yli 15 minuuttia, jonka jälkeen ikkunan viimeinen Finish-välilehti aukesi. Pidin täpän kohdassa Restart Now ja painoin Done-painiketta, jonka jälkeen virtuaalikone käynnistyi uudelleen. Uudelleenkäynnistyksen jälkeen pääsin kirjautumaan virtuaalikoneelle luomillani tunnuksilla kello 20.30. Kokeilin sisään kirjauduttuani samalla tavalla kuin aikaisemmin, että verkkoselain toimii ja toimihan se!
 
@@ -46,6 +46,7 @@ KUVAT 12-21
 
 Kello 20.51 tein vielä Tero Karvisen ohjeen viimeiset vaiheet eli asensin Linuxille uusimmat turvallisuuspäivitykset. Klikkasin vasemassa ylänurkassa olevaa Applications-painiketta ja valitsin avautuneesta valikosta Terminal Emulator, josta avautui uusi ikkuna. Suoritin komentorivillä ohjeen mukaisesti komennon sudo apt-get update, jonka jälkeen syötin salasanani. Tällä komennolla hain listan saatavilla olevista päivityksistä. Tämän jälkeen suoritin komennon sudo apt-get -y dist-upgrade, jolla suoritin kaikki saatavilla olevat päivitykset. Tämä kesti muutaman minuutin. Lopuksi vielä asensin palomuurin ja otin sen käyttöön. Asensin palomuurin ajamalla komentorivillä  komennon sudo apt-get -y install ufw ja otin palomuurin käyttöön komennolla sudo ufw enable. Lopuksi vielä käynnistin virtuaalikoneen uudelleen kello 21.09 klikkaamalla virtuaalikoneen vasemassa yläkulmassa olevaa Applications-painiketta, josta avautuneesta valikosta valitsin Log out ja sitten vielä Restart.
 
+KUVAT 22-27
 
 #### Lähteet
 
