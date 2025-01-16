@@ -36,7 +36,7 @@ Aloitin boottauksen tekemisen kello 18.53 tuplaklikkaamalla luomani virtualikone
 
 KUVAT 7-9
 
-Kello 19.15 päätin kokeilla tarkastella luomani virtuaalikoneen asetuksia ja huomasin, että version kohdalla oli Debian (32-bit) eikä ohjeen mukainen Debian (64-bit). Muutin version oikeaksi ja kokeilin sitten kello 19.17 boottausta uudelleen samalla tavalla kuin aikaisemmin. Tällä kertaa boottaus onnistui ja virtuaalikoneen työpöytä aukesi. Testasin verkkoselaimen toimivuutta klikkaamalla työpäydän vasemmassa ylänurkassa olevasta kohdasta Applications ja valitsin avautuneesta valikosta Web Browser. Kirjoitin hakukenttään "Haaga-Helia" ja pääsin sitä kautta siirtymään Haaga-Helian verkkosivuille eli verkkoselain toimi. Tämän jälkeen suljin verkkoselaimen. 
+Selvitin ongelmaa googlettamalla ja löysin vastauksen Stack Overflown verkkosivuilta. Kello 19.15 tarkastelin luomani virtuaalikoneen asetuksia ja huomasin, että version kohdalla oli Debian (32-bit) eikä ohjeen mukainen Debian (64-bit). Muutin version oikeaksi ja kokeilin sitten kello 19.17 boottausta uudelleen samalla tavalla kuin aikaisemmin. Tällä kertaa boottaus onnistui ja virtuaalikoneen työpöytä aukesi. Testasin verkkoselaimen toimivuutta klikkaamalla työpäydän vasemmassa ylänurkassa olevasta kohdasta Applications ja valitsin avautuneesta valikosta Web Browser. Kirjoitin hakukenttään "Haaga-Helia" ja pääsin sitä kautta siirtymään Haaga-Helian verkkosivuille eli verkkoselain toimi. Tämän jälkeen suljin verkkoselaimen. 
 
 KUVAT 10-11
 
@@ -51,6 +51,8 @@ KUVAT 22-27
 #### Lähteet
 
 Free Software Foundation: What is Free Software? Luettavissa: https://www.gnu.org/philosophy/free-sw.html
+
+Stack Overflow: https://stackoverflow.com/questions/24872842/virtualbox-kernel-requires-an-x86-64-cpu-but-only-detected-an-i686-cpu
 
 Tero Karvinen: Install Debian on Virtualbox - Updated 2024. Luettavissa: https://terokarvinen.com/2021/install-debian-on-virtualbox/
 
