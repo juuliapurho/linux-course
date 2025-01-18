@@ -1,4 +1,4 @@
-![13](https://github.com/user-attachments/assets/f6ef6c0f-18cf-4b37-9832-29786b1902e7)# h1 - Oma Linux
+# h1 - Oma Linux
 
 ## x)
 #### Tero Karvinen: Raportin kirjoittaminen
