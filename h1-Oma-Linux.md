@@ -1,4 +1,4 @@
-# h1 - Oma Linux
+![13](https://github.com/user-attachments/assets/f6ef6c0f-18cf-4b37-9832-29786b1902e7)# h1 - Oma Linux
 
 ## x)
 #### Tero Karvinen: Raportin kirjoittaminen
@@ -34,35 +34,72 @@ Ensimmäiseksi latasin Debian ISO-tiedoston sivustolta https://cdimage.debian.or
 
 Aloitin harjoituksen tekemisen kello 18.20. Olin jo aikaisemmin ladannut tietokoneelle VirtualBoxin, joten pääsin heti aloittamaan itse virtuaalikoneen asentamisen. Aloitin asentamisen avaamalla VirtualBoxin ja valitsemalla valikosta kohdan New. Tästä aukesi uusi Create Virtual Machine -ikkuna. Tämän ikkunan ensimmäisessä välilehdessä mimesin virtuaalikoneen, valitsin lataamani ISO-tiedoston sekä laitoin täpän kohtaan Skip Unattended Installation. Seuraavalla välilehdellä asetin muistin kooksi 4000 MB ja pidin prosessoriydinten määrän yhdessä. Next-painikkeella siirryin seuraavalle välilehdelle, jossa pidin valittuna kohdan Create a Virtual Hard Disk Now ja asetin levyn kooksi ohjeen mukaan 60 GB. Viimeisellä välilehdellä oli yhteenveto tekemistäni valinnoista. Tarkistin, että tekemäni valinnat olivat oikein ja painoin sen jälkeen Finish-painiketta. Tämän jälkeen luomani virtuaalikone ilmestyi VirtualBoxin aloitusnäkymään.
 
-![Uploading 1.png…]()
+![1](https://github.com/user-attachments/assets/3e00392b-f19b-441a-bfae-3163f8cff40a)
 
 ![2](https://github.com/user-attachments/assets/61a90de0-a618-466b-92a2-896b2774b5c5)
 
 ![3](https://github.com/user-attachments/assets/79bc6c03-453f-4e5d-b397-e8e5277ff4ba)
 
+![4](https://github.com/user-attachments/assets/3e303d02-a1b9-459e-b694-c7946486611c)
 
-
-KUVAT 1-5
+![5](https://github.com/user-attachments/assets/96b87cd9-73ce-4a9f-990f-2b3245d7ffb1)
 
 Seuraavaksi kello 18.45 aloitin Debian ISO-tiedosto lisäämisen CD-ROMiksi ohjeen mukaan. Klikkasin ensin luomani virtuaalikoneen kohdalta hiiren vasemalla painikkeella ja valitsemalla avautuneesta valikosta kohdan Settings. Avautuneessa Settings-ikkunassa valitsin vasemmasta laidasta kohdan Storage ja huomasin, että tämä olikin jo tehty aikaisemmassa vaiheessa virtuaalikonetta luotaessa. Siirryin siis harjoituksen seuraavaan vaiheeseen.
 
-KUVA 6
+![6](https://github.com/user-attachments/assets/73f058eb-92a3-4b1f-a199-0ad9c0f125b6)
 
 Aloitin boottauksen tekemisen kello 18.53 tuplaklikkaamalla luomani virtualikoneen kohdalta. Virtuaalikone työpöytä näkyin ensin todella pienenä, mutta sain sen suurennettua valitsemalla yläpalkista View -> Virtual Screen 1 -> Scale to 275%. Virtuaalikoneen käynnistyksen jälkeen auenneessa menussa ei näkynyt ohjeessa olevaa vaihtoehtoa, joten valitsin ylimmän vaihtoehdon Live system (amd64). Tästä aukesi virheilmoitus, jossa kerrottiin, että tämä ydin (kernel) tarvitsee x86-64 prosessoriytimen, mutta ainoastaan i686 prosessoriydin havaittiin, jonka vuoksi boottausta ei voitu tehdä.
 
-KUVAT 7-9
+![7](https://github.com/user-attachments/assets/5a13b8b7-f6bc-41e9-ba00-8c0b6c31b1c3)
+
+![8](https://github.com/user-attachments/assets/f5ba8d7f-693a-4d85-8796-bdf107b57e36)
+
+![9](https://github.com/user-attachments/assets/e84566b6-0d90-4fc9-9c27-35605924db7c)
 
 Selvitin ongelmaa googlettamalla ja löysin vastauksen Stack Overflown verkkosivuilta. Kello 19.15 tarkastelin luomani virtuaalikoneen asetuksia ja huomasin, että version kohdalla oli Debian (32-bit) eikä ohjeen mukainen Debian (64-bit). Muutin version oikeaksi ja kokeilin sitten kello 19.17 boottausta uudelleen samalla tavalla kuin aikaisemmin. Tällä kertaa boottaus onnistui ja virtuaalikoneen työpöytä aukesi. Testasin verkkoselaimen toimivuutta klikkaamalla työpäydän vasemmassa ylänurkassa olevasta kohdasta Applications ja valitsin avautuneesta valikosta Web Browser. Kirjoitin hakukenttään "Haaga-Helia" ja pääsin sitä kautta siirtymään Haaga-Helian verkkosivuille eli verkkoselain toimi. Tämän jälkeen suljin verkkoselaimen. 
 
-KUVAT 10-11
+![10](https://github.com/user-attachments/assets/028f7f26-fd7c-4450-ac7f-5d480ff87223)
+
+![11](https://github.com/user-attachments/assets/173e0c02-3215-4e66-b5f4-c342ffd76bfd)
 
 Kello 19.39 aloitin Debianin asentamisen. Virtuaalikoneen työpoydällä oli Install Debian -kuvake, jota kklikattuani hetken kuluttua aukesi Debian GNU/Linux Installer -ikkuna. Ensimmäisellä Welcome-välilehdellä valitsin kieleksi American English. Location-välilehdellä valitsin kartalta Suomen. Keyboard-välilehdellä valitsin Keyboard Model -kohdassa ohjeen mukaisesti vaihtoehdon Generic 105-key PC, vasemmanpuoleisesta valikosta Finnish ja oikeanpuoleisesta valikosta Default. Tämän jälkeen testasin vielä, että näppäimistö toimii ja pystyn kirjoittamaan myös ääkkösiä. Partitions-välilehdellä valitsin vaihtoehdon Erase disk. Users-välilehdelle syötin kenttiin pyydetyt tiedot eli oman nimeni, kirjautumiseen käytettävän nimen ja tietokoneen nimen sekä asetin salasanan. Summary-välilehdellä on jälleen yhteenveto tekemistäni valinnoista. Tarkastettuani, että kaikki oli oikein, aloitin asennusen Finish-painikkeella. Asennus kesti hieman yli 15 minuuttia, jonka jälkeen ikkunan viimeinen Finish-välilehti aukesi. Pidin täpän kohdassa Restart Now ja painoin Done-painiketta, jonka jälkeen virtuaalikone käynnistyi uudelleen. Uudelleenkäynnistyksen jälkeen pääsin kirjautumaan virtuaalikoneelle luomillani tunnuksilla kello 20.30. Kokeilin sisään kirjauduttuani samalla tavalla kuin aikaisemmin, että verkkoselain toimii ja toimihan se!
 
-KUVAT 12-21
+![12](https://github.com/user-attachments/assets/8785ca3a-3d1a-46e6-be44-157ef289ba61)
+
+![13](https://github.com/user-attachments/assets/6d6b0963-3c94-476d-9867-fd7c2ed3c183)
+
+![14](https://github.com/user-attachments/assets/f16fe2f4-d17d-4ee8-b359-8c1dd002a8e9)
+
+![15 korvaava](https://github.com/user-attachments/assets/6b8b618c-9c53-4905-a5aa-b0ab027e5c10)
+
+![16](https://github.com/user-attachments/assets/de9d12b3-ca2c-4c12-904b-6d9615682c70)
+
+![17](https://github.com/user-attachments/assets/efddb800-0bcb-467d-a739-82951d9e0306)
+
+![18](https://github.com/user-attachments/assets/47997123-eb29-40c7-b309-4b5a4aa199ae)
+
+![19](https://github.com/user-attachments/assets/53446fe3-9d63-42bc-aa6c-4e1812f1ca45)
+
+![20](https://github.com/user-attachments/assets/06e8f7a2-d02e-428b-a52e-38bab88184b3)
+
+![21](https://github.com/user-attachments/assets/3c8fa19c-e1b3-4b03-98d7-916bc933efe6)
 
 Kello 20.51 tein vielä Tero Karvisen ohjeen viimeiset vaiheet eli asensin Linuxille uusimmat turvallisuuspäivitykset. Klikkasin vasemassa ylänurkassa olevaa Applications-painiketta ja valitsin avautuneesta valikosta Terminal Emulator, josta avautui uusi ikkuna. Suoritin komentorivillä ohjeen mukaisesti komennon sudo apt-get update, jonka jälkeen syötin salasanani. Tällä komennolla hain listan saatavilla olevista päivityksistä. Tämän jälkeen suoritin komennon sudo apt-get -y dist-upgrade, jolla suoritin kaikki saatavilla olevat päivitykset. Tämä kesti muutaman minuutin. Lopuksi vielä asensin palomuurin ja otin sen käyttöön. Asensin palomuurin ajamalla komentorivillä  komennon sudo apt-get -y install ufw ja otin palomuurin käyttöön komennolla sudo ufw enable. Lopuksi vielä käynnistin virtuaalikoneen uudelleen kello 21.09 klikkaamalla virtuaalikoneen vasemassa yläkulmassa olevaa Applications-painiketta, josta avautuneesta valikosta valitsin Log out ja sitten vielä Restart.
 
-KUVAT 22-27
+![22](https://github.com/user-attachments/assets/f27af81e-f697-458a-bb6b-ac438ed2cd0f)
+
+![23](https://github.com/user-attachments/assets/c2840ca1-76bf-4463-b53d-1f9e3eb16f3e)
+
+![24](https://github.com/user-attachments/assets/8e5d83b9-b2ce-4053-9ad8-2f2812c7a77e)
+
+![25](https://github.com/user-attachments/assets/aead908e-4eb2-49c2-ade3-ffc83793e587)
+
+![26](https://github.com/user-attachments/assets/31d2f696-2dbd-4b71-b86a-6a6b6ecbda3b)
+
+![27](https://github.com/user-attachments/assets/56e6ebc9-b7f8-4a22-933b-84f1fe5a7d18)
+
+
+
 
 #### Lähteet
 
