@@ -23,12 +23,12 @@ Käyttäjän vapaudella käyttää ohjelmaa haluamallaan tavalla mihin tahansa t
 Tässä harjoituksessa asensin ensin virtuaalikoneen, jonka jälkeen asensin virtuaalikoneeseen ensimmäistä kertaa Linuxin Tero Karvisen laatiman yksityiskohtaisen ohjeen mukaisesti. Tein harjoituksen torstaina 2025-01-16.
 
 Tietokoneen tiedot
-Lenovon ThinkBook 13s G3 ACN kannettava tietokone
-Suoritin: AMD Ryzen 7 5800U with Radeon Graphics 1.90 GHz
-RAM: 16,0 Gt
-SSD: 475 Gt, josta käytettävissä 341 Gt
-Järjestelmätyyppi: 64-bittinen käyttöjärjestelmä, x64-suoritin
-Käyttöjärjestelmä: Windows 11 Pro, 24H2
+- Lenovon ThinkBook 13s G3 ACN kannettava tietokone
+- Suoritin: AMD Ryzen 7 5800U with Radeon Graphics 1.90 GHz
+- RAM: 16,0 Gt
+- SSD: 475 Gt, josta käytettävissä 341 Gt
+- Järjestelmätyyppi: 64-bittinen käyttöjärjestelmä, x64-suoritin
+- Käyttöjärjestelmä: Windows 11 Pro, 24H2
 
 Ensimmäiseksi latasin Debian ISO-tiedoston sivustolta https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/. Valitsin Tero Karvisen laatimasssa asennusohjeessa olleiden neuvojen ja suositusten pohjalta sivuston vaihtoehdoista tiedoston nimeltä debian-live-12.9.0-amd64-xfce.iso. Tiedoston lataaminen kesti joitakin minuutteja. 
 
