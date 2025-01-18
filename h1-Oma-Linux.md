@@ -44,7 +44,7 @@ Aloitin harjoituksen tekemisen kello 18.20. Olin jo aikaisemmin ladannut tietoko
 
 ![5](https://github.com/user-attachments/assets/96b87cd9-73ce-4a9f-990f-2b3245d7ffb1)
 
-![28](https://github.com/user-attachments/assets/038b91c6-0f66-4556-b712-2865521e0d6a)
+![30](https://github.com/user-attachments/assets/88ef9d6b-9ac6-4d0b-aaf3-85c8d24f43b3)
 
 Seuraavaksi kello 18.45 aloitin Debian ISO-tiedosto lisäämisen CD-ROMiksi ohjeen mukaan. Valitsin VirtualBoxin valikosta Settings ja avautuneessa Settings-ikkunassa valitsin vasemmasta laidasta kohdan Storage. Huomasin, että tämä olikin jo tehty aikaisemmassa vaiheessa virtuaalikonetta luotaessa. Siirryin siis harjoituksen seuraavaan vaiheeseen.
 
