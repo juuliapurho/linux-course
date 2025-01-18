@@ -20,13 +20,22 @@ Käyttäjän vapaudella käyttää ohjelmaa haluamallaan tavalla mihin tahansa t
 
 
 ## a)
-Tässä harjoituksessa ansensin Linuxin ensimmäistä kertaa virtuaalikoneeseen Tero Karvisen laatiman yksityiskohtaisen ohjeen mukaisesti. Tein harjoituksen torstaina 2025-01-16 ja koneena oli Lenovon ThinkBook 13s G3 ACN -mallinen kannettava tietokone. 
+Tässä harjoituksessa asensin ensin virtuaalikoneen ja sitten Linuxin ensimmäistä kertaa virtuaalikoneeseen Tero Karvisen laatiman yksityiskohtaisen ohjeen mukaisesti. Tein harjoituksen torstaina 2025-01-16.
+
+Tietokoneen tiedot
+Lenovon ThinkBook 13s G3 ACN kannettava tietokone
+Suoritin: AMD Ryzen 7 5800U with Radeon Graphics 1.90 GHz
+RAM: 16,0 Gt
+SSD: 475 Gt, josta käytettävissä 341 Gt
+Järjestelmätyyppi: 64-bittinen käyttöjärjestelmä, x64-suoritin
+Käyttöjärjestelmä: Windows 11 Pro, 24H2
 
 Ensimmäiseksi latasin Debian ISO-tiedoston sivustolta https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/. Valitsin Tero Karvisen laatimasssa asennusohjeessa olleiden neuvojen ja suositusten pohjalta sivuston vaihtoehdoista tiedoston nimeltä debian-live-12.9.0-amd64-xfce.iso. Tiedoston lataaminen kesti joitakin minuutteja. 
 
 Aloitin harjoituksen tekemisen kello 18.20. Olin jo aikaisemmin ladannut tietokoneelle VirtualBoxin, joten pääsin heti aloittamaan itse virtuaalikoneen asentamisen. Aloitin asentamisen avaamalla VirtualBoxin ja valitsemalla valikosta kohdan New. Tästä aukesi uusi Create Virtual Machine -ikkuna. Tämän ikkunan ensimmäisessä välilehdessä mimesin virtuaalikoneen, valitsin lataamani ISO-tiedoston sekä laitoin täpän kohtaan Skip Unattended Installation. Seuraavalla välilehdellä asetin muistin kooksi 4000 MB ja pidin prosessoriydinten määrän yhdessä. Next-painikkeella siirryin seuraavalle välilehdelle, jossa pidin valittuna kohdan Create a Virtual Hard Disk Now ja asetin levyn kooksi ohjeen mukaan 60 GB. Viimeisellä välilehdellä oli yhteenveto tekemistäni valinnoista. Tarkistin, että tekemäni valinnat olivat oikein ja painoin sen jälkeen Finish-painiketta. Tämän jälkeen luomani virtuaalikone ilmestyi VirtualBoxin aloitusnäkymään.
 
- ![Add file: Upload](1.png)
+![Uploading 1.png…]()
+
 
 KUVAT 1-5
 
@@ -52,9 +61,11 @@ KUVAT 22-27
 
 #### Lähteet
 
+Debian ISO-tiedoston lataus: https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/
+
 Free Software Foundation: What is Free Software? Luettavissa: https://www.gnu.org/philosophy/free-sw.html
 
-Stack Overflow: https://stackoverflow.com/questions/24872842/virtualbox-kernel-requires-an-x86-64-cpu-but-only-detected-an-i686-cpu
+Stack Overflow: VirtualBox - Kernel requires an x86-64 cpu but only detected an i686 cpu. Luettavissa: https://stackoverflow.com/questions/24872842/virtualbox-kernel-requires-an-x86-64-cpu-but-only-detected-an-i686-cpu
 
 Tero Karvinen: Install Debian on Virtualbox - Updated 2024. Luettavissa: https://terokarvinen.com/2021/install-debian-on-virtualbox/
 
