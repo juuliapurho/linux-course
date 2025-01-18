@@ -36,6 +36,11 @@ Aloitin harjoituksen tekemisen kello 18.20. Olin jo aikaisemmin ladannut tietoko
 
 ![Uploading 1.png…]()
 
+![2](https://github.com/user-attachments/assets/61a90de0-a618-466b-92a2-896b2774b5c5)
+
+![3](https://github.com/user-attachments/assets/79bc6c03-453f-4e5d-b397-e8e5277ff4ba)
+
+
 
 KUVAT 1-5
 
