@@ -60,6 +60,8 @@ Aloitin boottauksen tekemisen kello 18.53 tuplaklikkaamalla luomani virtualikone
 
 Selvitin ongelmaa googlettamalla ja löysin vastauksen Stack Overflown verkkosivuilta. Kello 19.15 tarkastelin luomani virtuaalikoneen asetuksia ja huomasin, että version kohdalla oli Debian (32-bit) eikä ohjeen mukainen Debian (64-bit). Muutin version oikeaksi ja kokeilin sitten kello 19.17 boottausta uudelleen samalla tavalla kuin aikaisemmin. Tällä kertaa boottaus onnistui ja virtuaalikoneen työpöytä aukesi. Testasin verkkoselaimen toimivuutta klikkaamalla työpäydän vasemmassa ylänurkassa olevasta Applications-painikkeesta ja valitsin avautuneesta valikosta Web Browser. Kirjoitin hakukenttään "Haaga-Helia" ja pääsin sitä kautta siirtymään Haaga-Helian verkkosivuille eli verkkoselain toimi. Tämän jälkeen suljin verkkoselaimen. 
 
+![29](https://github.com/user-attachments/assets/872f2a5f-fe17-41c4-94fe-d19cab235eb6)
+
 ![10](https://github.com/user-attachments/assets/028f7f26-fd7c-4450-ac7f-5d480ff87223)
 
 ![11](https://github.com/user-attachments/assets/173e0c02-3215-4e66-b5f4-c342ffd76bfd)
