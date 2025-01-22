@@ -9,15 +9,15 @@ Tero Karvisen julkaisemassa kirjoituksessa Command Line Basics Revisited käsite
 - cd, jolla päästään liikkumaan hakemistosta toiseen ylös- ja alaspäin
 - less, jolla voi tarkastella tekstitiedostoa
 
-Tiedostojen käsittelyyn liittyviä tärkeiitä komentoja ovat:
+Tiedostojen käsittelyyn liittyviä tärkeitä komentoja ovat:
 
 - mkdir, joka luo uuden hakemiston (esimerkiksi kansion)
 - mv, joka siirtää tai uudelleen nimeää hakemiston tai tiedoston
 - cp, jolla voidaan kopioida
 - rmdir, joka poistaa tyhjä hakemisto
-- rm, joka poistaa tietyn tiedoston. Tällä komennolla ei ole roskakoria, joten tulee olla varovainen.
+- rm, joka poistaa tietyn tiedoston. Tällä komennolla ei ole roskakoria, joten sitä käyttäessä tulee olla varovainen.
 
-  SSH-etäohjaukseen liittyviä tärkeitä komentoja ovat:
+SSH-etäohjaukseen liittyviä tärkeitä komentoja ovat:
   - ssh, jolla voidaan avata yhteys etäpalvelimeen. Tällöin aukeaa komentorivi, johon kirjoitetut komennot lähetetään etäkoneelle, ja vastaus lähetetään takaisin käyttäjälle. w-komennolla on mahdollista nähdä, ketkä muut ovat kirjautuneena samaan koneeseen.
   - exit, joka palauttaa käyttäjän takaisin tämän omalle koneelle
   - scp, jolla tiedosto voidaan kopioida turvallisesti etäkoneelle
