@@ -54,7 +54,7 @@ Olin jo aikaisemmin asentanut virtuaalikoneelleni micro-editorin, mutta tein sen
 
 ## b)
 #### b) Kolmen uuden komentorivi ohjelman asennus
-
+Päätin asentaa virtuaalikoneelleni tehtävänannossa annetut komentoriviohjelmat 
 
 
 
