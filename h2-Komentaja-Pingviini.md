@@ -22,8 +22,9 @@ SSH-etäohjaukseen liittyviä tärkeitä komentoja ovat:
   - exit, joka palauttaa käyttäjän takaisin tämän omalle koneelle
   - scp, jolla tiedosto voidaan kopioida turvallisesti etäkoneelle
 
-Lisäksi kirjoituksessa kerrotaan, että Tab-näppäimen kahdesti painaminen näyttää, mitä voi kirjoittaa seuraavaksi. Tab-näppäin täydentää  myös yksiselitteisiä komentoja ja sitä tulisi käyttää aina tiedostojen nimien ja polkujen syöttämisessä kirjoitusvirheiltä välttymiseksi. Tero Karvinen kertoo kirjoituksessa myös, että Linuxissa on vain muutama hakemisto, jotka käyttäjän tulee muistaa ja näitä ovat:
+Lisäksi kirjoituksessa kerrotaan, että Tab-näppäimen kahdesti painaminen näyttää, mitä voi kirjoittaa seuraavaksi. Tab-näppäin täydentää  myös yksiselitteisiä komentoja ja sitä tulisi käyttää aina tiedostojen nimien ja polkujen syöttämisessä kirjoitusvirheiltä välttymiseksi. 
 
+Tero Karvinen kertoo kirjoituksessa myös Linuxissa olevan vain muutama hakemisto, jotka käyttäjän tulee muistaa ja näitä ovat:
 - / eli juurihakemisto
 - /home/, joka sisältää kaikkien käyttäjien kotihakemistot
 - /home/juulia/, joka on käyttäjän juulia kotihakemisto. Tämä on ainoa sijainti, johon käyttäjä juulia voi tallentaa tietoja pysyvästi.
