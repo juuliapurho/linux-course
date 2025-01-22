@@ -48,7 +48,7 @@ Oracle VirtualBox versio  7.1.4
 #### Micro-editorin asennus
 Olin jo aikaisemmin asentanut virtuaalikoneelleni micro-editorin, mutta tein sen uudelleen harjoitusmielessä. Tein asennuksen keskiviikkona 2025-01-22 ja aloitin asentamisen kello 20.31. Avasin ensin virtuaalikoneeni komentokehotteen ja suoritin siellä ensin komennon sudo apt-get update ja syötin sitten salasanani. Sitten suoritin kommennon sudo apt-get install micro, josta tulostuneessa vastauksessa kerrottiin, että micro-editorista on jo asennettu uusin versio. Päätin asennuksen tekemisen kello 20.38.
 
-![image](https://github.com/user-attachments/assets/dd2ea4b0-dc51-40cc-95da-c4e8ea2e9ca5)
+![1](https://github.com/user-attachments/assets/9e637ce8-ddae-4365-88d3-999a84604a4b)
 
 ![image](https://github.com/user-attachments/assets/1b08f7de-79c0-480d-9faf-2374f454f333)
 
