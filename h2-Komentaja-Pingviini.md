@@ -32,7 +32,23 @@ Tero Karvinen kertoo kirjoituksessa myös Linuxissa olevan vain muutama hakemist
 - /media/, jossa on poistettavat mediat
 - /var/log/, jossa on koko järjestelmän laajuiset lokitiedostot
 
-Lopuksi kirjoituksessa käydään vielä läpi hallintakomentoja. Vähimmän oikeuden periaatteen mukaan toimenpiteet tulisi tehdä mahdollisimman matalalla oikeustasolla ja vain vain korkeita oikeuksia vaativat toimenpiteet suoritetaan sudo-komennolla. Sudo-komennolla saadaan rajattomat oikeudet. Tällaisia korkeampia oikeuksia vaativia toimenpiteitä ovat koko järjestelmään vaikuttavat komennot, kuten ohjelmistojen asentaminen tai niiden poistaminen ja käyttäjien luominen.
+Lopuksi kirjoituksessa käydään vielä läpi hallintakomentoja. Vähimmän oikeuden periaatteen mukaan toimenpiteet tulisi tehdä mahdollisimman matalalla oikeustasolla ja vain korkeita oikeuksia vaativat toimenpiteet suoritetaan sudo-komennolla. Sudo-komennolla saadaan rajattomat oikeudet. Tällaisia korkeampia oikeuksia vaativia toimenpiteitä ovat koko järjestelmään vaikuttavat komennot, kuten ohjelmistojen asentaminen tai niiden poistaminen ja käyttäjien luominen.
+
+## Alakohdissa a-h käytetty ympäristö
+Lenovon ThinkBook 13s G3 ACN kannettava tietokone
+Suoritin: AMD Ryzen 7 5800U with Radeon Graphics 1.90 GHz
+RAM: 16,0 Gt
+SSD: 475 Gt, josta käytettävissä 341 Gt
+Järjestelmätyyppi: 64-bittinen käyttöjärjestelmä, x64-suoritin
+Käyttöjärjestelmä: Windows 11 Pro, 24H2
+
+Oracle VirtualBox versio  7.1.4
+
+## a) 
+#### Micro-editorin asennus
+Olin jo aikaisemmin asentanut virtuaalikoneelleni micro-editorin, mutta tein sen uudelleen harjoitusmielessä. Tein asennuksen keskiviikkona 2025-01-22 ja aloitin asentamisen kello 20.31. Avasin ensin virtuaalikoneeni komentokehotteen ja suoritin siellä ensin komennon sudo apt-get update ja syötin sitten salasanani.
+
+![image](https://github.com/user-attachments/assets/dd2ea4b0-dc51-40cc-95da-c4e8ea2e9ca5)
 
 
 
