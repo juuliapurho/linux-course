@@ -105,7 +105,7 @@ Lopuksi kokeilin vielä fortune ohjelmaa suorittamalla komennon fortune, joka ky
 ![19](https://github.com/user-attachments/assets/4b8e81cf-f528-4203-b835-6cb520624438)
 
 ## c) Tärkeimmät kansiot
-Tero Karvisen kirjoittamassa Command Line Basics Revisited -kirjoituksessa on listattu tärkeimpiä kansioita, jotka käyttäjän on tulee muista. Seuraavaksi näytän esimerkin kunkin tärkeän kansion sisältämästä tiedostosta tai kansiosta. Ensimmäisenä siirryin juurihakemistoon. Suoritin ensin komennon pwd, joka ilmoitti, että sen hetkinen työskentelyhakemistoni on /home/juulia. Siirryin juurihakemistoon ( / ) suorittamalla kahdesti komennon "cd .." ja jokaisessa välissä suoritin myös komennon pwd varmistaakseni, missä työskentelyhakemistossa olen. 
+Tein harjoituksen torstaina 2025-01-23 ja aloitin sen tekemisen kello 21.15. Tero Karvisen kirjoittamassa Command Line Basics Revisited -kirjoituksessa on listattu tärkeimpiä kansioita, jotka käyttäjän on tulee muista. Seuraavaksi näytän esimerkin kunkin tärkeän kansion sisältämästä tiedostosta tai kansiosta. Ensimmäisenä siirryin juurihakemistoon. Suoritin ensin komennon pwd, joka ilmoitti, että sen hetkinen työskentelyhakemistoni on /home/juulia. Siirryin juurihakemistoon ( / ) suorittamalla kahdesti komennon "cd .." ja jokaisessa välissä suoritin myös komennon pwd varmistaakseni, missä työskentelyhakemistossa olen. 
 
 Juurihakemistossa suoritin komennon ls, joka listasi sen sisältämät kansiot. Tämän jälkeen siirryin juurihakemiston kansioon sys ja tarkastelin sen sisältöä suorittamalla komennon cd sys. 
 
@@ -117,7 +117,7 @@ Tämän jälkeen siirryin takaisin juurihakemistoon suorittamalla kolmesti komen
 
 Sitten palasin takaisin juurihakemistoon ja sieltä kansioon /media/ suorittamalla komennot cd .., cd .., pwd, ls, cd media. Tarkastelin kansion sisältöä komennolla ls ja kansio oli tyhjä.
 
-Lopuksi siirryin vielä kansioon /var/log/ suorittamalla komennot cd.., pwd, ls, cd var, ls, cd log. Tarkastelin kansion sisältöä komennolla ls ja siirryin tarkastelemaan kansiota journal komennoilla cd journal ja ls. Sitten siirryin vielä omaan kotihakemistooni /home/juulia.
+Lopuksi siirryin vielä kansioon /var/log/ suorittamalla komennot cd.., pwd, ls, cd var, ls, cd log. Tarkastelin kansion sisältöä komennolla ls ja siirryin tarkastelemaan kansiota journal komennoilla cd journal ja ls. Sitten siirryin vielä omaan kotihakemistooni /home/juulia. Lopetin harjoituksen tekemisen 21.56.
 
 ![21](https://github.com/user-attachments/assets/64683b5e-3b9d-4f33-a32a-604da0570f16)
 
