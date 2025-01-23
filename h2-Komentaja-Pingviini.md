@@ -68,11 +68,15 @@ Aloitin asentamisen kello 19.22 käynnistämällä virtuaalikoneeni ja kirjautum
 
 ![5](https://github.com/user-attachments/assets/b0d18ca6-62ba-4b3c-8049-2a9056035469)
 
-Seuraavaksi pääsin kokeilemaan asentamiani ohjelmia. Kello 19.57 kokeilin ensimmäisenä figlet -ohjelmaa suorittamalla kommennon figlet Linux-kurssi ja tämä tulosti tekstibannerin, jossa luki "Linux-kurssi". Sitten kokeilin calcurse ohjelmaa ja suoritin ensin komennon calcurse, josta ohjelma aukesi. Ohjelmassa oli ikkunan alalaidassa selkeät ohjeet siitä, että millä painikkeella ohjelmassa tehdään mitäkin. Lisäsin ohjelmaan uuden tapaamisen seuraavalle päivälle ohjelman verkkosivuilta löytyvän ohjeen mukaisesti (https://www.calcurse.org/files/manual.html). Siirryin ensin seuraavan päivän eli 24.1.2025 kohdalle L-painikkeella ja sitten painoin A-painiketta. Tämän jälkeen kirjoitin ohjelman alalaidassa pyytämät tiedot seuraavasti:
+Seuraavaksi pääsin kokeilemaan asentamiani ohjelmia. Kello 19.57 kokeilin ensimmäisenä figlet -ohjelmaa suorittamalla kommennon figlet Linux-kurssi ja tämä tulosti tekstibannerin, jossa luki "Linux-kurssi". 
+
+Sitten kokeilin calcurse ohjelmaa ja suoritin ensin komennon calcurse, josta ohjelma aukesi. Ohjelmassa oli ikkunan alalaidassa selkeät ohjeet siitä, että millä painikkeella ohjelmassa tehdään mitäkin. Lisäsin ohjelmaan uuden tapaamisen seuraavalle päivälle ohjelman verkkosivuilta löytyvän ohjeen mukaisesti (https://www.calcurse.org/files/manual.html). Siirryin ensin seuraavan päivän eli 24.1.2025 kohdalle L-painikkeella ja sitten painoin A-painiketta. Tämän jälkeen kirjoitin ohjelman alalaidassa pyytämät tiedot seuraavasti:
 - aloitusaika : 09:00
 - kesto: +03:00
 - kuvaus: Linux-kurssi
-Jokaisen tiedon syöttämisen jälkeen siirryin eteenpäin enterillä. Yllä mainitsemani tiedot syötettyäni tapaaminen ilmestyi kalenteriin huomisen kohdalle. 
+Jokaisen tiedon syöttämisen jälkeen siirryin eteenpäin enterillä. Yllä mainitsemani tiedot syötettyäni tapaaminen ilmestyi kalenteriin huomisen kohdalle.
+
+Lopuksi kokeilin vielä fortune ohjelmaa suorittamalla komennon fortune, joka kyllä tulosti ennustuksen, mutta se oli italian kielellä. Ajattelin, että suoritan kaikki saatavilla olevat päivitykset ja kokeilen, että toimiiko tämä. Suoritin siis komennon sudo apt-get update ja syötin salasanani. Tämän jälkeen suoritin komennon sudo apt-get -y dist-upgrade. Päivitysten tekeminen kesti muutaman minuutin ja kokeilin sen jälkeen uudelleen komentoa fortune, mutta päivitysten tekeminen ei muuttanut ennustuksia englanninkielisiksi. Yritin jälleen löytää ratkaisua ongelmaani googlettamalla ja löysin Debian Wikin verkkosivuilta apua (https://wiki.debian.org/fortune). Suoritin komennon fortune -fa, jolla sain selvitettyä kaikki asentamani fortune-tiedostot. Tästä näin, etten ollut asentanut englanninkielistä versiota. Latasin fortune ohjelman suorittamalla jälleen ensin komennon sudo apt-get update ja syötin salasanani. Tämän jälkeen suoritin komennon udo apt-get -y install fortunes. Ohjelman asentamisen jälkeen suoritin uudelleen komennon  fortune -fa, josta näin, että nyt fortune-tiedostoja oli huomattavasti enemmän kuin aikaisemmin. Suorittaessani komennon fortune tämän asennuksen jälkeen, ennustuksia tulostui sekä englanniksi että italian kielellä. Löysin vielä installati.one -verkkosivuilta ohjeen, miten tuon italiankielisen fortunen saa poistettua (https://installati.one/install-fortunes-it-off-debian-12/). Suoritin komennon sudo apt-get remove fortunes-it, jonka jälkeen kokeilin uudelleen fortune komentoa useamman kerran ja vihdoin kaikki ennustukset olivat englanninkielisiä! Onnistuttuani ratkaisemaan tämän ongelman lopetin harjoituksen tekemisen kello 21.12.
 
 ![6](https://github.com/user-attachments/assets/4223c7d4-702a-4a06-97f5-46d40339dafb)
 
@@ -86,9 +90,32 @@ Jokaisen tiedon syöttämisen jälkeen siirryin eteenpäin enterillä. Yllä mai
 
 ![11](https://github.com/user-attachments/assets/64eed9c0-376f-459b-8555-6304ab0ed88f)
 
+![12](https://github.com/user-attachments/assets/73e46e06-307b-4fb8-ba12-2a8411bd7674)
+
+![13](https://github.com/user-attachments/assets/2dcb58ae-22d9-4a33-95a6-144560fbbcf7)
+
+![14](https://github.com/user-attachments/assets/8477b9fb-35ed-4b12-bc15-4bb8def787fc)
+
+![15](https://github.com/user-attachments/assets/82367dde-53d2-4778-b02f-991ab9545b81)
+
+![16](https://github.com/user-attachments/assets/2d9428bd-74e6-4768-bef3-5e8ecf77129b)
+
+![17](https://github.com/user-attachments/assets/3cbacd5f-a3a7-4e0a-958b-ceb0de18f606)
+
+![18](https://github.com/user-attachments/assets/f5d455e9-1c62-4684-a1ff-9542faf318fc)
+
+![19](https://github.com/user-attachments/assets/4b8e81cf-f528-4203-b835-6cb520624438)
+
+
 #### Lähteet 
 
 Adam Garrett-Harris: awesome-cli-apps. Luettavissa: https://github.com/agarrharr/awesome-cli-apps?tab=readme-ov-file.
+
+Calcurse: CALCURSE - text-based organizer. Luettavissa: https://www.calcurse.org/files/manual.html.
+
+Debian Wiki: fortune. Luettavissa: https://wiki.debian.org/fortune.
+
+Installati.one: How To Install fortunes-it-off on Debian 12. Luettavissa: https://installati.one/install-fortunes-it-off-debian-12/
 
 Linux-Console.net: 10 parasta komentorivityökalua Linux-päätteelle. Luettavissa: https://fi.linux-console.net/?p=4760#gsc.tab=0.
 
