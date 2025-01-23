@@ -53,8 +53,9 @@ Olin jo aikaisemmin asentanut virtuaalikoneelleni micro-editorin, mutta tein sen
 ![image](https://github.com/user-attachments/assets/1b08f7de-79c0-480d-9faf-2374f454f333)
 
 ## b)
-#### b) Kolmen uuden komentorivi ohjelman asennus
-Päätin asentaa virtuaalikoneelleni tehtävänannossa annetut komentoriviohjelmat 
+#### b) Kolmen uuden komentoriviohjelman asennus
+Jatkoin tehtävän tekemistä torstaina 2025-01-23. En tiedä oikeastaan mitään komentoriviohjelmia, joten päätin lähteä etsimään netistä mielenkiintoisia ohjelmia, jotka voisin asentaa virtuaalikoneelleni. Löysin Linux-Console.net -verkkosivuilta kirjoituksen, jossa esiteltiin kymmenen komentorivityökalua Linux-päätteelle (https://fi.linux-console.net/?p=4760#gsc.tab=0) sekä Adam Garrett-Harrisin julkaisun GitHubissa, jossa esiteltiin CLI-ohjelmia (https://github.com/agarrharr/awesome-cli-apps?tab=readme-ov-file). 
+
 
 Nano -tekstieditori sudo apt install nano
 
@@ -63,4 +64,19 @@ Nano -tekstieditori sudo apt install nano
 
 
 #### Lähteet 
-Tero Karvinen: Command Line Basics Revisited. Luettavissa: https://terokarvinen.com/2020/command-line-basics-revisited/?fromSearch=command%20line%20basics%20revisited
+
+Adam Garrett-Harris: awesome-cli-apps. Luettavissa: https://github.com/agarrharr/awesome-cli-apps?tab=readme-ov-file.
+
+Linux-Console.net: 10 parasta komentorivityökalua Linux-päätteelle. Luettavissa: https://fi.linux-console.net/?p=4760#gsc.tab=0.
+
+Tero Karvinen: Command Line Basics Revisited. Luettavissa: https://terokarvinen.com/2020/command-line-basics-revisited/?fromSearch=command%20line%20basics%20revisited.
+
+Tero Karvinen 2025: Tehtävänanto h2. Luettavissa: https://terokarvinen.com/linux-palvelimet/.
+
+____________________________________________________________________________________________________________________________________________________________________
+Tätä dokumenttia saa kopioida ja muokata GNU General Public License (versio 2 tai uudempi) mukaisesti. http://www.gnu.org/licenses/gpl.html
+
+Pohjana Tero Karvinen 2025: Linux Palvelimet 2025 alkukevät, http://terokarvinen.com. 
+
+
+
