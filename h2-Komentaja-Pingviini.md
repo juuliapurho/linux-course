@@ -57,15 +57,34 @@ Olin jo aikaisemmin asentanut virtuaalikoneelleni micro-editorin, mutta tein sen
 Jatkoin tehtävän tekemistä torstaina 2025-01-23. En tiedä oikeastaan mitään komentoriviohjelmia, joten päätin lähteä etsimään netistä mielenkiintoisia ohjelmia, jotka voisin asentaa virtuaalikoneelleni. Löysin Linux-Console.net -verkkosivuilta kirjoituksen, jossa esiteltiin kymmenen komentorivityökalua Linux-päätteelle (https://fi.linux-console.net/?p=4760#gsc.tab=0) sekä Adam Garrett-Harrisin julkaisun GitHubissa, jossa esiteltiin CLI-ohjelmia (https://github.com/agarrharr/awesome-cli-apps?tab=readme-ov-file). Päätin näitä kirjoituksia luettuani asentaa virtualikoneelleni seuraavat ohjelmat:
 -  Figlet, jota käytetään tekstibannerien tai suurten kirjainten luomiseen
 -  Calcurse, joka on komentorivillä käytettävä kalenteri- ja aikataulutusohjelma
--  Fortune, joka tulostaa satunnaisen ennustuksen
+-  Quote-cli, joka tulostaa satunnaisen mietelauseen tai päivän mietelauseen
 Valittuani ohjelmat, jotka haluan asentaa, lähdin selvittämään miten minun olisi mahdollista asentaa nämä kaikki ohjelmat yhdellä kertaa. Löysin vastauksen googlettamalla nopeasti LinuxHint-verkkosivuilta (https://linuxhint.com/use-apt-to-install-multiple-programs-from-command-line-debian/). 
 
-Aloitin asentamisen kello 19.22 käynnistämällä virtuaalikoneeni ja kirjautumalla sisään. Tämän jälkeen avasin komentokehotteen ja suoritin komennon sudo apt-get update, jonka jälkeen syötin salasanani, kuten aikaisemminkin. Sitten suoritin komennon sudo apt-get -y install figlet calcurse fortune. Komento tulosti muun muassa tiedon siitä, että fortunen sijaan asennetaan fortune-mod, joka on uusin versio tästä ohjelmasta. Komennon suorittamisen jälkeen nämä kolme ohjelmaa olivat asentuneet virtuaalikoneelleni kello 19.35. Tämän jälkeen päätin vielä päivittää kaikki saatavilla olevat päivitykset komennolla. 
+Aloitin asentamisen kello 19.22 käynnistämällä virtuaalikoneeni ja kirjautumalla sisään. Tämän jälkeen avasin komentokehotteen ja suoritin komennon sudo apt-get update, jonka jälkeen syötin salasanani, kuten aikaisemminkin. Sitten suoritin komennon sudo apt-get -y install figlet calcurse quote-cli. Komento tulosti virheilmoituksen E:Unable to locate package quote-cli. Etsin netistä tietoa siitä, mitä tämä virheilmoitus tarkoittaa ja löysin apua ongelmaani FOSS Linux -verkkosivuilta (https://www.fosslinux.com/113252/fix-unable-to-locate-package-error-in-ubuntu-and-debian.htm). Päätin ensimmäisena tarkastaa, että antamani ohjelman nimi on kirjoitettu asennuskomentoon oikein. En löytänyt nopealla googlettamalla kyseistä quote-cli ohjelmaa ollenkaan hakutuloksista, joten päätin vaihtaa sen fortune ohjelmaan, joka tulostaa satunnaisen ennustuksen. Suoritin sitten kello 19.46 komennon sudo apt-get -y install figlet calcurse fortune. Tämä komento tulosti tiedon siitä, että fortunen sijaan asennetaan fortune-mod, joka on uusin versio tästä ohjelmasta. Komennon suorittamisen jälkeen nämä kolme ohjelmaa olivat asentuneet virtuaalikoneelleni. 
 
 ![3](https://github.com/user-attachments/assets/1c5d7d27-3ca5-46b8-bf97-562948c6f155)
 
+![3](https://github.com/user-attachments/assets/de086263-4967-4fb2-80ac-e8c32801dd51)
+
 ![5](https://github.com/user-attachments/assets/b0d18ca6-62ba-4b3c-8049-2a9056035469)
 
+Seuraavaksi pääsin kokeilemaan asentamiani ohjelmia. Kello 19.57 kokeilin ensimmäisenä figlet -ohjelmaa suorittamalla kommennon figlet Linux-kurssi ja tämä tulosti tekstibannerin, jossa luki "Linux-kurssi". Sitten kokeilin calcurse ohjelmaa ja suoritin ensin komennon calcurse, josta ohjelma aukesi. Ohjelmassa oli ikkunan alalaidassa selkeät ohjeet siitä, että millä painikkeella ohjelmassa tehdään mitäkin. Lisäsin ohjelmaan uuden tapaamisen seuraavalle päivälle ohjelman verkkosivuilta löytyvän ohjeen mukaisesti (https://www.calcurse.org/files/manual.html). Siirryin ensin seuraavan päivän eli 24.1.2025 kohdalle L-painikkeella ja sitten painoin A-painiketta. Tämän jälkeen kirjoitin ohjelman alalaidassa pyytämät tiedot seuraavasti:
+- aloitusaika : 09:00
+- kesto: +03:00
+- kuvaus: Linux-kurssi
+Jokaisen tiedon syöttämisen jälkeen siirryin eteenpäin enterillä. Yllä mainitsemani tiedot syötettyäni tapaaminen ilmestyi kalenteriin huomisen kohdalle. 
+
+![6](https://github.com/user-attachments/assets/4223c7d4-702a-4a06-97f5-46d40339dafb)
+
+![7](https://github.com/user-attachments/assets/80106802-4993-4b06-a094-a374463e1a56)
+
+![8](https://github.com/user-attachments/assets/b878a46b-81bc-48af-8954-8f238cb38937)
+
+![9](https://github.com/user-attachments/assets/ff518a8b-886a-4cbe-9267-109aa90ddb1d)
+
+![10](https://github.com/user-attachments/assets/448771dc-34a0-46ff-b04a-a09b142cb407)
+
+![11](https://github.com/user-attachments/assets/64eed9c0-376f-459b-8555-6304ab0ed88f)
 
 #### Lähteet 
 
