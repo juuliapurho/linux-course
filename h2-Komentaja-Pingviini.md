@@ -64,8 +64,6 @@ Aloitin asentamisen kello 19.22 käynnistämällä virtuaalikoneeni ja kirjautum
 
 ![3](https://github.com/user-attachments/assets/1c5d7d27-3ca5-46b8-bf97-562948c6f155)
 
-![3](https://github.com/user-attachments/assets/de086263-4967-4fb2-80ac-e8c32801dd51)
-
 ![5](https://github.com/user-attachments/assets/b0d18ca6-62ba-4b3c-8049-2a9056035469)
 
 Seuraavaksi pääsin kokeilemaan asentamiani ohjelmia. Kello 19.57 kokeilin ensimmäisenä figlet -ohjelmaa suorittamalla kommennon figlet Linux-kurssi ja tämä tulosti tekstibannerin, jossa luki "Linux-kurssi". 
