@@ -106,6 +106,8 @@ Lopuksi kokeilin vielä fortune ohjelmaa suorittamalla komennon fortune, joka ky
 
 ![19](https://github.com/user-attachments/assets/4b8e81cf-f528-4203-b835-6cb520624438)
 
+## c)
+
 
 #### Lähteet 
 
