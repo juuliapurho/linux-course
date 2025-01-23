@@ -54,7 +54,11 @@ Olin jo aikaisemmin asentanut virtuaalikoneelleni micro-editorin, mutta tein sen
 
 ## b)
 #### b) Kolmen uuden komentoriviohjelman asennus
-Jatkoin tehtävän tekemistä torstaina 2025-01-23. En tiedä oikeastaan mitään komentoriviohjelmia, joten päätin lähteä etsimään netistä mielenkiintoisia ohjelmia, jotka voisin asentaa virtuaalikoneelleni. Löysin Linux-Console.net -verkkosivuilta kirjoituksen, jossa esiteltiin kymmenen komentorivityökalua Linux-päätteelle (https://fi.linux-console.net/?p=4760#gsc.tab=0) sekä Adam Garrett-Harrisin julkaisun GitHubissa, jossa esiteltiin CLI-ohjelmia (https://github.com/agarrharr/awesome-cli-apps?tab=readme-ov-file). 
+Jatkoin tehtävän tekemistä torstaina 2025-01-23. En tiedä oikeastaan mitään komentoriviohjelmia, joten päätin lähteä etsimään netistä mielenkiintoisia ohjelmia, jotka voisin asentaa virtuaalikoneelleni. Löysin Linux-Console.net -verkkosivuilta kirjoituksen, jossa esiteltiin kymmenen komentorivityökalua Linux-päätteelle (https://fi.linux-console.net/?p=4760#gsc.tab=0) sekä Adam Garrett-Harrisin julkaisun GitHubissa, jossa esiteltiin CLI-ohjelmia (https://github.com/agarrharr/awesome-cli-apps?tab=readme-ov-file). Päätin näitä kirjoituksia luettuani asentaa virtualikoneelleni seuraavat ohjelmat:
+-  Wikit, jolla voi etsiä tietoa Wikipediasta Linuxilla
+-  Calcurse, joka on komentorivillä käytettävä kalenteri- ja aikataulutusohjelma
+-  Quote-cli, joka tulostaa satunnaisen mietelauseen tai päivän mietelauseen komentorivillä
+Valittuani ohjelmat, jotka haluan asentaa, lähdin selvittämään miten minun olisi mahdollista asentaa nämä kaikki ohjelmat yhdellä kertaa.
 
 
 Nano -tekstieditori sudo apt install nano
