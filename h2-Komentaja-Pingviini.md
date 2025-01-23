@@ -119,7 +119,7 @@ Tämän jälkeen siirryin takaisin juurihakemistoon suorittamalla kolmesti komen
 
 Sitten palasin takaisin juurihakemistoon ja sieltä kansioon /media/ suorittamalla komennot cd .., cd .., pwd, ls, cd media. Tarkastelin kansion sisältöä komennolla ls ja kansio oli tyhjä.
 
-Lopuksi siirryin vielä kansioon /var/log/ suorittamalla komennot 
+Lopuksi siirryin vielä kansioon /var/log/ suorittamalla komennot cd.., pwd, ls, cd var, ls, cd log. Tarkastelin kansion sisältöä komennolla ls ja siirryin tarkastelemaan kansiota journal komennoilla cd journal ja ls. Sitten siirryin vielä omaan kotihakemistooni /home/juulia.
 
 ![21](https://github.com/user-attachments/assets/64683b5e-3b9d-4f33-a32a-604da0570f16)
 
@@ -132,6 +132,12 @@ Lopuksi siirryin vielä kansioon /var/log/ suorittamalla komennot
 ![26](https://github.com/user-attachments/assets/cdbc5dc7-cec3-4a46-9124-f27d5b012007)
 
 ![27](https://github.com/user-attachments/assets/3352be6a-640e-4cbe-bf7b-11e627ae70a2)
+
+![28](https://github.com/user-attachments/assets/3c4d9ac1-056e-400c-b45c-4daff8d0ff78)
+
+![29](https://github.com/user-attachments/assets/656e7417-76d7-49b9-9323-80059744dd0c)
+
+![30](https://github.com/user-attachments/assets/e2d1a183-2c1f-49c3-abd3-ed58ca533389)
 
 
 
