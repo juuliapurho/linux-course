@@ -55,16 +55,16 @@ Olin jo aikaisemmin asentanut virtuaalikoneelleni micro-editorin, mutta tein sen
 ## b)
 #### b) Kolmen uuden komentoriviohjelman asennus
 Jatkoin tehtävän tekemistä torstaina 2025-01-23. En tiedä oikeastaan mitään komentoriviohjelmia, joten päätin lähteä etsimään netistä mielenkiintoisia ohjelmia, jotka voisin asentaa virtuaalikoneelleni. Löysin Linux-Console.net -verkkosivuilta kirjoituksen, jossa esiteltiin kymmenen komentorivityökalua Linux-päätteelle (https://fi.linux-console.net/?p=4760#gsc.tab=0) sekä Adam Garrett-Harrisin julkaisun GitHubissa, jossa esiteltiin CLI-ohjelmia (https://github.com/agarrharr/awesome-cli-apps?tab=readme-ov-file). Päätin näitä kirjoituksia luettuani asentaa virtualikoneelleni seuraavat ohjelmat:
--  Wikit, jolla voi etsiä tietoa Wikipediasta Linuxilla
+-  Figlet, jota käytetään tekstibannerien tai suurten kirjainten luomiseen
 -  Calcurse, joka on komentorivillä käytettävä kalenteri- ja aikataulutusohjelma
--  Quote-cli, joka tulostaa satunnaisen mietelauseen tai päivän mietelauseen komentorivillä
-Valittuani ohjelmat, jotka haluan asentaa, lähdin selvittämään miten minun olisi mahdollista asentaa nämä kaikki ohjelmat yhdellä kertaa.
+-  Fortune, joka tulostaa satunnaisen ennustuksen
+Valittuani ohjelmat, jotka haluan asentaa, lähdin selvittämään miten minun olisi mahdollista asentaa nämä kaikki ohjelmat yhdellä kertaa. Löysin vastauksen googlettamalla nopeasti LinuxHint-verkkosivuilta (https://linuxhint.com/use-apt-to-install-multiple-programs-from-command-line-debian/). 
 
+Aloitin asentamisen kello 19.22 käynnistämällä virtuaalikoneeni ja kirjautumalla sisään. Tämän jälkeen avasin komentokehotteen ja suoritin komennon sudo apt-get update, jonka jälkeen syötin salasanani, kuten aikaisemminkin. Sitten suoritin komennon sudo apt-get -y install figlet calcurse fortune. Komento tulosti muun muassa tiedon siitä, että fortunen sijaan asennetaan fortune-mod, joka on uusin versio tästä ohjelmasta. Komennon suorittamisen jälkeen nämä kolme ohjelmaa olivat asentuneet virtuaalikoneelleni kello 19.35. Tämän jälkeen päätin vielä päivittää kaikki saatavilla olevat päivitykset komennolla. 
 
-Nano -tekstieditori sudo apt install nano
+![3](https://github.com/user-attachments/assets/1c5d7d27-3ca5-46b8-bf97-562948c6f155)
 
-
-
+![5](https://github.com/user-attachments/assets/b0d18ca6-62ba-4b3c-8049-2a9056035469)
 
 
 #### Lähteet 
@@ -72,6 +72,8 @@ Nano -tekstieditori sudo apt install nano
 Adam Garrett-Harris: awesome-cli-apps. Luettavissa: https://github.com/agarrharr/awesome-cli-apps?tab=readme-ov-file.
 
 Linux-Console.net: 10 parasta komentorivityökalua Linux-päätteelle. Luettavissa: https://fi.linux-console.net/?p=4760#gsc.tab=0.
+
+Linux Hint: How to Use apt to Install Multiple Programs from the Command Line in Debian 11. Luettavissa: https://linuxhint.com/use-apt-to-install-multiple-programs-from-command-line-debian/.
 
 Tero Karvinen: Command Line Basics Revisited. Luettavissa: https://terokarvinen.com/2020/command-line-basics-revisited/?fromSearch=command%20line%20basics%20revisited.
 
