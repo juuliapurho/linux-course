@@ -24,7 +24,7 @@ SSH-etäohjaukseen liittyviä tärkeitä komentoja ovat:
 
 Lisäksi kirjoituksessa kerrotaan, että Tab-näppäimen kahdesti painaminen näyttää, mitä voi kirjoittaa seuraavaksi. Tab-näppäin täydentää  myös yksiselitteisiä komentoja ja sitä tulisi käyttää aina tiedostojen nimien ja polkujen syöttämisessä kirjoitusvirheiltä välttymiseksi. 
 
-Tero Karvinen kertoo kirjoituksessa myös Linuxissa olevan vain muutama hakemisto, jotka käyttäjän tulee muistaa ja näitä ovat:
+Tero Karvinen kertoo kirjoituksessa myös Linuxissa olevan vain muutama kansio, jotka käyttäjän tulee muistaa ja näitä ovat:
 - / eli juurihakemisto
 - /home/, joka sisältää kaikkien käyttäjien kotihakemistot
 - /home/juulia/, joka on käyttäjän juulia kotihakemisto. Tämä on ainoa sijainti, johon käyttäjä juulia voi tallentaa tietoja pysyvästi.
@@ -107,10 +107,18 @@ Lopuksi kokeilin vielä fortune ohjelmaa suorittamalla komennon fortune, joka ky
 ![19](https://github.com/user-attachments/assets/4b8e81cf-f528-4203-b835-6cb520624438)
 
 ## c)
+Tero Karvisen kirjoittamassa Command Line Basics Revisited -kirjoituksessa on listattu tärkeimpiä kansioita, jotka käyttäjän on tulee muista. Seuraavaksi näytän esimerkin kunkin tärkeän kansion sisältämästä tiedostosta tai kansiosta. Ensimmäisenä siirryin juurihakemistoon. Suoritin ensin komennon pwd, joka ilmoitti, että sen hetkinen työskentelyhakemistoni on /home/juulia. Siirryin juuri hakemistoon ( / ) suorittamalla kahdesti komennon "cd .." ja jokaisessa välissä suoritin myös komennon pwd varmistaakseni, missä kansiossa olen aina cd-komennon suorittamisen jälkeen. Juurihakemistossa suoritin komennon ls, joka listasi hakemiston sisältämät tiedostot. Tämän jälkeen siirryin juurihakemiston kansioon sys ja tarkastelin sen sisältöä suorittamalla komennon cd sys. Seuraavaksi siirryin kansioon /home/ suorittamalla komennot cd .., pwd, ls ja cd home. Tarkastelin kansion sisältöä komennolla ls ja tämä kansio piti sisällään ainoastaan minun kotihakemistoni eli juulia. Siirryin tarkastelemaan omaa kotihakemistoani komennolla cd juulia ja varmistin komennolla pwd sijaintini. Sitten jälleen komennolla ls tarkastelin kansion sisältöä. Siirryin kotihakemistoni kansioon Documents suorittamalla komennot cd Documents, pwd, ls.
+
+![21](https://github.com/user-attachments/assets/64683b5e-3b9d-4f33-a32a-604da0570f16)
+
+![22](https://github.com/user-attachments/assets/5979e651-fc52-41c2-aa25-5b96b404df4b)
+
+![24](https://github.com/user-attachments/assets/83a15be1-f716-4f44-8d1d-37d6777f5bf7)
+
 
 
 #### Lähteet 
-
+ls 
 Adam Garrett-Harris: awesome-cli-apps. Luettavissa: https://github.com/agarrharr/awesome-cli-apps?tab=readme-ov-file.
 
 Calcurse: CALCURSE - text-based organizer. Luettavissa: https://www.calcurse.org/files/manual.html.
