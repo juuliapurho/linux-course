@@ -35,14 +35,14 @@ Tero Karvinen kertoo kirjoituksessa myös Linuxissa olevan vain muutama hakemist
 Lopuksi kirjoituksessa käydään vielä läpi hallintakomentoja. Vähimmän oikeuden periaatteen mukaan toimenpiteet tulisi tehdä mahdollisimman matalalla oikeustasolla ja vain korkeita oikeuksia vaativat toimenpiteet suoritetaan sudo-komennolla. Sudo-komennolla saadaan rajattomat oikeudet. Tällaisia korkeampia oikeuksia vaativia toimenpiteitä ovat koko järjestelmään vaikuttavat komennot, kuten ohjelmistojen asentaminen tai niiden poistaminen ja käyttäjien luominen.
 
 ## Alakohdissa a-h käytetty ympäristö
-Lenovon ThinkBook 13s G3 ACN kannettava tietokone
-Suoritin: AMD Ryzen 7 5800U with Radeon Graphics 1.90 GHz
-RAM: 16,0 Gt
-SSD: 475 Gt, josta käytettävissä 341 Gt
-Järjestelmätyyppi: 64-bittinen käyttöjärjestelmä, x64-suoritin
-Käyttöjärjestelmä: Windows 11 Pro, 24H2
+- Lenovon ThinkBook 13s G3 ACN kannettava tietokone
+- Suoritin: AMD Ryzen 7 5800U with Radeon Graphics 1.90 GHz
+- RAM: 16,0 Gt
+- SSD: 475 Gt, josta käytettävissä 341 Gt
+- Järjestelmätyyppi: 64-bittinen käyttöjärjestelmä, x64-suoritin
+- Käyttöjärjestelmä: Windows 11 Pro, 24H2
 
-Oracle VirtualBox versio  7.1.4
+- Oracle VirtualBox versio  7.1.4
 
 ## a) 
 #### Micro-editorin asennus
