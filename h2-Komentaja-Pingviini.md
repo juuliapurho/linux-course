@@ -45,7 +45,7 @@ Lopuksi kirjoituksessa käydään vielä läpi hallintakomentoja. Vähimmän oik
 - Oracle VirtualBox versio  7.1.4
 
 ## a) 
-#### Micro-editorin asennus
+#### Micro - micro-editorin asennus
 Olin jo aikaisemmin asentanut virtuaalikoneelleni micro-editorin, mutta tein sen uudelleen harjoitusmielessä. Tein asennuksen keskiviikkona 2025-01-22 ja aloitin asentamisen kello 20.31. Avasin ensin virtuaalikoneeni komentokehotteen ja suoritin siellä ensin komennon sudo apt-get update ja syötin sitten salasanani. Sitten suoritin kommennon sudo apt-get install micro, josta tulostuneessa vastauksessa kerrottiin, että micro-editorista on jo asennettu uusin versio. Päätin asennuksen tekemisen kello 20.38.
 
 ![1](https://github.com/user-attachments/assets/9e637ce8-ddae-4365-88d3-999a84604a4b)
@@ -53,7 +53,7 @@ Olin jo aikaisemmin asentanut virtuaalikoneelleni micro-editorin, mutta tein sen
 ![image](https://github.com/user-attachments/assets/1b08f7de-79c0-480d-9faf-2374f454f333)
 
 ## b)
-#### b) Kolmen uuden komentoriviohjelman asennus
+#### b) Apt - Kolmen uuden komentoriviohjelman asennus
 Jatkoin tehtävän tekemistä torstaina 2025-01-23. En tiedä oikeastaan mitään komentoriviohjelmia, joten päätin lähteä etsimään netistä mielenkiintoisia ohjelmia, jotka voisin asentaa virtuaalikoneelleni. Löysin Linux-Console.net -verkkosivuilta kirjoituksen, jossa esiteltiin kymmenen komentorivityökalua Linux-päätteelle (https://fi.linux-console.net/?p=4760#gsc.tab=0) sekä Adam Garrett-Harrisin julkaisun GitHubissa, jossa esiteltiin CLI-ohjelmia (https://github.com/agarrharr/awesome-cli-apps?tab=readme-ov-file). Päätin näitä kirjoituksia luettuani asentaa virtualikoneelleni seuraavat ohjelmat:
 -  Figlet, jota käytetään tekstibannerien tai suurten kirjainten luomiseen
 -  Calcurse, joka on komentorivillä käytettävä kalenteri- ja aikataulutusohjelma
@@ -104,7 +104,7 @@ Lopuksi kokeilin vielä fortune ohjelmaa suorittamalla komennon fortune, joka ky
 
 ![19](https://github.com/user-attachments/assets/4b8e81cf-f528-4203-b835-6cb520624438)
 
-## c) Tärkeimmät kansiot
+## c) FHS - Tärkeimmät kansiot
 Tein harjoituksen torstaina 2025-01-23 ja aloitin sen tekemisen kello 21.15. Tero Karvisen kirjoittamassa Command Line Basics Revisited -kirjoituksessa on listattu tärkeimpiä kansioita, jotka käyttäjän on tulee muista. Seuraavaksi näytän esimerkin kunkin tärkeän kansion sisältämästä tiedostosta tai kansiosta. Ensimmäisenä siirryin juurihakemistoon. Suoritin ensin komennon pwd, joka ilmoitti, että sen hetkinen työskentelyhakemistoni on /home/juulia. Siirryin juurihakemistoon ( / ) suorittamalla kahdesti komennon "cd .." ja jokaisessa välissä suoritin myös komennon pwd varmistaakseni, missä työskentelyhakemistossa olen. 
 
 Juurihakemistossa suoritin komennon ls, joka listasi sen sisältämät kansiot. Tämän jälkeen siirryin juurihakemiston kansioon sys ja tarkastelin sen sisältöä suorittamalla komennon cd sys. 
@@ -137,7 +137,7 @@ Lopuksi siirryin vielä kansioon /var/log/ suorittamalla komennot cd.., pwd, ls,
 
 ![30](https://github.com/user-attachments/assets/e2d1a183-2c1f-49c3-abd3-ed58ca533389)
 
-## d) Grep-komennon käyttö
+## d) The Friendly M - grep-komennon käyttö
 
 
 #### Lähteet 
