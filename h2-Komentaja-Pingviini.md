@@ -138,14 +138,23 @@ Lopuksi siirryin vielä kansioon /var/log/ suorittamalla komennot cd.., pwd, ls,
 ![30](https://github.com/user-attachments/assets/e2d1a183-2c1f-49c3-abd3-ed58ca533389)
 
 ## d) The Friendly M - grep-komennon käyttö
-Tein harjoituksen perjantaina 2025-01-24 ja aloitin sen tekemisen kello 09.50. Aloitin kirjautumalla virtuaalikoneelleni ja avaamalla komentokehotteen. Avasin grep-komennon manuaalin suorittamalla komennon man grep. Manuaalissa kerrotaan, että grep komento etsii kustakin tiedostosta kuvioita (pattern). Tällainen kuvio on yksi tai useampi rivinvaihtomerkillä erotettu kuvio ja grep-komento tulostaa jokaisen kuvio, joka sopii tähän komennossa esitettyyn kuvioon. Jotta voisin etsiä tiedostoista näitä kuviota grep-komennolla päätin kirjoittaa edellisellä tunnilla tekemäni viikonpaivat-kansion tiedostoihin tekstiä. Siirryin kansioon komennolla cd Viikonpaivat ja tämän jälkeen siirryin eri viikonpäivien kansioihin komennolla cd [viikonpäivän lyhenne] eli esimerkiksi cd ma. Tämän jälkeen komennolla ls tarkastelin kansion sisältöä ja lisäsin tekstitiedostoihin tekstiä komennolla micro [tiedoston nimi] eli esimerkiksi micro kissa.txt.
+Tein harjoituksen perjantaina 2025-01-24 ja aloitin sen tekemisen kello 09.50. Aloitin kirjautumalla virtuaalikoneelleni ja avaamalla komentokehotteen. Avasin grep-komennon manuaalin suorittamalla komennon man grep. Manuaalissa kerrotaan, että grep komento etsii kustakin tiedostosta kuvioita (pattern). Tällainen kuvio on yksi tai useampi rivinvaihtomerkillä erotettu kuvio ja grep-komento tulostaa jokaisen kuvio, joka sopii tähän komennossa esitettyyn kuvioon. Jotta voisin etsiä tiedostoista näitä kuviota grep-komennolla päätin kirjoittaa edellisellä tunnilla tekemäni viikonpaivat-kansion tiedostoihin tekstiä. Siirryin kansioon komennolla cd Viikonpaivat ja tämän jälkeen siirryin eri viikonpäivien kansioihin komennolla cd [viikonpäivän lyhenne] eli esimerkiksi cd ma. Tämän jälkeen komennolla ls tarkastelin kansion sisältöä ja lisäsin tekstitiedostoihin tekstiä komennolla micro [tiedoston nimi] eli esimerkiksi micro kissa.txt. Etsin grep-komennon manuaalin lisäksi vielä netistä ohjeita komennon käyttämiseen ja löysin mielestäni hyvän GoLinuxCloud-verkkosivuilta (https://www.golinuxcloud.com/grep-command-in-linux/)
 
 Tämän jälkeen siirryin viikonpaivat-kansion ma-kansioon ja etsin kissa.txt tiedostosta sanaa harjoitus suorittamalla komennon grep harjoitus kissa.txt. Tämä komento tulosti tekstin "tämä on harjoitus", joka siis lukee kissa.txt tiedostossa. 
 
-Seuraavaksi suoritin komennon 
+Seuraavaksi suoritin viikonpaivat-kansion kansiossa pe komennon grep testi kissa.txt koira.txt kala.txt, jolla etsin näistä kaikista kolmesta tekstiedostosta sanaa testi. Komento tulosti tiedon siitä, että näistä jokaisesta tekstitiedostosto löytyy kyseinen sana.
+
+TEE VIELÄ SE -I GREP KOMENTO
 
 ![31](https://github.com/user-attachments/assets/30ff7395-1067-401a-bc53-e2498328c48f)
 
+![32](https://github.com/user-attachments/assets/270f9e7a-4078-4e1b-900f-7bdd06317ae0)
+
+![33](https://github.com/user-attachments/assets/fd350989-b8d6-4044-9113-0f05c6964b42)
+
+![34](https://github.com/user-attachments/assets/840909c5-c88a-4a44-aba9-6d3b2cbf256b)
+
+![35](https://github.com/user-attachments/assets/ce6f13e6-e123-4bdc-bfe6-9615f1f125f5)
 
 #### Lähteet 
 
@@ -154,6 +163,8 @@ Adam Garrett-Harris: awesome-cli-apps. Luettavissa: https://github.com/agarrharr
 Calcurse: CALCURSE - text-based organizer. Luettavissa: https://www.calcurse.org/files/manual.html.
 
 Debian Wiki: fortune. Luettavissa: https://wiki.debian.org/fortune.
+
+GoLinuxCloud: 20 grep command examples in Linux [Cheat Sheet]. Luettavissa: https://www.golinuxcloud.com/grep-command-in-linux/
 
 Installati.one: How To Install fortunes-it-off on Debian 12. Luettavissa: https://installati.one/install-fortunes-it-off-debian-12/
 
