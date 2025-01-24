@@ -138,6 +138,9 @@ Lopuksi siirryin vielä kansioon /var/log/ suorittamalla komennot cd.., pwd, ls,
 ![30](https://github.com/user-attachments/assets/e2d1a183-2c1f-49c3-abd3-ed58ca533389)
 
 ## d) The Friendly M - grep-komennon käyttö
+Tein harjoituksen perjantaina 2025-01-24 ja aloitin sen tekemisen kello 09.50. Aloitin kirjautumalla virtuaalikoneelleni ja avaamalla komentokehotteen. Avasin grep-komennon manuaalin suorittamalla komennon man grep. Manuaalissa kerrotaan, että grep komento etsii kustakin tiedostosta kuvioita (pattern). Tällainen kuvio on yksi tai useampi rivinvaihtomerkillä erotettu kuvio ja grep-komento tulostaa jokaisen kuvio, joka sopii tähän komennossa esitettyyn kuvioon. Jotta voisin etsiä tiedostoista näitä kuviota grep-komennolla päätin kirjoittaa edellisellä tunnilla tekemäni viikonpaivat-kansion tiedostoihin tekstiä. Siirryin kansioon komennolla cd Viikonpaivat ja tämän jälkeen siirryin eri viikonpäivien kansioihin komennolla cd [viikonpäivän lyhenne] eli esimerkiksi cd ma. Tämän jälkeen komennolla ls tarkastelin kansion sisältöä ja lisäsin tekstitiedostoihin tekstiä komennolla micro [tiedoston nimi] eli esimerkiksi micro kissa.txt.
+
+![31](https://github.com/user-attachments/assets/30ff7395-1067-401a-bc53-e2498328c48f)
 
 
 #### Lähteet 
