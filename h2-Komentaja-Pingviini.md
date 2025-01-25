@@ -192,6 +192,8 @@ Debian Wiki: fortune. Luettavissa: https://wiki.debian.org/fortune.
 
 GoLinuxCloud: 20 grep command examples in Linux [Cheat Sheet]. Luettavissa: https://www.golinuxcloud.com/grep-command-in-linux/
 
+Idroot.us: lshw Command in Linux with Examples. Luettavissa: https://idroot.us/lshw-command-linux/#Understanding_lshw_Output.
+
 Installati.one: How To Install fortunes-it-off on Debian 12. Luettavissa: https://installati.one/install-fortunes-it-off-debian-12/
 
 Linux-Console.net: 10 parasta komentorivityökalua Linux-päätteelle. Luettavissa: https://fi.linux-console.net/?p=4760#gsc.tab=0.
