@@ -176,6 +176,10 @@ Tein tämänkin harjoituksen alakohdan lauantaina 2025-01-25 ja aloitin sen teke
 
 ![44](https://github.com/user-attachments/assets/9e19320a-15d5-4f1c-9a17-4ea67a06da52)
 
+Lshw komento siis listaa käyttämäni koneen raudan. Suorittamani komennon tulosteessa on nähtävissä, että käyttämäni järjestelmä sekä väylä ovat VirtualBox-pohjaisia, ja virtuaalikoneelle on osoitettu 4 GiB muistia. Lisäksi listauksessa näkyy, että koneeni prosessori on AMD Ryzen 7 5800U. 
+
+Minulla ei ole juurikaan osaamista tietokoneiden erilaisista ominaisuuksista, joten en valitettavasti osaa analysoida lshw-komennon tulostamaa vastausta tämän tarkemmin. 
+
 
 #### Lähteet 
 
