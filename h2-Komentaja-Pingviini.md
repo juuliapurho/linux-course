@@ -7,7 +7,7 @@ Tero Karvisen julkaisemassa kirjoituksessa Command Line Basics Revisited käsite
 - pwd, joka tulostaa sen hetkisen työskentelyhakemiston
 - ls, joka listaa työskentelyhakemiston sisältämät tiedostot
 - cd, jolla päästään liikkumaan hakemistosta toiseen ylös- ja alaspäin
-- less, jolla voi tarkastella tekstitiedostoa
+- less, jolla voi selata tekstitiedostojen sisältöä
 
 Tiedostojen käsittelyyn liittyviä tärkeitä komentoja ovat:
 
@@ -86,7 +86,7 @@ Jokaisen tiedon syöttämisen jälkeen siirryin eteenpäin enterillä. Yllä mai
 
 ![11](https://github.com/user-attachments/assets/64eed9c0-376f-459b-8555-6304ab0ed88f)
 
-Lopuksi kokeilin vielä fortune ohjelmaa suorittamalla komennon fortune, joka kyllä tulosti ennustuksen, mutta se oli italian kielellä. Ajattelin, että suoritan kaikki saatavilla olevat päivitykset ja kokeilen, että toimiiko tämä. Suoritin siis komennon sudo apt-get update ja syötin salasanani. Tämän jälkeen suoritin komennon sudo apt-get -y dist-upgrade. Päivitysten tekeminen kesti muutaman minuutin ja kokeilin sen jälkeen uudelleen komentoa fortune, mutta päivitysten tekeminen ei muuttanut ennustuksia englanninkielisiksi. Yritin jälleen löytää ratkaisua ongelmaani googlettamalla ja löysin Debian Wikin verkkosivuilta apua (https://wiki.debian.org/fortune). Suoritin komennon fortune -fa, jolla sain selvitettyä kaikki asentamani fortune-tiedostot. Tästä näin, etten ollut asentanut englanninkielistä versiota. Latasin fortune ohjelman suorittamalla jälleen ensin komennon sudo apt-get update ja syötin salasanani. Tämän jälkeen suoritin komennon udo apt-get -y install fortunes. Ohjelman asentamisen jälkeen suoritin uudelleen komennon  fortune -fa, josta näin, että nyt fortune-tiedostoja oli huomattavasti enemmän kuin aikaisemmin. Suorittaessani komennon fortune tämän asennuksen jälkeen, ennustuksia tulostui sekä englanniksi että italian kielellä. Löysin vielä installati.one -verkkosivuilta ohjeen, miten tuon italiankielisen fortunen saa poistettua (https://installati.one/install-fortunes-it-off-debian-12/). Suoritin komennon sudo apt-get remove fortunes-it, jonka jälkeen kokeilin uudelleen fortune komentoa useamman kerran ja vihdoin kaikki ennustukset olivat englanninkielisiä! Onnistuttuani ratkaisemaan tämän ongelman lopetin harjoituksen tekemisen kello 21.12.
+Lopuksi kokeilin vielä fortune ohjelmaa suorittamalla komennon fortune, joka kyllä tulosti ennustuksen, mutta se oli italian kielellä. Ajattelin, että suoritan kaikki saatavilla olevat päivitykset ja kokeilen, että toimisiko tämä. Mietin siis, että voisiko minulla olla käytössä jokin vanha versio kyseisestä ohjelmasta ja päivittäminen ratkaisisi ongelman. Suoritin siis komennon sudo apt-get update ja syötin salasanani. Tämän jälkeen suoritin komennon sudo apt-get -y dist-upgrade. Päivitysten tekeminen kesti muutaman minuutin ja kokeilin sen jälkeen uudelleen komentoa fortune, mutta päivitysten tekeminen ei muuttanut ennustuksia englanninkielisiksi. Yritin jälleen löytää ratkaisua ongelmaani googlettamalla ja löysin Debian Wikin verkkosivuilta apua (https://wiki.debian.org/fortune). Suoritin komennon fortune -fa, jolla sain selvitettyä kaikki asentamani fortune-tiedostot. Tästä näin, etten ollut asentanut englanninkielistä versiota. Latasin fortune ohjelman suorittamalla jälleen ensin komennon sudo apt-get update ja syötin salasanani. Tämän jälkeen suoritin komennon udo apt-get -y install fortunes. Ohjelman asentamisen jälkeen suoritin uudelleen komennon  fortune -fa, josta näin, että nyt fortune-tiedostoja oli huomattavasti enemmän kuin aikaisemmin. Suorittaessani komennon fortune tämän asennuksen jälkeen, ennustuksia tulostui sekä englanniksi että italian kielellä. Löysin vielä installati.one -verkkosivuilta ohjeen, miten tuon italiankielisen fortunen saa poistettua (https://installati.one/install-fortunes-it-off-debian-12/). Suoritin komennon sudo apt-get remove fortunes-it, jonka jälkeen kokeilin uudelleen fortune komentoa useamman kerran ja vihdoin kaikki ennustukset olivat englanninkielisiä! Onnistuttuani ratkaisemaan tämän ongelman lopetin harjoituksen tekemisen kello 21.12.
 
 ![12](https://github.com/user-attachments/assets/73e46e06-307b-4fb8-ba12-2a8411bd7674)
 
@@ -107,45 +107,38 @@ Lopuksi kokeilin vielä fortune ohjelmaa suorittamalla komennon fortune, joka ky
 ## c) FHS - Tärkeimmät kansiot
 Tein harjoituksen torstaina 2025-01-23 ja aloitin sen tekemisen kello 21.15. Tero Karvisen kirjoittamassa Command Line Basics Revisited -kirjoituksessa on listattu tärkeimpiä kansioita, jotka käyttäjän on tulee muista. Seuraavaksi näytän esimerkin kunkin tärkeän kansion sisältämästä tiedostosta tai kansiosta. Ensimmäisenä siirryin juurihakemistoon. Suoritin ensin komennon pwd, joka ilmoitti, että sen hetkinen työskentelyhakemistoni on /home/juulia. Siirryin juurihakemistoon ( / ) suorittamalla kahdesti komennon "cd .." ja jokaisessa välissä suoritin myös komennon pwd varmistaakseni, missä työskentelyhakemistossa olen. 
 
-Juurihakemistossa suoritin komennon ls, joka listasi sen sisältämät kansiot. Tämän jälkeen siirryin juurihakemiston kansioon sys ja tarkastelin sen sisältöä suorittamalla komennon cd sys. 
-
-Seuraavaksi siirryin kansioon /home/ suorittamalla komennot cd .., pwd, ls ja cd home. Tarkastelin kansion sisältöä komennolla ls ja tämä kansio piti sisällään ainoastaan minun kotihakemistoni eli juulia. 
-
-Siirryin tarkastelemaan omaa kotihakemistoani komennolla cd juulia ja varmistin komennolla pwd sijaintini. Sitten jälleen komennolla ls tarkastelin kansion sisältöä. Siirryin kotihakemistoni kansioon Documents suorittamalla komennot cd Documents, pwd, ls. Tämä Documents-kansio oli tyhjä.
-
-Tämän jälkeen siirryin takaisin juurihakemistoon suorittamalla kolmesti komennon cd .. ja näiden komentojen välissä suoritin jälleen aina komennon pwd, jolla tarkistin missä työskentelyhakemistossa olin milloinkin. Juurihakemistosta siirryin kansioon /etc/ suorittamalla komennot ls ja cd etc. Sitten tarkastelin kyseisen kansion sisältöä komennolla ls. Siirryin tarkastelemaan kansion kernel sisältöä komennolla cd kernel. 
-
-Sitten palasin takaisin juurihakemistoon ja sieltä kansioon /media/ suorittamalla komennot cd .., cd .., pwd, ls, cd media. Tarkastelin kansion sisältöä komennolla ls ja kansio oli tyhjä.
-
-Lopuksi siirryin vielä kansioon /var/log/ suorittamalla komennot cd.., pwd, ls, cd var, ls, cd log. Tarkastelin kansion sisältöä komennolla ls ja siirryin tarkastelemaan kansiota journal komennoilla cd journal ja ls. Sitten siirryin vielä omaan kotihakemistooni /home/juulia. Lopetin harjoituksen tekemisen 21.56.
-
 ![21](https://github.com/user-attachments/assets/64683b5e-3b9d-4f33-a32a-604da0570f16)
+
+Juurihakemistossa suoritin komennon ls, joka listasi sen sisältämät alihakemistot. Tämän jälkeen siirryin juurihakemiston alihakemistoon sys ja tarkastelin sen sisältöä suorittamalla komennon cd sys. 
 
 ![22](https://github.com/user-attachments/assets/5979e651-fc52-41c2-aa25-5b96b404df4b)
 
+Seuraavaksi siirryin alihakemistoon /home/ suorittamalla komennot cd .., pwd, ls ja cd home. Tarkastelin hakemiston sisältöä komennolla ls ja tämä hakemisto piti sisällään ainoastaan minun kotihakemistoni eli juulia. 
+
 ![24](https://github.com/user-attachments/assets/83a15be1-f716-4f44-8d1d-37d6777f5bf7)
 
+Siirryin tarkastelemaan omaa kotihakemistoani komennolla cd juulia ja varmistin komennolla pwd sijaintini. Sitten jälleen komennolla ls tarkastelin kotihakemistoni sisältöä. Siirryin kotihakemistoni kansioon Documents suorittamalla komennot cd Documents, pwd, ls. Tämä Documents-kansio oli tyhjä.
+
 ![25](https://github.com/user-attachments/assets/3dd14ae8-447e-4fd2-91bc-6f169030b79a)
+
+Tämän jälkeen siirryin takaisin juurihakemistoon suorittamalla kolmesti komennon cd .. ja näiden komentojen välissä suoritin jälleen aina komennon pwd, jolla tarkistin missä työskentelyhakemistossa olin milloinkin. Juurihakemistosta siirryin alihakemistoon /etc/ suorittamalla komennot ls ja cd etc. Sitten tarkastelin kyseisen hakemiston sisältöä komennolla ls. Siirryin tarkastelemaan kansion kernel sisältöä komennolla cd kernel. 
 
 ![26](https://github.com/user-attachments/assets/cdbc5dc7-cec3-4a46-9124-f27d5b012007)
 
 ![27](https://github.com/user-attachments/assets/3352be6a-640e-4cbe-bf7b-11e627ae70a2)
 
+Sitten palasin takaisin juurihakemistoon ja sieltä alihakemistoon /media/ suorittamalla komennot cd .., cd .., pwd, ls, cd media. Tarkastelin hakemiston sisältöä komennolla ls ja kansio oli tyhjä.
+
 ![28](https://github.com/user-attachments/assets/3c4d9ac1-056e-400c-b45c-4daff8d0ff78)
+
+Lopuksi siirryin vielä kansioon /var/log/ suorittamalla komennot cd.., pwd, ls, cd var, ls, cd log. Tarkastelin kansion sisältöä komennolla ls ja siirryin tarkastelemaan kansiota journal komennoilla cd journal ja ls. Sitten siirryin vielä omaan kotihakemistooni /home/juulia. Lopetin harjoituksen tekemisen 21.56.
 
 ![29](https://github.com/user-attachments/assets/656e7417-76d7-49b9-9323-80059744dd0c)
 
 ![30](https://github.com/user-attachments/assets/e2d1a183-2c1f-49c3-abd3-ed58ca533389)
 
 ## d) The Friendly M - grep-komennon käyttö
-Tein harjoituksen perjantaina 2025-01-24 ja aloitin sen tekemisen kello 09.50. Aloitin kirjautumalla virtuaalikoneelleni ja avaamalla komentokehotteen. Avasin grep-komennon manuaalin suorittamalla komennon man grep. Manuaalissa kerrotaan, että grep komento etsii kustakin tiedostosta kuvioita (pattern). Tällainen kuvio on yksi tai useampi rivinvaihtomerkillä erotettu kuvio ja grep-komento tulostaa jokaisen kuvio, joka sopii tähän komennossa esitettyyn kuvioon. Jotta voisin etsiä tiedostoista näitä kuviota grep-komennolla päätin kirjoittaa edellisellä tunnilla tekemäni viikonpaivat-kansion tiedostoihin tekstiä. Siirryin kansioon komennolla cd Viikonpaivat ja tämän jälkeen siirryin eri viikonpäivien kansioihin komennolla cd [viikonpäivän lyhenne] eli esimerkiksi cd ma. Tämän jälkeen komennolla ls tarkastelin kansion sisältöä ja lisäsin tekstitiedostoihin tekstiä komennolla micro [tiedoston nimi] eli esimerkiksi micro kissa.txt. Etsin grep-komennon manuaalin lisäksi vielä netistä ohjeita komennon käyttämiseen ja löysin mielestäni hyvän GoLinuxCloud-verkkosivuilta (https://www.golinuxcloud.com/grep-command-in-linux/)
-
-Tämän jälkeen siirryin viikonpaivat-kansion ma-kansioon ja etsin kissa.txt tiedostosta sanaa harjoitus suorittamalla komennon grep harjoitus kissa.txt. Tämä komento tulosti tekstin "tämä on harjoitus", joka siis lukee kissa.txt tiedostossa. 
-
-Seuraavaksi suoritin viikonpaivat-kansion kansiossa pe komennon grep testi kissa.txt koira.txt kala.txt, jolla etsin näistä kaikista kolmesta tekstiedostosta sanaa testi. Komento tulosti tiedon siitä, että näistä jokaisesta tekstitiedostosto löytyy kyseinen sana. Päätin harjoituksen tekemisen kello 10.40.
-
-Jatkoin vielä tämän grep-komentoon liittyvän harjoituksen tekemistä lauantaina 2023-01-25 kello 8.35. Käynnistin ensimmäiseksi virtuaalikoneeni, kirjauduin sisään ja avasin komentokehotteen. Suoritin vielä komennon grep -r moi. Tämä komento hakee osumat kaikista tiedostoista nykyisessä hakemistossa, myös alihakemistoista. Tämä komento 
-Tämä komento hakee osumat kaikista tiedostoista nykyisessä hakemistossa, mukaan lukien alihakemistot.
+Tein harjoituksen perjantaina 2025-01-24 ja aloitin kello 09.50. Aloitin kirjautumalla virtuaalikoneelleni ja avaamalla komentokehotteen. Avasin grep-komennon manuaalin suorittamalla komennon man grep. Manuaalissa kerrotaan, että grep komento etsii kustakin tiedostosta kuvioita (pattern). Tällainen kuvio on yksi tai useampi rivinvaihtomerkillä erotettu kuvio ja grep-komento tulostaa jokaisen kuvio, joka sopii tähän komennossa esitettyyn kuvioon. Jotta voisin etsiä tiedostoista näitä kuviota grep-komennolla päätin kirjoittaa edellisellä tunnilla tekemäni viikonpaivat-kansion tiedostoihin tekstiä. Siirryin kansioon komennolla cd Viikonpaivat ja tämän jälkeen siirryin eri viikonpäivien kansioihin komennolla cd [viikonpäivän lyhenne] eli esimerkiksi cd ma. Tämän jälkeen komennolla ls tarkastelin kansion sisältöä ja lisäsin tekstitiedostoihin tekstiä komennolla micro [tiedoston nimi] eli esimerkiksi micro kissa.txt. Etsin grep-komennon manuaalin lisäksi vielä netistä ohjeita komennon käyttämiseen ja löysin mielestäni hyvän GoLinuxCloud-verkkosivuilta (https://www.golinuxcloud.com/grep-command-in-linux/)
 
 ![31](https://github.com/user-attachments/assets/30ff7395-1067-401a-bc53-e2498328c48f)
 
@@ -153,9 +146,36 @@ Tämä komento hakee osumat kaikista tiedostoista nykyisessä hakemistossa, muka
 
 ![36](https://github.com/user-attachments/assets/c0b3fe1c-f305-4e5e-8ef5-249c23db4c7b)
 
+Tämän jälkeen siirryin viikonpaivat-kansion ma-kansioon ja etsin kissa.txt tiedostosta sanaa harjoitus suorittamalla komennon grep harjoitus kissa.txt. Tämä komento tulosti tekstin "tämä on harjoitus", joka siis lukee kissa.txt tiedostossa. 
+
 ![34](https://github.com/user-attachments/assets/840909c5-c88a-4a44-aba9-6d3b2cbf256b)
 
+Seuraavaksi suoritin viikonpaivat-kansion kansiossa pe komennon grep testi kissa.txt koira.txt kala.txt, jolla etsin näistä kaikista kolmesta tekstiedostosta sanaa testi. Komento tulosti tiedon siitä, että näistä jokaisesta tekstitiedostosto löytyy kyseinen sana. Päätin harjoituksen tekemisen kello 10.40.
+
 ![35](https://github.com/user-attachments/assets/ce6f13e6-e123-4bdc-bfe6-9615f1f125f5)
+
+Jatkoin vielä tämän grep-komentoon liittyvän harjoituksen tekemistä lauantaina 2023-01-25 kello 8.50. Käynnistin ensimmäiseksi virtuaalikoneeni, kirjauduin sisään ja avasin komentokehotteen. Suoritin vielä komennon grep -i -r harjoitus. I-kirjain tulostaa osumat riippumatta siitä, onko sanassa isoja tai pieniä kirjaimia ja R-kirjain taas hakee osumat kaikista tiedostoista nykyisessä hakemistossa, myös alihakemistoista. Tämä komento tulosti tiedon siitä, mistä kaikista tiedostoista tämä kyseinen sana löytyy. Päätin harjoituksen tekemisen kello 8.54.
+
+![38](https://github.com/user-attachments/assets/ced3bb8a-7c0a-4670-8044-7b8efeb128e2)
+
+## e) Pipe - esimerkki putkista
+Tein harjoituksen lauantaina 2025-01-25 ja aloitin kello 09.15. Päätin ensin hieman googlettaa, että mitä putkilla tarkoitetaan, koska se jäi minulle hieman epäselväksi viime luennolla. GeeksForGeeks-verkkosivuilla julkaistussa kirjoituksessa kerrotaan, että putkia käytetään yhden komennon, ohjelman tai prosessin tulosteen lähettämisessä toisen komennon, ohjelman tai prosessin käsiteltäväksi. Päätin Terko Karvisen kirjoituksessa annetun esimerkin mukaisesti kokeilla putkien toimintaa yhdistämällä komennot ls, joka listaa työskentelyhakemiston sisältämät tiedostot ja less, jolla voi selata tekstitiedostojen sisältöä. Suoritin siis komentorivillä omassa kotihakemistossani komennon ls /etc|less, joka siis ohjasi komennon ls tulosteen komennolle less. Näin hakemiston etc sisältämien kansioiden lista näkyi näkyi tulosteena, jota pystyi selata sivu kerrallaan. Tämä siis helpotti pitkän kansiolistauksen lukemista. Poistuin tästä listasta Q-kirjainta painamalla. Suoritin tämän jälkeen vielä vertailuna komennon ls /etc, joka listasi hakemiston sisällön monisarakkeiseksi listaksi, jota oli mielestäni hankalampaa lukea. Päätin harjoituksen tekemisen kello 9.35.
+
+![40](https://github.com/user-attachments/assets/7a85946e-375b-427a-b83e-75e9d59d9dfc)
+
+![39](https://github.com/user-attachments/assets/0c4f1a96-4089-4be3-9633-fbd7a84cfdb3)
+
+## f) Rauta 
+Tein tämänkin harjoituksen alakohdan lauantaina 2025-01-25 ja aloitin sen tekemisen kello 09.38. Suoritin ensin komentorivillä komennon sudo lshw -short -sanitize ja syötin salasanani. Tästä tulostui vastaus sudo: lshw: command not found. Tämä tarkoitti siis sitä, että virtuaalikoneelleni ei ole vielä asennettu lshw:tä. Asensin siis seuraavaksi sen suorittamalla ensin komennon sudo apt-get update ja syöttämällä salasanani. Sitten suoritin komennon sudo apt-get -y install lshw. Asennuksen jälkeen kello 09.43 suoritin uudelleen komennon sudo lshw -short -sanitize. 
+
+![41](https://github.com/user-attachments/assets/9a10fba1-e5f6-49de-9c6d-3e012c1c4205)
+
+![42](https://github.com/user-attachments/assets/0e12d37d-39d5-444d-9cb4-e60339b22c72)
+
+![43](https://github.com/user-attachments/assets/1ddde8be-4f06-4075-9332-c6a70c46c8e4)
+
+![44](https://github.com/user-attachments/assets/9e19320a-15d5-4f1c-9a17-4ea67a06da52)
+
 
 #### Lähteet 
 
