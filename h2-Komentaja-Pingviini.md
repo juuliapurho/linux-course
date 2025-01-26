@@ -42,13 +42,16 @@ Suurin osa näistä edellä mainituista komennoista oli minulle täysin uusia ja
 
 ## Alakohdissa a-h käytetty ympäristö
 Kannettava tietokone
+
 - Lenovon ThinkBook 13s G3 ACN 
 - Suoritin: AMD Ryzen 7 5800U with Radeon Graphics 1.90 GHz
 - RAM: 16,0 Gt
 - SSD: 475 Gt, josta käytettävissä 341 Gt
 - Järjestelmätyyppi: 64-bittinen käyttöjärjestelmä, x64-suoritin
 - Käyttöjärjestelmä: Windows 11 Pro, 24H2
+  
 Virtuaalikone
+
 - Virtualisointi: Oracle VirtualBox versio  7.1.4
 - Käyttöjärjestelmä: Debian 12.9.0
 - Järjestelmätyyppi: 64-bittinen käyttöjärjestelmä
