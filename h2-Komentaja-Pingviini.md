@@ -136,11 +136,11 @@ Löysin vielä installati.one -verkkosivuilta ohjeen, miten tuon italiankielisen
 ![19](https://github.com/user-attachments/assets/4b8e81cf-f528-4203-b835-6cb520624438)
 
 ## c) FHS - Tärkeimmät kansiot
-Tein harjoituksen torstaina 2025-01-23 ja aloitin sen tekemisen kello 21.15. Tero Karvisen kirjoittamassa Command Line Basics Revisited -kirjoituksessa on listattu tärkeimpiä kansioita, jotka käyttäjän on tulee muista. Seuraavaksi näytän esimerkin kunkin tärkeän kansion sisältämästä tiedostosta tai kansiosta. Ensimmäisenä siirryin juurihakemistoon. Suoritin ensin komennon pwd, joka ilmoitti, että sen hetkinen työskentelyhakemistoni on /home/juulia. Siirryin juurihakemistoon ( / ) suorittamalla kahdesti komennon "cd .." ja jokaisessa välissä suoritin myös komennon pwd varmistaakseni, missä työskentelyhakemistossa olen. 
+Tein harjoituksen torstaina 2025-01-23 ja aloitin sen tekemisen kello 21.15. Tero Karvisen kirjoittamassa Command Line Basics Revisited -kirjoituksessa on listattu tärkeimpiä kansioita, jotka käyttäjän on tulisi muistaa. Seuraavaksi näytän esimerkin kunkin tärkeän kansion sisältämästä tiedostosta tai kansiosta. Ensimmäisenä siirryin juurihakemistoon. Suoritin ensin komennon pwd, joka ilmoitti, että sen hetkinen työskentelyhakemistoni on /home/juulia. Siirryin juurihakemistoon ( / ) suorittamalla kahdesti komennon "cd .." ja jokaisessa välissä suoritin myös komennon pwd varmistaakseni, missä työskentelyhakemistossa olen. 
 
 ![21](https://github.com/user-attachments/assets/64683b5e-3b9d-4f33-a32a-604da0570f16)
 
-Juurihakemistossa suoritin komennon ls, joka listasi sen sisältämät alihakemistot. Tämän jälkeen siirryin juurihakemiston alihakemistoon sys ja tarkastelin sen sisältöä suorittamalla komennon cd sys. 
+Juurihakemistossa suoritin komennon ls, joka listasi sen sisältämät kansiot. Tämän jälkeen siirryin juurihakemiston kansioon sys ja tarkastelin sen sisältöä suorittamalla komennon cd sys. 
 
 ![22](https://github.com/user-attachments/assets/5979e651-fc52-41c2-aa25-5b96b404df4b)
 
@@ -152,13 +152,13 @@ Siirryin tarkastelemaan omaa kotihakemistoani komennolla cd juulia ja varmistin 
 
 ![25](https://github.com/user-attachments/assets/3dd14ae8-447e-4fd2-91bc-6f169030b79a)
 
-Tämän jälkeen siirryin takaisin juurihakemistoon suorittamalla kolmesti komennon cd .. ja näiden komentojen välissä suoritin jälleen aina komennon pwd, jolla tarkistin missä työskentelyhakemistossa olin milloinkin. Juurihakemistosta siirryin alihakemistoon /etc/ suorittamalla komennot ls ja cd etc. Sitten tarkastelin kyseisen hakemiston sisältöä komennolla ls. Siirryin tarkastelemaan kansion kernel sisältöä komennolla cd kernel. 
+Tämän jälkeen siirryin takaisin juurihakemistoon suorittamalla kolmesti komennon cd .. ja näiden komentojen välissä suoritin jälleen aina komennon pwd, jolla tarkistin missä työskentelyhakemistossa olin milloinkin. Juurihakemistosta siirryin kansioon /etc/ suorittamalla komennot ls ja cd etc. Sitten tarkastelin kyseisen hakemiston sisältöä komennolla ls. Siirryin tarkastelemaan kansion kernel sisältöä komennolla cd kernel. 
 
 ![26](https://github.com/user-attachments/assets/cdbc5dc7-cec3-4a46-9124-f27d5b012007)
 
 ![27](https://github.com/user-attachments/assets/3352be6a-640e-4cbe-bf7b-11e627ae70a2)
 
-Sitten palasin takaisin juurihakemistoon ja sieltä alihakemistoon /media/ suorittamalla komennot cd .., cd .., pwd, ls, cd media. Tarkastelin hakemiston sisältöä komennolla ls ja kansio oli tyhjä.
+Sitten palasin takaisin juurihakemistoon ja sieltä kansioon /media/ suorittamalla komennot cd .., cd .., pwd, ls, cd media. Tarkastelin kansion sisältöä komennolla ls ja kansio oli tyhjä.
 
 ![28](https://github.com/user-attachments/assets/3c4d9ac1-056e-400c-b45c-4daff8d0ff78)
 
