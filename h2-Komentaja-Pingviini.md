@@ -61,7 +61,7 @@ Virtuaalikone
 
 ## a) 
 #### Micro - micro-editorin asennus
-Olin jo aikaisemmin asentanut virtuaalikoneelleni micro-editorin, mutta tein sen uudelleen harjoitusmielessä. Tein asennuksen keskiviikkona 2025-01-22 ja aloitin asentamisen kello 20.31. Avasin ensin virtuaalikoneeni komentokehotteen ja suoritin siellä ensin komennon <sudo apt-get update> ja syötin sitten salasanani. Sitten suoritin kommennon <sudo apt-get install micro>, josta tulostuneessa vastauksessa kerrottiin, että micro-editorista on jo asennettu uusin versio. Päätin asennuksen tekemisen kello 20.38.
+Olin jo aikaisemmin asentanut virtuaalikoneelleni micro-editorin, mutta tein sen uudelleen harjoitusmielessä. Tein asennuksen keskiviikkona 2025-01-22 ja aloitin asentamisen kello 20.31. Avasin ensin virtuaalikoneeni komentokehotteen ja suoritin siellä ensin komennon sudo apt-get update ja syötin sitten salasanani. Sitten suoritin kommennon sudo apt-get install micro, josta tulostuneessa vastauksessa kerrottiin, että micro-editorista on jo asennettu uusin versio. Päätin asennuksen tekemisen kello 20.38.
 
 ![1](https://github.com/user-attachments/assets/9e637ce8-ddae-4365-88d3-999a84604a4b)
 
