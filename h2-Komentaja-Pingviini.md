@@ -175,7 +175,7 @@ Tein harjoituksen perjantaina 2025-01-24 ja aloitin kello 09.50. Aloitin kirjaut
 
 ![31](https://github.com/user-attachments/assets/30ff7395-1067-401a-bc53-e2498328c48f)
 
-Jotta voisin etsiä tiedostoista näitä kuviota grep-komennolla päätin kirjoittaa edellisellä tunnilla tekemäni viikonpaivat-kansion tiedostoihin tekstiä. Siirryin kansioon komennolla cd Viikonpaivat ja tämän jälkeen siirryin eri viikonpäivien kansioihin komennolla cd [viikonpäivän lyhenne] eli esimerkiksi cd ma. Tämän jälkeen komennolla ls tarkastelin kansion sisältöä ja lisäsin tekstitiedostoihin tekstiä komennolla micro [tiedoston nimi] eli esimerkiksi micro kissa.txt. Etsin grep-komennon manuaalin lisäksi vielä netistä ohjeita komennon käyttämiseen ja löysin mielestäni hyvän GoLinuxCloud-verkkosivuilta (https://www.golinuxcloud.com/grep-command-in-linux/)
+Jotta voisin etsiä tiedostoista näitä kuviota grep-komennolla päätin kirjoittaa edellisellä tunnilla tekemäni viikonpaivat-kansion tiedostoihin tekstiä. Siirryin kansioon komennolla cd Viikonpaivat ja tämän jälkeen siirryin eri viikonpäivien kansioihin komennolla cd [viikonpäivän lyhenne] eli esimerkiksi cd ma. Tämän jälkeen komennolla ls tarkastelin kansion sisältöä ja lisäsin tekstitiedostoihin tekstiä komennolla micro [tiedoston nimi] eli esimerkiksi micro kissa.txt. Etsin grep-komennon manuaalin lisäksi vielä netistä ohjeita komennon käyttämiseen ja löysin mielestäni hyvän ohjeen GoLinuxCloud-verkkosivuilta (https://www.golinuxcloud.com/grep-command-in-linux/)
 
 ![32](https://github.com/user-attachments/assets/270f9e7a-4078-4e1b-900f-7bdd06317ae0)
 
