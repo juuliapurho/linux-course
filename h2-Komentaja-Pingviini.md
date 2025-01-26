@@ -145,7 +145,7 @@ Juurihakemistossa suoritin komennon ls, joka listasi sen sisältämät kansiot. 
 
 ![22](https://github.com/user-attachments/assets/5979e651-fc52-41c2-aa25-5b96b404df4b)
 
-Seuraavaksi siirryin alihakemistoon /home/ suorittamalla komennot cd .., pwd, ls ja cd home. Tarkastelin hakemiston sisältöä komennolla ls ja tämä hakemisto piti sisällään ainoastaan minun kotihakemistoni eli juulia. 
+Seuraavaksi siirryin juurihakemiston kansioon /home/ suorittamalla komennot cd .., pwd, ls ja cd home. Tarkastelin kansion sisältöä komennolla ls ja tämä hakemisto piti sisällään ainoastaan minun kotihakemistoni eli juulia. 
 
 ![24](https://github.com/user-attachments/assets/83a15be1-f716-4f44-8d1d-37d6777f5bf7)
 
