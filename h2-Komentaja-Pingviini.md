@@ -119,25 +119,15 @@ Päivitysten tekeminen kesti muutaman minuutin ja kokeilin sen jälkeen uudellee
 
 ![14](https://github.com/user-attachments/assets/8477b9fb-35ed-4b12-bc15-4bb8def787fc)
 
-Latasin fortune ohjelman suorittamalla jälleen ensin komennon sudo apt-get update ja syötin salasanani. Tämän jälkeen suoritin komennon udo apt-get -y install fortunes. Ohjelman asentamisen jälkeen suoritin uudelleen komennon  fortune -fa, josta näin, että nyt fortune-tiedostoja oli huomattavasti enemmän kuin aikaisemmin ja listauksesta löytyivät sekä italiankieliset että englanninkieliset versiot. 
+Latasin fortune ohjelman suorittamalla jälleen ensin komennon sudo apt-get update ja syötin salasanani. Tämän jälkeen suoritin komennon sudo apt-get -y install fortunes. Ohjelman asentamisen jälkeen suoritin uudelleen komennon  fortune -fa, josta näin, että nyt fortune-tiedostoja oli huomattavasti enemmän kuin aikaisemmin ja listauksesta löytyivät sekä italiankieliset että englanninkieliset versiot. 
 
-![15](https://github.com/user-attachments/assets/82367dde-53d2-4778-b02f-991ab9545b81)
+![16](https://github.com/user-attachments/assets/f435e970-206c-4ed8-a2f7-5349a2e2674a)
 
 Suorittaessani komennon fortune tämän asennuksen jälkeen, ennustuksia tulostui sekä englanniksi että italian kielellä. 
 
-Löysin vielä installati.one -verkkosivuilta ohjeen, miten tuon italiankielisen fortunen saa poistettua (https://installati.one/install-fortunes-it-off-debian-12/). Suoritin komennon sudo apt-get remove fortunes-it, jonka jälkeen kokeilin uudelleen fortune komentoa useamman kerran ja vihdoin kaikki ennustukset olivat englanninkielisiä! Onnistuttuani ratkaisemaan tämän ongelman lopetin harjoituksen tekemisen kello 21.12.
-
-
-
-
-
-
-
-
-
-
-
 ![17](https://github.com/user-attachments/assets/3cbacd5f-a3a7-4e0a-958b-ceb0de18f606)
+
+Löysin vielä installati.one -verkkosivuilta ohjeen, miten tuon italiankielisen fortunen saa poistettua (https://installati.one/install-fortunes-it-off-debian-12/). Suoritin komennon sudo apt-get remove fortunes-it, jonka jälkeen kokeilin uudelleen fortune komentoa useamman kerran ja vihdoin kaikki ennustukset olivat englanninkielisiä! Onnistuttuani ratkaisemaan tämän ongelman lopetin harjoituksen tekemisen kello 21.12.
 
 ![18](https://github.com/user-attachments/assets/f5d455e9-1c62-4684-a1ff-9542faf318fc)
 
