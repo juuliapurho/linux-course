@@ -68,7 +68,7 @@ Olin jo aikaisemmin asentanut virtuaalikoneelleni micro-editorin, mutta tein sen
 ![image](https://github.com/user-attachments/assets/1b08f7de-79c0-480d-9faf-2374f454f333)
 
 ## b)
-#### b) Apt - Kolmen uuden komentoriviohjelman asennus
+#### Apt - Kolmen uuden komentoriviohjelman asennus
 Jatkoin tehtävän tekemistä torstaina 2025-01-23. En tiedä oikeastaan mitään komentoriviohjelmia, joten päätin lähteä etsimään netistä mielenkiintoisia ohjelmia, jotka voisin asentaa virtuaalikoneelleni. Löysin Linux-Console.net -verkkosivuilta kirjoituksen, jossa esiteltiin kymmenen komentorivityökalua Linux-päätteelle (https://fi.linux-console.net/?p=4760#gsc.tab=0) sekä Adam Garrett-Harrisin julkaisun GitHubissa, jossa esiteltiin CLI-ohjelmia (https://github.com/agarrharr/awesome-cli-apps?tab=readme-ov-file). Päätin näitä kirjoituksia luettuani asentaa virtualikoneelleni seuraavat ohjelmat:
 -  Figlet, jota käytetään tekstibannerien tai suurten kirjainten luomiseen
 -  Calcurse, joka on komentorivillä käytettävä kalenteri- ja aikataulutusohjelma
@@ -135,7 +135,8 @@ Löysin vielä installati.one -verkkosivuilta ohjeen, miten tuon italiankielisen
 
 ![19](https://github.com/user-attachments/assets/4b8e81cf-f528-4203-b835-6cb520624438)
 
-## c) FHS - Tärkeimmät kansiot
+## c) 
+#### FHS - Tärkeimmät kansiot
 Tein harjoituksen torstaina 2025-01-23 ja aloitin sen tekemisen kello 21.15. Tero Karvisen kirjoittamassa Command Line Basics Revisited -kirjoituksessa on listattu tärkeimpiä kansioita, jotka käyttäjän on tulisi muistaa. Seuraavaksi näytän esimerkin kunkin tärkeän kansion sisältämästä tiedostosta tai kansiosta. Ensimmäisenä siirryin juurihakemistoon. Suoritin ensin komennon pwd, joka ilmoitti, että sen hetkinen työskentelyhakemistoni on /home/juulia. Siirryin juurihakemistoon ( / ) suorittamalla kahdesti komennon "cd .." ja jokaisessa välissä suoritin myös komennon pwd varmistaakseni, missä työskentelyhakemistossa olen. 
 
 ![21](https://github.com/user-attachments/assets/64683b5e-3b9d-4f33-a32a-604da0570f16)
@@ -168,7 +169,8 @@ Lopuksi siirryin vielä kansioon /var/log/ suorittamalla komennot cd.., pwd, ls,
 
 ![30](https://github.com/user-attachments/assets/e2d1a183-2c1f-49c3-abd3-ed58ca533389)
 
-## d) The Friendly M - grep-komennon käyttö
+## d) 
+#### The Friendly M - grep-komennon käyttö
 Tein harjoituksen perjantaina 2025-01-24 ja aloitin kello 09.50. Aloitin kirjautumalla virtuaalikoneelleni ja avaamalla komentokehotteen. Avasin grep-komennon manuaalin suorittamalla komennon man grep. Manuaalissa kerrotaan, että grep komento etsii kustakin tiedostosta kuvioita (pattern). Tällainen kuvio on yksi tai useampi rivinvaihtomerkillä erotettu kuvio ja grep-komento tulostaa jokaisen kuvion, joka sopii tähän komennossa esitettyyn kuvioon.
 
 ![31](https://github.com/user-attachments/assets/30ff7395-1067-401a-bc53-e2498328c48f)
@@ -191,7 +193,8 @@ Jatkoin vielä tämän grep-komentoon liittyvän harjoituksen tekemistä lauanta
 
 ![38](https://github.com/user-attachments/assets/ced3bb8a-7c0a-4670-8044-7b8efeb128e2)
 
-## e) Pipe - esimerkki putkista
+## e) 
+#### Pipe - esimerkki putkista
 Tein harjoituksen lauantaina 2025-01-25 ja aloitin kello 09.15. Päätin ensin hieman googlettaa, että mitä putkilla tarkoitetaan, koska se jäi minulle hieman epäselväksi viime luennolla. GeeksForGeeks-verkkosivuilla julkaistussa kirjoituksessa kerrotaan, että putkia käytetään yhden komennon, ohjelman tai prosessin tulosteen lähettämisessä toisen komennon, ohjelman tai prosessin käsiteltäväksi (https://www.geeksforgeeks.org/piping-in-unix-or-linux/).
 
 Päätin Terko Karvisen kirjoituksessa annetun esimerkin mukaisesti kokeilla putkien toimintaa yhdistämällä komennot ls, joka listaa työskentelyhakemiston sisältämät tiedostot ja less, jolla voi selata tekstitiedostojen sisältöä. Suoritin siis komentorivillä omassa kotihakemistossani komennon ls /etc|less, joka siis ohjasi komennon ls tulosteen komennolle less. Näin hakemiston etc sisältämien kansioiden lista näkyi näkyi tulosteena, jota pystyi selata sivu kerrallaan. Tämä siis helpotti pitkän kansiolistauksen lukemista. Poistuin tästä listasta Q-painikkeella. Suoritin tämän jälkeen vielä vertailuna komennon ls /etc, joka listasi hakemiston sisällön monisarakkeiseksi listaksi, jota oli mielestäni hankalampaa lukea kuin tuota aikaisempaa näkymää. Päätin harjoituksen tekemisen kello 9.35.
@@ -200,7 +203,8 @@ Päätin Terko Karvisen kirjoituksessa annetun esimerkin mukaisesti kokeilla put
 
 ![39](https://github.com/user-attachments/assets/0c4f1a96-4089-4be3-9633-fbd7a84cfdb3)
 
-## f) Rauta 
+## f) 
+#### Rauta 
 Tein tämänkin harjoituksen lauantaina 2025-01-25 ja aloitin sen tekemisen kello 09.38. Suoritin ensin komentorivillä komennon sudo lshw -short -sanitize ja syötin salasanani. Tästä tulostui vastaus sudo: lshw: command not found. Tämä tarkoitti siis sitä, että virtuaalikoneelleni ei ole vielä asennettu lshw:tä. 
 
 ![41](https://github.com/user-attachments/assets/9a10fba1-e5f6-49de-9c6d-3e012c1c4205)
