@@ -169,9 +169,11 @@ Lopuksi siirryin vielä kansioon /var/log/ suorittamalla komennot cd.., pwd, ls,
 ![30](https://github.com/user-attachments/assets/e2d1a183-2c1f-49c3-abd3-ed58ca533389)
 
 ## d) The Friendly M - grep-komennon käyttö
-Tein harjoituksen perjantaina 2025-01-24 ja aloitin kello 09.50. Aloitin kirjautumalla virtuaalikoneelleni ja avaamalla komentokehotteen. Avasin grep-komennon manuaalin suorittamalla komennon man grep. Manuaalissa kerrotaan, että grep komento etsii kustakin tiedostosta kuvioita (pattern). Tällainen kuvio on yksi tai useampi rivinvaihtomerkillä erotettu kuvio ja grep-komento tulostaa jokaisen kuvio, joka sopii tähän komennossa esitettyyn kuvioon. Jotta voisin etsiä tiedostoista näitä kuviota grep-komennolla päätin kirjoittaa edellisellä tunnilla tekemäni viikonpaivat-kansion tiedostoihin tekstiä. Siirryin kansioon komennolla cd Viikonpaivat ja tämän jälkeen siirryin eri viikonpäivien kansioihin komennolla cd [viikonpäivän lyhenne] eli esimerkiksi cd ma. Tämän jälkeen komennolla ls tarkastelin kansion sisältöä ja lisäsin tekstitiedostoihin tekstiä komennolla micro [tiedoston nimi] eli esimerkiksi micro kissa.txt. Etsin grep-komennon manuaalin lisäksi vielä netistä ohjeita komennon käyttämiseen ja löysin mielestäni hyvän GoLinuxCloud-verkkosivuilta (https://www.golinuxcloud.com/grep-command-in-linux/)
+Tein harjoituksen perjantaina 2025-01-24 ja aloitin kello 09.50. Aloitin kirjautumalla virtuaalikoneelleni ja avaamalla komentokehotteen. Avasin grep-komennon manuaalin suorittamalla komennon man grep. Manuaalissa kerrotaan, että grep komento etsii kustakin tiedostosta kuvioita (pattern). Tällainen kuvio on yksi tai useampi rivinvaihtomerkillä erotettu kuvio ja grep-komento tulostaa jokaisen kuvion, joka sopii tähän komennossa esitettyyn kuvioon.
 
 ![31](https://github.com/user-attachments/assets/30ff7395-1067-401a-bc53-e2498328c48f)
+
+Jotta voisin etsiä tiedostoista näitä kuviota grep-komennolla päätin kirjoittaa edellisellä tunnilla tekemäni viikonpaivat-kansion tiedostoihin tekstiä. Siirryin kansioon komennolla cd Viikonpaivat ja tämän jälkeen siirryin eri viikonpäivien kansioihin komennolla cd [viikonpäivän lyhenne] eli esimerkiksi cd ma. Tämän jälkeen komennolla ls tarkastelin kansion sisältöä ja lisäsin tekstitiedostoihin tekstiä komennolla micro [tiedoston nimi] eli esimerkiksi micro kissa.txt. Etsin grep-komennon manuaalin lisäksi vielä netistä ohjeita komennon käyttämiseen ja löysin mielestäni hyvän GoLinuxCloud-verkkosivuilta (https://www.golinuxcloud.com/grep-command-in-linux/)
 
 ![32](https://github.com/user-attachments/assets/270f9e7a-4078-4e1b-900f-7bdd06317ae0)
 
@@ -179,35 +181,47 @@ Tein harjoituksen perjantaina 2025-01-24 ja aloitin kello 09.50. Aloitin kirjaut
 
 Tämän jälkeen siirryin viikonpaivat-kansion ma-kansioon ja etsin kissa.txt tiedostosta sanaa harjoitus suorittamalla komennon grep harjoitus kissa.txt. Tämä komento tulosti tekstin "tämä on harjoitus", joka siis lukee kissa.txt tiedostossa. 
 
-![34](https://github.com/user-attachments/assets/840909c5-c88a-4a44-aba9-6d3b2cbf256b)
+![34](https://github.com/user-attachments/assets/2f45eb51-618a-49c0-9ef0-988679de4dc1)
 
 Seuraavaksi suoritin viikonpaivat-kansion kansiossa pe komennon grep testi kissa.txt koira.txt kala.txt, jolla etsin näistä kaikista kolmesta tekstiedostosta sanaa testi. Komento tulosti tiedon siitä, että näistä jokaisesta tekstitiedostosto löytyy kyseinen sana. Päätin harjoituksen tekemisen kello 10.40.
 
-![35](https://github.com/user-attachments/assets/ce6f13e6-e123-4bdc-bfe6-9615f1f125f5)
+![35](https://github.com/user-attachments/assets/ec16c8c7-55f7-429d-bfb2-880e22b6e52a)
 
 Jatkoin vielä tämän grep-komentoon liittyvän harjoituksen tekemistä lauantaina 2023-01-25 kello 8.50. Käynnistin ensimmäiseksi virtuaalikoneeni, kirjauduin sisään ja avasin komentokehotteen. Suoritin vielä komennon grep -i -r harjoitus. I-kirjain tulostaa osumat riippumatta siitä, onko sanassa isoja tai pieniä kirjaimia ja R-kirjain taas hakee osumat kaikista tiedostoista nykyisessä hakemistossa, myös alihakemistoista. Tämä komento tulosti tiedon siitä, mistä kaikista tiedostoista tämä kyseinen sana löytyy. Päätin harjoituksen tekemisen kello 8.54.
 
 ![38](https://github.com/user-attachments/assets/ced3bb8a-7c0a-4670-8044-7b8efeb128e2)
 
 ## e) Pipe - esimerkki putkista
-Tein harjoituksen lauantaina 2025-01-25 ja aloitin kello 09.15. Päätin ensin hieman googlettaa, että mitä putkilla tarkoitetaan, koska se jäi minulle hieman epäselväksi viime luennolla. GeeksForGeeks-verkkosivuilla julkaistussa kirjoituksessa kerrotaan, että putkia käytetään yhden komennon, ohjelman tai prosessin tulosteen lähettämisessä toisen komennon, ohjelman tai prosessin käsiteltäväksi. Päätin Terko Karvisen kirjoituksessa annetun esimerkin mukaisesti kokeilla putkien toimintaa yhdistämällä komennot ls, joka listaa työskentelyhakemiston sisältämät tiedostot ja less, jolla voi selata tekstitiedostojen sisältöä. Suoritin siis komentorivillä omassa kotihakemistossani komennon ls /etc|less, joka siis ohjasi komennon ls tulosteen komennolle less. Näin hakemiston etc sisältämien kansioiden lista näkyi näkyi tulosteena, jota pystyi selata sivu kerrallaan. Tämä siis helpotti pitkän kansiolistauksen lukemista. Poistuin tästä listasta Q-kirjainta painamalla. Suoritin tämän jälkeen vielä vertailuna komennon ls /etc, joka listasi hakemiston sisällön monisarakkeiseksi listaksi, jota oli mielestäni hankalampaa lukea. Päätin harjoituksen tekemisen kello 9.35.
+Tein harjoituksen lauantaina 2025-01-25 ja aloitin kello 09.15. Päätin ensin hieman googlettaa, että mitä putkilla tarkoitetaan, koska se jäi minulle hieman epäselväksi viime luennolla. GeeksForGeeks-verkkosivuilla julkaistussa kirjoituksessa kerrotaan, että putkia käytetään yhden komennon, ohjelman tai prosessin tulosteen lähettämisessä toisen komennon, ohjelman tai prosessin käsiteltäväksi (https://www.geeksforgeeks.org/piping-in-unix-or-linux/).
+
+Päätin Terko Karvisen kirjoituksessa annetun esimerkin mukaisesti kokeilla putkien toimintaa yhdistämällä komennot ls, joka listaa työskentelyhakemiston sisältämät tiedostot ja less, jolla voi selata tekstitiedostojen sisältöä. Suoritin siis komentorivillä omassa kotihakemistossani komennon ls /etc|less, joka siis ohjasi komennon ls tulosteen komennolle less. Näin hakemiston etc sisältämien kansioiden lista näkyi näkyi tulosteena, jota pystyi selata sivu kerrallaan. Tämä siis helpotti pitkän kansiolistauksen lukemista. Poistuin tästä listasta Q-painikkeella. Suoritin tämän jälkeen vielä vertailuna komennon ls /etc, joka listasi hakemiston sisällön monisarakkeiseksi listaksi, jota oli mielestäni hankalampaa lukea kuin tuota aikaisempaa näkymää. Päätin harjoituksen tekemisen kello 9.35.
 
 ![40](https://github.com/user-attachments/assets/7a85946e-375b-427a-b83e-75e9d59d9dfc)
 
 ![39](https://github.com/user-attachments/assets/0c4f1a96-4089-4be3-9633-fbd7a84cfdb3)
 
 ## f) Rauta 
-Tein tämänkin harjoituksen alakohdan lauantaina 2025-01-25 ja aloitin sen tekemisen kello 09.38. Suoritin ensin komentorivillä komennon sudo lshw -short -sanitize ja syötin salasanani. Tästä tulostui vastaus sudo: lshw: command not found. Tämä tarkoitti siis sitä, että virtuaalikoneelleni ei ole vielä asennettu lshw:tä. Asensin siis seuraavaksi sen suorittamalla ensin komennon sudo apt-get update ja syöttämällä salasanani. Sitten suoritin komennon sudo apt-get -y install lshw. Asennuksen jälkeen kello 09.43 suoritin uudelleen komennon sudo lshw -short -sanitize. 
+Tein tämänkin harjoituksen lauantaina 2025-01-25 ja aloitin sen tekemisen kello 09.38. Suoritin ensin komentorivillä komennon sudo lshw -short -sanitize ja syötin salasanani. Tästä tulostui vastaus sudo: lshw: command not found. Tämä tarkoitti siis sitä, että virtuaalikoneelleni ei ole vielä asennettu lshw:tä. 
 
 ![41](https://github.com/user-attachments/assets/9a10fba1-e5f6-49de-9c6d-3e012c1c4205)
+
+Asensin siis seuraavaksi sen suorittamalla ensin komennon sudo apt-get update ja syöttämällä salasanani. Sitten suoritin komennon sudo apt-get -y install lshw. 
 
 ![42](https://github.com/user-attachments/assets/0e12d37d-39d5-444d-9cb4-e60339b22c72)
 
 ![43](https://github.com/user-attachments/assets/1ddde8be-4f06-4075-9332-c6a70c46c8e4)
 
+Asennuksen jälkeen kello 09.43 suoritin uudelleen komennon sudo lshw -short -sanitize. Ja tästä tulostui listaus virtuaalikoneeni laitteistoista.
+
 ![44](https://github.com/user-attachments/assets/9e19320a-15d5-4f1c-9a17-4ea67a06da52)
 
-Lshw komento siis listaa käyttämäni koneen raudan. Listauksessa on neljä eri saraketta, jotka ovat laitteiston polku (H/W path), laite, jossa laitteisto sijaitsee (Device), luokka (Class) ja kuvaus (Description). Yritin selvittää googlettamalla, mitä nämä listauksessa nähtävät tiedot tarkoittavat, mutta en löytänyt näistä juurikaan tietoa. Yritin myös hakea verkosta tietoa jokaisesta laitteistosta erikseen, mutta en sitäkään kautta saanut juurikaan selvyyttä tähän listaukseen. Tarkastelin myös komennon manuaalia, mutta siitäkään ei ollut juuri apua tulosten analysointiin. Idroot.us-verkkosivulta löysin lyhyen ohjeen tulosten tulkitsemiseen (https://idroot.us/lshw-command-linux/#Understanding_lshw_Output), jossa kerrottiin, komennon tulostama vastaus on usein järjestetty hierarkisesti siten, että alussa on tietoa järjestelmästä kokonaisuutena ja sitten se jakautuu yksittäisiin osiin. Minulla ei itselläni ole juurikaan tietoa eikä osaamista tietokoneiden erilaisista ominaisuuksista ja komponenteista, joten tietotaitoni ei oikein riittänyt lshw-komennon tulostaman vastauksen tarkempaan analysointiin. Sen verran sain selvitettyä, että komennon tulosteessa on nähtävissä, että käyttämäni järjestelmä on VirtualBox-pohjainen, ja virtuaalikoneelle on osoitettu 4 GiB muistia. Listauksessa näkyy, että koneeni prosessori on AMD Ryzen 7 5800U. Näiden lisäksi listauksesta on nähtävissä tietoa käytettävistä väylistä, verkko-ohjaimesta ja verkkoliittännöistä, tallennuslaitteista, näytönohjaimesta ja muista liitetyistä laitteista.
+Lshw komento siis listaa käyttämäni koneen raudan. Listauksessa on neljä eri saraketta, jotka ovat laitteiston polku (H/W path), laite, jossa laitteisto sijaitsee (Device), luokka (Class) ja kuvaus (Description). 
+
+Yritin selvittää googlettamalla, mitä nämä listauksessa nähtävät tiedot tarkoittavat, mutta en löytänyt näistä juurikaan tietoa. Yritin myös hakea verkosta tietoa jokaisesta laitteistosta erikseen, mutta en sitäkään kautta saanut juurikaan selvyyttä tähän listaukseen. Tarkastelin myös komennon manuaalia, mutta siitäkään ei ollut juuri apua tulosten analysointiin. 
+
+Idroot.us-verkkosivulta löysin lyhyen ohjeen tulosten tulkitsemiseen (https://idroot.us/lshw-command-linux/#Understanding_lshw_Output), jossa kerrottiin, komennon tulostama vastaus on usein järjestetty hierarkisesti siten, että alussa on tietoa järjestelmästä kokonaisuutena ja sitten se jakautuu yksittäisiin osiin. Minulla ei itselläni ole juurikaan tietoa eikä osaamista tietokoneiden erilaisista ominaisuuksista ja komponenteista, joten tietotaitoni ei oikein riittänyt lshw-komennon tulostaman vastauksen tarkempaan analysointiin. 
+
+Sen verran sain selvitettyä, että komennon tulosteessa on nähtävissä, että käyttämäni järjestelmä on VirtualBox-pohjainen, ja virtuaalikoneelle on osoitettu 4 GiB muistia. Virtuaalikoneella on myös listauksen mukaan 64 GB suuruinen virtuaalinen kovalevy, vaikka asetin edellisessä tehtävässä kovalevyn kooksi 60 GB. Listauksessa näkyy, että prosessori on AMD Ryzen 7 5800U, joka on siis sama kuin käyttämäni kannettavan tietokoneen. Näiden lisäksi listauksesta on nähtävissä tietoa muun muassa väylistä, verkko-ohjaimesta, näytönohjaimesta ja muista liitetyistä laitteista, jotka eivät oikein sanoneet minulle mitään.
 
 
 
@@ -222,6 +236,8 @@ Calcurse: CALCURSE - text-based organizer. Luettavissa: https://www.calcurse.org
 Debian Wiki: fortune. Luettavissa: https://wiki.debian.org/fortune.
 
 FOSSLinux 2023: Fix: ‘Unable to Locate Package’ Error in Ubuntu and Debian. Luettavissa: https://www.fosslinux.com/113252/fix-unable-to-locate-package-error-in-ubuntu-and-debian.htm.
+
+GeeksForGeeks 2024: Piping in Unix or Linux. Luettavissa: https://www.geeksforgeeks.org/piping-in-unix-or-linux/.
 
 GoLinuxCloud 2024: 20 grep command examples in Linux [Cheat Sheet]. Luettavissa: https://www.golinuxcloud.com/grep-command-in-linux/.
 
