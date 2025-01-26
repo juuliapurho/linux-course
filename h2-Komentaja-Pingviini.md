@@ -38,15 +38,23 @@ Lopuksi kirjoituksessa käydään vielä läpi hallintakomentoja. Vähimmän oik
 - sudo apt-get -y install, jolla asennetaan ohjelmia
 - sudo apt-get purge, jolla poistetaan ohjelma ja sen järjestelmän laajuiset asetukset
 
+Suurin osa näistä edellä mainituista komennoista oli minulle täysin uusia ja olen käyttänyt komentokehotetta melko vähän. Tero Karvisen kirjoittama ohjee toimii kuitenkin varmasti hyvänä pohjana kotitehtäviä tehdessäni. Päätin, että laadin kurssin aikana myös itselleni Wordiin oman paljon käytettyjen ja tärkeiden komentojen listan. Jäin miettimään, että tuleekohan minulle itselleni Linux-kurssia suorittaessani mieleen jotain sellaisia komentoja, joita voisin lisätä näiden Tero Karvisen mainitsemien komentojen lisäksi omaan listaani.
+
 ## Alakohdissa a-h käytetty ympäristö
-- Lenovon ThinkBook 13s G3 ACN kannettava tietokone
+Kannettava tietokone
+- Lenovon ThinkBook 13s G3 ACN 
 - Suoritin: AMD Ryzen 7 5800U with Radeon Graphics 1.90 GHz
 - RAM: 16,0 Gt
 - SSD: 475 Gt, josta käytettävissä 341 Gt
 - Järjestelmätyyppi: 64-bittinen käyttöjärjestelmä, x64-suoritin
 - Käyttöjärjestelmä: Windows 11 Pro, 24H2
-
-- Oracle VirtualBox versio  7.1.4
+Virtuaalikone
+- Virtualisointi: Oracle VirtualBox versio  7.1.4
+- Käyttöjärjestelmä: Debian 12.9.0
+- Järjestelmätyyppi: 64-bittinen käyttöjärjestelmä
+- Muisti: 4000 MB
+- Vituaalikovalevyn koko: 60 GB
+- 1 CPU
 
 ## a) 
 #### Micro - micro-editorin asennus
