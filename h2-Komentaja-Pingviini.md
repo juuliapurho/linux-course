@@ -113,15 +113,13 @@ Lopuksi kokeilin vielä fortune ohjelmaa suorittamalla komennon fortune. Tämä 
 
 Ajattelin, että suoritan ensimmäiseksi kaikki saatavilla olevat päivitykset ja kokeilen, että toimisiko tämä. Mietin siis, että voisiko minulla olla käytössä jokin vanha versio kyseisestä ohjelmasta ja päivittäminen ratkaisisi ongelman. Suoritin siis komennon sudo apt-get update ja syötin salasanani. Tämän jälkeen suoritin komennon sudo apt-get -y dist-upgrade.
 
-![12](https://github.com/user-attachments/assets/73e46e06-307b-4fb8-ba12-2a8411bd7674)
+![13](https://github.com/user-attachments/assets/2dcb58ae-22d9-4a33-95a6-144560fbbcf7)
 
 Päivitysten tekeminen kesti muutaman minuutin ja kokeilin sen jälkeen uudelleen komentoa fortune, mutta päivitysten suorittamisen jälkeen ennustukset olivat edelleen italiankielisiä. Yritin jälleen löytää ratkaisua ongelmaani googlettamalla ja löysin Debian Wikin verkkosivuilta apua (https://wiki.debian.org/fortune). Suoritin komennon fortune -fa, jolla sain selvitettyä kaikki asentamani fortune-tiedostot. Tästä näin, etten ollut asentanut ollenkaan ohjelman englanninkielistä versiota. 
 
-![13](https://github.com/user-attachments/assets/2dcb58ae-22d9-4a33-95a6-144560fbbcf7)
+![14](https://github.com/user-attachments/assets/8477b9fb-35ed-4b12-bc15-4bb8def787fc)
 
 Latasin fortune ohjelman suorittamalla jälleen ensin komennon sudo apt-get update ja syötin salasanani. Tämän jälkeen suoritin komennon udo apt-get -y install fortunes. Ohjelman asentamisen jälkeen suoritin uudelleen komennon  fortune -fa, josta näin, että nyt fortune-tiedostoja oli huomattavasti enemmän kuin aikaisemmin ja listauksesta löytyivät sekä italiankieliset että englanninkieliset versiot. 
-
-![14](https://github.com/user-attachments/assets/8477b9fb-35ed-4b12-bc15-4bb8def787fc)
 
 ![15](https://github.com/user-attachments/assets/82367dde-53d2-4778-b02f-991ab9545b81)
 
@@ -137,7 +135,7 @@ Löysin vielä installati.one -verkkosivuilta ohjeen, miten tuon italiankielisen
 
 
 
-![16](https://github.com/user-attachments/assets/2d9428bd-74e6-4768-bef3-5e8ecf77129b)
+
 
 ![17](https://github.com/user-attachments/assets/3cbacd5f-a3a7-4e0a-958b-ceb0de18f606)
 
