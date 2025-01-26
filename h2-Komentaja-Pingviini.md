@@ -53,11 +53,11 @@ Kannettava tietokone
 Virtuaalikone
 
 - Virtualisointi: Oracle VirtualBox versio  7.1.4
-- Käyttöjärjestelmä: Debian 12.9.0
-- Järjestelmätyyppi: 64-bittinen käyttöjärjestelmä
-- Muisti: 4000 MB
-- Vituaalikovalevyn koko: 60 GB
 - 1 CPU
+- Virtuaalikovalevyn koko: 60 GB
+- Muisti: 4000 MB
+- Järjestelmätyyppi: 64-bittinen käyttöjärjestelmä
+- Käyttöjärjestelmä: Debian 12.9.0
 
 ## a) 
 #### Micro - micro-editorin asennus
