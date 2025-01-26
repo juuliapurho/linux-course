@@ -90,7 +90,7 @@ Seuraavaksi pääsin kokeilemaan asentamiani ohjelmia. Kello 19.57 kokeilin ensi
 
 ![6](https://github.com/user-attachments/assets/4223c7d4-702a-4a06-97f5-46d40339dafb)
 
-Sitten kokeilin calcurse ohjelmaa ja suoritin ensin komennon calcurse, josta ohjelma aukesi. Ohjelmassa oli ikkunan alalaidassa selkeät ohjeet siitä, että millä painikkeella ohjelmassa tehdään mitäkin. Lisäsin ohjelmaan uuden tapaamisen seuraavalle päivälle ohjelman verkkosivuilta löytyvän ohjeen mukaisesti (https://www.calcurse.org/files/manual.html). Siirryin ensin seuraavan päivän eli 24.1.2025 kohdalle L-painikkeella ja sitten painoin A-painiketta. Tämän jälkeen kirjoitin ohjelman alalaidassa pyytämät tiedot seuraavasti:
+Sitten kokeilin calcurse ohjelmaa ja suoritin ensin komennon calcurse, josta ohjelma aukesi. Lisäsin ohjelmaan uuden tapaamisen seuraavalle päivälle calcurse ohjelman verkkosivuilta löytyvän ohjeen mukaisesti (https://www.calcurse.org/files/manual.html). Siirryin ensin seuraavan päivän eli 24.1.2025 kohdalle L-painikkeella ja sitten painoin A-painiketta. Tämän jälkeen kirjoitin ohjelman alalaidassa pyytämät tiedot seuraavasti:
 - aloitusaika : 09:00
 - kesto: +03:00
 - kuvaus: Linux-kurssi
@@ -210,7 +210,9 @@ Calcurse: CALCURSE - text-based organizer. Luettavissa: https://www.calcurse.org
 
 Debian Wiki: fortune. Luettavissa: https://wiki.debian.org/fortune.
 
-GoLinuxCloud: 20 grep command examples in Linux [Cheat Sheet]. Luettavissa: https://www.golinuxcloud.com/grep-command-in-linux/
+FOSSLinux 2023: Fix: ‘Unable to Locate Package’ Error in Ubuntu and Debian. Luettavissa: https://www.fosslinux.com/113252/fix-unable-to-locate-package-error-in-ubuntu-and-debian.htm.
+
+GoLinuxCloud 2024: 20 grep command examples in Linux [Cheat Sheet]. Luettavissa: https://www.golinuxcloud.com/grep-command-in-linux/.
 
 Idroot.us: lshw Command in Linux with Examples. Luettavissa: https://idroot.us/lshw-command-linux/#Understanding_lshw_Output.
 
