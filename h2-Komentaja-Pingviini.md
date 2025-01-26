@@ -201,7 +201,7 @@ Päätin Tero Karvisen kirjoituksessa annetun esimerkin mukaisesti kokeilla putk
 
 ![40](https://github.com/user-attachments/assets/7a85946e-375b-427a-b83e-75e9d59d9dfc)
 
-![39](https://github.com/user-attachments/assets/0c4f1a96-4089-4be3-9633-fbd7a84cfdb3)
+![45](https://github.com/user-attachments/assets/cbeb35e4-5074-45a5-a058-672a5394cccd)
 
 ## f) 
 #### Rauta 
