@@ -137,7 +137,7 @@ Löysin vielä installati.one -verkkosivuilta ohjeen, miten tuon italiankielisen
 
 ## c) 
 #### FHS - Tärkeimmät kansiot
-Tein harjoituksen torstaina 2025-01-23 ja aloitin sen tekemisen kello 21.15. Tero Karvisen kirjoittamassa Command Line Basics Revisited -kirjoituksessa on listattu tärkeimpiä kansioita, jotka käyttäjän on tulisi muistaa. Seuraavaksi näytän esimerkin kunkin tärkeän kansion sisältämästä tiedostosta tai kansiosta. Ensimmäisenä siirryin juurihakemistoon. Suoritin ensin komennon pwd, joka ilmoitti, että sen hetkinen työskentelyhakemistoni on /home/juulia. Siirryin juurihakemistoon ( / ) suorittamalla kahdesti komennon "cd .." ja jokaisessa välissä suoritin myös komennon pwd varmistaakseni, missä työskentelyhakemistossa olen. 
+Tein harjoituksen torstaina 2025-01-23 ja aloitin sen tekemisen kello 21.15. Tero Karvisen kirjoittamassa Command Line Basics Revisited -kirjoituksessa on listattu tärkeimpiä kansioita, jotka käyttäjän on tulisi muistaa. Seuraavaksi näytän esimerkin kunkin tärkeän kansion sisältämistä kansioista. Ensimmäisenä siirryin juurihakemistoon. Suoritin ensin komennon pwd, joka ilmoitti, että sen hetkinen työskentelyhakemistoni on /home/juulia. Siirryin juurihakemistoon ( / ) suorittamalla kahdesti komennon "cd .." ja jokaisessa välissä suoritin myös komennon pwd varmistaakseni, missä työskentelyhakemistossa olen. 
 
 ![21](https://github.com/user-attachments/assets/64683b5e-3b9d-4f33-a32a-604da0570f16)
 
