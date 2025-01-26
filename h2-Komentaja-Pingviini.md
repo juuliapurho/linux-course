@@ -14,7 +14,7 @@ Tiedostojen käsittelyyn liittyviä tärkeitä komentoja ovat:
 - mkdir, joka luo uuden hakemiston (esimerkiksi kansion)
 - mv, joka siirtää tai uudelleen nimeää hakemiston tai tiedoston
 - cp, jolla voidaan kopioida
-- rmdir, joka poistaa tyhjä hakemisto
+- rmdir, joka poistaa tyhjän hakemisto
 - rm, joka poistaa tietyn tiedoston. Tällä komennolla ei ole roskakoria, joten sitä käyttäessä tulee olla varovainen.
 
 SSH-etäohjaukseen liittyviä tärkeitä komentoja ovat:
@@ -24,7 +24,7 @@ SSH-etäohjaukseen liittyviä tärkeitä komentoja ovat:
 
 Lisäksi kirjoituksessa kerrotaan, että Tab-näppäimen kahdesti painaminen näyttää, mitä voi kirjoittaa seuraavaksi. Tab-näppäin täydentää  myös yksiselitteisiä komentoja ja sitä tulisi käyttää aina tiedostojen nimien ja polkujen syöttämisessä kirjoitusvirheiltä välttymiseksi. 
 
-Tero Karvinen kertoo kirjoituksessa myös Linuxissa olevan vain muutama kansio, jotka käyttäjän tulee muistaa ja näitä ovat:
+Tero Karvinen kertoo kirjoituksessa Linuxissa olevan vain muutama kansio, jotka käyttäjän tulee muistaa ja näitä ovat:
 - / eli juurihakemisto
 - /home/, joka sisältää kaikkien käyttäjien kotihakemistot
 - /home/juulia/, joka on käyttäjän juulia kotihakemisto. Tämä on ainoa sijainti, johon käyttäjä juulia voi tallentaa tietoja pysyvästi.
@@ -32,7 +32,11 @@ Tero Karvinen kertoo kirjoituksessa myös Linuxissa olevan vain muutama kansio, 
 - /media/, jossa on poistettavat mediat
 - /var/log/, jossa on koko järjestelmän laajuiset lokitiedostot
 
-Lopuksi kirjoituksessa käydään vielä läpi hallintakomentoja. Vähimmän oikeuden periaatteen mukaan toimenpiteet tulisi tehdä mahdollisimman matalalla oikeustasolla ja vain korkeita oikeuksia vaativat toimenpiteet suoritetaan sudo-komennolla. Sudo-komennolla saadaan rajattomat oikeudet. Tällaisia korkeampia oikeuksia vaativia toimenpiteitä ovat koko järjestelmään vaikuttavat komennot, kuten ohjelmistojen asentaminen tai niiden poistaminen ja käyttäjien luominen.
+Lopuksi kirjoituksessa käydään vielä läpi hallintakomentoja. Vähimmän oikeuden periaatteen mukaan toimenpiteet tulisi tehdä mahdollisimman matalalla oikeustasolla ja vain korkeita oikeuksia vaativat toimenpiteet suoritetaan sudo-komennolla. Sudo-komennolla saadaan rajattomat oikeudet. Tällaisia korkeampia oikeuksia vaativia toimenpiteitä ovat koko järjestelmään vaikuttavat komennot, kuten ohjelmistojen asentaminen tai niiden poistaminen ja käyttäjien luominen. Esimerkkejä sudo-komennoista ovat:
+
+- sudo apt-get update, joka tulee suorittaa ennen muita apt-komentoja. Tämä komento myös päivittää käytettävissä olevien pakettien luettelon.
+- sudo apt-get -y install, jolla asennetaan ohjelmia
+- sudo apt-get purge, jolla poistetaan ohjelma ja sen järjestelmän laajuiset asetukset
 
 ## Alakohdissa a-h käytetty ympäristö
 - Lenovon ThinkBook 13s G3 ACN kannettava tietokone
