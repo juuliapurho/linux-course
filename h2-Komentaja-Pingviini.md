@@ -141,7 +141,7 @@ Tein harjoituksen torstaina 2025-01-23 ja aloitin sen tekemisen kello 21.15. Ter
 
 ![21](https://github.com/user-attachments/assets/64683b5e-3b9d-4f33-a32a-604da0570f16)
 
-Juurihakemistossa suoritin komennon ls, joka listasi sen sisältämät kansiot. Tämän jälkeen siirryin juurihakemiston kansioon sys ja tarkastelin sen sisältöä suorittamalla komennon cd sys. 
+Juurihakemistossa suoritin komennon ls, joka listasi sen sisältämät kansiot. Tämän jälkeen siirryin juurihakemiston kansioon sys ja tarkastelin sen sisältöä suorittamalla komennot cd sys ja ls. 
 
 ![22](https://github.com/user-attachments/assets/5979e651-fc52-41c2-aa25-5b96b404df4b)
 
