@@ -119,7 +119,7 @@ Päivitysten tekeminen kesti muutaman minuutin ja kokeilin sen jälkeen uudellee
 
 ![14](https://github.com/user-attachments/assets/8477b9fb-35ed-4b12-bc15-4bb8def787fc)
 
-Latasin fortune ohjelman suorittamalla jälleen ensin komennon sudo apt-get update ja syötin salasanani. Tämän jälkeen suoritin komennon sudo apt-get -y install fortunes. Ohjelman asentamisen jälkeen suoritin uudelleen komennon  fortune -fa, josta näin, että nyt fortune-tiedostoja oli huomattavasti enemmän kuin aikaisemmin ja listauksesta löytyivät sekä italiankieliset että englanninkieliset versiot. 
+Latasin fortune ohjelman uudelleen suorittamalla jälleen ensin komennon sudo apt-get update ja syötin salasanani. Tämän jälkeen suoritin komennon sudo apt-get -y install fortunes. Ohjelman asentamisen jälkeen suoritin uudelleen komennon  fortune -fa, josta näin, että nyt fortune-tiedostoja oli huomattavasti enemmän kuin aikaisemmin ja listauksesta löytyivät sekä italiankieliset että englanninkieliset versiot. 
 
 ![15](https://github.com/user-attachments/assets/a1fd0fef-304b-4bfa-ae81-6272c944b8a1)
 
