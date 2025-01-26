@@ -29,7 +29,7 @@ Tero Karvinen kertoo kirjoituksessa Linuxissa olevan vain muutama kansio, jotka 
 - /home/, joka sisältää kaikkien käyttäjien kotihakemistot
 - /home/juulia/, joka on käyttäjän juulia kotihakemisto. Tämä on ainoa sijainti, johon käyttäjä juulia voi tallentaa tietoja pysyvästi.
 - /etc/, jossa on kaikki järjestelmän laajuiset asetukset
-- /media/, jossa on poistettavat mediat
+- /media/, jossa on irrotettavat mediat
 - /var/log/, jossa on koko järjestelmän laajuiset lokitiedostot
 
 Lopuksi kirjoituksessa käydään vielä läpi hallintakomentoja. Vähimmän oikeuden periaatteen mukaan toimenpiteet tulisi tehdä mahdollisimman matalalla oikeustasolla ja vain korkeita oikeuksia vaativat toimenpiteet suoritetaan sudo-komennolla. Sudo-komennolla saadaan rajattomat oikeudet. Tällaisia korkeampia oikeuksia vaativia toimenpiteitä ovat koko järjestelmään vaikuttavat komennot, kuten ohjelmistojen asentaminen tai niiden poistaminen ja käyttäjien luominen. Esimerkkejä sudo-komennoista ovat:
