@@ -209,7 +209,7 @@ Tein tämänkin harjoituksen lauantaina 2025-01-25 ja aloitin sen tekemisen kell
 
 ![41](https://github.com/user-attachments/assets/9a10fba1-e5f6-49de-9c6d-3e012c1c4205)
 
-Asensin siis seuraavaksi sen suorittamalla ensin komennon sudo apt-get update ja syöttämällä salasanani. Sitten suoritin komennon sudo apt-get -y install lshw. 
+Asensin siis seuraavaksi sen suorittamalla ensin komennon sudo apt-get update ja sitten komennon sudo apt-get -y install lshw. 
 
 ![42](https://github.com/user-attachments/assets/0e12d37d-39d5-444d-9cb4-e60339b22c72)
 
