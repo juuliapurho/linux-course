@@ -61,7 +61,7 @@ Virtuaalikone
 
 ## a) 
 #### Micro - micro-editorin asennus
-Olin jo aikaisemmin asentanut virtuaalikoneelleni micro-editorin, mutta tein sen uudelleen harjoitusmielessä. Tein asennuksen keskiviikkona 2025-01-22 ja aloitin asentamisen kello 20.31. Avasin ensin virtuaalikoneeni komentokehotteen ja suoritin siellä ensin komennon sudo apt-get update ja syötin sitten salasanani. Sitten suoritin kommennon sudo apt-get install micro, josta tulostuneessa vastauksessa kerrottiin, että micro-editorista on jo asennettu uusin versio. Päätin asennuksen tekemisen kello 20.38.
+Olin jo aikaisemmin asentanut virtuaalikoneelleni micro-editorin, mutta tein sen uudelleen harjoitusmielessä. Tein asennuksen keskiviikkona 2025-01-22 ja aloitin asentamisen kello 20.31. Avasin ensin virtuaalikoneeni komentokehotteen ja suoritin siellä ensin komennon sudo apt-get update ja syötin sitten salasanani. Sitten suoritin kommennon sudo apt-get install micro, josta tulostuneessa vastauksessa kerrottiin, että micro-editorista on jo asennettu uusin versio. Päätin asennuksen tekemisen kello 20.38. 
 
 ![1](https://github.com/user-attachments/assets/9e637ce8-ddae-4365-88d3-999a84604a4b)
 
@@ -73,6 +73,7 @@ Jatkoin tehtävän tekemistä torstaina 2025-01-23. En tiedä oikeastaan mitää
 -  Figlet, jota käytetään tekstibannerien tai suurten kirjainten luomiseen
 -  Calcurse, joka on komentorivillä käytettävä kalenteri- ja aikataulutusohjelma
 -  Quote-cli, joka tulostaa satunnaisen mietelauseen tai päivän mietelauseen
+
 Valittuani ohjelmat, jotka haluan asentaa, lähdin selvittämään miten minun olisi mahdollista asentaa nämä kaikki ohjelmat yhdellä kertaa. Löysin vastauksen googlettamalla nopeasti LinuxHint-verkkosivuilta (https://linuxhint.com/use-apt-to-install-multiple-programs-from-command-line-debian/). 
 
 Aloitin asentamisen kello 19.22 käynnistämällä virtuaalikoneeni ja kirjautumalla sisään. Tämän jälkeen avasin komentokehotteen ja suoritin komennon sudo apt-get update, jonka jälkeen syötin salasanani, kuten aikaisemminkin. Sitten suoritin komennon sudo apt-get -y install figlet calcurse quote-cli. Komento tulosti virheilmoituksen E:Unable to locate package quote-cli. Etsin netistä tietoa siitä, mitä tämä virheilmoitus tarkoittaa ja löysin apua ongelmaani FOSS Linux -verkkosivuilta (https://www.fosslinux.com/113252/fix-unable-to-locate-package-error-in-ubuntu-and-debian.htm). Päätin ensimmäisena tarkastaa, että antamani ohjelman nimi on kirjoitettu asennuskomentoon oikein. En löytänyt nopealla googlettamalla kyseistä quote-cli ohjelmaa ollenkaan hakutuloksista, joten päätin vaihtaa sen fortune ohjelmaan, joka tulostaa satunnaisen ennustuksen. Suoritin sitten kello 19.46 komennon sudo apt-get -y install figlet calcurse fortune. Tämä komento tulosti tiedon siitä, että fortunen sijaan asennetaan fortune-mod, joka on uusin versio tästä ohjelmasta. Komennon suorittamisen jälkeen nämä kolme ohjelmaa olivat asentuneet virtuaalikoneelleni. 
