@@ -1,12 +1,22 @@
 # h3 - Hello Web Server
 
-## X)
+## x)
 #### The Apache Software Foundation: Name-based Virtual Host Support
 The Apache Software Foundationin Apache HTTP-palvelimen versiota 2.4 koskevan dokumentaation luvussa Name-based Virtual Host Support kuvataan sitä, milloin ja miten name-based virtual hosteja käytetään.
 
 #### Tero Karvinen: Name-based Virtual Host Support
 
+## a)
 
+## b)
+
+## c)
+
+## d)
+
+## e)
+
+## f)
 
 #### Lähteet
 
