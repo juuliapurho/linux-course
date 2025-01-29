@@ -204,7 +204,9 @@ Tämän jälkeen avasin vielä uudelleen curl komennon manuaalin samalla tavalla
 
 ![32](https://github.com/user-attachments/assets/4009f920-9be9-41ed-becd-aa4960223819)
 
-Löysin vielä Linuxize-verkkosivulta lisää tietoa tästä komennosta (https://linuxize.com/post/curl-command-examples/), jossa kerrotaan, että nämä HTTP-otsakkeet sisältävät tietoja muun muassa UserAgentista, sisältötyypistä ja koodauksesta. Nämä otsakkeet välitetään asiakkaan eli clientin ja palvelimen välillä pyynnön tai vastauksen kanssa. Seuraavaksi kokeilin curl -I komentoa suorittamalla komennon curl -I localhost ja tästä tulostui tekemäni sivun HTTP-otsakkeet alla olevan kuvan mukaisesti.
+Löysin vielä Linuxize-verkkosivulta lisää tietoa tästä komennosta (https://linuxize.com/post/curl-command-examples/), jossa kerrotaan, että nämä HTTP-otsakkeet sisältävät tietoja muun muassa UserAgentista, sisältötyypistä ja koodauksesta. Nämä otsakkeet välitetään asiakkaan eli clientin ja palvelimen välillä pyynnön tai vastauksen kanssa. 
+
+Seuraavaksi kokeilin curl -I komentoa suorittamalla komennon curl -I localhost ja tästä tulostui tekemäni sivun HTTP-otsakkeet alla olevan kuvan mukaisesti.
 
 ![33](https://github.com/user-attachments/assets/f2596b05-9716-4096-bd86-60952640a34a)
 
