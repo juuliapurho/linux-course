@@ -14,11 +14,12 @@ Tero Karvisen kirjoittaman artikkelin alussa todetaan, että Apachen avulla yhde
 
 - Apachen Web-palvelin asennetaan komennolla: $ sudo apt-get -y install apache2
 - Oletussivua muokataan komennolla: $ echo "Default"|sudo tee /var/www/html/index.html
-- Uusi nimipohjainen virtual host lisätään: $ sudoedit /etc/apache2/sites-available/pyora.example.com.conf
-- Lisätyn virtual hostin konfiguraatiotiedostoa muokataan komennolla: $ cat /etc/apache2/sites-available/pyora.example.com.conf (Tähän tiedostoon lisätään VirtualHost-lohko tietoineen)
-- Lisätty virtual host laitetaan päälle kommennolla: $ sudo a2ensite pyora.example.com
-- Apache käynnistetään komennolla: $ sudo systemctl restart apache2
-- Uusi verkkosivu luodaan komennoilla $ mkdir -p /home/xubuntu/publicsites/pyora.example.com/ ja $ echo pyora > /home/xubuntu/publicsites/pyora.example.com/index.html
+- Uusi nimipohjainen virtual host lisätään komennolla: $ sudoedit /etc/apache2/sites-available/pyora.example.com.conf
+- Lisätyn virtual hostin konfiguraatiotiedoston sisältöä tarkastellaan komennolla: $ cat /etc/apache2/sites-available/pyora.example.com.conf
+- Lisätty virtual host laitetaan päälle komennolla: $ sudo a2ensite pyora.example.com
+- Apache uudelleen käynnistetään komennolla: $ sudo systemctl restart apache2
+- Uusi verkkosivu luodaan komennoilla $ mkdir -p /home/xubuntu/publicsites/pyora.example.com/
+- Verkkosivun html-tiedosto luodaan komennolla: $ echo pyora > /home/xubuntu/publicsites/pyora.example.com/index.html
 - Luodun virtual hostin toimintaa testataan komennolla: $ curl -H 'Host: pyora.example.com' localhost tai $ curl localhost
 
 ## Alakohdissa a-f käytetty ympäristö
@@ -33,7 +34,7 @@ Kannettava tietokone
   
 Virtuaalikone
 
-- Virtualisointi: Oracle VirtualBox versio  7.1.4
+- Virtualisointi: Oracle VirtualBox versio 7.1.4
 - 1 CPU
 - Virtuaalikovalevyn koko: 60 GB
 - Muisti: 4000 MB
