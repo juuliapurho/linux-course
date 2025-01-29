@@ -68,6 +68,8 @@ Tämän jälkeen lähdin etsimään tietoa tämän analysoimiseen, koska en osan
 - Seuraava viiva (-) kertoo jälleen, että tieto ei ole saatavilla. Tässä kohdassa tieto, joka ei ole saatavilla, on sivusto, jolta asiakas eli client ilmoittaa olevansa ohjattu. Tämä tarkoittaa siis sivustoa, jolta pyyntö on lähetetty.
 - Viimeisenä oleva lainausmerkeissä oleva "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0" on UserAgent HTTP-pyynnön otsikko. Tämä kertoo tiedot, jotka asiakasselain ilmoittaa itsestään. Mozilla/5.0 Gecko/20100101 Firefox/128.0 kertoo tietoja käytetystä selaimesta ja tämän tekstin sisällä suluissa oleva X11; Linux x86_64; rv:128.0 taas kertoo käyttöjärjestelmän tietoja. Käytössä on siis Mozillan selain Firefox ja käyttöjärjestelmänä on Linux.
 
+Muissakin lokiriveissä tiedot olivat melkolailla samanlaisia kuin tuossa tarkemmin analysoimassani viimeisessä rivissä. Rivillä kaksi on asiakkaan pyyntörivillä nähtävissä pyynnön käyttämän menetelmän jälkeisen kauttaviivan (/) jälkeen pyydetty resurssi eli icons/openlogo-75.png, joka on kuva logosta. Tällä toisella rivillä on myös nähtävissä 
+
 Lopetin lokitietojen tarkastelemisen ja analysoimisen kello 10.44.
 
 ![3](https://github.com/user-attachments/assets/30fd53aa-e807-417c-b090-987309afa91e)
