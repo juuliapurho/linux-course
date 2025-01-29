@@ -44,6 +44,7 @@ Virtuaalikone
 ## a)
 #### Weppipalvelimen testaus
 Aloitusaika: Keskiviikko 2025-01-29, kello 09.35.
+
 Tässä tehtävässä testasin, että weppipalvelimeni vastaa localhost-osoitteesta. Olin asentanut Apachen jo luennon aikana tiistaina 2025-01-29 sekä tehnyt uuden nimipohjaisen virtual hostin juulia.example.com, joka näkyy palvelimen etusivulla http://localhost/. Testasin tämän toimintaa terminaalissa komennolla curl localhost, josta tulostui tekemäni sivun sisältö. Tämän jälkeen kokeilin sivun toimintaa vielä verkkoselaimella kirjoittamalla osoiteriville http://localhost/ ja sivu näkyi selaimessakin oikein. Lopetin tehtävän tekemisen kello 09.37.
 
 ![1](https://github.com/user-attachments/assets/52b5bad1-8877-409f-ad09-4418ff375c00)
@@ -53,6 +54,7 @@ Tässä tehtävässä testasin, että weppipalvelimeni vastaa localhost-osoittee
 ## b)
 #### Lokirivien analysointi
 Aloitusaika: Keskiviikko 2025-01-29, kello 09.50.
+
 Tässä tehtävässä etsin lokista rivit, jotka syntyvät, kun lataan omalta palvelimeltani yhden sivun ja analysoin näitä rivejä. Tero Karvisen laatiman tehtävänannon yhteydessä olevien vinkkien sikä edellisen päivän luennon perusteella avasin lokitiedoston komennolla sudo tail /var/log/apache2/access.log ja syötin salasanani. Tämän jälkeen lokitiedot tulostuivat. Päätin tulkita lokin viimeistä riviä, joka oli seuraavanlainen:
 
 127.0.0.1 - - [28/Jan/2025:20:15:03 +0200] "GET / HTTP/1.1" 200 3380 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
@@ -91,6 +93,7 @@ Lopetin lokitietojen tarkastelemisen ja analysoimisen kello 10.59.
 ## c)
 #### Etusivu uusiksi
 Aloitusaika: Keskiviikko 2025-01-29, kello 11.50.
+
 Tässä tehtävässä loin uuden nimipohjaisen virtual hostin tehtävänannossa annettujen tietojen mukaisesti, joka näkyy suoraan palvelimen etusivulla http://localhost/. Aloitin tehtävän tekemisen terminaalissa komennolla sudoedit /etc/apache2/sites-available/hattu.example.com.conf ja syötin salasanani. 
 
 ![4](https://github.com/user-attachments/assets/7c97dec3-fe72-4285-86e4-0fd5b9d1c34e)
@@ -146,6 +149,7 @@ Lopetin tämän tehtävän tekemisen kello 12.37.
 ## e)
 #### Validin HTML5 sivun tekeminen
 Aloitusaika: Keskiviikko 2025-01-29, kello 12.51.
+
 Tässä tehtävässä minun tuli tehdä validi HTML5 sivu. Muokkasin siis äsken tekemäni sivun index.html-tiedostoa Tero Karvisen kirjoittamass artikkelissa Short HTML5 page annetun ohjeen mukaisesti. Avasin ensin tuon index.html tiedoston siirtymällä ensin hattu.example.com kansioon komennolla cd /home/juulia/public_sites/hattu.example.com ja suorittamalla tämän jälkeen komennon micro index.html.
 
 ![18](https://github.com/user-attachments/assets/722e9a94-40b9-419a-9378-4a5189f271aa)
@@ -187,6 +191,7 @@ Lopetin tämän tehtävän tekemisen kello 13.34.
 ## f)
 #### Esimerkit komennoista curl -I ja curl
 Aloitusaika: Keskiviikko 2025-01-29, kello 15.27.
+
 Tässä tehtävässä minun tuli antaa esimerkit komentojen curl ja curl -I komennoista sekä selittää jälkimmäisen komennon muutamasta näyttämästä otsakkeesta eli response headerista, että mitä ne tarkoittavat. Aloitin tehtävän tekemisen avaamalla curl-komennon manuaalin komennolla man curl. Tässä manuaalissa kerrottiin, että komento curl on työkalu datan siirtämiseen palvelimelle tai palvelimelta. Tämä komento tukee monia eri protokollia. Suljin manuaalin Q-painikkeella.
 
 ![30](https://github.com/user-attachments/assets/ae104b62-517e-44a1-85ad-7f73f9ce08ea)
