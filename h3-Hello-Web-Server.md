@@ -106,7 +106,7 @@ Tämän jälkeen vielä tarkstin konfiguraatiotiedoston sisällön komennolla ca
 
 ![6](https://github.com/user-attachments/assets/a54eaaef-7ccc-489e-b33e-86d4dc4a6318)
 
-Tämän jälkeen käynnistin tekemäni luomani virtual hostin komennolla sudo a2ensite hattu.example.com, jonka jälkeen tästä tulostuneen ohjeen mukaisesti käynnistin Apachen uudelleen komennolla sudo systemctl restart apache2.
+Tämän jälkeen käynnistin tekemäni virtual hostin komennolla sudo a2ensite hattu.example.com, jonka jälkeen tästä tulostuneen ohjeen mukaisesti käynnistin Apachen uudelleen komennolla sudo systemctl restart apache2.
 
 ![7](https://github.com/user-attachments/assets/1f09dac5-ae6a-499a-a6be-561d5d1f90d0)
 
