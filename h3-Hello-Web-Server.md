@@ -142,11 +142,14 @@ Lopetin tämän tehtävän tekemisen kello 12.37.
 
 
 
-## d)
-
 ## e)
+#### Validin HTML5 sivun tekeminen
+Aloitusaika: Keskiviikko 2025-01-29, kello 12.40.
+Tässä tehtävässä minun tuli tehdä validi HTML5 sivu.
 
 ## f)
+
+
 
 #### Lähteet
 
