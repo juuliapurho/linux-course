@@ -75,7 +75,7 @@ Muissakin lokiriveissä tiedot olivat melkolailla samanlaisia kuin tuossa tarkem
 
 127.0.0.1 - - [28/Jan/2025:18:15:31 +0200] "GET /icons/openlogo-75.png HTTP/1.1" 200 6040 "http://localhost/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
 
-Alla olen listannut ja selittänyt ne tiedot, jotka ovat toisella lokirivllä erilaisia verrattuna analysoimaani viimeiseen lokiriviin:
+Alla olen listannut ja selittänyt ne tiedot, jotka ovat toisella lokirivillä erilaisia verrattuna aikaisemmin analysoimaani viimeiseen lokiriviin:
 
 - Tässä asiakkaan pyyntörivillä "GET /icons/openlogo-75.png HTTP/1.1" on nähtävissä pyynnön käyttämän menetelmän (GET) jälkeisen kauttaviivan (/) jälkeen pyydetty resurssi eli icons/openlogo-75.png, joka on kuva logosta.
 - Objektin koon 6040 jälkeen tällä rivillä on myös sivusto, jolta client on ohjattu eli mistä pyyntö on tehty, joka on "http://localhost/".
