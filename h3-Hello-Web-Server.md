@@ -12,7 +12,7 @@ Lopuksi tekstissä käsitellään vielä nimipohjaisten virtual hostien käyttä
 #### Tero Karvinen: Name Based Virtual Hosts on Apache
 Tero Karvisen kirjoittaman artikkelin alussa todetaan, että Apachen avulla yhdessä IP-osoitteessa voi olla useita verkkotunnuksia. Artikkelissa on lista komennoista ja konfiguraatiotiedostoista, joita käytetään nimipohjaisessa virtual hostingissa Apachella. 
 
-- Apachen Web palvelin asennetaan komennolla: $ sudo apt-get -y install apache2
+- Apachen Web-palvelin asennetaan komennolla: $ sudo apt-get -y install apache2
 - Oletussivua muokataan komennolla: $ echo "Default"|sudo tee /var/www/html/index.html
 - Uusi nimipohjainen virtual host lisätään: $ sudoedit /etc/apache2/sites-available/pyora.example.com.conf
 - Lisätyn virtual hostin konfiguraatiotiedostoa muokataan komennolla: $ cat /etc/apache2/sites-available/pyora.example.com.conf (Tähän tiedostoon lisätään VirtualHost-lohko tietoineen)
