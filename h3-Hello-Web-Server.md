@@ -150,11 +150,11 @@ Lopetin tämän tehtävän tekemisen kello 12.37.
 #### Validin HTML5 sivun tekeminen
 Aloitusaika: Keskiviikko 2025-01-29, kello 12.51.
 
-Tässä tehtävässä minun tuli tehdä validi HTML5 sivu. Muokkasin siis äsken tekemäni sivun index.html-tiedostoa Tero Karvisen kirjoittamass artikkelissa Short HTML5 page annetun ohjeen mukaisesti. Avasin ensin tuon index.html tiedoston siirtymällä ensin hattu.example.com kansioon komennolla cd /home/juulia/public_sites/hattu.example.com ja suorittamalla tämän jälkeen komennon micro index.html.
+Tässä tehtävässä minun tuli tehdä validi HTML5 sivu. Muokkasin siis äsken tekemäni sivun index.html-tiedostoa Tero Karvisen kirjoittamassa artikkelissa Short HTML5 page annetun ohjeen mukaisesti. Avasin tuon index.html tiedoston siirtymällä ensin hattu.example.com kansioon komennolla cd /home/juulia/public_sites/hattu.example.com ja suorittamalla tämän jälkeen komennon micro index.html.
 
 ![18](https://github.com/user-attachments/assets/722e9a94-40b9-419a-9378-4a5189f271aa)
 
-Tämän jälkeen tosiaan muokkasin tiedostoa tuon Tero Karvisen ohjeen mukaisesti. Tallensin tekemäni muokkaukset ctrl + S ja suljin tiedoston ctrl + Q. Muokattu index-html-tiedosto näkyy alla olevassa kuvassa. 
+Tämän jälkeen tosiaan muokkasin tiedostoa tuon Tero Karvisen ohjeen mukaisesti. Tallensin tekemäni muokkaukset ctrl + S ja suljin tiedoston ctrl + Q. Muokattu index.html-tiedosto näkyy alla olevassa kuvassa. 
 
 ![20](https://github.com/user-attachments/assets/fe858a85-cb2f-4103-82da-f38b29ca565c)
 
@@ -164,13 +164,13 @@ Sitten testasin sivun toimintaa verkkoselaimella menemällä osoitteeseen http:/
 
 ![22](https://github.com/user-attachments/assets/0fdeb15b-6dc8-45e7-84c8-13fdf76b02f2)
 
-Lopuksi vielä testasin HTML5 sivun validiutta sivustolla https://validator.w3.org/. Valitsin sivuston vaihtoehdoista "Validate by Direct Input" ja kopion html-tiedoston sisällön kenttään, jonka jälkeen painoin Check-painiketta. Testi antoi tuloksena yhden varoituksen ja yhden infon. Varoituksessa kerrottiin, että html-tiedostosta puuttuu sivulla käytetyn kielen kertova lang-tagi. Infossa kerrottin, että meta-tagissa on toiseksi viimeisenä merkkinä olevalla kauttaviivalla (/) ei ole vaikutusta. 
+Lopuksi vielä testasin HTML5 sivun validiutta sivustolla https://validator.w3.org/. Valitsin sivuston vaihtoehdoista "Validate by Direct Input" ja kopion html-tiedoston sisällön kenttään, jonka jälkeen painoin Check-painiketta. Testi antoi tuloksena yhden varoituksen ja yhden infon. Varoituksessa kerrottiin, että html-tiedostosta puuttuu sivun kielen ilmoittava lang-tagi. Infossa taas kerrottin, että meta-tagissa toiseksi viimeisenä merkkinä olevalla kauttaviivalla (/) ei ole vaikutusta. 
 
 ![23](https://github.com/user-attachments/assets/5cf6c559-a887-4d13-a1cd-1720c8bca544)
 
 ![24](https://github.com/user-attachments/assets/2bd11085-cd18-4b18-b3f0-5699be087d35)
 
-Siirryin testin tekemisen jälkeen html-tiedostoon samalla tavalla kuin aikaisemminknin ja tein index.html tiedostoon tarvittavat muutokset eli lisäsin lang-tagin ja poistin kauttaviivan meta-tagista sekä tallensin tekemäni muutokset. Alla kuva muokatusta index.html-tiedostosta.
+Siirryin testin tekemisen jälkeen html-tiedostoon samalla tavalla kuin aikaisemminkin ja tein index.html-tiedostoon tarvittavat muutokset eli lisäsin lang-tagin ja poistin kauttaviivan meta-tagista sekä tallensin tekemäni muutokset. Alla kuva muokatusta index.html-tiedostosta.
 
 ![25](https://github.com/user-attachments/assets/221fab13-e79a-44d0-bb2a-a4dbd27dc0f3)
 
@@ -192,7 +192,7 @@ Lopetin tämän tehtävän tekemisen kello 13.34.
 #### Esimerkit komennoista curl -I ja curl
 Aloitusaika: Keskiviikko 2025-01-29, kello 15.27.
 
-Tässä tehtävässä minun tuli antaa esimerkit komentojen curl ja curl -I komennoista sekä selittää jälkimmäisen komennon muutamasta näyttämästä otsakkeesta eli response headerista, että mitä ne tarkoittavat. Aloitin tehtävän tekemisen avaamalla curl-komennon manuaalin komennolla man curl. Tässä manuaalissa kerrottiin, että komento curl on työkalu datan siirtämiseen palvelimelle tai palvelimelta. Tämä komento tukee monia eri protokollia. Suljin manuaalin Q-painikkeella.
+Tässä tehtävässä minun tuli antaa esimerkit curl ja curl -I komennoista sekä selittää jälkimmäisen komennon muutamasta näyttämästä otsakkeesta eli response headerista, että mitä ne tarkoittavat. Aloitin tehtävän tekemisen avaamalla curl-komennon manuaalin komennolla man curl. Tässä manuaalissa kerrottiin, että komento curl on työkalu datan siirtämiseen palvelimelle tai palvelimelta. Tämä komento tukee monia eri protokollia. Suljin manuaalin Q-painikkeella.
 
 ![30](https://github.com/user-attachments/assets/ae104b62-517e-44a1-85ad-7f73f9ce08ea)
 
@@ -200,7 +200,11 @@ Olen käyttänyt curl komentoa tämän viikon kotitehtävässä useaan kertaan v
 
 ![31](https://github.com/user-attachments/assets/c26865d0-df58-4dc2-b690-7f7d52c32cc7)
 
-Tämän jälkeen avasin vielä uudelleen curl komennon manuaalin samalla tavalla kuin aikaisemmin ja tarkastelin mitään komentoon lisätty -I tarkoittaa. Manuaalissa kerrottiin, että curl -I komennolla haetaan vain sivun HTTP-otsakkeet. Löysin vielä Linuxize-verkkosivuilta lisää tietoa tästä komennosta (https://linuxize.com/post/curl-command-examples/), jossa kerrotaan, että nämä HTTP-otsakkeet sisältävät tietoja muun muassa UserAgentista, sisältötyypistä ja koodauksesta. Nämä otsakkeet välitetään asiakkaan eli clientin ja palvelimen välillä pyynnön tai vastauksen kanssa. Seuraavaksi kokeilin curl -I komentoa suorittamalla komennon curl -I localhost ja tästä tulostui tekemäni sivun HTTP-otsakkeet alla olevan kuvan mukaisesti.
+Tämän jälkeen avasin vielä uudelleen curl komennon manuaalin samalla tavalla kuin aikaisemmin ja tarkastelin mitään komentoon lisätty -I tarkoittaa. Manuaalissa kerrottiin, että curl -I komennolla haetaan vain sivun HTTP-otsakkeet. 
+
+![32](https://github.com/user-attachments/assets/4009f920-9be9-41ed-becd-aa4960223819)
+
+Löysin vielä Linuxize-verkkosivulta lisää tietoa tästä komennosta (https://linuxize.com/post/curl-command-examples/), jossa kerrotaan, että nämä HTTP-otsakkeet sisältävät tietoja muun muassa UserAgentista, sisältötyypistä ja koodauksesta. Nämä otsakkeet välitetään asiakkaan eli clientin ja palvelimen välillä pyynnön tai vastauksen kanssa. Seuraavaksi kokeilin curl -I komentoa suorittamalla komennon curl -I localhost ja tästä tulostui tekemäni sivun HTTP-otsakkeet alla olevan kuvan mukaisesti.
 
 ![33](https://github.com/user-attachments/assets/f2596b05-9716-4096-bd86-60952640a34a)
 
