@@ -106,7 +106,7 @@ Tämän jälkeen vielä tarkstin konfiguraatiotiedoston sisällön komennolla ca
 
 ![6](https://github.com/user-attachments/assets/a54eaaef-7ccc-489e-b33e-86d4dc4a6318)
 
-Tämän jälkeen käynnistin tekemäni virtual hostin komennolla sudo a2ensite hattu.example.com, jonka jälkeen tästä tulostuneen ohjeen mukaisesti käynnistin Apachen uudelleen komennolla sudo systemctl restart apache2.
+Sitten käynnistin tekemäni virtual hostin komennolla sudo a2ensite hattu.example.com, jonka jälkeen tästä tulostuneen ohjeen mukaisesti käynnistin Apachen uudelleen komennolla sudo systemctl restart apache2.
 
 ![7](https://github.com/user-attachments/assets/1f09dac5-ae6a-499a-a6be-561d5d1f90d0)
 
@@ -114,7 +114,7 @@ Seuraavaksi loin uuden verkkosivun tavallisena käyttäjänä. Suoritin ensin ko
 
 ![8](https://github.com/user-attachments/assets/a8666efb-537b-4929-a15d-06aaa1fae1cb)
 
-Sitten loin tähän kansioon html-tiedoston, johon kirjoitin tekstin "Tervetuloa hattu.example.com-sivulle", komennolla echo Tervetuloa hattu.example.com-sivulle > /home/juulia/public_sites/hattu.example.com/index.html. Tarkastin vielä, että komennossa antamani teksti luki html-tiedostossa suorittamalla komennon micro index.html kansiossa hattu.example.com. Tämä avasi html-tiedoston ja siellä tosiaan luki edellisessä komennossa syöttämäni teksti. Lisäsin tähän tekstiin h1-tagin ja tallensin tekemäni muutokset ctrl + S ja suljin tiedoston ctrl + Q.
+Sitten loin tähän kansioon html-tiedoston, johon kirjoitin tekstin "Tervetuloa hattu.example.com-sivulle", komennolla echo Tervetuloa hattu.example.com-sivulle > /home/juulia/public_sites/hattu.example.com/index.html. Tarkastin vielä, että komennossa antamani teksti luki komennolla luodussa html-tiedostossa suorittamalla komennon micro index.html kansiossa hattu.example.com. Tämä avasi html-tiedoston ja siellä tosiaan luki edellisessä komennossa syöttämäni teksti. Lisäsin tähän tekstiin h1-tagin ja tallensin tekemäni muutokset ctrl + S ja suljin tiedoston ctrl + Q.
 
 ![9](https://github.com/user-attachments/assets/f1b70e6c-2f37-4e6f-b15a-7ed0a0b03978)
 
@@ -124,7 +124,7 @@ Sitten loin tähän kansioon html-tiedoston, johon kirjoitin tekstin "Tervetuloa
 
 ![12](https://github.com/user-attachments/assets/21ebaa90-ccae-4eb2-93c0-3f84a0c5d444)
 
-Seuraavaksi tarksitin, mitä virtual hostit ovat tällä hetkellä käynnissä. Tämän siirtymällä ensin alla olevan kuvan mukaisesti kansioon /etc/apache2 komennolla cd /etc/apache2. Sitten tarkastelin kansion sisältöä komennolla ls ja siirryin kansioon sites-enabled komennolla cd sites-enabled. Tarkastelin tämän kansion sisältöä ls komennolla ja näin, että sekä hattu.example.com.conf että juulia.example.com.conf virtual hostit ovat käynnissä, koska ne näkyivät tässä kansiossa.
+Seuraavaksi tarksitin, mitkä virtual hostit ovat tällä hetkellä käynnissä. Tämän tein siirtymällä ensin alla olevan kuvan mukaisesti kansioon /etc/apache2 komennolla cd /etc/apache2. Sitten tarkastelin kansion sisältöä komennolla ls ja siirryin kansioon sites-enabled komennolla cd sites-enabled. Tarkastelin tämän kansion sisältöä ls komennolla ja näin, että sekä hattu.example.com.conf että juulia.example.com.conf virtual hostit ovat käynnissä, koska ne näkyivät tässä kansiossa.
 
 ![13](https://github.com/user-attachments/assets/fbfb35f9-48c8-4af4-a631-0f7ae10d15f4)
 
