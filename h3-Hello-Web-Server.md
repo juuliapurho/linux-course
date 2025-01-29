@@ -87,8 +87,9 @@ Lopetin lokitietojen tarkastelemisen ja analysoimisen kello 10.59.
 
 ![3](https://github.com/user-attachments/assets/30fd53aa-e807-417c-b090-987309afa91e)
 
-
 ## c)
+#### Etusivu uusiksi
+
 
 ## d)
 
