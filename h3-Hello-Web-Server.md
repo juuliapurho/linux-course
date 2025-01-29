@@ -210,9 +210,9 @@ Seuraavaksi kokeilin curl -I komentoa suorittamalla komennon curl -I localhost j
 
 ![33](https://github.com/user-attachments/assets/f2596b05-9716-4096-bd86-60952640a34a)
 
-Näiden HTTP-otsakkeen tietojen tulkitsemissa käytin apuna Developer Mozilla -verkkosivuilla olevaa artikkelia (https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers). Alla olen listannut kaikki curl -I localhost komennon tulostamat HTTP-otsakkeen tiedot ja olen avannut mitä ne tarkoittavat:
+Näiden HTTP-otsakkeiden tietojen tulkitsemissa käytin apuna Developer Mozilla -verkkosivuilla olevaa artikkelia (https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers). Alla olen listannut kaikki curl -I localhost komennon tulostamat HTTP-otsakkeiden tiedot ja olen avannut mitä ne tarkoittavat:
 
-- HTTP/1.1 200 OK kertoo käytetyn HTTP-protokollan version ja 200 OK kertoo, että pyyntö on onnistunut.
+- HTTP/1.1 200 OK kertoo käytetyn HTTP-protokollan ja 200 OK kertoo, että pyyntö on onnistunut.
 - Date sisältää päivämäärän ja kellonajan, jolloin pyyntö on tehty. 
 - Server sisältää tietoja ohjelmistosta, jota palvelin käyttää pyynnön käsittelyssä. Tässä tapauksessa on ilmoitettu, että palvelin on Apache ja sen versio on 2.4.64 ja käyttöjärjestelmänä on Debian.
 - Last-Modified kertoo tiedoston viimeisimmän muokkausajankohdan. 
@@ -226,7 +226,7 @@ Lopetin tämän tehtävän tekemisen ja HTTP-otsakkeiden tulkitsemisen kello 16.
 
 ## m)
 #### GitHub Education -paketin hankinta
-Tein vielä h3 kotitehtävän vapaahetoisen tehtävän, jossa hankin GitHub Education -paketin. Siirryin GitHub Educationin verkkosivuille https://github.com/education, liitin Haaga-Helian sähköpostini olemassa olevaan tunnukseeni ja lähetin hakemuksen. 
+Tein vielä h3 kotitehtävän vapaaehtoisen tehtävän, jossa hankin GitHub Education -paketin. Siirryin GitHub Educationin verkkosivuille https://github.com/education, liitin Haaga-Helian sähköpostini olemassa olevaan tunnukseeni ja lähetin hakemuksen. 
 
 ![Näyttökuva 2025-01-29 kello 17 10 28](https://github.com/user-attachments/assets/09f962ac-56cd-4f37-8bb6-ac456dbf8efe)
 
