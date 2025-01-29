@@ -41,7 +41,7 @@ Virtuaalikone
 - Käyttöjärjestelmä: Debian 12.9.0
   
 ## a)
-#### weppipalvelimen testaus
+#### Weppipalvelimen testaus
 Aloitusaika: Keskiviikko 2025-01-29, kello 09.35.
 Tässä tehtävässä testasin, että weppipalvelimeni vastaa localhost-osoitteesta. Olin asentanut Apachen jo luennon aikana tiistaina 2025-01-29 sekä tehnyt uuden nimipohjaisen virtual hostin juulia.example.com, joka näkyy palvelimen etusivulla http://localhost/. Testasin tämän toimintaa terminaalissa komennolla curl localhost, josta tulostui tekemäni sivun sisältö. Tämän jälkeen kokeilin sivun toimintaa vielä verkkoselaimella kirjoittamalla osoiteriville http://localhost/ ja sivu näkyi selaimessakin oikein. Lopetin tehtävän tekemisen kello 09.37.
 
@@ -89,6 +89,57 @@ Lopetin lokitietojen tarkastelemisen ja analysoimisen kello 10.59.
 
 ## c)
 #### Etusivu uusiksi
+Aloitusaika: Keskiviikko 2025-01-29, kello 11.50.
+Tässä tehtävässä loin uuden nimipohjaisen virtual hostin tehtävänannossa annettujen tietojen mukaisesti, joka näkyy suoraan palvelimen etusivulla http://localhost/. Aloitin tehtävän tekemisen terminaalissa komennolla sudoedit /etc/apache2/sites-available/hattu.example.com.conf ja syötin salasanani. 
+
+![4](https://github.com/user-attachments/assets/7c97dec3-fe72-4285-86e4-0fd5b9d1c34e)
+
+Tästä avautui konfiguraatiotiedosto, johon kirjoitin Tero Karvisen artikkelin Name Based Virtual Hosts on Apache mukaiset tiedot eli lisäsin VirtualHost-lohkon, jonka sisään kirjoitin ServerName-, ServerAlias- ja DocumentRoot-direktiivit sekä Directory-lohkon alla olevan kuvan mukaisesti. Tallensin kirjoittamani tekstin painamalla ctrl + S ja suljin tiedoston ctrl + Z.
+
+![5](https://github.com/user-attachments/assets/0bde51cc-b762-487e-822e-9a0aa54805cf)
+
+Tämän jälkeen vielä tarkstin konfiguraatiotiedoston sisällön komennolla cat /etc/apache2/sites-available/hattu.example.com.conf. Tämä tulosti tiedostoon äsken kirjoittamani tiedot alla olevan kuvan mukaisesti.
+
+![6](https://github.com/user-attachments/assets/a54eaaef-7ccc-489e-b33e-86d4dc4a6318)
+
+Tämän jälkeen käynnistin tekemäni luomani virtual hostin komennolla sudo a2ensite hattu.example.com, jonka jälkeen tästä tulostuneen ohjeen mukaisesti käynnistin Apachen uudelleen komennolla sudo systemctl restart apache2.
+
+![7](https://github.com/user-attachments/assets/1f09dac5-ae6a-499a-a6be-561d5d1f90d0)
+
+Seuraavaksi loin uuden verkkosivun tavallisena käyttäjänä. Suoritin ensin komennon mkdir -p /home/juulia/public_sites/hattu.example.com/. Komennon suorittamisen jälkeen siirryin kotihakemistoni kansioon public_sites komennolla cd /home/juulia/public_sites/ ja tarkistin komennolla ls, että sinne oli luotu uusi kansio nimeltä hattu.example.com.
+
+![8](https://github.com/user-attachments/assets/a8666efb-537b-4929-a15d-06aaa1fae1cb)
+
+Sitten loin tähän kansioon html-tiedoston, johon kirjoitin tekstin "Tervetuloa hattu.example.com-sivulle", komennolla echo Tervetuloa hattu.example.com-sivulle > /home/juulia/public_sites/hattu.example.com/index.html. Tarkastin vielä, että komennossa antamani teksti luki html-tiedostossa suorittamalla komennon micro index.html kansiossa hattu.example.com. Tämä avasi html-tiedoston ja siellä tosiaan luki edellisessä komennossa syöttämäni teksti. Lisäsin tähän tekstiin h1-tagin ja tallensin tekemäni muutokset ctrl + S ja suljin tiedoston ctrl + Q
+
+![9](https://github.com/user-attachments/assets/f1b70e6c-2f37-4e6f-b15a-7ed0a0b03978)
+
+![10](https://github.com/user-attachments/assets/766b3d49-620c-49d8-84fa-30786fd78b92)
+
+![11](https://github.com/user-attachments/assets/0f4c85b6-6593-48df-b934-470bab6e711c)
+
+![12](https://github.com/user-attachments/assets/21ebaa90-ccae-4eb2-93c0-3f84a0c5d444)
+
+Seuraavaksi tarksitin, mitä virtual hostit ovat tällä hetkellä käynnissä. Tämän siirtymällä ensin alla olevan kuvan mukaisesti kansioon /etc/apache2 komennolla cd /etc/apache2. Sitten tarkastelin kansion sisältöä komennolla ls ja siirryin kansioon sites-enabled komennolla cd sites-enabled. Tarkastelin tämän kansion sisältöä ls komennolla ja näin, että sekä hattu.example.com.conf että juulia.example.com.conf virtual hostit ovat käynnissä, koska ne näkyivät tässä kansiossa.
+
+![13](https://github.com/user-attachments/assets/fbfb35f9-48c8-4af4-a631-0f7ae10d15f4)
+
+Sammutin sitten juulia.example.com.conf virtual hostin komennolla sudo a2dissite juulia.example.com.conf ja syötin salasanani. Tästä tulostuneen ohjeen mukaisesti käynnistin Apachen uudelleen komennolla sudo systemctl restart apache2.
+
+![14](https://github.com/user-attachments/assets/38ab5c92-a5bc-46e7-9c32-5234269297bc)
+
+Sitten tarkistin vielä, että tuo juulia.example.com.conf oli sammutettu tarkastelemalla kansion /etc/apache2/sites-enabled sisältöä komennolla ls. Tästä näin, että enää ainoastaan tässä tehtävässä tekemäni hattu.example.com.conf virtual host oli käynnissä.   
+
+![15](https://github.com/user-attachments/assets/6a2592ff-b7ba-444e-a061-3b524c4ed7fe)
+
+Lopuksi oli aika kokeilla tekemäni virtual hostin ja sivun toimintaa. Menin ensin verkkoselaimella osoitteeseen http://localhost/, jossa näkymä oli oikeanlainen ja sivu toimi ongelmitta. Kokeilin toimintaa vielä komennolla curl localhost, josta tulostui hattu.example.comiin luomani sivun sisältö.
+
+![16](https://github.com/user-attachments/assets/b0ee2d65-adfc-4908-b40c-aaaf7b54ad3b)
+
+![17](https://github.com/user-attachments/assets/f3446b72-76e1-47a2-a188-dbca2bb75683)
+
+Lopetin tämän tehtävän tekemisen kello 12.37.
+
 
 
 ## d)
