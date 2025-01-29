@@ -10,7 +10,7 @@ Lopuksi tekstissä käsitellään vielä nimipohjaisten virtual hostien käyttä
 
 
 #### Tero Karvinen: Name Based Virtual Hosts on Apache
-Terko Karvisen kirjoittaman artikkelin alussa todetaan, että Apachen avulla yhdessä IP-osoitteessa voi olla useita verkkotunnuksia. Artikkelissa on lista komennoista ja konfiguraatiotiedostoista nimipohjaiseen virtual hostingiin Apachella. 
+Tero Karvisen kirjoittaman artikkelin alussa todetaan, että Apachen avulla yhdessä IP-osoitteessa voi olla useita verkkotunnuksia. Artikkelissa on lista komennoista ja konfiguraatiotiedostoista nimipohjaiseen virtual hostingiin Apachella. 
 
 - Apachen Web palvelin asennetaan komennolla: $ sudo apt-get -y install apache2
 - Oletussivua muokataan komennolla: $ echo "Default"|sudo tee /var/www/html/index.html
