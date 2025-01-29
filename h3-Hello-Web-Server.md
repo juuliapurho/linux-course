@@ -98,7 +98,7 @@ Tässä tehtävässä loin uuden nimipohjaisen virtual hostin tehtävänannossa 
 
 ![4](https://github.com/user-attachments/assets/7c97dec3-fe72-4285-86e4-0fd5b9d1c34e)
 
-Tästä avautui konfiguraatiotiedosto, johon kirjoitin Tero Karvisen artikkelin Name Based Virtual Hosts on Apache mukaiset tiedot. Lisäsin tiedostoon VirtualHost-lohkon, jonka sisään lisäsin ServerName-, ServerAlias- ja DocumentRoot-direktiivit sekä Directory-lohkon alla olevan kuvan mukaisesti. Tallensin kirjoittamani tekstin painamalla ctrl + S ja suljin tiedoston ctrl + Z.
+Tästä avautui konfiguraatiotiedosto, johon kirjoitin Tero Karvisen artikkelissa Name Based Virtual Hosts on Apache kerrotut tiedot. Lisäsin tiedostoon VirtualHost-lohkon, jonka sisään lisäsin ServerName-, ServerAlias- ja DocumentRoot-direktiivit sekä Directory-lohkon alla olevan kuvan mukaisesti. Tallensin kirjoittamani tekstin painamalla ctrl + S ja suljin tiedoston ctrl + Z.
 
 ![5](https://github.com/user-attachments/assets/0bde51cc-b762-487e-822e-9a0aa54805cf)
 
