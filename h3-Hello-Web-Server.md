@@ -52,7 +52,10 @@ Tässä tehtävässä testasin, että weppipalvelimeni vastaa localhost-osoittee
 ## b)
 #### Lokirivien analysointi
 Aloitusaika: Keskiviikko 2025-01-29, kello 09.43.
-Tässä tehtävässä etsin lokista rivit, jotka syntyvät, kun lataan omalta palvelimeltani yhden sivun ja analysoin näitä rivejä. Tero Karvisen laatiman tehtävänannon yhteydessä olevien vinkkien sikä edellisen päivän luennon perusteella avasin lokitiedoston komennolla sudo tail /var/log/apache2/access.log ja syötin salasanani. Tämän jälkeen lokitiedot tulostuivat. Päätin tulkita lokin viimeistä riviä, joka oli seuraavanlainen
+Tässä tehtävässä etsin lokista rivit, jotka syntyvät, kun lataan omalta palvelimeltani yhden sivun ja analysoin näitä rivejä. Tero Karvisen laatiman tehtävänannon yhteydessä olevien vinkkien sikä edellisen päivän luennon perusteella avasin lokitiedoston komennolla sudo tail /var/log/apache2/access.log ja syötin salasanani. Tämän jälkeen lokitiedot tulostuivat. Päätin tulkita lokin viimeistä riviä, joka oli seuraavanlainen:
+
+127.0.0.1 - - [28/Jan/2025:20:15:03 +0200] "GET / HTTP/1.1" 200 3380 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+
 
 ## c)
 
