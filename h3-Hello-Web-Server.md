@@ -185,13 +185,42 @@ Lopetin tämän tehtävän tekemisen kello 13.34.
 
 ## f)
 #### Esimerkit komennoista curl -I ja curl
-Aloitusaika: Keskiviikko 2025-01-29, kello .
-Tässä tehtävässä minun tuli antaa esimerkit komentojen curl ja curl -I komennoista sekä selittää jälkimmäisen komennon muutamasta näyttämästä otsakkeesta eli response headerista, että mitä ne tarkoittavat.
+Aloitusaika: Keskiviikko 2025-01-29, kello 15.27.
+Tässä tehtävässä minun tuli antaa esimerkit komentojen curl ja curl -I komennoista sekä selittää jälkimmäisen komennon muutamasta näyttämästä otsakkeesta eli response headerista, että mitä ne tarkoittavat. Aloitin tehtävän tekemisen avaamalla curl-komennon manuaalin komennolla man curl. Tässä manuaalissa kerrottiin, että komento curl on työkalu datan siirtämiseen palvelimelle tai palvelimelta. Tämä komento tukee monia eri protokollia. Suljin manuaalin Q-painikkeella.
 
-## c)
+![30](https://github.com/user-attachments/assets/ae104b62-517e-44a1-85ad-7f73f9ce08ea)
+
+Olen käyttänyt curl komentoa tämän viikon kotitehtävässä useaan kertaan verkkosivun sisällön selaamiseen ja lukemiseen komentorivillä. Komento curl localhost tulosti palvelimen etusivulla osoitteessa http://localhost/ sijaitsevan, tekemäni sivun html-tiedoston sisällön eli kyseisen sivun sisällön alla olevan kuvan mukaisesti.
+
+![31](https://github.com/user-attachments/assets/c26865d0-df58-4dc2-b690-7f7d52c32cc7)
+
+Tämän jälkeen avasin vielä uudelleen curl komennon manuaalin samalla tavalla kuin aikaisemmin ja tarkastelin mitään komentoon lisätty -I tarkoittaa. Manuaalissa kerrottiin, että curl -I komennolla haetaan vain sivun HTTP-otsakkeet. Löysin vielä Linuxize-verkkosivuilta lisää tietoa tästä komennosta (https://linuxize.com/post/curl-command-examples/), jossa kerrotaan, että nämä HTTP-otsakkeet sisältävät tietoja muun muassa UserAgentista, sisältötyypistä ja koodauksesta. Nämä otsakkeet välitetään asiakkaan eli clientin ja palvelimen välillä pyynnön tai vastauksen kanssa. Seuraavaksi kokeilin curl -I komentoa suorittamalla komennon curl -I localhost ja tästä tulostui tekemäni sivun HTTP-otsakkeet alla olevan kuvan mukaisesti.
+
+![33](https://github.com/user-attachments/assets/f2596b05-9716-4096-bd86-60952640a34a)
+
+Näiden HTTP-otsakkeen tietojen tulkitsemissa käytin apuna Developer Mozilla -verkkosivuilla olevaa artikkelia (https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers). Alla olen listannut kaikki curl -I localhost komennon tulostamat HTTP-otsakkeen tiedot ja olen avannut mitä ne tarkoittavat:
+
+- HTTP/1.1 200 OK kertoo käytetyn HTTP-protokollan version ja 200 OK kertoo, että pyyntö on onnistunut.
+- Date sisältää päivämäärän ja kellonajan, jolloin pyyntö on tehty. 
+- Server sisältää tietoja ohjelmistosta, jota palvelin käyttää pyynnön käsittelyssä. Tässä tapauksessa on ilmoitettu, että palvelin on Apache ja sen versio on 2.4.64 ja käyttöjärjestelmänä on Debian.
+- Last-Modified kertoo tiedoston viimeisimmän muokkausajankohdan. 
+- E-Tag kertoo yksilöllisen merkkijonon, jolla tunnistetaan resurssin versio.
+- Accept-Ranges ilmaisee, että tukeeko palvelin osittaisia pyyntöjä ja missä yksikössä tämä osa voidaan ilmaista. Koska tässä kohdassa lukee bytes, se tarkoittaa, että palvelin tukee osittaisia pyyntöjä ja ne ilmaistaan tavuina.
+- Content-Length kertoo resurssin koon tavuina.
+- Vary ilmoittaa kuinka pyynnön otsakkeet sovitetaan yhteen, jotta voidaan päättää onko välimuistissa olevan vastauksen käyttäminen mahdollista uuden vastauksen pyytämisen sijaan. Tässä tapauksessa Vary-kohdassa lukee Accept-Encoding, mutta en löytänyt vastausta siihen, mitä tämä tarkoittaa. 
+- Content-Type kertoo resurssin sisällön tyypin, joka tässä tapauksessa on teksti html-muodossa.
+
+Lopetin tämän tehtävän tekemisen ja HTTP-otsakkeiden tulkitsemisen kello 16.41.
+
+## m)
 #### GitHub Education -paketin hankinta
+Tein vielä h3 kotitehtävän vapaahetoisen tehtävän, jossa hankin GitHub Education -paketin. Siirryin GitHub Educationin verkkosivuille https://github.com/education ja 
 
 #### Lähteet
+
+Linuxize 2019: Curl Command in Linux with Examples. Luettavissa: https://linuxize.com/post/curl-command-examples/. 
+
+MDN: HTTP headers. Luettavissa: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers.
 
 Tero Karvinen 2018: Name Based Virtual Hosts on Apache – Multiple Websites to Single IP Address. Luettavissa: https://terokarvinen.com/2018/04/10/name-based-virtual-hosts-on-apache-multiple-websites-to-single-ip-address/.
 
