@@ -58,9 +58,16 @@ Tässä tehtävässä etsin lokista rivit, jotka syntyvät, kun lataan omalta pa
 
 Tämän jälkeen lähdin etsimään tietoa tämän analysoimiseen, koska en osannut tulkita tuota lokiriviä itse. Löysin The Apache Software Foundationin Apache HTTP-palvelimen versiota 2.4 koskevan dokumentaation luvusta Log Files tietoa aiheesta (https://httpd.apache.org/docs/2.4/logs.html). Olen listannut alle edellä mainitsemani lokirivin osat ja niiden merkityksen järjestyksessä alusta loppuun:
 
-- **127.0.0.1 **on palvelimelle pyynnön tehneen asikkaan eli clientin IP-osoite
+- Ensimmäisenä oleva 127.0.0.1 on palvelimelle pyynnön tehneen asikkaan eli clientin IP-osoite
+- Toisena IP-osoitteen jälkeen oleva viiva (-) tarkoittaa, että tieto ei ole saatavilla. Tässä kohdassa tieto, joka ei ole saatavilla, on asiakkaan identiteetti (RFC 1413  identity), jonka määrittää asiakaskoneen identd.
+- Toinen viiva (-) tarkoitta jälleen, että tieto ei ole saatavilla. Tässä kohdassa tieto, joka ei ole saatavilla, on asiakkaan käyttäjän id (userid). Tässä kohdassa on käyttäjän id:n sijaan viiva, koska haettua tiedostoa ei ole suojattu salasanalla.
+- Seuraavana oleva [28/Jan/2025:20:15:03 +0200] on aika, jolloin pyyntö vastaanotettiin ja se on muodossa [päivä/kuukausi/vuosi:tunti:minuutti: toinen vyöhyke].
+- Pyynnön vastaanottamisajan jälkeen lainausmerkeissä oleva "GET / HTTP/1.1" on asiakkaan pyyntörivi. GET on asiakkaan pyynnön käyttämä menetelmä. Kauttaviivan jälkeen olisi tieto siitä, mitä reurssia on pyydetty. HTTP/1.1 kertoo asiakkaan käyttämän protokollan.
+- Seuraavana oleva 200 on statuskoodi, jonka palvelin lähettää asiakkaalle. Tämä tieto kertoo, onko pyyntö johtanut oikeaan vastaukseen. Numerolla 2 alkavat koodit kertovat onnistuneesta vastauksesta, numerolla 3 alkavat koodit uudelleenohjauksesta, numerolla 4 alkavat koodit asiakkaan aiheuttamasta virheestä ja numerolla 5 alkavat koodit virheeseen palvelimessa. Tällä lokirivillä vastaus on siis onnistunut.
+- 3380 kertoo asiakkaalle palautetun objektin koon bitteinä.
+- Seuraava viiva (-) kertoo jälleen, että tieto ei ole saatavilla. Tässä kohdassa tieto, joka ei ole saatavilla, on sivusto, jolta asiakas eli client ilmoittaa olevansa ohjattu. Tämä tarkoittaa siis sivustoa, jolta pyyntö on lähetetty.
+- Viimeisenä oleva lainausmerkeissä oleva "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0" on UserAgent HTTP-pyynnön otsikko. Tämä kertoo tiedot, jotka asiakasselain ilmoittaa itsestään. Mozilla/5.0 Gecko/20100101 Firefox/128.0 kertoo tietoja käytetystä selaimesta ja tämän tekstin sisällä suluissa oleva X11; Linux x86_64; rv:128.0 taas kertoo käyttöjärjestelmän tietoja. UserAgents.io-verkkosivuilla kerrotaan tämän kal
 - 
-
 ![3](https://github.com/user-attachments/assets/30fd53aa-e807-417c-b090-987309afa91e)
 
 
