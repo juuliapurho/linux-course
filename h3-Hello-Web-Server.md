@@ -68,9 +68,22 @@ Tämän jälkeen lähdin etsimään tietoa tämän analysoimiseen, koska en osan
 - Seuraava viiva (-) kertoo jälleen, että tieto ei ole saatavilla. Tässä kohdassa tieto, joka ei ole saatavilla, on sivusto, jolta asiakas eli client ilmoittaa olevansa ohjattu. Tämä tarkoittaa siis sivustoa, jolta pyyntö on lähetetty.
 - Viimeisenä oleva lainausmerkeissä oleva "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0" on UserAgent HTTP-pyynnön otsikko. Tämä kertoo tiedot, jotka asiakasselain ilmoittaa itsestään. Mozilla/5.0 Gecko/20100101 Firefox/128.0 kertoo tietoja käytetystä selaimesta ja tämän tekstin sisällä suluissa oleva X11; Linux x86_64; rv:128.0 taas kertoo käyttöjärjestelmän tietoja. Käytössä on siis Mozillan selain Firefox ja käyttöjärjestelmänä on Linux.
 
-Muissakin lokiriveissä tiedot olivat melkolailla samanlaisia kuin tuossa tarkemmin analysoimassani viimeisessä rivissä. Rivillä kaksi on asiakkaan pyyntörivillä nähtävissä pyynnön käyttämän menetelmän jälkeisen kauttaviivan (/) jälkeen pyydetty resurssi eli icons/openlogo-75.png, joka on kuva logosta. Tällä toisella rivillä on myös nähtävissä 
+Muissakin lokiriveissä tiedot olivat melkolailla samanlaisia kuin tuossa tarkemmin analysoimassani viimeisessä rivissä. Esimerkiksi rivillä kaksi on muutamia erilaisia tietoja kuin tuolla viimeisellä lokirivillä. Toinen lokirivi on seuraavanlainen:
 
-Lopetin lokitietojen tarkastelemisen ja analysoimisen kello 10.44.
+127.0.0.1 - - [28/Jan/2025:18:15:31 +0200] "GET /icons/openlogo-75.png HTTP/1.1" 200 6040 "http://localhost/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+
+Alla olen listannut ja selittänyt ne tiedot, jotka ovat lokirivllä kaksi erilaisia kuin viimeisellä lokirivillä:
+
+- Tässä asiakkaan pyyntörivillä "GET /icons/openlogo-75.png HTTP/1.1" on nähtävissä pyynnön käyttämän menetelmän (GET) jälkeisen kauttaviivan (/) jälkeen pyydetty resurssi eli icons/openlogo-75.png, joka on kuva logosta.
+- Objektin koon 6040 jälkeen tällä rivillä on myös sivusto, jolta client on ohjattu eli mistä pyyntö on tehty "http://localhost/".
+
+Toiseksi viimeisellä lokirivillä on myös yksi erilainen tieto kuin muilla lokiriveillä. Tämä toiseksi viimeinen lokirivi on seuraavanlainen:
+
+127.0.0.1 - - [28/Jan/2025:19:54:37 +0200] "GET / HTTP/1.1" 200 10956 "-" "curl/7.88.1"
+
+Tällä rivillä viimeisenä tietona oleva UserAgent HTTP-pyynnön otsikko on "curl/7.88.1", joka tarkoittaa, että sivustoa on tarkasteltu terminaalissa curl-komennolla.
+
+Lopetin lokitietojen tarkastelemisen ja analysoimisen kello 10.59.
 
 ![3](https://github.com/user-attachments/assets/30fd53aa-e807-417c-b090-987309afa91e)
 
