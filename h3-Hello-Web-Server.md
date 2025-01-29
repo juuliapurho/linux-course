@@ -214,7 +214,11 @@ Lopetin tämän tehtävän tekemisen ja HTTP-otsakkeiden tulkitsemisen kello 16.
 
 ## m)
 #### GitHub Education -paketin hankinta
-Tein vielä h3 kotitehtävän vapaahetoisen tehtävän, jossa hankin GitHub Education -paketin. Siirryin GitHub Educationin verkkosivuille https://github.com/education ja 
+Tein vielä h3 kotitehtävän vapaahetoisen tehtävän, jossa hankin GitHub Education -paketin. Siirryin GitHub Educationin verkkosivuille https://github.com/education, liitin Haaga-Helian sähköpostini olemassa olevaan tunnukseeni ja lähetin hakemuksen. 
+
+![Näyttökuva 2025-01-29 kello 17 10 28](https://github.com/user-attachments/assets/09f962ac-56cd-4f37-8bb6-ac456dbf8efe)
+
+
 
 #### Lähteet
 
