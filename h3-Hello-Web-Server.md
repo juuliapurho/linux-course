@@ -110,7 +110,7 @@ Seuraavaksi loin uuden verkkosivun tavallisena käyttäjänä. Suoritin ensin ko
 
 ![8](https://github.com/user-attachments/assets/a8666efb-537b-4929-a15d-06aaa1fae1cb)
 
-Sitten loin tähän kansioon html-tiedoston, johon kirjoitin tekstin "Tervetuloa hattu.example.com-sivulle", komennolla echo Tervetuloa hattu.example.com-sivulle > /home/juulia/public_sites/hattu.example.com/index.html. Tarkastin vielä, että komennossa antamani teksti luki html-tiedostossa suorittamalla komennon micro index.html kansiossa hattu.example.com. Tämä avasi html-tiedoston ja siellä tosiaan luki edellisessä komennossa syöttämäni teksti. Lisäsin tähän tekstiin h1-tagin ja tallensin tekemäni muutokset ctrl + S ja suljin tiedoston ctrl + Q
+Sitten loin tähän kansioon html-tiedoston, johon kirjoitin tekstin "Tervetuloa hattu.example.com-sivulle", komennolla echo Tervetuloa hattu.example.com-sivulle > /home/juulia/public_sites/hattu.example.com/index.html. Tarkastin vielä, että komennossa antamani teksti luki html-tiedostossa suorittamalla komennon micro index.html kansiossa hattu.example.com. Tämä avasi html-tiedoston ja siellä tosiaan luki edellisessä komennossa syöttämäni teksti. Lisäsin tähän tekstiin h1-tagin ja tallensin tekemäni muutokset ctrl + S ja suljin tiedoston ctrl + Q.
 
 ![9](https://github.com/user-attachments/assets/f1b70e6c-2f37-4e6f-b15a-7ed0a0b03978)
 
@@ -144,22 +144,68 @@ Lopetin tämän tehtävän tekemisen kello 12.37.
 
 ## e)
 #### Validin HTML5 sivun tekeminen
-Aloitusaika: Keskiviikko 2025-01-29, kello 12.40.
-Tässä tehtävässä minun tuli tehdä validi HTML5 sivu.
+Aloitusaika: Keskiviikko 2025-01-29, kello 12.51.
+Tässä tehtävässä minun tuli tehdä validi HTML5 sivu. Muokkasin siis äsken tekemäni sivun index.html-tiedostoa Tero Karvisen kirjoittamass artikkelissa Short HTML5 page annetun ohjeen mukaisesti. Avasin ensin tuon index.html tiedoston siirtymällä ensin hattu.example.com kansioon komennolla cd /home/juulia/public_sites/hattu.example.com ja suorittamalla tämän jälkeen komennon micro index.html.
+
+![18](https://github.com/user-attachments/assets/722e9a94-40b9-419a-9378-4a5189f271aa)
+
+Tämän jälkeen tosiaan muokkasin tiedostoa tuon Tero Karvisen ohjeen mukaisesti. Tallensin tekemäni muokkaukset ctrl + S ja suljin tiedoston ctrl + Q. Muokattu index-html-tiedosto näkyy alla olevassa kuvassa. 
+
+![20](https://github.com/user-attachments/assets/fe858a85-cb2f-4103-82da-f38b29ca565c)
+
+Sitten testasin sivun toimintaa verkkoselaimella menemällä osoitteeseen http://localhost/ sekä terminaalissa komennolla curl localhost. 
+
+![21](https://github.com/user-attachments/assets/628f63cc-3b69-4227-9d1c-e55e7f085dab)
+
+![22](https://github.com/user-attachments/assets/0fdeb15b-6dc8-45e7-84c8-13fdf76b02f2)
+
+Lopuksi vielä testasin HTML5 sivun validiutta sivustolla https://validator.w3.org/. Valitsin sivuston vaihtoehdoista "Validate by Direct Input" ja kopion html-tiedoston sisällön kenttään, jonka jälkeen painoin Check-painiketta. Testi antoi tuloksena yhden varoituksen ja yhden infon. Varoituksessa kerrottiin, että html-tiedostosta puuttuu sivulla käytetyn kielen kertova lang-tagi. Infossa kerrottin, että meta-tagissa on toiseksi viimeisenä merkkinä olevalla kauttaviivalla (/) ei ole vaikutusta. 
+
+![23](https://github.com/user-attachments/assets/5cf6c559-a887-4d13-a1cd-1720c8bca544)
+
+![24](https://github.com/user-attachments/assets/2bd11085-cd18-4b18-b3f0-5699be087d35)
+
+Siirryin testin tekemisen jälkeen html-tiedostoon samalla tavalla kuin aikaisemminknin ja tein index.html tiedostoon tarvittavat muutokset eli lisäsin lang-tagin ja poistin kauttaviivan meta-tagista sekä tallensin tekemäni muutokset. Alla kuva muokatusta index.html-tiedostosta.
+
+![25](https://github.com/user-attachments/assets/221fab13-e79a-44d0-bb2a-a4dbd27dc0f3)
+
+Sitten testasin sivun uudelleen https://validator.w3.org/ sivustolla. Tällä kertaa tiedostosta ei tullut mitään varoituksia eli tekemäni korjaukset olivat onnistuneet.
+
+![26](https://github.com/user-attachments/assets/d6a2bb51-c699-44e8-b460-b32cd4a19b0c)
+
+![27](https://github.com/user-attachments/assets/f114dd49-6d92-44f1-b2bb-f5030e1855f6)
+
+Lopuksi vielä varmistin jälleen, että sivusto toimii menemällä verkkoselaimella osoitteeseen http://localhost/. Sivusto toimi ongelmitta ja näkymä oli oikeanlainen. Sitten suoritin vielä terminaalissa komennon curl localhost, josta tulostui hattu.example.comiin luomani sivun sisältö.
+
+![28](https://github.com/user-attachments/assets/2f9d28e8-ae58-4a71-a26d-729c72d63a5a)
+
+![29](https://github.com/user-attachments/assets/83c7887b-0dff-4376-87a4-b6f692c9f0fe)
+
+Lopetin tämän tehtävän tekemisen kello 13.34.
 
 ## f)
+#### Esimerkit komennoista curl -I ja curl
+Aloitusaika: Keskiviikko 2025-01-29, kello .
+Tässä tehtävässä minun tuli antaa esimerkit komentojen curl ja curl -I komennoista sekä selittää jälkimmäisen komennon muutamasta näyttämästä otsakkeesta eli response headerista, että mitä ne tarkoittavat.
 
-
+## c)
+#### GitHub Education -paketin hankinta
 
 #### Lähteet
+
+Tero Karvinen 2018: Name Based Virtual Hosts on Apache – Multiple Websites to Single IP Address. Luettavissa: https://terokarvinen.com/2018/04/10/name-based-virtual-hosts-on-apache-multiple-websites-to-single-ip-address/.
+
+Tero Karvinen 2025: Tehtävänanto h3. Luettavissa: https://terokarvinen.com/linux-palvelimet/.
+
+Tero Karvinen 2012: Short HTML5 page. Luettavissa: https://terokarvinen.com/2012/short-html5-page/.
 
 The Apache Software Foundation 2023: Apache HTTP Server Version 2.4 Documentation: Name-based Virtual Host Support. Luettavissa: https://httpd.apache.org/docs/2.4/vhosts/name-based.html.
 
 The Apache Software Foundation 2023: Apache HTTP Server Version 2.4 Documentation: Log Files. Luettavissa: (https://httpd.apache.org/docs/2.4/logs.html). 
 
-Tero Karvinen 2025: Tehtävänanto h3. Luettavissa: https://terokarvinen.com/linux-palvelimet/.
+The World Wide Web Consortium: Markup Validation Service. Käytettävissä: https://validator.w3.org/. 
 
-Tero Karvinen 2018: Name Based Virtual Hosts on Apache – Multiple Websites to Single IP Address. Luettavissa: https://terokarvinen.com/2018/04/10/name-based-virtual-hosts-on-apache-multiple-websites-to-single-ip-address/.
+
 ____________________________________________________________________________________________________________________________________________________________________
 Tätä dokumenttia saa kopioida ja muokata GNU General Public License (versio 2 tai uudempi) mukaisesti. http://www.gnu.org/licenses/gpl.html
 
