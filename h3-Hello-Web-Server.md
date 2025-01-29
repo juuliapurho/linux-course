@@ -228,9 +228,9 @@ MDN: HTTP headers. Luettavissa: https://developer.mozilla.org/en-US/docs/Web/HTT
 
 Tero Karvinen 2018: Name Based Virtual Hosts on Apache – Multiple Websites to Single IP Address. Luettavissa: https://terokarvinen.com/2018/04/10/name-based-virtual-hosts-on-apache-multiple-websites-to-single-ip-address/.
 
-Tero Karvinen 2025: Tehtävänanto h3. Luettavissa: https://terokarvinen.com/linux-palvelimet/.
-
 Tero Karvinen 2012: Short HTML5 page. Luettavissa: https://terokarvinen.com/2012/short-html5-page/.
+
+Tero Karvinen 2025: Tehtävänanto h3. Luettavissa: https://terokarvinen.com/linux-palvelimet/.
 
 The Apache Software Foundation 2023: Apache HTTP Server Version 2.4 Documentation: Name-based Virtual Host Support. Luettavissa: https://httpd.apache.org/docs/2.4/vhosts/name-based.html.
 
