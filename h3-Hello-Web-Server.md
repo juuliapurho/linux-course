@@ -61,26 +61,26 @@ Tässä tehtävässä etsin lokista rivit, jotka syntyvät, kun lataan omalta pa
 
 Tämän jälkeen lähdin etsimään tietoa tämän analysoimiseen, koska en osannut tulkita tuota lokiriviä itse. Löysin The Apache Software Foundationin Apache HTTP-palvelimen versiota 2.4 koskevan dokumentaation luvusta Log Files tietoa aiheesta (https://httpd.apache.org/docs/2.4/logs.html). Olen listannut alle edellä mainitsemani lokirivin osat ja niiden merkityksen järjestyksessä alusta loppuun:
 
-- Ensimmäisenä oleva 127.0.0.1 on palvelimelle pyynnön tehneen asikkaan eli clientin IP-osoite
-- Toisena IP-osoitteen jälkeen oleva viiva (-) tarkoittaa, että tieto ei ole saatavilla. Tässä kohdassa tieto, joka ei ole saatavilla, on asiakkaan identiteetti (RFC 1413  identity), jonka määrittää asiakaskoneen identd.
+- Ensimmäisenä oleva 127.0.0.1 on palvelimelle pyynnön tehneen asikkaan eli clientin IP-osoite.
+- Toisena IP-osoitteen jälkeen oleva viiva (-) tarkoittaa, että tieto ei ole saatavilla. Tässä kohdassa tieto, joka ei ole saatavilla, on asiakkaan identiteetti (RFC 1413 identity), jonka määrittää asiakaskoneen identd.
 - Toinen viiva (-) tarkoitta jälleen, että tieto ei ole saatavilla. Tässä kohdassa tieto, joka ei ole saatavilla, on asiakkaan käyttäjän id (userid). Tässä kohdassa on käyttäjän id:n sijaan viiva, koska haettua tiedostoa ei ole suojattu salasanalla.
 - Seuraavana oleva [28/Jan/2025:20:15:03 +0200] on aika, jolloin pyyntö vastaanotettiin ja se on muodossa [päivä/kuukausi/vuosi:tunti:minuutti: toinen vyöhyke].
 - Pyynnön vastaanottamisajan jälkeen lainausmerkeissä oleva "GET / HTTP/1.1" on asiakkaan pyyntörivi. GET on asiakkaan pyynnön käyttämä menetelmä. Kauttaviivan jälkeen olisi tieto siitä, mitä reurssia on pyydetty. HTTP/1.1 kertoo asiakkaan käyttämän protokollan.
-- Seuraavana oleva 200 on statuskoodi, jonka palvelin lähettää asiakkaalle. Tämä tieto kertoo, onko pyyntö johtanut oikeaan vastaukseen. Numerolla 2 alkavat koodit kertovat onnistuneesta vastauksesta, numerolla 3 alkavat koodit uudelleenohjauksesta, numerolla 4 alkavat koodit asiakkaan aiheuttamasta virheestä ja numerolla 5 alkavat koodit virheeseen palvelimessa. Tällä lokirivillä vastaus on siis onnistunut.
+- Seuraavana oleva 200 on statuskoodi, jonka palvelin lähettää asiakkaalle. Tämä tieto kertoo, onko pyyntö johtanut oikeaan vastaukseen. Numerolla 2 alkavat koodit kertovat onnistuneesta vastauksesta, numerolla 3 alkavat koodit uudelleenohjauksesta, numerolla 4 alkavat koodit asiakkaan aiheuttamasta virheestä ja numerolla 5 alkavat koodit virheestä palvelimessa. Tällä lokirivillä vastaus on siis onnistunut.
 - 3380 kertoo asiakkaalle palautetun objektin koon bitteinä.
-- Seuraava viiva (-) kertoo jälleen, että tieto ei ole saatavilla. Tässä kohdassa tieto, joka ei ole saatavilla, on sivusto, jolta asiakas eli client ilmoittaa olevansa ohjattu. Tämä tarkoittaa siis sivustoa, jolta pyyntö on lähetetty.
-- Viimeisenä oleva lainausmerkeissä oleva "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0" on UserAgent HTTP-pyynnön otsikko. Tämä kertoo tiedot, jotka asiakasselain ilmoittaa itsestään. Mozilla/5.0 Gecko/20100101 Firefox/128.0 kertoo tietoja käytetystä selaimesta ja tämän tekstin sisällä suluissa oleva X11; Linux x86_64; rv:128.0 taas kertoo käyttöjärjestelmän tietoja. Käytössä on siis Mozillan selain Firefox ja käyttöjärjestelmänä on Linux.
+- Seuraava viiva (-) kertoo taas, että tieto ei ole saatavilla. Tässä kohdassa tieto, joka ei ole saatavilla, on sivusto, jolta asiakas eli client ilmoittaa olevansa ohjattu. Tämä tarkoittaa siis sivustoa, jolta pyyntö on lähetetty.
+- Viimeisenä lainausmerkeissä oleva "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0" on UserAgent HTTP-pyynnön otsikko. Tämä kertoo tiedot, jotka asiakasselain ilmoittaa itsestään. Mozilla/5.0 Gecko/20100101 Firefox/128.0 kertoo tietoja käytetystä selaimesta ja tämän tekstin sisällä suluissa oleva teksti X11; Linux x86_64; rv:128.0 taas kertoo käyttöjärjestelmän tietoja. Käytössä on siis Mozillan selain Firefox ja käyttöjärjestelmänä on Linux.
 
-Muissakin lokiriveissä tiedot olivat melkolailla samanlaisia kuin tuossa tarkemmin analysoimassani viimeisessä rivissä. Esimerkiksi rivillä kaksi on muutamia erilaisia tietoja kuin tuolla viimeisellä lokirivillä. Toinen lokirivi on seuraavanlainen:
+Muissakin lokiriveissä tiedot olivat melkolailla samanlaisia kuin tuossa tarkemmin analysoimassani viimeisessä lokirivissä. Esimerkiksi rivillä kaksi on joitakin erilaisia tietoja kuin tuolla viimeisellä lokirivillä. Toinen lokirivi on seuraavanlainen:
 
 127.0.0.1 - - [28/Jan/2025:18:15:31 +0200] "GET /icons/openlogo-75.png HTTP/1.1" 200 6040 "http://localhost/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
 
-Alla olen listannut ja selittänyt ne tiedot, jotka ovat lokirivllä kaksi erilaisia kuin viimeisellä lokirivillä:
+Alla olen listannut ja selittänyt ne tiedot, jotka ovat toisella lokirivllä erilaisia verrattuna analysoimaani viimeiseen lokiriviin:
 
 - Tässä asiakkaan pyyntörivillä "GET /icons/openlogo-75.png HTTP/1.1" on nähtävissä pyynnön käyttämän menetelmän (GET) jälkeisen kauttaviivan (/) jälkeen pyydetty resurssi eli icons/openlogo-75.png, joka on kuva logosta.
-- Objektin koon 6040 jälkeen tällä rivillä on myös sivusto, jolta client on ohjattu eli mistä pyyntö on tehty "http://localhost/".
+- Objektin koon 6040 jälkeen tällä rivillä on myös sivusto, jolta client on ohjattu eli mistä pyyntö on tehty, joka on "http://localhost/".
 
-Toiseksi viimeisellä lokirivillä on myös yksi erilainen tieto kuin muilla lokiriveillä. Tämä toiseksi viimeinen lokirivi on seuraavanlainen:
+Toiseksi viimeisellä lokirivillä on myös yksi erilainen tieto verrattuna edellä analysoimiini lokiriveihiin. Tämä toiseksi viimeinen lokirivi on seuraavanlainen:
 
 127.0.0.1 - - [28/Jan/2025:19:54:37 +0200] "GET / HTTP/1.1" 200 10956 "-" "curl/7.88.1"
 
