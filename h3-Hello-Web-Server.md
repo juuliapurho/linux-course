@@ -80,7 +80,7 @@ Alla olen listannut ja selittänyt ne tiedot, jotka ovat toisella lokirivillä e
 - Tässä asiakkaan pyyntörivillä "GET /icons/openlogo-75.png HTTP/1.1" on nähtävissä pyynnön käyttämän menetelmän (GET) jälkeisen kauttaviivan (/) jälkeen pyydetty resurssi eli icons/openlogo-75.png, joka on kuva logosta.
 - Objektin koon 6040 jälkeen tällä rivillä on myös sivusto, jolta client on ohjattu eli mistä pyyntö on tehty, joka on "http://localhost/".
 
-Toiseksi viimeisellä lokirivillä on myös yksi erilainen tieto verrattuna edellä analysoimiini lokiriveihiin. Tämä toiseksi viimeinen lokirivi on seuraavanlainen:
+Toiseksi viimeisellä lokirivillä on myös yksi erilainen tieto verrattuna edellä analysoimiini lokiriveihin. Tämä toiseksi viimeinen lokirivi on seuraavanlainen:
 
 127.0.0.1 - - [28/Jan/2025:19:54:37 +0200] "GET / HTTP/1.1" 200 10956 "-" "curl/7.88.1"
 
