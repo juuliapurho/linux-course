@@ -14,7 +14,7 @@ Susanna Lehdon blogipostaus Teoriasta käytäntöön pilvipalvelimen avulla (h4)
 
 Pilvipalvelimen vuokraamisen jälkeen Lehto kertoi vielä raportissaan siitä, miten hän vuokrasi domain nimen Namecheapin kautta. Tehtävässä d) Lehto asensi vuokraamalleen virtuaalipalvelimelle palomuurin. Tämän Lehto teki seuraavalla tavalla:
 
-- Ensin otetaan SSH-yhteyden virtuaalipalvelimeen (joka tässä tapauksessa sijaitsi IP-osoitteessa 188.166.4.6) komennolla $ ssh root@188.166.4.6
+- Ensin otetaan SSH-yhteys virtuaalipalvelimeen (joka tässä tapauksessa sijaitsi IP-osoitteessa 188.166.4.6) komennolla $ ssh root@188.166.4.6
 - Seuraavaksi kysytään halutaanko yhteys varmasti muodostaa, johon vastataan kyllä ja sen jälkeen syötetään virtuaalipalvelimelle annettu salasana
 - Tämän jälkeen haetaan tiedot saatavilla olevista päivityksistä komennolla $ sudo apt-get update
 - Sitten asennetaan palomuuri komennolla $ sudo apt-get install ufw
