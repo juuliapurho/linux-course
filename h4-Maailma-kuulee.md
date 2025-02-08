@@ -79,7 +79,9 @@ Virtuaalikone
 #### Virtuaalipalvelimen vuokraus
 Aloitusaika: Lauantai 2025-02-08, kello 11.30.
 
-Tässä tehtävässä vuokrasin virtuaalipalvelimen DigitalOceanilta. Tehtävää tehdessäni kirjoitin samanaikaisesti raporttia. Päädyin valitsemaan palveluntarjoajaksi DigitalOceanin, sillä se on osa GitHub Educationin opiskelijapakettia. Aloitin asennuksen siirtymällä DigitalOceanin verkkosivuille ja oikeasta yläkulmasta Sign up. Sitten loin käyttäjätilin valitsemalla Sign Up with GitHub. 
+Tässä tehtävässä vuokrasin virtuaalipalvelimen DigitalOceanilta. Tehtävää tehdessäni kirjoitin samanaikaisesti raporttia. Päädyin valitsemaan palveluntarjoajaksi DigitalOceanin, sillä se on osa GitHub Educationin opiskelijapakettia. 
+
+Aloitin asennuksen siirtymällä DigitalOceanin verkkosivuille ja oikeasta yläkulmasta Sign up. Sitten loin käyttäjätilin valitsemalla Sign Up with GitHub. 
 
 
 ![6](https://github.com/user-attachments/assets/f885494d-3249-4286-8e6b-d975a1d0da8d)
@@ -131,7 +133,7 @@ Tämän jälkeen minun olisi ollut mahdollista hankkia lisää tallennustilaa ja
 ![17](https://github.com/user-attachments/assets/423942f4-855e-4434-a30d-1d1b13dc891f)
 
 
-Seuraavaksi kohdassa Choose Authentication Method minun tuli valita autentikointimenetelmä, ja tässä vaihtoehtoina olivat SSD-avaimet ja salasana. Kävimme edellisellä luennolla läpi SSH-avainten käyttöä, mutta en muistanut enää tarkalleen miten niiden kanssa toimittiin ja mitä toimenpiteitä SSH-avainten käyttöönotossa tuli suorittaa. Tämän vuoksi päädyin siis valitsemaan näistä vaihtoehdoista salasanan ja asetin virtuaalipalvelimelle hyvän salasanan. Olisin voinut tässä kohtaa myös valita joitakin lisäpalveluita, kuten parannetun mittaroinnin ja hälytyksen, mutta jätin lisäpalvelut valitsematta.
+Seuraavaksi kohdassa Choose Authentication Method minun tuli valita autentikointimenetelmä, ja tässä vaihtoehtoina olivat SSH-avaimet ja salasana. Kävimme edellisellä luennolla läpi SSH-avainten käyttöä ja tehtävänannon vinkeissä oli apua SSH-avainten käyttämiseen. Minulla ei ole kokoemusta SSH-avainten käyttämisestä ja se vaikutti minun osaamistasooni nähden hieman monimutkaiselta, joten päädyin valitsemaan näistä vaihtoehdoista salasanan ja asetin virtuaalipalvelimelle hyvän salasanan. Olisin voinut tässä kohtaa myös valita joitakin lisäpalveluita, kuten parannetun mittaroinnin ja hälytyksen, mutta jätin lisäpalvelut valitsematta.
 
 
 ![18](https://github.com/user-attachments/assets/4724c7e8-f97b-44c3-a2a3-de37c9d1e187)
@@ -155,9 +157,11 @@ Lopetin tehtävän tekemisen kello 12.20.
 
 ## b)
 #### Alkutoimet virtuaalipalvelimella
-Aloitusaika: Lauantai 2025-02-08, kello XX.XX.
+Aloitusaika: Lauantai 2025-02-08, kello 12.38.
 
+Tässä tehtävässä tein juuri vuokraamallani virtuaalipalvelimella alkutoimia eli laitoin palomuurin päälle, suljin root-tunnuksen ja suoritin ohjelmien päivityksen. Tehtävää tehdessäni kirjoitin samanaikaisesti raporttia. 
 
+Aloitin tehtävän tekemisen ottamalla virtuaalikoneellani yhteyden virtuaalipalvelimeen. Kirjauduin ensin virtuaalikoneelleni ja suoritin sen jälkeen terminaalissa komennon ssh root@165.22.75.206 ja syötin salasanani.
 
 ## c)
 #### Weppipalvelimen asennus virtuaalipalvelimelle
