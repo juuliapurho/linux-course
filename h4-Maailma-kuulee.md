@@ -200,7 +200,7 @@ Kun käyttäjä juulia oli onnistuneesti lisätty pääkäyttäjäksi, kokeilin 
 
 ![33](https://github.com/user-attachments/assets/5ec97f0f-c64e-452f-afe0-8b8495a3c392)
 
-Seuraavaksi olikin vuorossa root-tunnuksen lukitseminen. Tämän tein suorittamalla virtuaalipalvelimella käyttäjänä juulia komennon sudo usermod --lock root. Tämän jälkeen muokkasin vielä konfiguraatiotiedostoa siten, että root-tunnuksella ei voi ottaa virtuaalipalvelimeen SSH-yhteyttä. Tämän tein suorittamalla ensin komennon sudoedit /etc/ssh/sshd_config, josta tämä konfiguraatiotiedosto aukesi. Sitten muutin kohtaan PermitRootLogin sanan yes tilalle sanan no. Tämän jälkeen painoin ctrl + X ja nano-ohjelma kysyi, että haluanko tallentaa tekemäni muutokset. Painoin Y-painiketta ja sitten enteriä, jolla sain tiedoston suljettua.
+Seuraavaksi olikin vuorossa root-tunnuksen lukitseminen. Tämän tein suorittamalla virtuaalipalvelimella käyttäjänä juulia komennon sudo usermod --lock root. Tämän jälkeen muokkasin vielä konfiguraatiotiedostoa siten, että root-tunnuksella ei voi ottaa virtuaalipalvelimeen SSH-yhteyttä. Tämän tein suorittamalla ensin komennon sudoedit /etc/ssh/sshd_config, josta tämä konfiguraatiotiedosto aukesi. Sitten muutin kohtaan PermitRootLogin sanan "yes" tilalle sanan "no". Tämän jälkeen painoin ctrl + X ja nano-ohjelma kysyi, että haluanko tallentaa tekemäni muutokset. Painoin Y-painiketta ja sitten enteriä, jolla sain tiedoston suljettua ja tehdyt muutokset tallennettua.
 
 ![34](https://github.com/user-attachments/assets/e195b0c2-e21e-411b-9da7-6f7efae62783)
 
