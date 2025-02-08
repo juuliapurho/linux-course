@@ -310,14 +310,26 @@ Komennolla sudo tail /var/log/apache2/error.log tulostin lokitietoja ja yritin s
 
 [Sat Feb 08 15:22:01.321985 2025] [core:error] [pid 30137:tid 30167] (13)Permission denied: [client 194.50.16.218:49886] AH00035: access to / denied (filesystem path '/home/juulia/public_sites') because search permissions are missing on a component of the path
 
-Tulkitsin tuota virheilmoitusta sillä tavalla, että pääsy käyttäjän juulia kotihakemistoon ja siellä olevaan kansioon publi_sites on estetty. Lähdin hakemaan netistä apua tähän ongelmaan ja löysin StackExchangen superuser-sivustolta apua (https://superuser.com/questions/882594/permission-denied-because-search-permissions-are-missing-on-a-component-of-the-p). Suoritin tämän sivuston ohjeiden mukaan komennot 
+Tulkitsin tuota virheilmoitusta sillä tavalla, että pääsy käyttäjän juulia kotihakemistoon ja siellä olevaan kansioon public_sites on estetty. Lähdin hakemaan netistä apua tähän ongelmaan ja löysin StackExchangen AskUbuntu-sivustolta apua (https://askubuntu.com/questions/1353377/apache2-permission-denied-access-to-denied-because-search-permissions-are-mi). Suoritin tämän sivuston ohjeiden mukaan seuraavat komennot:
+
+- sudo chmod +x /home/
+- sudo chmod +x /home/juulia/
+- sudo chmod +x /home/juulia/public_sites/
+
+Tällä komennolla annoin siis pääsyn käyttäjän juulia kotihakemistoon ja siellä olevaan kansioon public_sites. X-kirjain komennossa tarkoittaa suoritusoikeutta. Komentojen suorittamisen jälkeen kokeilin sivun toimintaa suorittamalla ensin terminaalissa komennon curl localhost ja se tulosti tekemäni html-sivun sisällön. Kokeilin vielä sivun toimintaa verkkoselaimella ja luomani sivu näkyi myös siellä oikein. Ongelma oli siis ratkaistu. Myös puhelimeni verkkoselaimessa luomani uusi sivu ja sen sisältö näkyivät oikein.
+
+
 
 Lopetin tehtävän tekemisen kello 17.55.
 
 
 #### Lähteet
 
+Dave McKay, How-To Geek 2023: How to Use the chmod Command on Linux. Luettavissa: https://www.howtogeek.com/437958/how-to-use-the-chmod-command-on-linux/. Luettu 8.2.2025.
+
 Dave McKay, How-To Geek 2023: How (and Why) to Disable Root Login Over SSH on Linux. Luettavissa: https://www.howtogeek.com/828538/how-and-why-to-disable-root-login-over-ssh-on-linux/. Luettu 8.2.2025.
+
+StackExchangen, AskUbuntu: Apache2 Permission denied - access to / denied because search permissions are missing on a component of the path. Luettavissa: https://askubuntu.com/questions/1353377/apache2-permission-denied-access-to-denied-because-search-permissions-are-mi. Luettu 8.2.2025.
 
 Susanna Lehto 2022: Teoriasta käytäntöön pilvipalvelimen avulla (h4). Luettavissa: https://susannalehto.fi/2022/teoriasta-kaytantoon-pilvipalvelimen-avulla-h4/. Luettu 8.2.2025.
 
