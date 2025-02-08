@@ -180,7 +180,7 @@ Sitten asensin virtuaalipalvelimelle palomuurin suorittamalla ensin komennon sud
 
 ![27](https://github.com/user-attachments/assets/ecfe0113-f1d7-41cb-99e9-5c933b9e5c4b)
 
-Seuraavaksi tein palomuuriin reiän komennolla sudo ufw allow 22/tcp ja laitoin palomuurin päälle komennolla sudo ufw enable. Nyt virtuaalipalvelin onb suojattu palomuurilla. 
+Seuraavaksi tein palomuuriin reiän komennolla sudo ufw allow 22/tcp ja laitoin palomuurin päälle komennolla sudo ufw enable. Nyt virtuaalipalvelin on suojattu palomuurilla. 
 
 ![28](https://github.com/user-attachments/assets/ffef1446-2c83-48ba-8633-08251b2623d5)
 
