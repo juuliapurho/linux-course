@@ -10,7 +10,7 @@ Susanna Lehdon blogipostaus Teoriasta käytäntöön pilvipalvelimen avulla (h4)
 - Tämän jälkeen valitaan datakeskuksen sijainti (tässä Lehto valitsi Amsterdamin)
 - Seuraavaksi valitaan autentikointimenetelmä (Lehto valitsi salasanan)
 - Sitten on mahdollista valita lisäpalveluita (tässä Lehto ei valinnut maksullisia eikä ilmaisia lisäpalveluita)
-- Lopuksi valitaan vielä, että kuinka monta virtuaalipalvelinta halutaan ja annetaan julkisesti näkyva hostname, jonka jälkeen painetaan Create Droplet -painiketta ja virtuaalipalvelimen asennus alkoi
+- Lopuksi valitaan vielä, että kuinka monta virtuaalikonetta halutaan ja annetaan julkisesti näkyvä host name, jonka jälkeen painetaan Create Droplet -painiketta ja virtuaalikoneen asennus alkoi
 
 Pilvipalvelimen vuokraamisen jälkeen Lehto kertoi vielä raportissaan siitä, miten hän vuokrasi domain nimen Namecheapin kautta. Tehtävässä d) Lehto asensi vuokraamalleen virtuaalipalvelimelle palomuurin. Tämän Lehto teki seuraavalla tavalla:
 
