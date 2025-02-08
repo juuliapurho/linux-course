@@ -310,6 +310,9 @@ Komennolla sudo tail /var/log/apache2/error.log tulostin lokitietoja ja yritin s
 
 [Sat Feb 08 15:22:01.321985 2025] [core:error] [pid 30137:tid 30167] (13)Permission denied: [client 194.50.16.218:49886] AH00035: access to / denied (filesystem path '/home/juulia/public_sites') because search permissions are missing on a component of the path
 
+![66](https://github.com/user-attachments/assets/76a2e37e-d4fb-4333-ada5-091ac4748812)
+
+
 Tulkitsin tuota virheilmoitusta sillä tavalla, että pääsy käyttäjän juulia kotihakemistoon ja siellä olevaan kansioon public_sites on estetty. Lähdin hakemaan netistä apua tähän ongelmaan ja löysin StackExchangen AskUbuntu-sivustolta apua (https://askubuntu.com/questions/1353377/apache2-permission-denied-access-to-denied-because-search-permissions-are-mi). Suoritin tämän sivuston ohjeiden mukaan seuraavat komennot:
 
 - sudo chmod +x /home/
@@ -318,9 +321,12 @@ Tulkitsin tuota virheilmoitusta sillä tavalla, että pääsy käyttäjän juuli
 
 Tällä komennolla annoin siis pääsyn käyttäjän juulia kotihakemistoon ja siellä olevaan kansioon public_sites. X-kirjain komennossa tarkoittaa suoritusoikeutta. Komentojen suorittamisen jälkeen kokeilin sivun toimintaa suorittamalla ensin terminaalissa komennon curl localhost ja se tulosti tekemäni html-sivun sisällön. Kokeilin vielä sivun toimintaa verkkoselaimella ja luomani sivu näkyi myös siellä oikein. Ongelma oli siis ratkaistu. Myös puhelimeni verkkoselaimessa luomani uusi sivu ja sen sisältö näkyivät oikein.
 
+![64](https://github.com/user-attachments/assets/19ec4aa6-4ee3-4800-9e81-b5202c5a73a3)
 
+![65](https://github.com/user-attachments/assets/a53da92d-bbc7-4195-8681-cfd7cd671663)
 
 Lopetin tehtävän tekemisen kello 17.55.
+
 
 
 #### Lähteet
@@ -334,6 +340,10 @@ StackExchangen, AskUbuntu: Apache2 Permission denied - access to / denied becaus
 Susanna Lehto 2022: Teoriasta käytäntöön pilvipalvelimen avulla (h4). Luettavissa: https://susannalehto.fi/2022/teoriasta-kaytantoon-pilvipalvelimen-avulla-h4/. Luettu 8.2.2025.
 
 Tero Karvinen 2012: First Steps on a New Virtual Private Server – an Example on DigitalOcean and Ubuntu 16.04 LTS. Luettavissa: https://terokarvinen.com/2017/first-steps-on-a-new-virtual-private-server-an-example-on-digitalocean/. Luettu 8.2.2025.
+
+Tero Karvinen 2018: Name Based Virtual Hosts on Apache – Multiple Websites to Single IP Address. Luettavissa: https://terokarvinen.com/2018/04/10/name-based-virtual-hosts-on-apache-multiple-websites-to-single-ip-address/. Luettu 8.2.2025
+
+Tero Karvinen 2012: Short HTML5 page. Luettavissa: https://terokarvinen.com/2012/short-html5-page/. Luettu 8.2.2025
 
 Tero Karvinen 2025: Tehtävänanto h4. Luettavissa: https://terokarvinen.com/linux-palvelimet/. Luettu 8.2.2025.
 
