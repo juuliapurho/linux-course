@@ -310,7 +310,7 @@ Komennolla sudo tail /var/log/apache2/error.log tulostin lokitietoja ja yritin s
 
 [Sat Feb 08 15:22:01.321985 2025] [core:error] [pid 30137:tid 30167] (13)Permission denied: [client 194.50.16.218:49886] AH00035: access to / denied (filesystem path '/home/juulia/public_sites') because search permissions are missing on a component of the path
 
-Tulkitsin tuota virheilmoitusta sillä tavalla, että pääsy käyttäjän juulia kotihakemistoon ja siellä olevaan kansioon publi_sites on estetty. Lähdin hakemaan netistä apua tähän ongelmaan ja löysin 
+Tulkitsin tuota virheilmoitusta sillä tavalla, että pääsy käyttäjän juulia kotihakemistoon ja siellä olevaan kansioon publi_sites on estetty. Lähdin hakemaan netistä apua tähän ongelmaan ja löysin StackExchangen superuser-sivustolta apua (https://superuser.com/questions/882594/permission-denied-because-search-permissions-are-missing-on-a-component-of-the-p). Suoritin tämän sivuston ohjeiden mukaan komennot 
 
 Lopetin tehtävän tekemisen kello 17.55.
 
