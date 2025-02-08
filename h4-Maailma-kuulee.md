@@ -214,7 +214,7 @@ Tämän tehtävän lopuksi päivitin vielä kaikki ohjelmat suorittamalla ensin 
 
 ![39](https://github.com/user-attachments/assets/57f65508-d5fa-4dd5-9290-e1ab3769efd1)
 
-Päivitysten tekemisten jälkeen ajattelin, että minun tulee tehdä konfiguraatiotiedostoon uudelleen muokkaus siitä, että root-tunnuksella ei voi ottaa virtuaalipalvelimeen SSH-yhteyttä. Siirryin siis uudelleen tähän konfiguraatiotiedostoon komennolla sudoedit /etc/ssh/sshd_config. En löytänyt tästä päivitetystä konfiguraatiotiedosta samanlaista aikaisemmassa tiedostossa ollutta PermitRootLogin-kohtaa, jossa teksti olisi ollut väriltään valkoinen. Etsin siis tähän apua netistä ja löysin How-To Geek -verkkosivuilta apua (https://www.howtogeek.com/828538/how-and-why-to-disable-root-login-over-ssh-on-linux/). Sivuston ohjeiden mukaan kirjoitin konfiguraatiotiedostoon uuden tesktin "PermitRootLogin no" alla olevan kuvan mukaisesti ja tallensin tekemäni muutokset. Sitten vielä käynnistin SSH-työkalun uudelleen komennolla sudo systemctl restart ssh.
+Päivitysten tekemisten jälkeen ajattelin, että minun tulee tehdä SSH-konfiguraatiotiedostoon uudelleen muokkaus siitä, että root-tunnuksella ei voi ottaa virtuaalipalvelimeen SSH-yhteyttä. Siirryin siis uudelleen tähän konfiguraatiotiedostoon komennolla sudoedit /etc/ssh/sshd_config. En löytänyt tästä päivitetystä konfiguraatiotiedosta samanlaista aikaisemmassa tiedostossa ollutta PermitRootLogin-kohtaa, jossa teksti olisi ollut väriltään valkoinen. Etsin siis tähän apua netistä ja löysin How-To Geek -verkkosivuilta apua (https://www.howtogeek.com/828538/how-and-why-to-disable-root-login-over-ssh-on-linux/). Sivuston ohjeiden mukaan kirjoitin konfiguraatiotiedostoon uuden tesktin "PermitRootLogin no" alla olevan kuvan mukaisesti ja tallensin tekemäni muutokset. Sitten vielä käynnistin SSH-työkalun uudelleen komennolla sudo systemctl restart ssh.
 
 ![40](https://github.com/user-attachments/assets/b6f4374f-460a-4dbe-81a6-bf9317c13d84)
 
@@ -313,7 +313,7 @@ Viimeisin lokirivi oli seuraavanlainen:
 
 [Sat Feb 08 15:22:01.321985 2025] [core:error] [pid 30137:tid 30167] (13)Permission denied: [client 194.50.16.218:49886] AH00035: access to / denied (filesystem path '/home/juulia/public_sites') because search permissions are missing on a component of the path
 
-Virheilmoituksen muukaan käyttäjän juulia kotihakemistoon ja siellä olevaan kansioon public_sites ei ole pääsyoikeutta ja jostain osasta polkua /home/juulia/public_sites puuttui hakuoikeus. Lähdin hakemaan netistä apua tähän ongelmaan ja löysin StackExchangen AskUbuntu-sivustolta apua (https://askubuntu.com/questions/1353377/apache2-permission-denied-access-to-denied-because-search-permissions-are-mi). Suoritin tämän sivuston ohjeiden mukaan seuraavat komennot:
+Virheilmoituksen mukaan käyttäjän juulia kotihakemistoon ja siellä olevaan kansioon public_sites ei ole pääsyoikeutta ja jostain osasta polkua /home/juulia/public_sites puuttui hakuoikeus. Lähdin hakemaan netistä apua tähän ongelmaan ja löysin StackExchangen AskUbuntu-sivustolta apua (https://askubuntu.com/questions/1353377/apache2-permission-denied-access-to-denied-because-search-permissions-are-mi). Suoritin tämän sivuston ohjeiden mukaan seuraavat komennot:
 
 - sudo chmod +x /home/
 - sudo chmod +x /home/juulia/
