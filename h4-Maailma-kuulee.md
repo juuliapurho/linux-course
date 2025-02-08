@@ -90,7 +90,7 @@ Aloitin asennuksen siirtymällä DigitalOceanin verkkosivuille ja oikeasta yläk
 ![7](https://github.com/user-attachments/assets/5203684d-bea2-4f6e-a62b-2bc29afad3a4)
 
 
-Tämän jälkeen vahvistin maksutapani lisäämällä maksukorttini tiedot, jonka jälkeen minun oli todennettava GitHub-tilini krediittien käyttämiseksi. Lopuksi sain ilmoituksen, että GitHubin opiskelijapaketti oli otettu käyttöön.
+Tämän jälkeen vahvistin maksutapani lisäämällä maksukorttini tiedot, jonka jälkeen minun oli todennettava GitHub-tilini krediittien käyttämiseksi. Lopuksi sain ilmoituksen, että GitHub Educationin opiskelijapaketti oli otettu käyttöön.
 
 
 ![8](https://github.com/user-attachments/assets/78b77ce4-0c1a-4099-b80b-a5a69aa6da1e)
