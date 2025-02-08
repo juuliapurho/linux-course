@@ -134,7 +134,7 @@ Tämän jälkeen minun olisi ollut mahdollista hankkia lisää tallennustilaa ja
 ![17](https://github.com/user-attachments/assets/423942f4-855e-4434-a30d-1d1b13dc891f)
 
 
-Seuraavaksi kohdassa Choose Authentication Method minun tuli valita autentikointimenetelmä, ja tässä vaihtoehtoina olivat SSH-avaimet ja salasana. Kävimme edellisellä luennolla läpi SSH-avainten käyttöä ja tehtävänannon vinkeissä oli apua SSH-avainten käyttämiseen. Minulla ei ole kokoemusta SSH-avainten käyttämisestä ja se vaikutti minun osaamistasooni nähden hieman monimutkaiselta, joten päädyin valitsemaan näistä vaihtoehdoista salasanan ja asetin virtuaalipalvelimelle hyvän salasanan. Olisin voinut tässä kohtaa myös valita joitakin lisäpalveluita, kuten parannetun mittaroinnin ja hälytyksen, mutta jätin lisäpalvelut valitsematta.
+Seuraavaksi kohdassa Choose Authentication Method minun tuli valita autentikointimenetelmä, ja tässä vaihtoehtoina olivat SSH-avaimet ja salasana. Kävimme edellisellä luennolla läpi SSH-avainten käyttöä ja tehtävänannon vinkeissä oli apua SSH-avainten käyttämiseen. Minulla ei ole aikaisempaa kokemusta SSH-avainten käyttämisestä ja se vaikutti minun osaamistasooni nähden hieman monimutkaiselta, joten päädyin valitsemaan näistä vaihtoehdoista salasanan ja asetin virtuaalipalvelimelle hyvän salasanan. Olisin voinut tässä kohtaa myös valita joitakin lisäpalveluita, kuten parannetun mittaroinnin ja hälytyksen, mutta jätin lisäpalvelut valitsematta.
 
 
 ![18](https://github.com/user-attachments/assets/4724c7e8-f97b-44c3-a2a3-de37c9d1e187)
