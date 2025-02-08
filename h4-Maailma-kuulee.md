@@ -250,7 +250,7 @@ Sitten suoritin terminaalissa komennon curl localhost, joka tulosti testisivun s
 
 ![48](https://github.com/user-attachments/assets/b34aad8f-6a0f-4c6c-bcf3-67a198e3518c)
 
-Tämän jälkeen korvasin testisivun sisällön tekstillä "Tervetuloa virtuaalipalvelimelle" suorittamalla komennon echo Tervetuloa virtuaalipalvelimelle |sudo tee /var/www/html/index.html. Sitten kokeilin, että tekemäni muutos oli onnistunut. Suoritin terminaalissa komennon curl localhost, joka tulosti sivun sisällöksi komennossa antamani teksti. Myös verkkoselaimessa tekemäni muutos näkyi. Testasin vielä sivun toimivuutta puhelimellani kirjoittamalla virtuaalipalvelimeni IP-osoitteen osoitekenttään ja näkymä oli myös puhelimeni verkkoselaimella oikea.
+Tämän jälkeen korvasin testisivun sisällön tekstillä "Tervetuloa virtuaalipalvelimelle" suorittamalla komennon echo Tervetuloa virtuaalipalvelimelle |sudo tee /var/www/html/index.html. Sitten kokeilin, että tekemäni muutos oli onnistunut. Suoritin terminaalissa komennon curl localhost, joka tulosti sivun sisällöksi komennossa antamani tekstin. Myös verkkoselaimessa tekemäni muutos näkyi. Testasin vielä sivun toimivuutta puhelimellani kirjoittamalla virtuaalipalvelimeni IP-osoitteen osoitekenttään ja näkymä oli myös puhelimeni verkkoselaimella oikeanlainen.
 
 ![49](https://github.com/user-attachments/assets/a439e1ab-cc31-4961-b962-a7e03fc8e0e4)
 
