@@ -157,11 +157,68 @@ Lopetin tehtävän tekemisen kello 12.20.
 
 ## b)
 #### Alkutoimet virtuaalipalvelimella
-Aloitusaika: Lauantai 2025-02-08, kello 12.38.
+Aloitusaika: Lauantai 2025-02-08, kello 12.50.
 
 Tässä tehtävässä tein juuri vuokraamallani virtuaalipalvelimella alkutoimia eli laitoin palomuurin päälle, suljin root-tunnuksen ja suoritin ohjelmien päivityksen. Tehtävää tehdessäni kirjoitin samanaikaisesti raporttia. 
 
-Aloitin tehtävän tekemisen ottamalla virtuaalikoneellani yhteyden virtuaalipalvelimeen. Kirjauduin ensin virtuaalikoneelleni ja suoritin sen jälkeen terminaalissa komennon ssh root@165.22.75.206 ja syötin salasanani.
+Aloitin tehtävän tekemisen ottamalla virtuaalikoneellani yhteyden virtuaalipalvelimeen. Kirjauduin ensin virtuaalikoneelleni ja suoritin sen jälkeen terminaalissa komennon ssh root@165.22.75.206. Tästä tulostui vastaus bash: ssh: command not found, josta päättelin, etten ollut asentanut virtuaalikoneelleni OpneSSH-työkalua. 
+
+![23](https://github.com/user-attachments/assets/9a02ed8a-81e8-49f2-a1c3-ed786b579608)
+
+Seuraavaksi asensin tämän työkalun suorittamalla komennot sudo apt-get update ja sudo apt-get -y install openssh-client. 
+
+![24](https://github.com/user-attachments/assets/3fbc89ae-b721-4aba-9ecb-bc20fa20e783)
+
+![25](https://github.com/user-attachments/assets/73975d34-496f-425a-ae81-a1def4a19735)
+
+Tämän jälkeen suoritin virtuaalikoneen terminaalissa uudelleen komennon ssh root@165.22.75.206. Tällä kertaa komennon suorittaminen toimi ja valitsin ensin kyllä kirjoittamalla yes ja sen jälkeen syötin virtuaalipalvelimelle antamani salasanan.
+
+![26](https://github.com/user-attachments/assets/be3b1ec8-75e5-4fe1-8091-94476d3d5b73)
+
+Sitten asensin virtuaalipalvelimelle palomuurin suorittamalla ensin komennon sudo apt-get update ja sitten sudo apt-get install ufw.
+
+![27](https://github.com/user-attachments/assets/ecfe0113-f1d7-41cb-99e9-5c933b9e5c4b)
+
+Seuraavaksi tein palomuuriin reiän komennolla sudo ufw allow 22/tcp ja laitoin palomuurin päälle komennolla sudo ufw enable. Nyt virtuaalipalvelin onb suojattu palomuurilla. 
+
+![28](https://github.com/user-attachments/assets/ffef1446-2c83-48ba-8633-08251b2623d5)
+
+Tämän jälkeen loin virtuaalipalvelimelle uuden käyttäjän juulia, jotta voin myöhemmin sulkea root-käyttäjän. Loin uuden käyttäjän komennolla sudo adduser juulia. Komennon suorittamisen jälkeen annoin käyttäjälle salasanan ja lisäsin käyttäjän koko nimeksi oman nimeni. Näiden lisäksi en lisännyt muita tietoja. Sitten vielä vahvistin, että antamani tiedot ovat oikein Y-painikkeella, jonka jälkeen ilmoitettiin, että käyttäjä juulia oli lisätty ryhmään users.
+
+![29](https://github.com/user-attachments/assets/2e3d63ea-3b13-4e09-a45e-2fe866b48a98)
+
+![30](https://github.com/user-attachments/assets/ecca2b25-419a-4530-b8e5-34cd6c4526ed)
+
+Sitten tein käyttäjästä juulia pääkäyttäjän komennolla sudo adduser juulia sudo.
+
+![31](https://github.com/user-attachments/assets/fe6e6237-3429-4074-a894-62a93eb892a1)
+
+Kun käyttäjä juulia oli onnistuneesti lisätty pääkäyttäjäksi, kokeilin uuden käyttäjän tunnuksia toisessa terminaalissa. Avasin siis virtuaalikoneellani toisen terminaalin ja avasin SSH-yhteyden virtuaalipalvelimeen komennolla ssh juulia@165.22.75.206. Tämä onnistui ja sain avattua yhteyden virtuaalipalvelimeen käyttäjänä juulia. Kokeilin myös, että komento sudo apt-get update toimi tällä käyttäjällä ja toimihan se. Näiden perusteella virtuaalipalvelin ja luomani uusi käyttäjä vaikuttivat siis toimivan hyvin.
+
+![32](https://github.com/user-attachments/assets/5e62439a-ea99-4375-bc13-0bc25245a4f9)
+
+![33](https://github.com/user-attachments/assets/5ec97f0f-c64e-452f-afe0-8b8495a3c392)
+
+Seuraavaksi olikin vuorossa root-tunnuksen lukitseminen. Tämän tein suorittamalla virtuaalipalvelimella käyttäjänä juulia komennon sudo usermod --lock root. Tämän muokkaisin vielä konfiguraatiotiedostoa siten, että root-tunnuksella ei voi ottaa virtuaalipalvelimeen ssh-yhteyttä. Tämän tein suorittamalla ensin komennon sudoedit /etc/ssh/sshd_config, josta tämä konfiguraatiotiedosto aukesi. Sitten muutin kohtaan PermitRootLogin sanan yes tilalle sanan no. Tämän jälkeen painoin ctrl + X ja nano-ohjelma kysyi, että haluanko tallentaa tekemäni muutokset. Painoin Y-painiketta ja sitten enteriä, jolla sain tiedoston suljettua.
+
+![34](https://github.com/user-attachments/assets/e195b0c2-e21e-411b-9da7-6f7efae62783)
+
+![36](https://github.com/user-attachments/assets/942e7018-d726-4cfd-89db-9439a3f5091b)
+
+![35](https://github.com/user-attachments/assets/3f41e6b1-78ea-4b9b-9ba9-fb1eff174c07)
+
+Tämän tehtävän lopuksi päivitin vielä kaikki ohjelmat suorittamalla ensin komennon sudo apt-get update ja sitten komennon sudo apt-get dist-upgrade. Päivityksen ollessa kesken sain ilmoituksen, että ssh-konfiguraatiotiedostosta on saatavilla uusi versio, mutta nykyistä konfiguraatiotiedostoa on muutettu paikallisesti. Päätin valita tästä ylimmän vaihtoehdon eli sen, että tästä tiedostosta asennetaan paketin ylläpitäjän versio. 
+
+![37](https://github.com/user-attachments/assets/7860eafc-7f0a-4caf-9167-9f3469556d48)
+
+![39](https://github.com/user-attachments/assets/57f65508-d5fa-4dd5-9290-e1ab3769efd1)
+
+Päivitysten tekemisten jälkeen ajattelin, että minun tulee tehdä konfiguraatiotiedostoon uudelleen muokkaus siitä, että root-tunnuksella ei voi ottaa virtuaalipalvelimeen ssh-yhteyttä. Siirryin siis uudelleen tähän konfiguraatiotiedostoon komennolla sudoedit /etc/ssh/sshd_config. En löytänyt tästä tiedosta tuota kohtaa PermitRootLogin, jossa teksti olisi ollut väriltään valkoinen. Etsin siis tähän apua netistä ja löysin 
+
+
+Lopetin tehtävän tekemisen kello 13.56.
+
+
 
 ## c)
 #### Weppipalvelimen asennus virtuaalipalvelimelle
