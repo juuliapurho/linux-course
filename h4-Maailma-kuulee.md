@@ -78,7 +78,7 @@ Virtuaalikone
 ## a)
 #### Virtuaalipalvelimen vuokraus
 Aloitusaika: Lauantai 2025-02-08, kello 11.30.
-Tässä tehtävässä vuokrasin virtuaalipalvelimen DigitalOceanilta. Päädyin tähän palveluntarjoajaan, sillä se on osa GitHub Educationin opiskelijapakettia. Aloitin asennuksen siirtymällä DigitalOceanin verkkosivuille ja oikeasta yläkulmasta Sign up. Sitten loin käyttäjätilin valitsemalla Sign Up with GitHub. 
+Tässä tehtävässä vuokrasin virtuaalipalvelimen DigitalOceanilta. Tehtävää tehdessäni kirjoitin samanaikaisesti raporttia. Päädyin valitsemaan palveluntarjoajaksi DigitalOceanin, sillä se on osa GitHub Educationin opiskelijapakettia. Aloitin asennuksen siirtymällä DigitalOceanin verkkosivuille ja oikeasta yläkulmasta Sign up. Sitten loin käyttäjätilin valitsemalla Sign Up with GitHub. 
 
 ![6](https://github.com/user-attachments/assets/f885494d-3249-4286-8e6b-d975a1d0da8d)
 
@@ -122,11 +122,16 @@ Seuraavaksi kohdassa Choose Authentication Method minun tuli valita autentikoint
 
 ![19](https://github.com/user-attachments/assets/71629fbf-71fe-42af-ad79-91a6f9cbee6b)
 
-Lopuksi kohdassa Finalize Details valitsin, että halusin vuokrata ainoastaan yhden virtuaalipalvelimen tekemilläni valinnoilla ja annoin hostnameksi debian. Sitten painoin painiketta Create Droplet. 
+Lopuksi kohdassa Finalize Details valitsin, että halusin luoda ainoastaan yhden virtuaalikoneen tekemilläni valinnoilla ja annoin hostnameksi debian. Sitten painoin painiketta Create Droplet. 
 
 ![20](https://github.com/user-attachments/assets/772bbbf8-5cfe-4f15-b134-8de3e04c7640)
 
+Hetken kuluttua luomani virtuaalikone näkyi DigitalOceanin projekteissani. Tästä sain myös selville koneen IP osoitteen, joka on 165.22.75.206. 
 
+![22](https://github.com/user-attachments/assets/7402a995-e2ca-4980-a9a5-3e528f56c451)
+
+
+Lopetin tehtävän tekemisen kello 12.20.
 
 ## b)
 #### Alkutoimet virtuaalipalvelimella
