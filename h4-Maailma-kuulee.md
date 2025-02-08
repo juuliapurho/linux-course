@@ -243,6 +243,8 @@ Aloitusaika: Lauantai 2025-02-08, kello XX.XX.
 
 #### Lähteet
 
+Dave McKay, How-To Geek 2023: How (and Why) to Disable Root Login Over SSH on Linux. Luettavissa: https://www.howtogeek.com/828538/how-and-why-to-disable-root-login-over-ssh-on-linux/. Luettu 8.2.2025.
+
 Susanna Lehto 2022: Teoriasta käytäntöön pilvipalvelimen avulla (h4). Luettavissa: https://susannalehto.fi/2022/teoriasta-kaytantoon-pilvipalvelimen-avulla-h4/. Luettu 8.2.2025.
 
 Tero Karvinen 2012: First Steps on a New Virtual Private Server – an Example on DigitalOcean and Ubuntu 16.04 LTS. Luettavissa: https://terokarvinen.com/2017/first-steps-on-a-new-virtual-private-server-an-example-on-digitalocean/. Luettu 8.2.2025.
