@@ -30,10 +30,10 @@ Tehtävässä e) Lehto asentaa virtuaalipalvelimelle Apache-weppipalvelimen, kor
 - Palomuuriin tehdään reikä porttia varten komennolla $ sudo ufw allow 80/tcp
 - Seuraavaksi korvataan Apachen oletussivu komennolla $ echo Hello world! |sudo tee /var/www/html/index.html
 - Otetaan userdir-moduuli käyttöön komennolla $ sudo a2enmod userdir ja käynnistetään palvelin uudestaan komennolla $ sudo service apache2 restart
-- Luodaan julkinen kansion public_html käyttäjän suska omaan kotihakemistoon
-- Avataan  SSH-yhteys komennolla $ sudo systemctl start ssh ja asennetaan micro-editori komennolla $ sudo apt-get install micro
+- Luodaan julkinen kansio public_html käyttäjän suska omaan kotihakemistoon
+- Käynnistetään SSH-työkalu uudelleen komennolla $ sudo systemctl start ssh 
 - Käyttäjän suska julkiseen hakemistoon public_html tehdään micro-editorilla index.html-tekstitiedosto komennoilla $ cd public_html ja $ micro index.html. Tähän tiedostoon tehdään lyhyt nettisivun runko
-- Lopuksi tarkistetaan, että luotukotisivu toimii
+- Lopuksi tarkistetaan, että luotu sivu toimii
 
 Tehtävässä f) Lehto päivittää vielä kaikki virtuaalipalvelimen ohjelmat. Tämän hän tekee seuraavilla komennoilla:
 
