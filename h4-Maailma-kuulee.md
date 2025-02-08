@@ -207,16 +207,23 @@ Seuraavaksi olikin vuorossa root-tunnuksen lukitseminen. Tämän tein suorittama
 
 ![35](https://github.com/user-attachments/assets/3f41e6b1-78ea-4b9b-9ba9-fb1eff174c07)
 
-Tämän tehtävän lopuksi päivitin vielä kaikki ohjelmat suorittamalla ensin komennon sudo apt-get update ja sitten komennon sudo apt-get dist-upgrade. Päivityksen ollessa kesken sain ilmoituksen, että ssh-konfiguraatiotiedostosta on saatavilla uusi versio, mutta nykyistä konfiguraatiotiedostoa on muutettu paikallisesti. Päätin valita tästä ylimmän vaihtoehdon eli sen, että tästä tiedostosta asennetaan paketin ylläpitäjän versio. 
+Tämän tehtävän lopuksi päivitin vielä kaikki ohjelmat suorittamalla ensin komennon sudo apt-get update ja sitten komennon sudo apt-get dist-upgrade. Päivityksen ollessa kesken sain ilmoituksen, että ssh-konfiguraatiotiedostosta on saatavilla uusi versio, mutta nykyistä konfiguraatiotiedostoa on muutettu paikallisesti. Päätin valita tästä ylimmän vaihtoehdon eli sen, että tiedostosta asennetaan paketin ylläpitäjän versio. Valitsin tämän vaihtoehdon, koska ajattelin, että konfiguraatiotiedostosta olisi hyvä olla käytössä mahdollisimman uusi versio.
 
 ![37](https://github.com/user-attachments/assets/7860eafc-7f0a-4caf-9167-9f3469556d48)
 
 ![39](https://github.com/user-attachments/assets/57f65508-d5fa-4dd5-9290-e1ab3769efd1)
 
-Päivitysten tekemisten jälkeen ajattelin, että minun tulee tehdä konfiguraatiotiedostoon uudelleen muokkaus siitä, että root-tunnuksella ei voi ottaa virtuaalipalvelimeen ssh-yhteyttä. Siirryin siis uudelleen tähän konfiguraatiotiedostoon komennolla sudoedit /etc/ssh/sshd_config. En löytänyt tästä tiedosta tuota kohtaa PermitRootLogin, jossa teksti olisi ollut väriltään valkoinen. Etsin siis tähän apua netistä ja löysin 
+Päivitysten tekemisten jälkeen ajattelin, että minun tulee tehdä konfiguraatiotiedostoon uudelleen muokkaus siitä, että root-tunnuksella ei voi ottaa virtuaalipalvelimeen ssh-yhteyttä. Siirryin siis uudelleen tähän konfiguraatiotiedostoon komennolla sudoedit /etc/ssh/sshd_config. En löytänyt tästä päivitetystä konfiguraatiotiedosta samanlaista aikaisemmassa tiedostossa ollutta PermitRootLogin-kohtaa, jossa teksti olisi ollut väriltään valkoinen. Etsin siis tähän apua netistä ja löysin How-To Geek -verkkosivuilta apua (https://www.howtogeek.com/828538/how-and-why-to-disable-root-login-over-ssh-on-linux/). Sivuston ohjeiden mukaan kirjoitin konfiguraatiotiedostoon uuden tesktin "PermitRootLogin no" alla olevan kuvan mukaisesti ja tallensin tekemäni muutokset. Sitten vielä käynnistin ssh-työkalun uudelleen komennolla sudo systemctl restart ssh.
 
+![40](https://github.com/user-attachments/assets/b6f4374f-460a-4dbe-81a6-bf9317c13d84)
 
-Lopetin tehtävän tekemisen kello 13.56.
+![41](https://github.com/user-attachments/assets/a6a316a3-262a-4ef1-9038-8a03ece441b3)
+
+Lopuksi kokeilin vielä, että saanko muodostettua ssh-yhteyden virtuaalipalvelimeen root-tunnuksella. Tein tämän suorittamalla ensin käyttäjänä juulia komennon exit, joka katkaisi ssh-yhteyden virtuaalipalvelimeen. Sitten suoritin komennon ssh root@165.22.75.206 ja syötin käyttäjänä salasanan, josta tulostui vastaus permission denied. 
+
+![42](https://github.com/user-attachments/assets/c13d7131-9204-44c1-8aea-d695130f0bc2)
+
+Lopetin tehtävän tekemisen kello 14.31.
 
 
 
