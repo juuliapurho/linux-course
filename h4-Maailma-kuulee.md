@@ -319,7 +319,7 @@ Virheilmoituksen muukaan käyttäjän juulia kotihakemistoon ja siellä olevaan 
 - sudo chmod +x /home/juulia/
 - sudo chmod +x /home/juulia/public_sites/
 
-Tällä komennolla annoin siis pääsyn käyttäjän juulia kotihakemistoon ja siellä olevaan kansioon public_sites. X-kirjain komennossa tarkoittaa suoritusoikeutta. Komentojen suorittamisen jälkeen kokeilin sivun toimintaa suorittamalla ensin terminaalissa komennon curl localhost ja se tulosti tekemäni html-sivun sisällön. Kokeilin vielä sivun toimintaa verkkoselaimella ja luomani sivu näkyi myös siellä oikein. Myös puhelimeni verkkoselaimessa luomani uusi sivu ja sen sisältö näkyivät oikein. Ongelma oli siis ratkaistu. 
+Tällä komennolla annoin siis pääsyn käyttäjän juulia kotihakemistoon ja siellä olevaan kansioon public_sites. X-kirjain komennossa tarkoittaa suoritusoikeutta. Komentojen suorittamisen jälkeen kokeilin sivun toimintaa suorittamalla ensin terminaalissa komennon curl localhost ja se tulosti tekemäni html-sivun sisällön tällä kertaa onnistuneesti. Kokeilin vielä sivun toimintaa verkkoselaimella ja luomani sivu näkyi myös siellä oikein. Tämän lisäksi myös puhelimeni verkkoselaimessa luomani uusi sivu ja sen sisältö näkyivät oikein. Ongelma oli siis ratkaistu. 
 
 ![64](https://github.com/user-attachments/assets/19ec4aa6-4ee3-4800-9e81-b5202c5a73a3)
 
