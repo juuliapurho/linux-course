@@ -271,11 +271,11 @@ Tässä tehtävässä tein omalle julkiselle palvelimelleni uuden Name Based Vir
 
 ![52](https://github.com/user-attachments/assets/2f14cb83-09a1-4229-81df-a9074efea2f2)
 
-Tulostin vielä konfiguraatiotiedoston sisällön komennolla cat /etc/apache2/sites-available/hattu.example.com.conf varmistaakseni, että tekemäni kirjaukset olivat tallentuneet tiedostoon. Komento tulosti juuri tiedostoon kirjoittamani tekstin eli tallennus oli onnistunut. 
+Tulostin vielä konfiguraatiotiedoston sisällön komennolla cat /etc/apache2/sites-available/juulia.example.com.conf varmistaakseni, että tekemäni kirjaukset olivat tallentuneet tiedostoon. Komento tulosti juuri tiedostoon kirjoittamani tekstin eli tallennus oli onnistunut. 
 
 ![54](https://github.com/user-attachments/assets/e21a1b16-c782-4b36-bad8-96d83b122f5f)
 
-Tämän jälkeen käynnistimn tekemäni virtual hostin komennolla a2ensite juulia.example.com ja käynnistin Apachen uudelleen komennolla sudo systemctl restart apache2.
+Tämän jälkeen käynnistin tekemäni virtual hostin komennolla a2ensite juulia.example.com ja käynnistin Apachen uudelleen komennolla sudo systemctl restart apache2.
 
 ![55](https://github.com/user-attachments/assets/9c252ea4-747e-4831-bcee-e446a462daaa)
 
@@ -291,7 +291,7 @@ Sitten loin tähän juulia.example.com kansioon html-tiedoston, johon kirjoitin 
 
 ![58](https://github.com/user-attachments/assets/e99401ab-66b8-4862-a9c8-91ecbe583e57)
 
-Tämän jälkeen tarkistin, että mitkä virtual hostit ovat tällä hetkellä käynnissä. Siirryin ensin oikeaan kansioon komennolla cd /etc/apache2/sites-enabled ja sitten tarkastelin kansion sisältöä komennolla ls. Näin, että sekä oletusssivu että luomani sivu olivat molemmat käynnissä.
+Tämän jälkeen tarkistin, että mitkä virtual hostit olivat tällä hetkellä käynnissä. Siirryin ensin oikeaan kansioon komennolla cd /etc/apache2/sites-enabled ja sitten tarkastelin kansion sisältöä komennolla ls. Näin, että sekä oletusssivu että luomani sivu olivat molemmat käynnissä.
 
 ![60](https://github.com/user-attachments/assets/6f7e5215-a42d-4d96-8747-7e89bff9703c)
 
@@ -319,7 +319,7 @@ Tulkitsin tuota virheilmoitusta sillä tavalla, että pääsy käyttäjän juuli
 - sudo chmod +x /home/juulia/
 - sudo chmod +x /home/juulia/public_sites/
 
-Tällä komennolla annoin siis pääsyn käyttäjän juulia kotihakemistoon ja siellä olevaan kansioon public_sites. X-kirjain komennossa tarkoittaa suoritusoikeutta. Komentojen suorittamisen jälkeen kokeilin sivun toimintaa suorittamalla ensin terminaalissa komennon curl localhost ja se tulosti tekemäni html-sivun sisällön. Kokeilin vielä sivun toimintaa verkkoselaimella ja luomani sivu näkyi myös siellä oikein. Ongelma oli siis ratkaistu. Myös puhelimeni verkkoselaimessa luomani uusi sivu ja sen sisältö näkyivät oikein.
+Tällä komennolla annoin siis pääsyn käyttäjän juulia kotihakemistoon ja siellä olevaan kansioon public_sites. X-kirjain komennossa tarkoittaa suoritusoikeutta. Komentojen suorittamisen jälkeen kokeilin sivun toimintaa suorittamalla ensin terminaalissa komennon curl localhost ja se tulosti tekemäni html-sivun sisällön. Kokeilin vielä sivun toimintaa verkkoselaimella ja luomani sivu näkyi myös siellä oikein. Myös puhelimeni verkkoselaimessa luomani uusi sivu ja sen sisältö näkyivät oikein. Ongelma oli siis ratkaistu. 
 
 ![64](https://github.com/user-attachments/assets/19ec4aa6-4ee3-4800-9e81-b5202c5a73a3)
 
