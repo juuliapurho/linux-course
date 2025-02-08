@@ -25,10 +25,10 @@ Tehtävässä e) Lehto asentaa virtuaalipalvelimelle Apache-weppipalvelimen, kor
 - Tehdään virtuaalipalvelimelle käyttäjä komennolla $ sudo adduser suska
 - Käyttäjästä tehdään pääkäyttäjä komennolla $ sudo adduser suska sudo
 - Juuri lukitaan komennolla $ sudo usermod --lock root
-- Avataan uusi terminaali ja avataan SSH-yhteys käyttäjällä suska
+- Avataan uusi terminaali ja avataan SSH-yhteys käyttäjällä suska komennolla $ ssh suska@188.166.4.6
 - Sitten asennetaan Apache-weppipalvelin komennolla $ sudo apt-get install apache2
 - Palomuuriin tehdään reikä porttia varten komennolla $ sudo ufw allow 80/tcp
-- Seuraavaksi korvataan Apachen oletussivu komennolla $ echo Hello world! |sudo tee /var/www/html/index.html
+- Seuraavaksi korvataan Apachen testisivu komennolla $ echo Hello world! |sudo tee /var/www/html/index.html
 - Otetaan userdir-moduuli käyttöön komennolla $ sudo a2enmod userdir ja käynnistetään palvelin uudestaan komennolla $ sudo service apache2 restart
 - Luodaan julkinen kansio public_html käyttäjän suska omaan kotihakemistoon
 - Käynnistetään SSH-työkalu uudelleen komennolla $ sudo systemctl start ssh 
