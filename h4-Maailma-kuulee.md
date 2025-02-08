@@ -225,21 +225,88 @@ Lopuksi kokeilin vielä, että saanko muodostettua ssh-yhteyden virtuaalipalveli
 
 ![42](https://github.com/user-attachments/assets/c13d7131-9204-44c1-8aea-d695130f0bc2)
 
-Lopetin tehtävän tekemisen kello 14.31.
+Lopetin tehtävän tekemisen kello 14.30.
 
 
 
 ## c)
 #### Weppipalvelimen asennus virtuaalipalvelimelle
-Aloitusaika: Lauantai 2025-02-08, kello XX.XX.
+Aloitusaika: Lauantai 2025-02-08, kello 16.10.
 
+Tässä tehätävässä asensin weppipalvelimen omalle virtuaalipalvelimelleni ja korvasin sen testisivun. Tehtävää tehdessäni kirjoitin jälleen samanaikaisesti raporttia. Aloitin tehtävän tekemisen luomalla ssh-yhteyden virtuaalipalvelimeeni komennolla ssh juulia@165.22.75.206, jonka jälkeen syötin salasanani. Tämän jälkeen asensin Apachen suorittamalla ensin komennon sudo apt-get update ja sitten sudo apt-get -y install apache2. Asennuksen jälkeen tarkistin vielä palvelimen tilan komennolla sudo systemctl status apache2.
+
+![43](https://github.com/user-attachments/assets/8d40a39c-72fc-418e-b5aa-c8e0de59c11f)
+
+![44](https://github.com/user-attachments/assets/55f8b225-2f92-457b-96b9-c116e586ca9d)
+
+![45](https://github.com/user-attachments/assets/6f627b0a-a208-4ac4-b89a-8275ba261236)
+
+Seuraavaksi tein palomuuriin reiän tehtävänannon mukaisesti suorittamalla komennon sudo ufw allow 80/tcp. 
+
+![46](https://github.com/user-attachments/assets/809ad844-2b48-405f-813c-c90d6815d564)
+
+Sitten suoritin terminaalissa komennon curl localhost, joka tulosti testisivun sisällön. Kokeilin testisivun toimivuutta vielä verkkoselaimella kirjoittamalla osoitekenttään virtuaalipalvelimeni IP-osoitteen ja testisivu näkyi selaimella normaalisti.
+
+![47](https://github.com/user-attachments/assets/dba0eadc-5721-42fb-87e0-16be78d69a05)
+
+![48](https://github.com/user-attachments/assets/b34aad8f-6a0f-4c6c-bcf3-67a198e3518c)
+
+Tämän jälkeen korvasin testisivun sisällön tekstillä "Tervetuloa virtuaalipalvelimelle" suorittamalla komennon echo Tervetuloa virtuaalipalvelimelle |sudo tee /var/www/html/index.html. Sitten kokeilin, että tekemäni muutos oli onnistunut. Suoritin terminaalissa komennon curl localhost, joka tulosti sivun sisällöksi komennossa antamani teksti. Myös verkkoselaimessa tekemäni muutos näkyi. Testasin vielä sivun toimivuutta puhelimellani kirjoittamalla virtuaalipalvelimeni IP-osoitteen osoitekenttään ja näkymä oli myös puhelimeni verkkoselaimella oikea.
+
+![49](https://github.com/user-attachments/assets/a439e1ab-cc31-4961-b962-a7e03fc8e0e4)
+
+![50](https://github.com/user-attachments/assets/76864d30-7ee9-4fbc-9e37-ae2496f384cf)
+
+![51](https://github.com/user-attachments/assets/e5b63e6a-1c38-49b9-a53d-ef6104920b55)
+
+Lopetin tehtävän tekemisen kello 16.35.
 
 
 ## d)
 #### Julkiselle palvelimelle uusi Name Based Virtual Host
-Aloitusaika: Lauantai 2025-02-08, kello XX.XX.
+Aloitusaika: Lauantai 2025-02-08, kello 16.40.
 
+Tässä tehtävässä tein omalle julkiselle palvelimelleni uuden Name Based Virtual Hostin. Tehtävää tehdessäni kirjasin samalla raporttia. Aloitin uuden nimipohjaisen virtual hostin tekemisen komennolla sudoedit /etc/apache2/sites-available/juulia.example.com.conf. Tästä avautuneeseen konfiguraatiotiedostoon lisäsin ServerName-, ServerAlias- ja DocumentRoot-direktiivit sekä Directory-lohkon alla olevan kuvan mukaisesti.
 
+![53](https://github.com/user-attachments/assets/419daefc-fe30-4b54-a620-19bf9551a51e)
+
+![52](https://github.com/user-attachments/assets/2f14cb83-09a1-4229-81df-a9074efea2f2)
+
+Tulostin vielä konfiguraatiotiedoston sisällön komennolla cat /etc/apache2/sites-available/hattu.example.com.conf varmistaakseni, että tekemäni kirjaukset olivat tallentuneet tiedostoon. Komento tulosti juuri tiedostoon kirjoittamani tekstin eli tallennus oli onnistunut. 
+
+![54](https://github.com/user-attachments/assets/e21a1b16-c782-4b36-bad8-96d83b122f5f)
+
+Tämän jälkeen käynnistimn tekemäni virtual hostin komennolla a2ensite juulia.example.com ja käynnistin Apachen uudelleen komennolla sudo systemctl restart apache2.
+
+![55](https://github.com/user-attachments/assets/9c252ea4-747e-4831-bcee-e446a462daaa)
+
+Seuraavaksi loin uuden verkkosivun tavallisena käyttäjänä. Loin ensin käyttäjän juulia kotihakemistoon kansion public_sites komennolla mkdir public_sites. Suoritin komennon ollessani käyttäjän kotihakemistossa. Sitten loin tähän public_sites-kansioon kansion juulia.example.com komennolla mkdir -p /home/juulia/public_sites/juulia.example.com ja komennolla ls public_sites tarkstin, että kansio oli luotu. 
+
+![56](https://github.com/user-attachments/assets/344aad91-9e18-45b2-9cb9-cabed3215b06)
+
+![57](https://github.com/user-attachments/assets/0b2b109a-04b1-4dd6-9bdd-dcbe9a7d73d9)
+
+Sitten loin tähän juulia.example.com kansioon html-tiedoston, johon kirjoitin tekstin "Tervetuloa", komennolla echo Tervetuloa > /home/juulia/public_sites/juulia.example.com/index.html. Tämän jälkeen suoritin komennon nano /home/juulia/public_sites/juulia.example.com/index.html, jolla pääsin muokkaamaan äsken luomaani html-tiedostoa. Kirjoitin tiedostoon lyhyen HTML-sivun tiedot ja tallensin tekemäni muutokset.
+
+![59](https://github.com/user-attachments/assets/d1855f39-cc0b-4a1b-a58a-1bfff26dd7db)
+
+![58](https://github.com/user-attachments/assets/e99401ab-66b8-4862-a9c8-91ecbe583e57)
+
+Tämän jälkeen tarkistin, että mitkä virtual hostit ovat tällä hetkellä käynnissä. Siirryin ensin oikeaan kansioon komennolla cd /etc/apache2/sites-enabled ja sitten tarkastelin kansion sisältöä komennolla ls. Näin, että sekä oletusssivu että luomani sivu olivat molemmat käynnissä.
+
+![60](https://github.com/user-attachments/assets/6f7e5215-a42d-4d96-8747-7e89bff9703c)
+
+Sammutin seuraavaksi oletussivun komennolla sudo a2dissite 000-default.conf, jonka jälkeen syötin salasanani ja sitten käynnistin Apachen uudelleen komennolla sudo systemctl restart apache2. 
+
+![61](https://github.com/user-attachments/assets/8c82cf2b-0f97-44b9-893d-ccb857e6e1bf)
+
+Lopuksi kokeilin sivun toimintaa suorittamalla komennon curl localhost. Tästä tulostui alla oleva vastaus, jonka mukaan html-tiedoston sisältö on kielletty (forbidden). Lisäksi verkkoselaimella tuli ilmoitus, ettei resurssiin ole pääsyä.
+
+![62](https://github.com/user-attachments/assets/ea4e3ce2-de37-4805-bfe0-65cb2d47721f)
+
+![63](https://github.com/user-attachments/assets/88e9b2fb-2318-4d44-8ed4-52fd9f62a32d)
+
+Komennolla sudo tail /var/log/apache2/error.log tulostin lokitietoja ja yritin selvittää niiden kautta mikä on mennyt pieleen. Viimeisimmällä lokirivillä luki, että access to / 
 
 #### Lähteet
 
