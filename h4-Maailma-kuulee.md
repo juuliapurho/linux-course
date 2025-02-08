@@ -44,7 +44,7 @@ Tehtävässä f) Lehto päivittää vielä kaikki virtuaalipalvelimen ohjelmat. 
 #### Tero Karvinen: First Steps on a New Virtual Private Server
 Tero Karvisen kirjoittamassa artikkelissa käsitellään ensimmäisiä vaiheita yksityisen virtuaalipalvelimen konfigurointiin DigitalOceanissa ja DNS-nimen konfigurointiin NameCheapissa. Artikkelissa käsitellään juuri näitä palveluntarjoajia, sillä ne ovat osa GitHub Educationin opiskelijapakettia. 
 
-Ensin luodaan uusi virtuaalipalvelin DigitalOceanissa luomalla tili ja lisäämällä luottokortin tiedot ja/tai alennuskoodi. Sitten luodaan uusi virtuaalipalvelin, johon palvelinkeskus kannattaa valita läheltä asiakkaita eli esimerkiksi Euroopasta. Autentikoinnissa voi joko ladata julkisen SSH-avaimen tai salasanaa. Virtuaalipalvelimen luomisen jälkeen tarkistetaan sen IP-osoite ja sitten kirjaudutaan sisään komennolla $ ssh root@10.0.0.1 ja annetaan pyydettäessä salasana. Tämä on ainoa kerta, kun palvelimelle kirjaudutaan root-käyttäjänä eli juurikäyttäjänä.
+Virtuaalipalvelimen luonti aloitetaan DigitalOceanissa luomalla tili ja lisäämällä luottokortin tiedot ja/tai alennuskoodi. Sitten luodaan uusi virtuaalipalvelin, johon palvelinkeskus kannattaa valita läheltä asiakkaita eli esimerkiksi Euroopasta. Autentikoinnissa voi joko ladata julkisen SSH-avaimen tai salasanaa. Virtuaalipalvelimen luomisen jälkeen tarkistetaan sen IP-osoite ja sitten kirjaudutaan sisään komennolla $ ssh root@10.0.0.1 ja annetaan pyydettäessä salasana. Tämä on ainoa kerta, kun palvelimelle kirjaudutaan root-käyttäjänä eli juurikäyttäjänä.
 
 Palomuuria asennettaessa tehdään ensin reikä SSH:ta varten komennolla $ sudo ufw allow 22/tcp ja sitten otetaan paloomuuri käyttöön komennolla $ sudo ufw enable. 
 
