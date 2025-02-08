@@ -162,7 +162,7 @@ Aloitusaika: Lauantai 2025-02-08, kello 12.50.
 
 Tässä tehtävässä tein juuri vuokraamallani virtuaalipalvelimella alkutoimia eli laitoin palomuurin päälle, suljin root-tunnuksen ja suoritin ohjelmien päivityksen. Tehtävää tehdessäni kirjoitin samanaikaisesti raporttia. 
 
-Aloitin tehtävän tekemisen ottamalla virtuaalikoneellani yhteyden virtuaalipalvelimeen. Kirjauduin ensin virtuaalikoneelleni ja suoritin sen jälkeen terminaalissa komennon ssh root@165.22.75.206. Tästä tulostui vastaus bash: ssh: command not found, josta päättelin, etten ollut asentanut virtuaalikoneelleni OpneSSH-työkalua. 
+Aloitin tehtävän tekemisen ottamalla virtuaalikoneellani yhteyden virtuaalipalvelimeen. Kirjauduin ensin virtuaalikoneelleni ja suoritin sen jälkeen terminaalissa komennon ssh root@165.22.75.206. Tästä tulostui vastaus "bash: ssh: command not found", josta päättelin, etten ollut asentanut virtuaalikoneelleni OpenSSH-työkalua. 
 
 ![23](https://github.com/user-attachments/assets/9a02ed8a-81e8-49f2-a1c3-ed786b579608)
 
