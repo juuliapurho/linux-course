@@ -299,7 +299,7 @@ Sammutin seuraavaksi oletussivun komennolla sudo a2dissite 000-default.conf, jon
 
 ![61](https://github.com/user-attachments/assets/8c82cf2b-0f97-44b9-893d-ccb857e6e1bf)
 
-Lopuksi kokeilin sivun toimintaa suorittamalla komennon curl localhost. Tästä tulostui alla oleva vastaus, jonka mukaan html-tiedoston sisältö on kielletty (forbidden) ja samassa yhteydessä ilmoitettiin, ettei resurssiin ole pääsyä. Lisäksi verkkoselaimella tuli ilmoitus, ettei resurssiin ole pääsyä.
+Lopuksi kokeilin sivun toimintaa suorittamalla komennon curl localhost. Tästä tulostui alla oleva vastaus, jonka mukaan html-tiedoston sisältö on kielletty (forbidden) ja samassa yhteydessä ilmoitettiin, ettei resurssiin ole pääsyoikeutta. Lisäksi verkkoselaimella näkyi ilmoitus, jossa ilmoitettiin, ettei resurssiin ole pääsyoikeutta.
 
 ![62](https://github.com/user-attachments/assets/ea4e3ce2-de37-4805-bfe0-65cb2d47721f)
 
@@ -313,7 +313,7 @@ Viimeisin lokirivi oli seuraavanlainen:
 
 [Sat Feb 08 15:22:01.321985 2025] [core:error] [pid 30137:tid 30167] (13)Permission denied: [client 194.50.16.218:49886] AH00035: access to / denied (filesystem path '/home/juulia/public_sites') because search permissions are missing on a component of the path
 
-Tulkitsin tuota virheilmoitusta sillä tavalla, että pääsy käyttäjän juulia kotihakemistoon ja siellä olevaan kansioon public_sites on estetty. Lähdin hakemaan netistä apua tähän ongelmaan ja löysin StackExchangen AskUbuntu-sivustolta apua (https://askubuntu.com/questions/1353377/apache2-permission-denied-access-to-denied-because-search-permissions-are-mi). Suoritin tämän sivuston ohjeiden mukaan seuraavat komennot:
+Virheilmoituksen muukaan käyttäjän juulia kotihakemistoon ja siellä olevaan kansioon public_sites ei ole pääsyoikeutta ja jostain osasta polkua /home/juulia/public_sites puuttui hakuoikeus. Lähdin hakemaan netistä apua tähän ongelmaan ja löysin StackExchangen AskUbuntu-sivustolta apua (https://askubuntu.com/questions/1353377/apache2-permission-denied-access-to-denied-because-search-permissions-are-mi). Suoritin tämän sivuston ohjeiden mukaan seuraavat komennot:
 
 - sudo chmod +x /home/
 - sudo chmod +x /home/juulia/
