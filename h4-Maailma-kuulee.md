@@ -299,7 +299,7 @@ Sammutin seuraavaksi oletussivun komennolla sudo a2dissite 000-default.conf, jon
 
 ![61](https://github.com/user-attachments/assets/8c82cf2b-0f97-44b9-893d-ccb857e6e1bf)
 
-Lopuksi kokeilin sivun toimintaa suorittamalla komennon curl localhost. Tästä tulostui alla oleva vastaus, jonka mukaan html-tiedoston sisältö on kielletty (forbidden). Lisäksi verkkoselaimella tuli ilmoitus, ettei resurssiin ole pääsyä.
+Lopuksi kokeilin sivun toimintaa suorittamalla komennon curl localhost. Tästä tulostui alla oleva vastaus, jonka mukaan html-tiedoston sisältö on kielletty (forbidden) ja samassa yhteydessä ilmoitettiin, ettei resurssiin ole pääsyä. Lisäksi verkkoselaimella tuli ilmoitus, ettei resurssiin ole pääsyä.
 
 ![62](https://github.com/user-attachments/assets/ea4e3ce2-de37-4805-bfe0-65cb2d47721f)
 
