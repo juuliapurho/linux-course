@@ -221,6 +221,8 @@ Päivitysten tekemisten jälkeen ajattelin, että minun tulee tehdä konfiguraat
 
 Lopuksi kokeilin vielä, että saanko muodostettua ssh-yhteyden virtuaalipalvelimeen root-tunnuksella. Tein tämän suorittamalla ensin käyttäjänä juulia komennon exit, joka katkaisi ssh-yhteyden virtuaalipalvelimeen. Sitten suoritin komennon ssh root@165.22.75.206 ja syötin käyttäjänä salasanan, josta tulostui vastaus permission denied. 
 
+![43](https://github.com/user-attachments/assets/9ea7520e-ead0-449b-a286-2f3388467706)
+
 ![42](https://github.com/user-attachments/assets/c13d7131-9204-44c1-8aea-d695130f0bc2)
 
 Lopetin tehtävän tekemisen kello 14.31.
