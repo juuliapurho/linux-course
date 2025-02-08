@@ -50,7 +50,7 @@ Palomuuria asennettaessa tehdään ensin reikä SSH:ta varten komennolla $ sudo 
 
 Uusi käyttäjä luodaan komennolla $ sudo adduser tero ja käyttäjästä tehdään pääkäyttäjä komennolla $ sudo adduser tero sudo. Tämän jälkeen avataan uusi paikallinen terminaali ja kokeillaan käyttäjää avaamalla SSH-yhteys komennolla $ ssh tero@tero.example.com ennen sen terminaalin sulkemista, jossa käyttäjästä on tehty pääkäyttäjä.
 
-Root-tunnus suljetaan komennolla $ sudo usermod --lock root. Tämä lukitsee ainoastaan salasanan käyttämisen, ei kaikkia tapoja käyttäjän käyttämiseen. Root-tunnuksella SSH-yhteyden ottaminen estetään suorittamalla komento $ sudoedit /etc/ssh/sshd_config ja muuttamalla konfiguraatiotiedostossa kohtaan PermitRootLogin yes-sanan tilalle sana no.
+Root-tunnus suljetaan komennolla $ sudo usermod --lock root. Tämä lukitsee ainoastaan salasanan käyttämisen, ei kaikkia tapoja käyttäjän käyttämiseen. Root-tunnuksella SSH-yhteyden ottaminen estetään suorittamalla komento $ sudoedit /etc/ssh/sshd_config ja muuttamalla konfiguraatiotiedostossa kohtaan PermitRootLogin sanan "yes" tilalle sana "no".
 
 Virtuaalipalvelimen ohjelmat päivitetään uusimpien tietoturvakorjausten saamiseksi komennoilla $ sudo apt-get update ja $ sudo apt-get upgrade. 
 
