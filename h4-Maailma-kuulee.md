@@ -57,7 +57,7 @@ Virtuaalipalvelimen ohjelmat päivitetään uusimpien tietoturvakorjausten saami
 Kun virtuaalipalvelimelle asennetaan julkinen palvelin, kuten Apache, täytyy palomuuriin muistaa tehdä reikä tätä varten komennolla sudo ufw allow 80/tcp.
 
 
-## Alakohdissa a-c käytetty ympäristö
+## Tehtävissä a-d käytetty ympäristö
 Kannettava tietokone
 
 - Lenovon ThinkBook 13s G3 ACN 
