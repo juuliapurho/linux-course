@@ -236,8 +236,6 @@ Aloitusaika: Lauantai 2025-02-08, kello 16.10.
 
 Tässä tehtävässä asensin weppipalvelimen omalle virtuaalipalvelimelleni ja korvasin palvelimen testisivun. Tehtävää tehdessäni kirjoitin jälleen samanaikaisesti raporttia. Aloitin tehtävän tekemisen luomalla SSH-yhteyden virtuaalipalvelimeeni komennolla ssh juulia@165.22.75.206, jonka jälkeen syötin salasanani. Tämän jälkeen asensin Apachen suorittamalla ensin komennon sudo apt-get update ja sitten sudo apt-get -y install apache2. Asennuksen jälkeen tarkistin vielä palvelimen tilan komennolla sudo systemctl status apache2 ja palvelin näytti olevan käynnissä.
 
-![43](https://github.com/user-attachments/assets/8d40a39c-72fc-418e-b5aa-c8e0de59c11f)
-
 ![44](https://github.com/user-attachments/assets/55f8b225-2f92-457b-96b9-c116e586ca9d)
 
 ![45](https://github.com/user-attachments/assets/6f627b0a-a208-4ac4-b89a-8275ba261236)
