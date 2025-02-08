@@ -220,7 +220,7 @@ Päivitysten tekemisten jälkeen ajattelin, että minun tulee tehdä konfiguraat
 
 ![41](https://github.com/user-attachments/assets/a6a316a3-262a-4ef1-9038-8a03ece441b3)
 
-Lopuksi kokeilin vielä, että saanko muodostettua SSH-yhteyden virtuaalipalvelimeen root-tunnuksella. Tein tämän suorittamalla ensin käyttäjänä juulia komennon exit, joka katkaisi SSH-yhteyden virtuaalipalvelimeen. Sitten suoritin komennon ssh root@165.22.75.206 ja syötin käyttäjänä salasanan, josta tulostui vastaus "permission denied" eli root-tunnuksella yhteyden muodostaminen ei onnistunut.
+Lopuksi kokeilin vielä, että saanko muodostettua SSH-yhteyden virtuaalipalvelimeen root-tunnuksella. Tein tämän suorittamalla ensin käyttäjänä juulia komennon exit, joka katkaisi SSH-yhteyden virtuaalipalvelimeen. Sitten suoritin komennon ssh root@165.22.75.206 ja syötin käyttäjänä salasanan, josta tulostui vastaus "permission denied, please try again" eli root-tunnuksella yhteyden muodostaminen ei onnistunut.
 
 ![43](https://github.com/user-attachments/assets/9ea7520e-ead0-449b-a286-2f3388467706)
 
