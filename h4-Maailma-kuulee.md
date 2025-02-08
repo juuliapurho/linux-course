@@ -78,6 +78,7 @@ Virtuaalikone
 ## a)
 #### Virtuaalipalvelimen vuokraus
 Aloitusaika: Lauantai 2025-02-08, kello 11.30.
+
 Tässä tehtävässä vuokrasin virtuaalipalvelimen DigitalOceanilta. Tehtävää tehdessäni kirjoitin samanaikaisesti raporttia. Päädyin valitsemaan palveluntarjoajaksi DigitalOceanin, sillä se on osa GitHub Educationin opiskelijapakettia. Aloitin asennuksen siirtymällä DigitalOceanin verkkosivuille ja oikeasta yläkulmasta Sign up. Sitten loin käyttäjätilin valitsemalla Sign Up with GitHub. 
 
 ![6](https://github.com/user-attachments/assets/f885494d-3249-4286-8e6b-d975a1d0da8d)
@@ -137,13 +138,19 @@ Lopetin tehtävän tekemisen kello 12.20.
 #### Alkutoimet virtuaalipalvelimella
 Aloitusaika: Lauantai 2025-02-08, kello XX.XX.
 
+
+
 ## c)
 #### Weppipalvelimen asennus virtuaalipalvelimelle
 Aloitusaika: Lauantai 2025-02-08, kello XX.XX.
 
+
+
 ## d)
 #### Julkiselle palvelimelle uusi Name Based Virtual Host
 Aloitusaika: Lauantai 2025-02-08, kello XX.XX.
+
+
 
 #### Lähteet
 
