@@ -234,7 +234,7 @@ Lopetin tehtävän tekemisen kello 14.30.
 #### Weppipalvelimen asennus virtuaalipalvelimelle
 Aloitusaika: Lauantai 2025-02-08, kello 16.10.
 
-Tässä tehtävässä asensin weppipalvelimen omalle virtuaalipalvelimelleni ja korvasin sen testisivun. Tehtävää tehdessäni kirjoitin jälleen samanaikaisesti raporttia. Aloitin tehtävän tekemisen luomalla ssh-yhteyden virtuaalipalvelimeeni komennolla ssh juulia@165.22.75.206, jonka jälkeen syötin salasanani. Tämän jälkeen asensin Apachen suorittamalla ensin komennon sudo apt-get update ja sitten sudo apt-get -y install apache2. Asennuksen jälkeen tarkistin vielä palvelimen tilan komennolla sudo systemctl status apache2.
+Tässä tehtävässä asensin weppipalvelimen omalle virtuaalipalvelimelleni ja korvasin palvelimen testisivun. Tehtävää tehdessäni kirjoitin jälleen samanaikaisesti raporttia. Aloitin tehtävän tekemisen luomalla ssh-yhteyden virtuaalipalvelimeeni komennolla ssh juulia@165.22.75.206, jonka jälkeen syötin salasanani. Tämän jälkeen asensin Apachen suorittamalla ensin komennon sudo apt-get update ja sitten sudo apt-get -y install apache2. Asennuksen jälkeen tarkistin vielä palvelimen tilan komennolla sudo systemctl status apache2 ja palvelin näytti olevan käynnissä.
 
 ![43](https://github.com/user-attachments/assets/8d40a39c-72fc-418e-b5aa-c8e0de59c11f)
 
