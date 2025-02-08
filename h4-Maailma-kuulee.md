@@ -306,7 +306,14 @@ Lopuksi kokeilin sivun toimintaa suorittamalla komennon curl localhost. Tästä 
 
 ![63](https://github.com/user-attachments/assets/88e9b2fb-2318-4d44-8ed4-52fd9f62a32d)
 
-Komennolla sudo tail /var/log/apache2/error.log tulostin lokitietoja ja yritin selvittää niiden kautta mikä on mennyt pieleen. Viimeisimmällä lokirivillä luki, että access to / 
+Komennolla sudo tail /var/log/apache2/error.log tulostin lokitietoja ja yritin selvittää niiden kautta mikä on mennyt pieleen. Viimeisimmällä lokirivi oli seuraavanlainen:
+
+[Sat Feb 08 15:22:01.321985 2025] [core:error] [pid 30137:tid 30167] (13)Permission denied: [client 194.50.16.218:49886] AH00035: access to / denied (filesystem path '/home/juulia/public_sites') because search permissions are missing on a component of the path
+
+Tulkitsin tuota virheilmoitusta sillä tavalla, että pääsy käyttäjän juulia kotihakemistoon ja siellä olevaan kansioon publi_sites on estetty. Lähdin hakemaan netistä apua tähän ongelmaan ja löysin 
+
+Lopetin tehtävän tekemisen kello 17.55.
+
 
 #### Lähteet
 
