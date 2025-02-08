@@ -6,7 +6,7 @@ Susanna Lehdon blogipostaus Teoriasta käytäntöön pilvipalvelimen avulla (h4)
 
 - Vasemmassa reunassa olevasta valikosta valitaan Droplets ja klikataan Create Droplets -painiketta
 - Seuraavaksi valitaan käyttöjärjestelmä (tässä Lehto valitsi vaihtoehdon Debian 11 x64)
-- Sitten valitaan paketti (Lehto valitsi Basic-paketin ja prosessoriksi tavallisen Intelin prosessorin SSD-kovalevyllä. Pakettiin sisältyi siis 1 GB prosessori, 25 GB SSD kovalevy ja 1000 GB siirtodata).
+- Sitten valitaan paketti (Lehto valitsi Basic-paketin ja prosessoriksi tavallisen Intelin prosessorin SSD-kovalevyllä. Pakettiin sisältyi siis 1 GB prosessori, 25 GB SSD-kovalevy ja 1000 GB siirtodataa).
 - Tämän jälkeen valitaan datakeskuksen sijainti (tässä Lehto valitsi Amsterdamin)
 - Seuraavaksi valitaan autentikointimenetelmä (Lehto valitsi salasanan)
 - Sitten on mahdollista valita lisäpalveluita (tässä Lehto ei valinnut maksullisia eikä ilmaisia lisäpalveluita)
