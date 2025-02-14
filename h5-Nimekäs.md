@@ -243,7 +243,7 @@ Tero Karvinen 2025: Tehtävänanto h5. Luettavissa: https://terokarvinen.com/lin
 
 W3Schools: HTML Tutorial. Luettavissa: https://www.w3schools.com/html/. Luettu 13.2.2025.
 
-W3Schools: HTML <nav> Tag. Luettavissa: https://www.w3schools.com/TAgs/tag_nav.asp. Luettu 14.2.2025.
+W3Schools: HTML nav Tag. Luettavissa: https://www.w3schools.com/TAgs/tag_nav.asp. Luettu 14.2.2025.
 
 ____________________________________________________________________________________________________________________________________________________________________
 Tätä dokumenttia saa kopioida ja muokata GNU General Public License (versio 2 tai uudempi) mukaisesti. http://www.gnu.org/licenses/gpl.html
