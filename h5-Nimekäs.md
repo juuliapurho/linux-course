@@ -222,7 +222,7 @@ Kävin vielä poistamassa näistä index.html ja contact.html tiedostoista tuon 
 
 ![70](https://github.com/user-attachments/assets/3990690f-bd12-4720-8e0f-a1b269b3d27f)
 
-Lopetin tehtävän tekemisen kello 11.35.
+Tein nämä muokkaukset vielä samalla tavalla alkuperäisiin virtuaalikoneellani oleviin tiedotostoihin ja lopetin tehtävän tekemisen kello 11.35.
 
 ## d)
 #### Alidomain
