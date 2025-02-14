@@ -140,11 +140,35 @@ Tämän tehtävän lopuksi kävin vielä verkkoselaimella tarkistamassa, että t
 
 Lopetin tehtävän tekemisen kello 19.20.
 
-
-
 ## c)
 #### Kotisivu
-Aloitusaika: Perjantai 2025-02-14, kello 11.30.
+Aloitusaika: Perjantai 2025-02-14, kello 09.50.
+
+Tässä tehtävässä minun tuli tehdä vähintään kolmen erillisen alasivun kotisivu ja kopioida se näkymään palvelimelleni. Tehtävää tehdessäni kirjoitin samalla raporttia. 
+
+Aloitin tehtävän tekemisen luomalla virtuaalikoneelleni uuden juuliapurho.me kansion kotisivuja varten. Tämän tein komennolla mkdir -p /home/juulia/public_sites/juuliapurho.me ja tarkistin, että kansion luominen oli onnistunut komennolla ls /home/juulia/public_sites.
+
+![41](https://github.com/user-attachments/assets/6b2fa146-f6ce-4ca9-8f3e-17456aec4f1a)
+
+Sitten loin tähän kansioon ensimmäiseksi index.html-tiedoston. Tämän tein siirtymällä ensin juuliapurho.me kansioon komennolla cd /home/juulia/public_sites/juuliapurho.me ja luomalla html-tiedoston komennolla micro index.html. Tähän tiedostoon kirjoitin lyhyen HTML5-sivun tiedot ja tallensin tekemäni muutokset ctrl + S ja suljin tiedoston ctrl + Q. Html-tiedoston muokkaamisessa käytin jälleen apuna W3Schoolsin HTML Tutorialia (https://www.w3schools.com/html/) sekä Tero Karvisen artikkelia (https://terokarvinen.com/2012/short-html5-page/). 
+
+![43](https://github.com/user-attachments/assets/7e1fffa2-dd8a-458a-b414-6b5699a5c4cd)
+
+![47](https://github.com/user-attachments/assets/d9436184-4123-46fd-8821-40b48d628e8e)
+
+Sitten loin toisen blog.html tiedoston komennolla micro blog.html ja kirjoitin tiedostoon jälleen lyhyen HTML5-sivun tiedot ja tallensin tekemäni muutokset ctrl + S ja suljin tiedoston ctrl + Q
+
+![45](https://github.com/user-attachments/assets/181da3d8-bec8-470c-9142-3d0ded38467f)
+
+![44](https://github.com/user-attachments/assets/c4943c85-62f6-4c14-bd35-a29184cd4ff6)
+
+Tämän jälkeen loin vielä kolmannen contact.html tiedoston komennolla micro contact.html ja kirjoitin tiedostoon jälleen lyhyen HTML5-sivun tiedot ja tallensin tekemäni muutokset ctrl + S ja suljin tiedoston ctrl + Q
+
+![48](https://github.com/user-attachments/assets/0d971da7-b76f-4cae-bba9-5444ff664325)
+
+![46](https://github.com/user-attachments/assets/06271ebe-8685-4d00-997d-ec541a7706b4)
+
+
 
 ## d)
 #### Alidomain
@@ -156,6 +180,8 @@ Aloitusaika: Lauantai 2025-02-08, kello 11.30.
 
 
 #### Lähteet
+
+Tero Karvinen 2012: Short HTML5 page. Luettavissa: https://terokarvinen.com/2012/short-html5-page/. Luettu 14.2.2025
 
 Tero Karvinen 2025: Tehtävänanto h5. Luettavissa: https://terokarvinen.com/linux-palvelimet/. Luettu 13.2.2025.
 
