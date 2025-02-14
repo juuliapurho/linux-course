@@ -168,7 +168,61 @@ Tämän jälkeen loin vielä kolmannen contact.html tiedoston komennolla micro c
 
 ![46](https://github.com/user-attachments/assets/06271ebe-8685-4d00-997d-ec541a7706b4)
 
+Tämän jälkeen lähdin selvittämään, miten saan sivut linkitettyä toisiinsa ja luotua sivulle navigointipalkin. Löysin tähän apua W3Schoolsin verkkosivuilta (https://www.w3schools.com/TAgs/tag_nav.asp). Lisäsin vielä jokaiseen äsken luomaani html-tiedostoon navigointilinkit alla olevien kuvien mukaisesti.
 
+![52](https://github.com/user-attachments/assets/b7b5ea52-1734-4cf6-bf42-337626aad8a8)
+
+![51](https://github.com/user-attachments/assets/5e66c0d4-9326-4c26-a72e-b50e9535db8c)
+
+![53](https://github.com/user-attachments/assets/e44f47ea-5a29-4806-b820-9c378f806d2c)
+
+Seuraavaksi kopion luomani sivut näkymään virtuaalipalvelimellani. Tässä käytin apuna tehtävänannossa ollutta vinkkiä scp komennosta. Suoritin siis komennon scp -r /home/juulia/public_sites/juuliapurho.me juulia@165.22.75.206:juuliapurho.me ja syötin salasanani. 
+
+![54](https://github.com/user-attachments/assets/3d93e64e-075b-4c5c-a1ce-2538a1f8f24f)
+
+Tämän jälkeen avasin SSH-yhteyden virtuaalipalvelimelleni komennolla ssh juulia@165.22.75.206 ja syötin salasanani. Tämän jälkeen menin tarkistamaan oliko siirto onnistunut komennoilla ls /home/juulia ja ls /home/juulia/juuliapurho.me, ja olihan se. Kansio juuliapurho.me ja sen sisällä olleet html-tiedostot olivat siirtyneet käyttäjän juulia kotihakemistoon.
+
+![55](https://github.com/user-attachments/assets/a8e9a29c-2ba2-4cb2-b59b-1746de1365ab)
+
+![56](https://github.com/user-attachments/assets/3801745b-a621-4e68-9faf-cdb5bdbd8093)
+
+Olin kuitenkin aikaisemmassa tehtävässä luonut käyttäjän juulia kotihakemistossa olevaan public_sites kansioon kansion juuliapurho.me, johon olin myös luonut yhden html-tiedoston. Halusin siirtää tämän juuri virtuaalipalvelimelleni kopioimani kansion public_sites kansioon ja poistaa tuon aikaisemmin luomani kansion. Tässä käytin apuna Tero Karvisen artikkelia Command Line Basics Revisited (https://terokarvinen.com/2020/command-line-basics-revisited/?fromSearch=command%20line%20basics%20revisited). Siirryin ensin public_sites kansioon komennolla cd/home/juulia/public_sites ja tarkastelin kansion sisältöä komennolla ls. Sitten poistin juuliapurho.me kansion komennolla rm -r juuliapurho.me ja tarkastin, että tämä oli onnistunut komennolla ls. Sitten siirsin kopioimani juuliapurho.me ja sen sisällä olevat kolme html-tiedostoa public_sites kansioon suorittamalla käyttäjän juulia kotihakemistossa komennon mv juuliapurho.me /home/juulia/public_sites/. 
+
+![57](https://github.com/user-attachments/assets/9a9c8010-4b66-4e06-a966-eee8d67c213f)
+
+![58](https://github.com/user-attachments/assets/01d70a39-fa92-44b4-9fe3-d354525f0cd4)
+
+![59](https://github.com/user-attachments/assets/d3fa5096-70f2-4c80-88bc-5c2f18321da1)
+
+Lopuksi oli vielä aika testata, että luomani kolmen erillisen alasivun sivu toimii. Kirjoitin verkkoselaimen osoitekenttään juuliapurho.me ja sivu toimi sekä pääsin siirtymään navigointipalkin avulla sivulta toiselle. 
+
+![60](https://github.com/user-attachments/assets/7d6def83-89ed-4f74-af03-71b5272ac104)
+
+![61](https://github.com/user-attachments/assets/d0a83d08-5ae6-414f-b3f8-0b2ff1a0d640)
+
+![62](https://github.com/user-attachments/assets/be0d6760-394b-4173-be59-3da131394a60)
+
+Testasin vielä luomani sivun validiutta sivustolla https://validator.w3.org. Syötin kunkin alasivun osoitteen address-kenttään erikseen ja painoin check-painiketta. Sain index.html ja contact.html sivuista virheilmoituksen lang-tagissa olevasta ylimääräisestä heittomerkistä ("). Sivu blog.html taas ei antanut mitään virheilmoituksia. 
+
+![63](https://github.com/user-attachments/assets/7eb6e74c-32e4-49b9-98e9-e586ab8716b1)
+
+![64](https://github.com/user-attachments/assets/eef58ff8-3ece-4041-8cdf-fb634e996be0)
+
+![65](https://github.com/user-attachments/assets/101faeb8-0430-425d-b02c-f2a14bbce47b)
+
+Kävin vielä poistamassa näistä index.html ja contact.html tiedostoista tuon ylimääräisen heittomerkin muokkaamalla tiedostoja micro komennolla ja testasin näiden sivujen validiutta uudelleen muokkausten jälkeen, jolloin niistä ei enää tullut virheilmoituksia.
+
+![68](https://github.com/user-attachments/assets/227cc112-a1cc-4240-ade8-1afa9b2a927d)
+
+![66](https://github.com/user-attachments/assets/e8566a3c-25c7-4a67-b31d-714dd84ff886)
+
+![67](https://github.com/user-attachments/assets/5f4d4485-ad84-481e-a78b-884e08ccc8d9)
+
+![69](https://github.com/user-attachments/assets/75e57692-0385-4e75-9d52-361e9dafd10d)
+
+![70](https://github.com/user-attachments/assets/3990690f-bd12-4720-8e0f-a1b269b3d27f)
+
+Lopetin tehtävän tekemisen kello 11.35.
 
 ## d)
 #### Alidomain
@@ -181,11 +235,15 @@ Aloitusaika: Lauantai 2025-02-08, kello 11.30.
 
 #### Lähteet
 
+Tero Karvinen: Command Line Basics Revisited. Luettavissa: https://terokarvinen.com/2020/command-line-basics-revisited/?fromSearch=command%20line%20basics%20revisited. Luettu 14.2.2025.
+
 Tero Karvinen 2012: Short HTML5 page. Luettavissa: https://terokarvinen.com/2012/short-html5-page/. Luettu 14.2.2025
 
 Tero Karvinen 2025: Tehtävänanto h5. Luettavissa: https://terokarvinen.com/linux-palvelimet/. Luettu 13.2.2025.
 
 W3Schools: HTML Tutorial. Luettavissa: https://www.w3schools.com/html/. Luettu 13.2.2025.
+
+W3Schools: HTML <nav> Tag. Luettavissa: https://www.w3schools.com/TAgs/tag_nav.asp. Luettu 14.2.2025.
 
 ____________________________________________________________________________________________________________________________________________________________________
 Tätä dokumenttia saa kopioida ja muokata GNU General Public License (versio 2 tai uudempi) mukaisesti. http://www.gnu.org/licenses/gpl.html
