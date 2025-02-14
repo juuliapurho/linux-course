@@ -334,6 +334,7 @@ Ensimmäisen kyselyn vastauksen ANSWER-osiossa näkyi tieto domainin A-tietueest
 
 Nyt kun olin saanut kaikkien kyselyiden tulokset tulkittua oli aika lopettaa tehtävän tekeminen kello 18.30.
 
+_________________________________________________________________________________________________________________________________________________________________________________________________
 
 #### Lähteet
 
