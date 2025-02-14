@@ -226,20 +226,140 @@ Tein nämä muokkaukset vielä samalla tavalla alkuperäisiin virtuaalikoneellan
 
 ## d)
 #### Alidomain
-Aloitusaika: Lauantai 2025-02-08, kello 11.30.
+Aloitusaika: Perjantai 2025-02-14, kello 13.45.
+
+Tässä tehtävässä tein kaksi uutta alidomainia, jotka osoittavat virtuaalipalvelimeeni. Päätin, että teen toisen alidomainin A-tietueella tai toisen CNAME-tietueella. Tehtävää tehdessäni kirjoitin samanaikaisesti raporttia.
+
+Lähdin ensimmäisenä etsimään tietoa siitä, mikä CNAME-tietue on ja miten se toimii. Löysin Cloudflaren verkkosivuilta artikkelin aiheesta (https://www.cloudflare.com/learning/dns/dns-records/dns-cname-record/). CNAME-tietue osoittaa aliasdomainista "kanoniseen" domainiin ja sitä käytetään silloin, kun domain tai alidomain on toisen domainin alias. CNAME-tietueen on osoitettava domainiin eikä koskaan IP-osoitteeseen. Usein, kun domaineilla on alidomaineja kuten blog.example.com tai shop.example.com, näillä alidomaineilla on CNAME-tietueita, jotka osoittavat root domainiin example.com. 
+
+Seuravaaksi ryhdyin tekemään näitä alidomaineja. Siirryin ensin Namecheapin verkkosivuille ja kirjauduin sisään. Tämän jälkeen valitsin vasemmassa reunassa olevasta valikosta Domain List ja klikkasin vuokraamani domain nimen juuliapurho.me kohdalta Manage-painiketta. Avautuneesta näkymästä siirryin Advanced DNS välilehdelle. 
+
+![71](https://github.com/user-attachments/assets/ea88e764-520c-4f17-9673-0e0252513bf9)
+
+![72](https://github.com/user-attachments/assets/03b86e9a-ef23-4203-89f3-5e141ffa0051)
+
+Kohdassa Host Records lisäsin ensin A-tietueen Add New Record -painiketta klikkaamalla. Host kohtaan kirjoitin blog, Value kohtaan virtuaalipalvelimeni IP-osoitteen ja TTL kohtaan valitsin vaihtoehdon 5 min. Sitten loin CNAME-tietueen, jossa Host kohtaan kirjoitin info, Value kohtaan blog.juuliapurho.me ja TTL kohtaan valitsin vaihtoehdon 5 min.
+
+![73](https://github.com/user-attachments/assets/f067d9d2-4093-4bb4-a6c7-b6c8d62e1124)
+
+Tehtävän lopuksi kokeilin vielä, että tekemäni alidomainit toimivat. Siirryin verkkoselaimeen ja kirjoitin ensin osoitekenttään blog.juuliapurho.me ja tämä ohjasi minut kotisivulleni. Sitten kirjoitin osoitekenttään info.juuliapurho.me ja tämäkin ohjasi minut onnistuneesti kotisivulleni. Tekemäni alidomainit siis toimivat!
+
+![74](https://github.com/user-attachments/assets/eb96cd57-4f69-48f3-a2fa-39f6e3e39058)
+
+![75](https://github.com/user-attachments/assets/41a5b764-f8c0-4698-b25e-a956ee847189)
+
+Lopetin tehtävän tekemisen kello 14.05.
 
 ## e)
 #### DNS-tiedot
-Aloitusaika: Lauantai 2025-02-08, kello 11.30.
+Aloitusaika: Perjantai 2025-02-14, kello 15.30.
+
+Tässä tehtävässä tutkin domain-nimien DNS-tietoja komennoilla host ja dig. Oman domain-nimeni lisäksi minun piti tutkia jonkin pikkuyrityksen sekä suuren ja kaikkien tunteman palvelun tietoja. Valitsin pieneksi yritykseksi Kymen Leipomon, joka vaikutti olevan pieni leipomoalan yritys ja suureksi kaikkien tuntemaksi palveluksi valitsin Googlen. Tehtävää tehdessäni kirjoitin samanaikaisesti raporttia.
+
+Aloitin tehtävän tekemisen yrittämällä avata host komennon manuaalin komennolla man host, mutta tästä tulostui vastaus "No manual entry for host". Tämän jälkeen yritin avata dig komennon manuaalin komennolla man dig, mutta tästä tulostui samankaltainen vastaus "No manual entry for dig". Kokeilin vielä näitä komentoja omalla domain-nimelläni eli suoritin komennot host juuliapurho.me ja dig juuliapurho.me, mutta näistä molemmista tulostui vastaus, jossa kerrottiin, ettei komentoa löydetty. Tästä siis päättelin, että minun tulee asentaa virtuaalikoneelleni ohjelmat, joilla näitä komentoja voidaan käyttää ja lähdin etsimään tähän apua verkosta. 
+
+![78](https://github.com/user-attachments/assets/22d831e6-72fe-4091-8b92-629a533b2f94)
+
+Löysin WebHostingGeeks.com sivulta apua (https://webhostinggeeks.com/howto/how-to-fix-nslookup-host-dig-bash-command-not-found-in-linux/) ja asensin DNS utilities paketin suorittamalla ensin komennon sudo apt-get update ja syöttämällä salasananin ja sitten komennon sudo apt-get install dnsutils. 
+
+![79](https://github.com/user-attachments/assets/776018d3-0d68-48a6-9201-206aa95deb1f)
+
+![80](https://github.com/user-attachments/assets/448d9425-08b5-4b09-9c13-6a8fd0148148)
+
+Tämän jälkeen yritin uudelleen avata host komennon manuaalia komennolla man host ja manuaali aukesi. Manuaalissa kerrottiin, että host komento on yksikertainen apuohjelma DNS-hakujen suorittamiseen ja sitä käytetään normaalisti IP-osoitteiden muuntamisessa nimiksi ja päinvastoin. Sitten suoritin komennon man dig ja pääsin tarkastelemaan dig komennon manuaalia. Manuaalissa dig komennon kerrotaan olevan joustava työkalu DNS-nimipalvelimien kyselemiseen. Se suorittaa DNS-kyselyitä ja näyttää vastaukset, jotka palautuivat niiltä nimipalvelimilta, joilta kysyttiin. Tehtävänannossa todetaan, että dig komennon manuaalista on myös nähtävissä miten komento näyttää kaikki kentät. Manuaalissa kerrotaan, että jos kyselyn tyyppiä ei määritetä, dig komento tulostaa ainostaan A-tietueet. Kun komentoon lisätään ANY, se näyttää kaikki tietuetyypit.
+
+![83](https://github.com/user-attachments/assets/07dd2eea-a3e6-4f70-ada4-06b3c22c549d)
+
+![81](https://github.com/user-attachments/assets/8891783d-b006-4e4c-9eb6-f92099b0e3b7)
+
+![82](https://github.com/user-attachments/assets/575ae519-8a86-42dd-8c21-f9d619179bfe)
+
+Suoritin seuraavaksi omalla domain-nimelläni komennon host juuliapurho.me ja komento tulosti alla olevassa kuvassa näkyvan vastauksen.
+
+![84](https://github.com/user-attachments/assets/433e4ae2-1017-40d3-9d25-f3a6772fd596)
+
+Host komento tulosti virtuaalipalvelimeni IP-osoitteen sekä sähköpostiin liittyviä tietoja. Löysin Namecheapista domain-nimeeni liittyen Advanced DNS-välilehden kohdasta Mail Settings TXT-tietueen, jonka Value kohdassa lukee "v=spf1 include:spf.efwd.registrar-servers.com ~all". Nämä host komennon tulostamat rivit varmaankin liittyvät siis tähän tietueeseen ja kertovat mihin sähköpostiliikenne on ohjattu.
+
+Sitten suoritin vertailun vuoksi komennot dig juuliapurho.me ja dig juuliapurho.me ANY. Ja nämä tulostivat alla olevien kuvien kaltaiset vastaukset.
+
+![85](https://github.com/user-attachments/assets/b77ad1c9-3014-4ea4-b18d-02625e7514f3)
+
+![86](https://github.com/user-attachments/assets/b030caab-3929-4d55-9735-c5f68eaf1dd1)
+
+
+Nämä komennot tulostivat keskenään hieman erilaiset vastaukset. Lähdin etsimään internetistä apua näiden tulosten tulkitsemiseen. Löysin näiden vastausten tulkitsemiseen apua phoenixNAP-verkkosivuilta (https://phoenixnap.com/kb/linux-dig-command-examples). Alla dig komennon tulostamien vastausten sisältö ylhäältä alas lueteltuna:
+
+- Molemmissa vatsuaksissa ensimmäinen rivi kertoo dig komennon version.
+- HEADER-osio kertoo DNS-kyselystä ja sen vastauksen yksityiskohdista. Se siis sisältää tietoja kyselytyypistä, vastauksen tilasta (NOERROR tarkoittaa onnistunutta vastausta), flags eli lipuista (jotka osoittavat pää atribuutit, kuten rekursion) sekä siinä luetellaan DNS-vastauksen kysymykset, vastaukset, auktoritatiiviset tietueet ja lisätietueiden määrät.
+- OPT PSEUDOSECTION-osio (joka tulostui vain jälkimmäisessä ANY-kyselyssä) näyttää lisätietoja. EDNS tarkoittaa DNS:n laajennusjärjestelmää, jonka lisäksi tässä osiossa on tietoa määritetyistä lipuista sekä udp-paketin koosta.
+- QUESTION-osiossa ensimmäisenä on domain-nimi, jota kysely koskee (tässä tapauksessa juuliapurho.me), toisena on kyselytyyppi (IN tarkoittaa internettiä) ja viimeisenä tällä rivillä on mitä tietueita kysely koskee (ensimmäisellä kyselyllä A-tietueita, sillä tietuetta ei määritetty ja jälkimmäisellä ANY-kyselyllä kaikkia tietueita).
+- ANSWER-osiossa ensimmäisenä on kyselyn kohteena olevan palvelimen nimi (juuliapurho.me), sitten on Time to Live eli asetettu aikajakso, jonka jälkeen tietue päivitetään (ensimmäisessä kyselyssä 140 ja toisessa ANY-kyselyssä 983). Seuraavana on kyselyluokka (molemissa kyselyissä IN eli internet), sitten kyselytyyppi (ensimmäisessä kyselyssä A eli A-tietueet ja jälkimmäisessä ANY-kyselyssä SOA, joka kertoo tietoja DNS-vyöhykkeestä). Viimeinen tieto poikkesi ensimmäisessä ja toisessa kyselyssä. Ensimmäisen kyselyn tuloksissa viimeisenä on virtuaalipalvelimeni IP-osoite. Toisen ANY-kyselyn tuloksissa taas on ensisijaisen nimipalvelimen nimi, toimialueen ylläpitäjän tai vastuhenkilön sähköposti, toimialueen sarjanumero sekä vyöhykkeen päivittämiseen liittyviä ajastimia. Tämän SOA-tietueen vastausten tulkistemiseen löysyin apua NsLookup.io verkkosivuilta (https://www.nslookup.io/learning/dns-record-types/soa/).
+- Kyselyn tulostaman vastauksen lopussa on vielä kyselyn metatiedot eli Query time (kyselyyn vastaamiseen kulunut aika), Server (kyselyyn vastanneen DNS-palvelimen IP-osoite ja portti), When (aika, jolloin kysely suoritettiin) ja MSG SIZE rcvd (DNS-palvelimen vastauksen koko).
+
+Tämän jälkeen suoritin samat kyselyt Kymen Leipomon verkkosivuille. Ensin suoritin komennon host kymenleipomo.fi, joka tulosti alla olevan vastauksen. 
+
+![87](https://github.com/user-attachments/assets/68cd79a0-cfc6-4ea5-b117-dd679d4a9649)
+
+Kysely siis tulosti domainin IP-osoitteen sekä tiedon siitä, että sähköpostit ohjautuvat leipomon Outlook-sähköpostiin. 
+
+Sitten suoritin komennot dig kymenleipomo.fi ja dig kymenleipomo.fi ANY, jotka tulostivat alla olevan kuvan kaltaiset tulokset.
+
+![89](https://github.com/user-attachments/assets/92c339b9-f135-41b4-a47d-e0cdb49e54c9)
+
+Ensimmäisen kyselyn vastauksen ANSWER-osiossa näkyi tieto domainin A-tietueesta, jossa oli sama IP-osoite kuin host komennolla suoritetun kyselyn vastauksessa. Kun lisäsin dig komennon loppuun ANY, tulostui vastaus, jossa kerrottiin yhteysvirheestä IP-osoitteeseen 10.0.2.3 ja porttiin 53. Nämä olivat ensimmäisen kyselyn tulostaman vastauksen perusteella kyselyyn vastanneen DNS-palvelimen IP-osoite ja portti. Lisäksi tässä yhteydessä ilmoitettiin, että palvelimiin ei saatu yhteyttä. Yritin etsiä tähän ongelmaan ratkaisua internetistä siinä onnistumatta. Lopulta päätin, että yhdistän tehtävien tekemiseen käyttämäni tietokoneen toiseen langattomaan WLAN-verkkoon ja suoritin uudelleen komennon dig kymenleipomo.fi ANY. Tällä kertaa se toimi (eli ongelma oli käyttämässäni verkossa) ja tulosti alla olevan kuvan mukaisen vastauksen. 
+
+![94](https://github.com/user-attachments/assets/da8598b8-fb8e-4490-90f5-2f54222a67f1)
+
+Tämän ANY-kyselyn ANSWER-osiossa oli nähtävissä A-tietueen lisäksi kolme NS-tietuetta sekä yhdet SOA-, MX- ja TXT-tietueet. Käytin näiden tulkitsemisessa apuna Cloudflaren artikkeleita, joissa kerrottiin, mitä mikäkin näistä tietueista tarkoittaa. A-tietueessa näkyy domainin IP-osoite. SOA-tietueesta on nähtävissä, että palveluntuottajana toimii JH Computer Oy ja ensisijaisena nimipalvelimena on kyseisen yrityksen nimipalvelin numero 1. NS-tietueissa on nähtävissä kaikki käytössä olevat nimipalvelimet, jotka ovat kaikki JH Computer Oy:n nimipalvelimia eli yrityksen nimipalvelimet numero 1, 2 ja 3. MX-tietue kertoo mille sähköpostipalvelimelle sähköpostit ohjataan ja tässä tapauksessa Kymen Leipomon sähköpostit ohjautuvat Outlookiin. TXT-tietue taas on keskeinen osa useissa eri sähköpostin todennusmenetelmissä, jotka auttavat sähköpostipalvelinta määrittämään, onko viesti luotettavasta lähteestä. Tässä TXT-tietueessa vaikuttaakin olevan jotain tähän liittyvää tietoa.
+
+Seuraavaksi suoritin nämä host ja dig kyselyt Googlella. Suoritin ensin komennon host google.com, joka tulosti alla olevan vastauksen. 
+
+![97](https://github.com/user-attachments/assets/c3a90d30-af0a-4605-87e7-0e7a10a323bd)
+
+Kysely tulosti tämän domainin IPv4- ja IPv6-osoitteet, jota osoittavat siis tähän samaan google.com domain-nimeen. Tämän lisäksi tulostui tieto siitä, että sähköpostit ohjautuvat Googlen palvelimelle eli Gmailiin. 
+
+Sitten suoritin komennot dig google.com ja dig google.com ANY, jotka tulostivat alla olevan kuvan kaltaiset tulokset.
+
+![98](https://github.com/user-attachments/assets/27aff5e4-0396-4069-945a-a188755ab388)
+
+![99](https://github.com/user-attachments/assets/d1e22a65-9d63-4dba-ba61-61d949dc3c45)
+
+Ensimmäisen kyselyn vastauksen ANSWER-osiossa näkyi tieto domainin A-tietueesta, jossa oli sama IPv4-osoite kuin host komennolla suoritetun kyselyn vastauksessa. Toisessa ANY-kyselyssä ANSWER-osiossa oli jälleen enemmän tietoa. Tämän kyselyn tuloksissa näkyi SOA-tietue, A-tietue, AAAA-tietue, HTTPS-tietue ja neljä NS-tietuetta. Käytin jälleen näiden tulkitsemisessa apuna Cloudflaren artikkeleita. SOA-tietue kertoi ensisijaisen DNS-palvelimen, joka on Googlen oman nimipalvelin numero 1. NS-tietueissa oli nähtävissä kaikki käytössä olevat DNS-palvelimet ja ne olivat kaikki Googlen omia nimipalvelimia (nimipalvelimet numero 1, 2, 3 ja 4). A-tietueessa näytti domainin IPv4-osoitteen ja AAAA-tietue taas IPv6-osoitteen. HTTPS-tietueesta löysin tietoa GCoren verkkosivuilta (https://gcore.com/docs/dns/dns-records/what-is-an-https-record-and-how-is-it-configured). HTTPS-tietue kertoo muita tietueita tarkemmin tietylle domainille saatavilla olevista palveluista. Tässä tapauksessa HTTPS-tietue oli seuraavanlainen:
+
+1 . alpn="h2,h3" 
+
+- Tässä numero yksi (1) tarkoittaa prioriteettiä eli numeroa jonossa.
+- Piste (.) tarkoittaa isäntää, jos se on sama kuin domain-nimi.
+- alpn=h3,h3 määrittää sovellusprotokollan version.
+
+Nyt kun olin saanut kaikkien kyselyiden tulokset tulkittua oli aika lopettaa tehtävän tekeminen kello 18.30.
 
 
 #### Lähteet
+
+Cloudflare: DNS AAAA record. Luettavissa: https://www.cloudflare.com/learning/dns/dns-records/dns-aaaa-record/. Luettu 14.2.2025.
+
+Cloudflare: What is a DNS CNAME record? Luettavissa: https://www.cloudflare.com/learning/dns/dns-records/dns-cname-record/. Luettu 14.2.2025.
+
+Cloudflare: DNS NS record. Luettavissa: https://www.cloudflare.com/learning/dns/dns-records/dns-ns-record/. Luettu 14.2.2025.
+
+Cloudflare: What is a DNS MX record? Luettavissa: https://www.cloudflare.com/learning/dns/dns-records/dns-mx-record/. Luettu 14.2.2025.
+
+Cloudflare: What is a DNS TXT record? Luettavissa:https://www.cloudflare.com/learning/dns/dns-records/dns-txt-record/. Luettu 14.2.2025.
+
+GCore: What is an HTTPS record and how is it configured? Luettavissa: https://gcore.com/docs/dns/dns-records/what-is-an-https-record-and-how-is-it-configured. Luettu 14.2.2025.
+
+phoenixNAP 2024: dig Command in Linux with Examples. Luettavissa: https://phoenixnap.com/kb/linux-dig-command-examples. Luettu 14.2.2025.
+
+NsLookup.io 2023: The SOA record. Luettavissa: https://www.nslookup.io/learning/dns-record-types/soa/. Luettu 14.2.2025.
 
 Tero Karvinen: Command Line Basics Revisited. Luettavissa: https://terokarvinen.com/2020/command-line-basics-revisited/?fromSearch=command%20line%20basics%20revisited. Luettu 14.2.2025.
 
 Tero Karvinen 2012: Short HTML5 page. Luettavissa: https://terokarvinen.com/2012/short-html5-page/. Luettu 14.2.2025
 
 Tero Karvinen 2025: Tehtävänanto h5. Luettavissa: https://terokarvinen.com/linux-palvelimet/. Luettu 13.2.2025.
+
+WebHostingGeeks.com: How to Fix nslookup, host, dig: -bash: command not found in Linux? Luettavissa: https://webhostinggeeks.com/howto/how-to-fix-nslookup-host-dig-bash-command-not-found-in-linux/. Luettu 14.2.2025.
 
 W3Schools: HTML Tutorial. Luettavissa: https://www.w3schools.com/html/. Luettu 13.2.2025.
 
