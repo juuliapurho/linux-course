@@ -181,7 +181,7 @@ Tämän jälkeen lähdin selvittämään, miten saan sivut linkitettyä toisiins
 
 ![53](https://github.com/user-attachments/assets/e44f47ea-5a29-4806-b820-9c378f806d2c)
 
-Seuraavaksi kopion luomani sivut näkymään virtuaalipalvelimellani. Tässä käytin apuna tehtävänannossa ollutta vinkkiä scp komennosta. Suoritin siis komennon scp -r /home/juulia/public_sites/juuliapurho.me juulia@165.22.75.206:juuliapurho.me ja syötin salasanani. 
+Seuraavaksi kopion luomani sivut näkymään virtuaalipalvelimelleni. Tässä käytin apuna tehtävänannossa ollutta vinkkiä scp komennosta. Suoritin siis komennon scp -r /home/juulia/public_sites/juuliapurho.me juulia@165.22.75.206:juuliapurho.me ja syötin salasanani. 
 
 ![54](https://github.com/user-attachments/assets/3d93e64e-075b-4c5c-a1ce-2538a1f8f24f)
 
