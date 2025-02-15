@@ -279,7 +279,7 @@ Sitten suoritin komennon man dig ja pääsin tarkastelemaan dig komennon manuaal
 
 ![82](https://github.com/user-attachments/assets/575ae519-8a86-42dd-8c21-f9d619179bfe)
 
-Suoritin seuraavaksi omalla domain-nimelläni komennon host juuliapurho.me ja komento tulosti alla olevassa kuvassa näkyvan vastauksen.
+Suoritin seuraavaksi omalla domain-nimelläni komennon host juuliapurho.me ja komento tulosti alla olevassa kuvassa näkyvän vastauksen.
 
 ![84](https://github.com/user-attachments/assets/433e4ae2-1017-40d3-9d25-f3a6772fd596)
 
