@@ -167,7 +167,7 @@ Sitten loin toisen blog.html tiedoston komennolla micro blog.html ja kirjoitin t
 
 ![44](https://github.com/user-attachments/assets/c4943c85-62f6-4c14-bd35-a29184cd4ff6)
 
-Tämän jälkeen loin vielä kolmannen contact.html tiedoston komennolla micro contact.html ja kirjoitin tiedostoon jälleen lyhyen HTML5-sivun tiedot ja tallensin tekemäni muutokset ctrl + S ja suljin tiedoston ctrl + Q
+Tämän jälkeen loin vielä kolmannen contact.html tiedoston komennolla micro contact.html ja kirjoitin tiedostoon jälleen lyhyen HTML5-sivun tiedot. Tallensin jälleen tekemäni muutokset ctrl + S ja suljin tiedoston ctrl + Q
 
 ![48](https://github.com/user-attachments/assets/0d971da7-b76f-4cae-bba9-5444ff664325)
 
