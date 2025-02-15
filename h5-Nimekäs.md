@@ -263,7 +263,7 @@ Aloitin tehtävän tekemisen yrittämällä avata host komennon manuaalin komenn
 
 ![78](https://github.com/user-attachments/assets/22d831e6-72fe-4091-8b92-629a533b2f94)
 
-Löysin WebHostingGeeks.com sivulta apua (https://webhostinggeeks.com/howto/how-to-fix-nslookup-host-dig-bash-command-not-found-in-linux/) ja asensin DNS utilities paketin suorittamalla ensin komennon sudo apt-get update ja syöttämällä salasananin ja sitten komennon sudo apt-get install dnsutils. 
+Löysin WebHostingGeeks.com sivulta apua (https://webhostinggeeks.com/howto/how-to-fix-nslookup-host-dig-bash-command-not-found-in-linux/) ja asensin DNS utilities paketin suorittamalla ensin komennon sudo apt-get update ja syöttämällä salasanani ja sitten komennon sudo apt-get install dnsutils. 
 
 ![79](https://github.com/user-attachments/assets/776018d3-0d68-48a6-9201-206aa95deb1f)
 
