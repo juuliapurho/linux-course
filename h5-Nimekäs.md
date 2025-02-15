@@ -48,7 +48,7 @@ Seuraavaksi Complete Order -sivulla minun tuli valita kohta GitHub Pages ja syö
 
 ![9](https://github.com/user-attachments/assets/354c4d81-cc55-4ceb-8f60-3f9a9519a46c)
 
-Sitten minut ohjattiin Namecheapin sisäänkirjautumissivulle, mutta en ollut vielä rekisteröitynyt palvelun käyttäjäksi, joten klikkasin REGISTER-painiketta ja rekisteröidyin palveluun. Rekisteröinnin jälkeen vahvistin tekemäni tilauksen klikkaamalla Confirm Order -painiketta.
+Sitten minut ohjattiin Namecheapin sisäänkirjautumissivulle, mutta en ollut vielä rekisteröitynyt palvelun käyttäjäksi, joten klikkasin Register-painiketta ja rekisteröidyin palveluun. Rekisteröinnin jälkeen vahvistin tekemäni tilauksen klikkaamalla Confirm Order -painiketta.
 
 ![12](https://github.com/user-attachments/assets/3ebf1f01-74cb-43be-8f79-2a611a847409)
 
