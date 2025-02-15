@@ -173,7 +173,7 @@ Tämän jälkeen loin vielä kolmannen contact.html tiedoston komennolla micro c
 
 ![46](https://github.com/user-attachments/assets/06271ebe-8685-4d00-997d-ec541a7706b4)
 
-Tämän jälkeen lähdin selvittämään, miten saan sivut linkitettyä toisiinsa ja luotua sivulle navigointipalkin. Löysin tähän apua W3Schoolsin verkkosivuilta (https://www.w3schools.com/TAgs/tag_nav.asp). Lisäsin vielä jokaiseen äsken luomaani html-tiedostoon navigointilinkit alla olevien kuvien mukaisesti.
+Tämän jälkeen lähdin selvittämään, miten saan sivut linkitettyä toisiinsa ja luotua sivulle navigointipalkin. Löysin tähän apua W3Schoolsin verkkosivuilta (https://www.w3schools.com/TAgs/tag_nav.asp). Lisäsin vielä jokaiseen äsken luomaani html-tiedostoon navigointilinkit body-tagin sisään alla olevien kuvien mukaisesti.
 
 ![52](https://github.com/user-attachments/assets/b7b5ea52-1734-4cf6-bf42-337626aad8a8)
 
@@ -181,7 +181,7 @@ Tämän jälkeen lähdin selvittämään, miten saan sivut linkitettyä toisiins
 
 ![53](https://github.com/user-attachments/assets/e44f47ea-5a29-4806-b820-9c378f806d2c)
 
-Seuraavaksi kopion luomani sivut näkymään virtuaalipalvelimelleni. Tässä käytin apuna tehtävänannossa ollutta vinkkiä scp komennosta. Suoritin siis komennon scp -r /home/juulia/public_sites/juuliapurho.me juulia@165.22.75.206:juuliapurho.me ja syötin salasanani. 
+Seuraavaksi kopion luomani sivut näkymään virtuaalipalvelimelleni. Tässä käytin apuna tehtävänannossa ollutta vinkkiä scp komennosta. Suoritin siis virtuaalikoneellani komennon scp -r /home/juulia/public_sites/juuliapurho.me juulia@165.22.75.206:juuliapurho.me ja syötin salasanani. 
 
 ![54](https://github.com/user-attachments/assets/3d93e64e-075b-4c5c-a1ce-2538a1f8f24f)
 
