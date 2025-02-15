@@ -199,7 +199,7 @@ Olin kuitenkin aikaisemmassa tehtävässä luonut käyttäjän juulia kotihakemi
 
 ![59](https://github.com/user-attachments/assets/d3fa5096-70f2-4c80-88bc-5c2f18321da1)
 
-Lopuksi oli vielä aika testata, että luomani kolmen erillisen alasivun sivu toimii. Kirjoitin verkkoselaimen osoitekenttään juuliapurho.me ja sivu toimi sekä pääsin siirtymään navigointipalkin avulla sivulta toiselle. 
+Lopuksi oli vielä aika testata, että luomani kolmen erillisen alasivun kotisivu toimii. Kirjoitin verkkoselaimen osoitekenttään juuliapurho.me ja sivu toimi sekä pääsin siirtymään navigointipalkin avulla sivulta toiselle. 
 
 ![60](https://github.com/user-attachments/assets/7d6def83-89ed-4f74-af03-71b5272ac104)
 
