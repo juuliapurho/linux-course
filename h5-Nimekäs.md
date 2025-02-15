@@ -89,7 +89,7 @@ Lopetin tehtävän tekemisen kello 18.15.
 ### Based 
 Aloitusaika: Torstai 2025-02-13, kello 18.25.
 
-Tässä tehtävässä tein uuden Name Based Virtual Hostin, joka näkyi uudessa, hetki sitten vuokraamassani domain-nimessäni. Tämän tekemisessä käytin apuna aikaisemmin laatimiani raportteja, joissa olen tehnyt uusia nimipohjaisia virtual hosteja. Tehtävää tehdessäni kirjoitin samalla raporttiin tekemäni toimenpiteet. 
+Tässä tehtävässä tein uuden Name Based Virtual Hostin, joka näkyi uudessa, hetki sitten vuokraamassani domain-nimessä. Tämän tekemisessä käytin apuna aikaisemmin laatimiani raportteja, joissa olen tehnyt uusia nimipohjaisia virtual hosteja. Tehtävää tehdessäni kirjoitin samalla raporttiin tekemäni toimenpiteet. 
 
 Aloitin tämän tekemisen avaamalla SSH-yhteyden virtuaalipalvelimelleni komennolla ssh juulia@165.22.75.206 ja syötin salasanani. 
 
