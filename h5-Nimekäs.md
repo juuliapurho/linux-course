@@ -101,7 +101,7 @@ Seuraavaksi suoritin komennon sudoedit /etc/apache2/sites-available/juuliapurho.
 
 ![27](https://github.com/user-attachments/assets/58cbe603-6424-4bda-98df-fefafa3480ed)
 
-Varmistin vielä, että konfiguraatiotiedostoon tekemäni muutokset olivat tallentuneet suorittamalla komennon cat /etc/apache2/sites-available/juuliapurho.me ja tämä tulosti tiedoston sisällön.
+Varmistin vielä, että konfiguraatiotiedostoon tekemäni muutokset olivat tallentuneet suorittamalla komennon cat /etc/apache2/sites-available/juuliapurho.me.conf ja tämä tulosti tiedoston sisällön.
 
 ![28](https://github.com/user-attachments/assets/edb30d2b-6c22-4a05-9072-0d4614662472)
 
