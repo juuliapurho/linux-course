@@ -339,7 +339,7 @@ Ensimmäisen kyselyn vastauksen ANSWER-osiossa näkyi tieto domainin A-tietueest
 - Piste (.) tarkoittaa isäntää, jos se on sama kuin domain-nimi.
 - alpn=h3,h3 määrittää sovellusprotokollan version.
 
-Nyt kun olin saanut kaikkien kyselyt suoritettua ja kyselyiden vastausten DNS-tiedot tulkittua oli aika lopettaa tehtävän tekeminen kello 18.30.
+Nyt kun olin saanut kaikki kyselyt suoritettua ja kyselyiden vastausten DNS-tiedot tulkittua oli aika lopettaa tehtävän tekeminen kello 18.30.
 
 _________________________________________________________________________________________________________________________________________________________________________________________________
 
