@@ -185,7 +185,7 @@ Seuraavaksi kopion luomani sivut näkymään virtuaalipalvelimelleni. Tässä k�
 
 ![54](https://github.com/user-attachments/assets/3d93e64e-075b-4c5c-a1ce-2538a1f8f24f)
 
-Tämän jälkeen avasin SSH-yhteyden virtuaalipalvelimelleni komennolla ssh juulia@165.22.75.206 ja syötin salasanani. Tämän jälkeen menin tarkistamaan oliko siirto onnistunut komennoilla ls /home/juulia ja ls /home/juulia/juuliapurho.me, ja olihan se. Kansio juuliapurho.me ja sen sisällä olleet html-tiedostot olivat siirtyneet käyttäjän juulia kotihakemistoon.
+Tämän jälkeen avasin SSH-yhteyden virtuaalipalvelimelleni komennolla ssh juulia@165.22.75.206 ja syötin salasanani. Sitten tarkistin oliko siirto onnistunut komennoilla ls /home/juulia ja ls /home/juulia/juuliapurho.me, ja olihan se. Kansio juuliapurho.me ja sen sisällä olleet html-tiedostot olivat siirtyneet käyttäjän juulia kotihakemistoon.
 
 ![55](https://github.com/user-attachments/assets/a8e9a29c-2ba2-4cb2-b59b-1746de1365ab)
 
