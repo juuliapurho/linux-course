@@ -36,7 +36,7 @@ Aloitin nimen vuokraamisen siirtymällä GitHub Educationin opiskelijapakettiin.
 
 ![5](https://github.com/user-attachments/assets/893149fd-eebe-4c3f-81b3-a928689a9891)
 
-Tämän jälkeen ohjauduin Domain results -sivulle, josta näin, että valitseman domain-nimi juuliapurho.me oli vapaana ja lisäsin sen ostoskoriini klikkaamalla ADD-painiketta. Sitten painoin vielä ostoskorin kohdalta Complete order -painiketta.  
+Tämän jälkeen ohjauduin Domain results -sivulle, josta näin, että valitseman domain-nimi juuliapurho.me oli vapaana ja lisäsin sen ostoskoriini klikkaamalla Add-painiketta. Sitten painoin vielä ostoskorin kohdalta Complete order -painiketta.  
 
 ![7](https://github.com/user-attachments/assets/a8b25bcb-664c-44d8-93e7-4dfee4d309c4)
 
