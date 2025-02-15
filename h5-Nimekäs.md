@@ -365,6 +365,8 @@ Tero Karvinen 2012: Short HTML5 page. Luettavissa: https://terokarvinen.com/2012
 
 Tero Karvinen 2025: Tehtävänanto h5. Luettavissa: https://terokarvinen.com/linux-palvelimet/. Luettu 13.2.2025.
 
+The World Wide Web Consortium: Markup Validation Service. Käytettävissä: https://validator.w3.org/.
+
 WebHostingGeeks.com: How to Fix nslookup, host, dig: -bash: command not found in Linux? Luettavissa: https://webhostinggeeks.com/howto/how-to-fix-nslookup-host-dig-bash-command-not-found-in-linux/. Luettu 14.2.2025.
 
 W3Schools: HTML Tutorial. Luettavissa: https://www.w3schools.com/html/. Luettu 13.2.2025.
