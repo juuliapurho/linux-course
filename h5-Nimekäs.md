@@ -237,7 +237,7 @@ Tässä tehtävässä tein kaksi uutta alidomainia, jotka osoittavat virtuaalipa
 
 Lähdin ensimmäisenä etsimään tietoa siitä, mikä CNAME-tietue on ja miten se toimii. Löysin Cloudflaren verkkosivuilta artikkelin aiheesta (https://www.cloudflare.com/learning/dns/dns-records/dns-cname-record/). CNAME-tietue osoittaa aliasdomainista "kanoniseen" domainiin ja sitä käytetään silloin, kun domain tai alidomain on toisen domainin alias. CNAME-tietueen on osoitettava domainiin eikä koskaan IP-osoitteeseen. Usein, kun domaineilla on alidomaineja kuten blog.example.com tai shop.example.com, näillä alidomaineilla on CNAME-tietueita, jotka osoittavat root domainiin example.com. 
 
-Seuravaaksi ryhdyin tekemään näitä alidomaineja. Siirryin ensin Namecheapin verkkosivuille ja kirjauduin sisään. Tämän jälkeen valitsin vasemmassa reunassa olevasta valikosta Domain List ja klikkasin vuokraamani domain nimen juuliapurho.me kohdalta Manage-painiketta. Avautuneesta näkymästä siirryin Advanced DNS välilehdelle. 
+Seuravaaksi ryhdyin tekemään näitä alidomaineja. Siirryin ensin Namecheapin verkkosivuille ja kirjauduin sisään. Tämän jälkeen valitsin vasemmassa reunassa olevasta valikosta Domain List ja klikkasin vuokraamani domain-nimen juuliapurho.me kohdalta Manage-painiketta. Avautuneesta näkymästä siirryin Advanced DNS välilehdelle. 
 
 ![72](https://github.com/user-attachments/assets/03b86e9a-ef23-4203-89f3-5e141ffa0051)
 
