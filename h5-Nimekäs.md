@@ -105,7 +105,7 @@ Varmistin vielä, että konfiguraatiotiedostoon tekemäni muutokset olivat talle
 
 ![28](https://github.com/user-attachments/assets/edb30d2b-6c22-4a05-9072-0d4614662472)
 
-Sitten laitoin juuri luomani virtual hostin päälle komennolla sudo a2ensite juuliapurho.me, jonka jälkeen uudelleen käynnistin Aapachen komennolla sudo systemctl restart apache2.
+Sitten laitoin juuri luomani virtual hostin päälle komennolla sudo a2ensite juuliapurho.me, jonka jälkeen uudelleen käynnistin Apachen komennolla sudo systemctl restart apache2.
 
 ![29](https://github.com/user-attachments/assets/8f1d57c4-cf90-49e6-9745-854131ebc10e)
 
