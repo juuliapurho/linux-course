@@ -68,7 +68,7 @@ Muistelin, että luennolla olisi ohjeistettu kytkemään Auto-Renew päälle, jo
 
 ![18](https://github.com/user-attachments/assets/0fb4a6e2-c3d9-43fa-87ac-5905931bd1f5)
 
-Seuraavaksi painoin vuokraamani domain-nimen kohdalta Manage-painiketta ja valitsin avautuneesta näkymästä Advanced DNS -välilehden. Tämän välilehden kohdassa Host records kohdassa oli valmiina neljä A-tietuetta ja yksi CNAME-tietue. Lisäsin tähän kaksi A-tietuetta Add New Record painikkeella. Ensimmäiseen A-tietueeseen laitoin Host-kohtaan @ ja toiseen www. Laitoin molempiin tietueisiin Value-kohtaan virtuaalipalvelimeni IP-osoitteen ja TTL-kohtaan vaihtoehdon 5min. Lopuksi poistin vielä kaikki muut valmiina olleet tietueet siten, että jäljelle jäivät vain kaksi tekemääni tietuetta ja näkymä oli alla olevan kuvan kaltainen.
+Seuraavaksi painoin vuokraamani domain-nimen kohdalta Manage-painiketta ja valitsin avautuneesta näkymästä Advanced DNS -välilehden. Tämän välilehden kohdassa Host records oli valmiina neljä A-tietuetta ja yksi CNAME-tietue. Lisäsin tähän kaksi A-tietuetta Add New Record painikkeella. Ensimmäiseen A-tietueeseen laitoin Host-kohtaan @ ja toiseen www. Laitoin molempiin tietueisiin Value-kohtaan virtuaalipalvelimeni IP-osoitteen ja TTL-kohtaan vaihtoehdon 5min. Lopuksi poistin vielä kaikki muut valmiina olleet tietueet siten, että jäljelle jäivät vain kaksi tekemääni tietuetta ja näkymä oli alla olevan kuvan kaltainen.
 
 ![20](https://github.com/user-attachments/assets/f8c8fbd8-333f-41c3-828d-65c05c9d3232)
 
