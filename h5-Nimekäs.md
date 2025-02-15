@@ -78,7 +78,7 @@ Lisäsin tähän kaksi A-tietuetta Add New Record painikkeella. Ensimmäiseen A-
 
 ![22](https://github.com/user-attachments/assets/38de0e51-25cf-40bd-a11d-fe6fdd913996)
 
-Lopuksi kokeilin vielä, että ohjaako vuokraamani domain-nimi minut nyt virtuaalipalvelimelle tekemälleni sivulle. Kirjoitin verkkoselaimen osoitekenttään verkkotunnukseni juuliapurho.me ja näkyviin tuli edellisessä tehtävässä tekemäni sivu eli ohjaus toimi!
+Lopuksi kokeilin vielä, että ohjaako vuokraamani domain-nimi minut nyt virtuaalipalvelimelle tekemälleni sivulle. Kirjoitin verkkoselaimen osoitekenttään verkkotunnukseni juuliapurho.me ja näkyviin tuli edellisessä kotitehtävässä tekemäni sivu eli ohjaus toimi!
 
 ![23](https://github.com/user-attachments/assets/996d5618-c853-450e-9590-89928d6ea642)
 
