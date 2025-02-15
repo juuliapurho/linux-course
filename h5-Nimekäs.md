@@ -239,8 +239,6 @@ Lähdin ensimmäisenä etsimään tietoa siitä, mikä CNAME-tietue on ja miten 
 
 Seuravaaksi ryhdyin tekemään näitä alidomaineja. Siirryin ensin Namecheapin verkkosivuille ja kirjauduin sisään. Tämän jälkeen valitsin vasemmassa reunassa olevasta valikosta Domain List ja klikkasin vuokraamani domain nimen juuliapurho.me kohdalta Manage-painiketta. Avautuneesta näkymästä siirryin Advanced DNS välilehdelle. 
 
-![71](https://github.com/user-attachments/assets/ea88e764-520c-4f17-9673-0e0252513bf9)
-
 ![72](https://github.com/user-attachments/assets/03b86e9a-ef23-4203-89f3-5e141ffa0051)
 
 Kohdassa Host Records lisäsin ensin A-tietueen Add New Record -painiketta klikkaamalla. Host kohtaan kirjoitin blog, Value kohtaan virtuaalipalvelimeni IP-osoitteen ja TTL kohtaan valitsin vaihtoehdon 5 min. Sitten loin CNAME-tietueen, jossa Host kohtaan kirjoitin info, Value kohtaan blog.juuliapurho.me ja TTL kohtaan valitsin vaihtoehdon 5 min.
