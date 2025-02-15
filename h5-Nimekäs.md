@@ -161,7 +161,7 @@ Sitten loin tähän kansioon ensimmäiseksi index.html-tiedoston. Tämän tein s
 
 ![47](https://github.com/user-attachments/assets/d9436184-4123-46fd-8821-40b48d628e8e)
 
-Sitten loin toisen blog.html tiedoston komennolla micro blog.html ja kirjoitin tiedostoon jälleen lyhyen HTML5-sivun tiedot ja tallensin tekemäni muutokset ctrl + S ja suljin tiedoston ctrl + Q
+Sitten loin toisen blog.html tiedoston komennolla micro blog.html ja kirjoitin tiedostoon jälleen lyhyen HTML5-sivun tiedot. Tallensin tekemäni muutokset ctrl + S ja suljin tiedoston ctrl + Q
 
 ![45](https://github.com/user-attachments/assets/181da3d8-bec8-470c-9142-3d0ded38467f)
 
