@@ -283,7 +283,7 @@ Suoritin seuraavaksi omalla domain-nimelläni komennon host juuliapurho.me ja ko
 
 ![84](https://github.com/user-attachments/assets/433e4ae2-1017-40d3-9d25-f3a6772fd596)
 
-Host komento tulosti virtuaalipalvelimeni IP-osoitteen sekä sähköpostiin liittyviä tietoja. Löysin Namecheapista domain-nimeeni liittyen Advanced DNS-välilehden kohdasta Mail Settings TXT-tietueen, jonka Value kohdassa lukee "v=spf1 include:spf.efwd.registrar-servers.com ~all". Nämä host komennon tulostamat rivit varmaankin liittyvät siis tähän tietueeseen ja kertovat mihin sähköpostiliikenne on ohjattu.
+Host komento tulosti virtuaalipalvelimeni IP-osoitteen sekä sähköpostiin liittyviä tietoja. Löysin Namecheapista domain-nimeeni liittyen Advanced DNS-välilehden kohdasta Mail Settings TXT-tietueen, jonka Value kohdassa lukee "v=spf1 include:spf.efwd.registrar-servers.com ~all". Nämä host komennon tulostamat viimeiset viisi riviä varmaankin liittyvät siis tähän tietueeseen ja kertovat mihin sähköpostiliikenne on ohjattu.
 
 Sitten suoritin vertailun vuoksi komennot dig juuliapurho.me ja dig juuliapurho.me ANY. Ja nämä tulostivat alla olevien kuvien kaltaiset vastaukset.
 
