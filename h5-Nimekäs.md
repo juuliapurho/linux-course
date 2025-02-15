@@ -23,7 +23,7 @@ Virtuaalikone
 
 
 ## a)
-#### Nimi
+### Nimi
 Aloitusaika: Torstai 2025-02-13, kello 17.20.
 
 Tässä tehtävässä vuokrasin domain-nimen ja laitoin sen osoittamaan virtuaalipalvelimeeni. Tehtävää tehdessäni kirjasin samanaikaisesti raporttia. 
@@ -84,7 +84,7 @@ Lopetin tehtävän tekemisen kello 18.15.
 
 
 ## b)
-#### Based 
+### Based 
 Aloitusaika: Torstai 2025-02-13, kello 18.25.
 
 Tässä tehtävässä tein uuden Name Based Virtual Hostin, joka näkyi uudessa, hetki sitten vuokraamassani domain-nimessäni. Tämän tekemisessä käytin apuna aikaisemmin laatimiani raportteja, joissa olen tehnyt uusia nimipohjaisia virtual hosteja. Tehtävää tehdessäni kirjoitin samalla raporttiin tekemäni toimenpiteet. 
@@ -144,7 +144,7 @@ Tämän tehtävän lopuksi kävin vielä verkkoselaimella tarkistamassa, että t
 Lopetin tehtävän tekemisen kello 19.20.
 
 ## c)
-#### Kotisivu
+### Kotisivu
 Aloitusaika: Perjantai 2025-02-14, kello 09.50.
 
 Tässä tehtävässä minun tuli tehdä vähintään kolmen erillisen alasivun kotisivu ja kopioida se näkymään palvelimelleni. Tehtävää tehdessäni kirjoitin samalla raporttia. 
@@ -228,7 +228,7 @@ Kävin vielä poistamassa näistä index.html ja contact.html tiedostoista tuon 
 Tein nämä muokkaukset vielä samalla tavalla alkuperäisiin virtuaalikoneellani oleviin tiedotostoihin ja lopetin tehtävän tekemisen kello 11.35.
 
 ## d)
-#### Alidomain
+### Alidomain
 Aloitusaika: Perjantai 2025-02-14, kello 13.45.
 
 Tässä tehtävässä tein kaksi uutta alidomainia, jotka osoittavat virtuaalipalvelimeeni. Päätin, että teen toisen alidomainin A-tietueella tai toisen CNAME-tietueella. Tehtävää tehdessäni kirjoitin samanaikaisesti raporttia.
@@ -254,7 +254,7 @@ Tehtävän lopuksi kokeilin vielä, että tekemäni alidomainit toimivat. Siirry
 Lopetin tehtävän tekemisen kello 14.05.
 
 ## e)
-#### DNS-tiedot
+### DNS-tiedot
 Aloitusaika: Perjantai 2025-02-14, kello 15.30.
 
 Tässä tehtävässä tutkin domain-nimien DNS-tietoja komennoilla host ja dig. Oman domain-nimeni lisäksi minun piti tutkia jonkin pikkuyrityksen sekä suuren ja kaikkien tunteman palvelun tietoja. Valitsin pieneksi yritykseksi Kymen Leipomon, joka vaikutti olevan pieni leipomoalan yritys ja suureksi kaikkien tuntemaksi palveluksi valitsin Googlen. Tehtävää tehdessäni kirjoitin samanaikaisesti raporttia.
