@@ -292,7 +292,7 @@ Sitten suoritin vertailun vuoksi komennot dig juuliapurho.me ja dig juuliapurho.
 ![86](https://github.com/user-attachments/assets/b030caab-3929-4d55-9735-c5f68eaf1dd1)
 
 
-Nämä komennot tulostivat keskenään hieman erilaiset vastaukset. Lähdin etsimään internetistä apua näiden tulosten tulkitsemiseen. Löysin näiden vastausten tulkitsemiseen apua phoenixNAP-verkkosivuilta (https://phoenixnap.com/kb/linux-dig-command-examples). Olen listannut alle dig komennon tulostaman vastauksen sisällön merkityksen ylhäältä alas lueteltuna:
+Nämä komennot tulostivat keskenään hieman erilaiset vastaukset. Lähdin etsimään internetistä apua näiden tulosten tulkitsemiseen. Löysin näiden vastausten tulkitsemiseen apua phoenixNAP-verkkosivuilta (https://phoenixnap.com/kb/linux-dig-command-examples). Olen listannut alle dig komennon tulostaman vastauksen sisältöjen merkitykset ylhäältä alas lueteltuna:
 
 - Ensimmäinen rivi kertoo dig komennon version.
 - HEADER-osio kertoo DNS-kyselystä ja sen vastauksen yksityiskohdista. Se siis sisältää tietoja kyselytyypistä, vastauksen tilasta (NOERROR tarkoittaa onnistunutta vastausta), flags eli lipuista (jotka osoittavat pääatribuutit, kuten rekursion) sekä siinä luetellaan DNS-vastauksen kysymykset, vastaukset, auktoritatiiviset tietueet ja lisätietueiden määrät.
