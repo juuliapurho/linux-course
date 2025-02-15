@@ -155,7 +155,7 @@ Aloitin tehtävän tekemisen luomalla virtuaalikoneelleni uuden juuliapurho.me k
 
 ![41](https://github.com/user-attachments/assets/6b2fa146-f6ce-4ca9-8f3e-17456aec4f1a)
 
-Sitten loin tähän kansioon ensimmäiseksi index.html-tiedoston. Tämän tein siirtymällä ensin juuliapurho.me kansioon komennolla cd /home/juulia/public_sites/juuliapurho.me ja luomalla html-tiedoston komennolla micro index.html. Tähän tiedostoon kirjoitin lyhyen HTML5-sivun tiedot ja tallensin tekemäni muutokset ctrl + S ja suljin tiedoston ctrl + Q. Html-tiedoston muokkaamisessa käytin jälleen apuna W3Schoolsin HTML Tutorialia (https://www.w3schools.com/html/) sekä Tero Karvisen artikkelia (https://terokarvinen.com/2012/short-html5-page/). 
+Sitten loin tähän kansioon ensimmäiseksi index.html-tiedoston. Tämän tein siirtymällä ensin juuliapurho.me kansioon komennolla cd /home/juulia/public_sites/juuliapurho.me ja luomalla html-tiedoston komennolla micro index.html. Tähän tiedostoon kirjoitin lyhyen HTML5-sivun tiedot ja tallensin tekemäni muutokset ctrl + S ja suljin tiedoston ctrl + Q. Html-tiedoston muokkaamisessa käytin jälleen apuna W3Schoolsin HTML Tutorialia (https://www.w3schools.com/html/) sekä Tero Karvisen artikkelia Short HTML5 page (https://terokarvinen.com/2012/short-html5-page/). 
 
 ![43](https://github.com/user-attachments/assets/7e1fffa2-dd8a-458a-b414-6b5699a5c4cd)
 
@@ -329,7 +329,7 @@ Sitten suoritin komennot dig google.com ja dig google.com ANY, jotka tulostivat 
 
 ![99](https://github.com/user-attachments/assets/d1e22a65-9d63-4dba-ba61-61d949dc3c45)
 
-Ensimmäisen kyselyn vastauksen ANSWER-osiossa näkyi tieto domainin A-tietueesta, jossa oli sama IPv4-osoite kuin host komennolla suoritetun kyselyn vastauksessa. Toisessa ANY-kyselyssä ANSWER-osiossa oli jälleen enemmän tietoa. Tämän kyselyn tuloksissa näkyi SOA-tietue, A-tietue, AAAA-tietue, HTTPS-tietue ja neljä NS-tietuetta. Käytin jälleen näiden tulkitsemisessa apuna Cloudflaren artikkeleita. SOA-tietue kertoi ensisijaisen DNS-palvelimen, joka on Googlen oman nimipalvelin numero 1. NS-tietueissa oli nähtävissä kaikki käytössä olevat DNS-palvelimet ja ne olivat kaikki Googlen omia nimipalvelimia (nimipalvelimet numero 1, 2, 3 ja 4). A-tietueessa näytti domainin IPv4-osoitteen ja AAAA-tietue taas IPv6-osoitteen. HTTPS-tietueesta löysin tietoa GCoren verkkosivuilta (https://gcore.com/docs/dns/dns-records/what-is-an-https-record-and-how-is-it-configured). HTTPS-tietue kertoo muita tietueita tarkemmin tietylle domainille saatavilla olevista palveluista. Tässä tapauksessa HTTPS-tietue oli seuraavanlainen:
+Ensimmäisen kyselyn vastauksen ANSWER-osiossa näkyi tieto domainin A-tietueesta, jossa oli sama IPv4-osoite kuin host komennolla suoritetun kyselyn vastauksessa. Toisessa ANY-kyselyssä ANSWER-osiossa oli jälleen enemmän tietoa. Tämän kyselyn tuloksissa näkyi SOA-tietue, A-tietue, AAAA-tietue, HTTPS-tietue ja neljä NS-tietuetta. Käytin jälleen näiden tulkitsemisessa apuna Cloudflaren artikkeleita. SOA-tietue kertoi ensisijaisen DNS-palvelimen, joka on Googlen oman nimipalvelin numero 1. NS-tietueissa oli nähtävissä kaikki käytössä olevat DNS-palvelimet ja ne olivat kaikki Googlen omia nimipalvelimia (nimipalvelimet numero 1, 2, 3 ja 4). A-tietue näytti domainin IPv4-osoitteen ja AAAA-tietue taas IPv6-osoitteen. HTTPS-tietueen tulkitsemiseen löysin tietoa GCoren verkkosivuilta (https://gcore.com/docs/dns/dns-records/what-is-an-https-record-and-how-is-it-configured). HTTPS-tietue kertoo muita tietueita tarkemmin tietylle domainille saatavilla olevista palveluista. Tässä tapauksessa HTTPS-tietue oli seuraavanlainen:
 
 1 . alpn="h2,h3" 
 
@@ -345,9 +345,9 @@ ________________________________________________________________________________
 
 Cloudflare: DNS AAAA record. Luettavissa: https://www.cloudflare.com/learning/dns/dns-records/dns-aaaa-record/. Luettu 14.2.2025.
 
-Cloudflare: What is a DNS CNAME record? Luettavissa: https://www.cloudflare.com/learning/dns/dns-records/dns-cname-record/. Luettu 14.2.2025.
-
 Cloudflare: DNS NS record. Luettavissa: https://www.cloudflare.com/learning/dns/dns-records/dns-ns-record/. Luettu 14.2.2025.
+
+Cloudflare: What is a DNS CNAME record? Luettavissa: https://www.cloudflare.com/learning/dns/dns-records/dns-cname-record/. Luettu 14.2.2025.
 
 Cloudflare: What is a DNS MX record? Luettavissa: https://www.cloudflare.com/learning/dns/dns-records/dns-mx-record/. Luettu 14.2.2025.
 
