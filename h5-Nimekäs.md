@@ -269,7 +269,9 @@ Löysin WebHostingGeeks.com sivulta apua (https://webhostinggeeks.com/howto/how-
 
 ![80](https://github.com/user-attachments/assets/448d9425-08b5-4b09-9c13-6a8fd0148148)
 
-Tämän jälkeen yritin uudelleen avata host komennon manuaalia komennolla man host ja manuaali aukesi. Manuaalissa kerrottiin, että host komento on yksikertainen apuohjelma DNS-hakujen suorittamiseen ja sitä käytetään normaalisti IP-osoitteiden muuntamisessa nimiksi ja päinvastoin. Sitten suoritin komennon man dig ja pääsin tarkastelemaan dig komennon manuaalia. Manuaalissa dig komennon kerrotaan olevan joustava työkalu DNS-nimipalvelimien kyselemiseen. Se suorittaa DNS-kyselyitä ja näyttää vastaukset, jotka palautuivat niiltä nimipalvelimilta, joilta kysyttiin. Tehtävänannossa todetaan, että dig komennon manuaalista on myös nähtävissä miten komento näyttää kaikki kentät. Manuaalissa kerrotaan, että jos kyselyn tyyppiä ei määritetä, dig komento tulostaa ainostaan A-tietueet. Kun komentoon lisätään ANY, se näyttää kaikki tietuetyypit.
+Tämän jälkeen yritin uudelleen avata host komennon manuaalia komennolla man host ja manuaali aukesi. Manuaalissa kerrottiin, että host komento on yksikertainen apuohjelma DNS-hakujen suorittamiseen ja sitä käytetään normaalisti IP-osoitteiden muuntamisessa nimiksi ja päinvastoin. 
+
+Sitten suoritin komennon man dig ja pääsin tarkastelemaan dig komennon manuaalia. Manuaalissa dig komennon kerrotaan olevan joustava työkalu DNS-nimipalvelimien kyselemiseen. Se suorittaa DNS-kyselyitä ja näyttää vastaukset, jotka palautuivat niiltä nimipalvelimilta, joilta kysyttiin. Tehtävänannossa todetaan, että dig komennon manuaalista on myös nähtävissä miten komento näyttää kaikki kentät. Manuaalissa kerrotaan, että jos kyselyn tyyppiä ei määritetä, dig komento tulostaa ainostaan A-tietueet. Kun komentoon lisätään ANY, se näyttää kaikki tietuetyypit.
 
 ![83](https://github.com/user-attachments/assets/07dd2eea-a3e6-4f70-ada4-06b3c22c549d)
 
