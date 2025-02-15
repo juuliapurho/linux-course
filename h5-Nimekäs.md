@@ -19,6 +19,9 @@ Virtuaalikone
 - Järjestelmätyyppi: 64-bittinen käyttöjärjestelmä
 - Käyttöjärjestelmä: Debian 12.9.0
 
+![100](https://github.com/user-attachments/assets/6f60095f-f3f2-4dd2-85ad-401e18eefe26)
+
+
 ## a)
 #### Nimi
 Aloitusaika: Torstai 2025-02-13, kello 17.20.
