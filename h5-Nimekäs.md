@@ -123,7 +123,7 @@ Huomasin, etten ollut vielä asentanut virtuaalipalvelimelleni micro-editoria, j
 
 ![33](https://github.com/user-attachments/assets/33bbb34a-95e9-44c8-8319-4d6b927cc1f0)
 
-Sitten tarkastin, että mitkä virtual hostit ovat tällä hetkellä käynnissä komennoilla cd /etc/apache2/sites-enabled ja ls. Näin, että nyt luomani virtual hostin juuliapurho.me lisäksi käynnissä oli myös edellisessä tehtävässä luomani virtual host juulia.example.com. Poistin jälkimmäisen käytöstä komennolla sudo a2dissite juulia.example.com.conf ja käynnistin Apachen uudellen komennolla sudo systemctl restart apache2. Tarkistin vielä, että nyt käynnissä oli enää juuliapurho.me virtual host komennolla ls.
+Sitten tarkastin, että mitkä virtual hostit ovat tällä hetkellä käynnissä komennoilla cd /etc/apache2/sites-enabled ja ls. Näin, että nyt luomani virtual hostin juuliapurho.me lisäksi käynnissä oli myös edellisessä kotitehtävässä luomani virtual host juulia.example.com. Poistin jälkimmäisen käytöstä komennolla sudo a2dissite juulia.example.com.conf ja käynnistin Apachen uudellen komennolla sudo systemctl restart apache2. Tarkistin vielä, että nyt käynnissä oli enää juuliapurho.me virtual host komennolla ls.
 
 ![34](https://github.com/user-attachments/assets/35c9788f-7294-4757-b74a-442047983fbf)
 
