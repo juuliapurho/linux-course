@@ -294,7 +294,7 @@ Sitten suoritin vertailun vuoksi komennot dig juuliapurho.me ja dig juuliapurho.
 
 Nämä komennot tulostivat keskenään hieman erilaiset vastaukset. Lähdin etsimään internetistä apua näiden tulosten tulkitsemiseen. Löysin näiden vastausten tulkitsemiseen apua phoenixNAP-verkkosivuilta (https://phoenixnap.com/kb/linux-dig-command-examples). Olen listannut alle dig komennon tulostaman vastauksen sisällön merkityksen ylhäältä alas lueteltuna:
 
-- Molemmissa vatsuaksissa ensimmäinen rivi kertoo dig komennon version.
+- Ensimmäinen rivi kertoo dig komennon version.
 - HEADER-osio kertoo DNS-kyselystä ja sen vastauksen yksityiskohdista. Se siis sisältää tietoja kyselytyypistä, vastauksen tilasta (NOERROR tarkoittaa onnistunutta vastausta), flags eli lipuista (jotka osoittavat pää atribuutit, kuten rekursion) sekä siinä luetellaan DNS-vastauksen kysymykset, vastaukset, auktoritatiiviset tietueet ja lisätietueiden määrät.
 - OPT PSEUDOSECTION-osio (joka tulostui vain jälkimmäisessä ANY-kyselyssä) näyttää lisätietoja. EDNS tarkoittaa DNS:n laajennusjärjestelmää, jonka lisäksi tässä osiossa on tietoa määritetyistä lipuista sekä udp-paketin koosta.
 - QUESTION-osiossa ensimmäisenä on domain-nimi, jota kysely koskee (tässä tapauksessa juuliapurho.me), toisena on kyselytyyppi (IN tarkoittaa internettiä) ja viimeisenä tällä rivillä on mitä tietueita kysely koskee (ensimmäisellä kyselyllä A-tietueita, sillä tietuetta ei määritetty ja jälkimmäisellä ANY-kyselyllä kaikkia tietueita).
