@@ -4,6 +4,19 @@
 ### Lue ja tiivistä 
 
 #### Let's Encrypt: How It Works
+Let's Encryptin verkkosivuilla julkaistussa artikkelissa How It Works kerrotaan, että Let's Encryptin ja ACME eli Automated Certificate Management Environment -protokollan tavoitteena on mahdollistaa HTTPS-palvelimen perustaminen ja saada sille automaattisesti selainluotetun sertifikaatti ilman ihmisen puuttumista. Tämä saavutetaan ajamalla sertifikaatinhallinta-agenttia verkkopalvelimella. Artikkelissa käsitellään sitä, että miten tämä TLS-sertifikaatin hankkimisprosessi Let's Encryptin kautta toimii teknisesti. Sertifikaatin määrittämisprosessi on kaksivaiheinen, ensin agentti todistaa sertifikaatin myöntäjälle (Certificate authority), että verkkopalvelin hallinnoin tiettyä verkkotunnusta ja sen jälkeen tämä agentti voi pyytää, uusia ja peruuttaa sertifikaatteja kyseiselle verkkotunnukselle.
+
+Ensimmäinen vaihe: Verkkotunnuksen validointi
+
+Let's Encrypt tunnistaa palvelimen ylläpitäjän julkisen avaimen perusteella. Agenttiohjelmiston ollessa ensimmäisen kerran vuorovaikutuksessa Let's Encryptin kanssa, se luo uuden avainparin ja todistaa Let's Encrypt sertifikaatin myöntäjälle, että palvelin hallitsee verkkotunnusta. Prosessin aloittamiseksi agentti kysyy Let's Encrypt sertifikaatin myöntäjältä, mitä agentin täytyy tehdä sen todistamiseksi, että se verkkotunnusta. Let's Encrypt sertifikaatin myöntäjä tarkastelee pyydettyä verkkotunnusta ja antaa yhden tai useamman haasteen. Nämä haasteet ovat erilaisia tapoja, joilla agentti voi todistaa verkkotunnuksen hallinnan. Tämän jälkeen agenttiohjelmisto suorittaa yhden näistä annetuista haasteista annetuista haasteista, jonka lisäksi agentti allekirjoittaa annetun nonce eli number used once -arvon yksityisellä avaimellaan. Agentin suoritettua nämä vaiheet, agentti ilmoittaa sertifikaatin myöntäjälle, että se on valmis suorittamaan validoinnin. Tämän jälkeen sertifikaatin myöntäjän tehtävänä on tarkistaa, että haasteet on täytetty. 
+
+Toinen vaihe: Varmenteiden myöntäminen ja peruuttaminen
+
+Kun agentilla on valtuutettu avainpari, sertifikaattien pyytäminen, uusiminen ja peruuttaminen on yksinkertaista. Tarvitsee vain lähettää sertifikaattien hallintaviestejä ja allekirjoittaa ne valtuutetulla avainparilla. Jotta verkkotunnus saa sertifikaatin, tulee 
+
+
+
+
 
 #### Lange: Lego: Obtain a Certificate: Using an existing, running web server 
 
@@ -45,6 +58,8 @@ Tässä tehtävässä testasin oman sivuni TLS:ää laadunvarmistustyökalu SSLL
 ____________________________________________________________________________________________________________________________________________________________________
 
 #### Lähteet
+
+Let's Encrypt 2024: How It Works. Luettavissa: https://letsencrypt.org/how-it-works/. Luettu 27.2.2025.
 
 
 ____________________________________________________________________________________________________________________________________________________________________
