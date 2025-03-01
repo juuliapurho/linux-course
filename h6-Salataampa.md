@@ -43,7 +43,7 @@ The Apache Software Foundationin Apache HTTP-palvelimen versiota 2.4 koskevan do
 -    SSLEngine on
 -    SSLCertificateFile "/path/to/www.example.com.cert"
 -    SSLCertificateKeyFile "/path/to/www.example.com.key"
-- </VirtualHost>
+-  </VirtualHost>
 
 ## Tehtävissä a-b käytetty ympäristö
 Kannettava tietokone
