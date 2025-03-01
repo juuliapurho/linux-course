@@ -152,15 +152,17 @@ Tässä virheilmoituksessa kerrottiin, että palvelimen täysin pätevää domai
 
 Suoritin komennon sudoedit /etc/apache2/apache2.conf ja pääsin muokkaamaan konfiguraatiotiedostoa. Lisäsin konfiguraatiotiedoston loppuun alla olevan kuvan mukaisesti tekstin ServerName 127.0.0.1 ja tallensin tekemäni muutokset. 
 
-![30](https://github.com/user-attachments/assets/63ae3ffd-258a-4013-a2ef-268615d062c0)
-
 ![36](https://github.com/user-attachments/assets/92d701d7-f7af-4bbf-875a-22390a5b96ff)
 
-Tämän jälkeen suoritin uudelleen komennon sudo apache2ctl configtest, joka tulostin vastauksen Syntax OK. Sitten käynnistin Apachen uudelleen komennolla sudo systemctl restart apache2 ja uudellenkäynnistys onnistui.
+![30](https://github.com/user-attachments/assets/63ae3ffd-258a-4013-a2ef-268615d062c0)
+
+Tämän jälkeen suoritin uudelleen komennon sudo apache2ctl configtest, joka tulostin vastauksen Syntax OK. Sitten käynnistin Apachen uudelleen komennolla sudo systemctl restart apache2 ja uudellenkäynnistys onnistui. Tarkistin vielä Apachen tilan komennolla systemctl status apache2.services ja kaikki näytti olevan kunnossa. 
 
 ![31](https://github.com/user-attachments/assets/4db9d7f8-4e86-493f-8b3a-7bec864fdd11)
 
 ![32](https://github.com/user-attachments/assets/4937642e-f8fb-423c-bc7d-a37897203cee)
+
+![37](https://github.com/user-attachments/assets/7009aca7-5e6a-49db-be17-46797cc296a9)
 
 Tämän jälkeen avasin reiän palomuuriin portille 443 suorittamalla komennon sudo ufw allow 443/tcp. 
 
