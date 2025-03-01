@@ -3,7 +3,7 @@
 ## x)
 ### Lue ja tiivistä 
 
-#### Let's Encrypt: How It Works
+#### Let's Encrypt: How It Works (https://letsencrypt.org/how-it-works/)
 Let's Encryptin verkkosivuilla julkaistussa artikkelissa How It Works kerrotaan, että Let's Encryptin ja ACME eli Automated Certificate Management Environment -protokollan tavoitteena on mahdollistaa HTTPS-palvelimen perustaminen ja saada sille automaattisesti selainluotettu sertifikaatti ilman ihmisen puuttumista. Tämä saavutetaan ajamalla sertifikaatinhallinta-agenttia verkkopalvelimella. Artikkelissa käsitellään sitä, miten tämä TLS-sertifikaatin hankkimisprosessi Let's Encryptin kautta toimii teknisesti. Sertifikaatin määrittämisprosessi on kaksivaiheinen, ensin agentti todistaa sertifikaatin myöntäjälle (Certificate authority), että verkkopalvelin hallinnoi tiettyä verkkotunnusta ja sen jälkeen tämä agentti voi pyytää, uusia ja peruuttaa sertifikaatteja kyseiselle verkkotunnukselle.
 
 Ensimmäinen vaihe: Verkkotunnuksen validointi
@@ -22,7 +22,7 @@ Kun agentilla on valtuutettu avainpari, sertifikaattien pyytäminen, uusiminen j
 - Jotta verkkotunnus saa sertifikaatin, tulee agentin muodostaa PKCS#10 -sertifikaatin allekirjoituspyyntö (8Certificate Signing Request), jolla pyydetään Let's Encrypt sertifikaatin myöntäjää myöntämään sertifikaatti verkkotunnukselle määritetyllä julkisella avaimella. Tämä allekirjoituspyyntö sisältää julkista avainta vastaavalla yksityisellä avaimella tehdyn allekirjoituksen. Agentti allekirjoittaa myös koko allekirjoituspyynnön verkkotunnuksen valtuutetulla avaimella.
 - Let’s Encrypt sertifikaatin myöntäjä vastaanottaa tämän pyynnön ja tarkistaa molemmat allekirjoitukset. Jos kaikki näyttää hyvältä, se antaa sertifikaatin verkkotunnukselle julkisella avaimella ja palauttaa sen agentille. 
 
-#### Nick Lange, Lego: Obtain a Certificate: Using an existing, running web server.
+#### Nick Lange, Lego: Obtain a Certificate: Using an existing, running web server. (https://go-acme.github.io/lego/usage/cli/obtain-a-certificate/index.html#using-an-existing-running-web-server)
 Nick Langen kirjoittamassa oppaassa kerrotaan erilaisista tavoista, joilla uusi sertifikaatti voidaan hankkia. Yksi oppaan kappaleista käsittelee sertifikaatin hankkimista käyttämällä olemassa olevaa ja käynnissä olevaa weppipalvelinta. Tällöin tulisi käyttää seuraavan kaltaista komentoa:
 
 lego --accept-tos --email you@example.com --http --http.webroot /path/to/webroot --domains example.com run
@@ -33,7 +33,7 @@ Tätä komentoa käytettäessä tulee ottaa huomioon seuraavia asioita:
 - Annetun hakemiston tulee olla julkisesti saatavilla /-nimellä verkkotunnuksella tai verkkotunnuksilla, jotta validointi voidaan suorittaa. Jos hakemisto ei ole julkinen, tulee pyyntö uudelleenkirjoittaa kyseiseen hakemistoon.
   
 
-#### The Apache Software Foundation: SSL/TLS Strong Encryption: How-To: Basic Configuration Example 
+#### The Apache Software Foundation: SSL/TLS Strong Encryption: How-To: Basic Configuration Example (https://httpd.apache.org/docs/2.4/ssl/ssl_howto.html#configexample)
 The Apache Software Foundationin Apache HTTP-palvelimen versiota 2.4 koskevan dokumentaation luvussa "SSL/TLS Strong Encryption: How-To" on esimerkki peruskonfiguraatiosta. Tässä kerrotaan, että SSL-konfiguraation tulee sisältää vähintään seuraavat tiedot:
 
 LoadModule ssl_module modules/mod_ssl.so
