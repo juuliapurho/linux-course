@@ -39,7 +39,7 @@ The Apache Software Foundationin Apache HTTP-palvelimen versiota 2.4 koskevan do
 - LoadModule ssl_module modules/mod_ssl.so
 - Listen 443
 - <VirtualHost *:443>
--     ServerName www.example.com
+-    ServerName www.example.com
 -    SSLEngine on
 -    SSLCertificateFile "/path/to/www.example.com.cert"
 -    SSLCertificateKeyFile "/path/to/www.example.com.key"
