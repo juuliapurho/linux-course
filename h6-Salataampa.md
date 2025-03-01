@@ -34,16 +34,10 @@ Tätä komentoa käytettäessä tulee ottaa huomioon seuraavia asioita:
   
 
 #### The Apache Software Foundation: SSL/TLS Strong Encryption: How-To: Basic Configuration Example (https://httpd.apache.org/docs/2.4/ssl/ssl_howto.html#configexample)
-The Apache Software Foundationin Apache HTTP-palvelimen versiota 2.4 koskevan dokumentaation luvussa "SSL/TLS Strong Encryption: How-To" on esimerkki peruskonfiguraatiosta. Tässä kerrotaan, että SSL-konfiguraation tulee sisältää vähintään seuraavat tiedot:
+The Apache Software Foundationin Apache HTTP-palvelimen versiota 2.4 koskevan dokumentaation luvussa "SSL/TLS Strong Encryption: How-To" on esimerkki peruskonfiguraatiosta. Tässä kerrotaan, että SSL-konfiguraation tulee sisältää vähintään alla olevan The Apache Software Foundationin dokumentaatiosta otetun kuvan mukaiset seuraavat tiedot:
 
-- LoadModule ssl_module modules/mod_ssl.so
-- Listen 443
-- <VirtualHost *:443>
--    ServerName www.example.com
--    SSLEngine on
--    SSLCertificateFile "/path/to/www.example.com.cert"
--    SSLCertificateKeyFile "/path/to/www.example.com.key"
-- Sekä </VirtualHost>
+![1](https://github.com/user-attachments/assets/cec5363c-39c0-4a9a-ab78-69503afadb8b)
+
 
 ## Tehtävissä a-b käytetty ympäristö
 Kannettava tietokone
