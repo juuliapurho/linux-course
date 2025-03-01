@@ -148,12 +148,29 @@ Siirryin muokkaamaan konfiguraatiotiedostoa komennolla sudoedit /etc/apache2/sit
 
 ![28](https://github.com/user-attachments/assets/a88593ef-b028-4ed5-8f7a-60d15b2d0e8d)
 
-Tässä virheilmoituksessa kerrottiin, että palvelimen täysin pätevää domain-nimeä ei voitu luotettavasti määrittää käyttämällä 127.0.1.1. Virheilmoituksessa kehotettiin asettamaan ServerName-direktiivi maailmanlaajuisesti kyseisen viestin estämiseksi. Virheilmoituksen jälkeen tuli myös ilmoitus "Syntax OK". P
+Tässä virheilmoituksessa kerrottiin, että palvelimen täysin pätevää domain-nimeä ei voitu luotettavasti määrittää käyttämällä 127.0.1.1. Virheilmoituksessa kehotettiin asettamaan ServerName-direktiivi maailmanlaajuisesti kyseisen viestin estämiseksi. Virheilmoituksen jälkeen tuli myös ilmoitus "Syntax OK". Löysin apua DigitalOceanin verkkosivuilta (https://www.digitalocean.com/community/tutorials/apache-configuration-error-ah00558-could-not-reliably-determine-the-server-s-fully-qualified-domain-name), jossa ohjeistettiin lisäämään Apacen kopnfiguraatiotiedostoon teksti "ServerName 127.0.0.1" virheilmoituksen korjaamiseksi. Päätin siis tehdä tämän. 
 
-Tämän jälkeen avasin reiän palomuuriin prtille 443 suorittamalla komennon sudo ufw allow 443/tcp. 
+Suoritin komennon sudoedit /etc/apache2/apache2.conf ja pääsin muokkaamaan konfiguraatiotiedostoa. Lisäsin konfiguraatiotiedoston loppuun alla olevan kuvan mukaisesti tekstin ServerName 127.0.0.1 ja tallensin tekemäni muutokset. 
 
+![30](https://github.com/user-attachments/assets/63ae3ffd-258a-4013-a2ef-268615d062c0)
 
-Sitten kokeilin, että sivustoni toimii. Siirryin virtuaalikoneellani verkkoselaimeen ja kirjoitin osoitekenttään https://juuliapurho.me ja sivusto toimi. Kokeilin sivuston toimivuutta vielä omalla tietokoneellani sekä puhelimellani ja se toimi näissä kaikissa. 
+![36](https://github.com/user-attachments/assets/92d701d7-f7af-4bbf-875a-22390a5b96ff)
+
+Tämän jälkeen suoritin uudelleen komennon sudo apache2ctl configtest, joka tulostin vastauksen Syntax OK. Sitten käynnistin Apachen uudelleen komennolla sudo systemctl restart apache2 ja uudellenkäynnistys onnistui.
+
+![31](https://github.com/user-attachments/assets/4db9d7f8-4e86-493f-8b3a-7bec864fdd11)
+
+![32](https://github.com/user-attachments/assets/4937642e-f8fb-423c-bc7d-a37897203cee)
+
+Tämän jälkeen avasin reiän palomuuriin portille 443 suorittamalla komennon sudo ufw allow 443/tcp. 
+
+![33](https://github.com/user-attachments/assets/8a0b1bba-0bf6-4d11-8be8-133ca17a158a)
+
+Sitten lopuksi kokeilin, että sivustoni toimii. Siirryin virtuaalikoneellani verkkoselaimeen ja kirjoitin osoitekenttään https://juuliapurho.me ja sivusto toimi. Kokeilin sivuston toimivuutta vielä omalla tietokoneellani sekä puhelimellani ja se toimi näissä kaikissa ongelmitta. 
+
+![34](https://github.com/user-attachments/assets/35ad1e89-c04c-45d9-bf0d-256ad1fbe479)
+
+![35](https://github.com/user-attachments/assets/e53331ab-d483-47e7-90dc-a1b0e4c908cf)
 
 Lopetin tehtävän tekemisen kello 19.40.
 
