@@ -188,11 +188,15 @@ ________________________________________________________________________________
 
 #### Lähteet
 
-The Apache Software Foundation 2025: Apache HTTP Server Version 2.4 Documentation: SSL/TLS Strong Encryption: How-To. Luettavissa: https://httpd.apache.org/docs/2.4/ssl/ssl_howto.html#configexample. Luettu 1.3.2025.
+Camisso Jamon, DigitalOcean 2022: Apache Configuration Error AH00558: Could not reliably determine the server's fully qualified domain name. Luettavissa: https://www.digitalocean.com/community/tutorials/apache-configuration-error-ah00558-could-not-reliably-determine-the-server-s-fully-qualified-domain-name. Luettu 1.3.2025.
 
 Let's Encrypt 2024: How It Works. Luettavissa: https://letsencrypt.org/how-it-works/. Luettu 1.3.2025.
 
-Nick Lange, Legp 2024: Obtain a Certificate. Luettavissa: https://go-acme.github.io/lego/usage/cli/obtain-a-certificate/index.html#using-an-existing-running-web-server. Luettu 1.3.2025. 
+Nick Lange, Lego 2024: Obtain a Certificate. Luettavissa: https://go-acme.github.io/lego/usage/cli/obtain-a-certificate/index.html#using-an-existing-running-web-server. Luettu 1.3.2025. 
+
+Tero Karvinen 2025: Tehtävänanto h6. Luettavissa: https://terokarvinen.com/linux-palvelimet/. Luettu 1.3.2025.
+
+The Apache Software Foundation 2025: Apache HTTP Server Version 2.4 Documentation: SSL/TLS Strong Encryption: How-To. Luettavissa: https://httpd.apache.org/docs/2.4/ssl/ssl_howto.html#configexample. Luettu 1.3.2025.
 ____________________________________________________________________________________________________________________________________________________________________
 Tätä dokumenttia saa kopioida ja muokata GNU General Public License (versio 2 tai uudempi) mukaisesti. http://www.gnu.org/licenses/gpl.html
 
