@@ -62,9 +62,100 @@ Virtuaalikone
 
 ## a)
 ### Let's
-Aloitusaika: Lauantai 2025-03-01, kello XX.XX.
+Aloitusaika: Lauantai 2025-03-01, kello 17.35.
 
-Tässä tehtävässä hankin ja asensin palvelimelleni ilmaisen TLS-sertifikaatin Let's Encryptilta. Tehtävää tehdessäni kirjoitin saman aikaisesti raporttia.
+Tässä tehtävässä hankin ja asensin palvelimelleni ilmaisen TLS-sertifikaatin Let's Encryptilta. Tehtävää tehdessäni kirjoitin saman aikaisesti raporttia. Käytin tehtävän tekemisessä apuna tehtävänannon vinkkejä. 
+
+Aloitin tehtävän tekemisen käynnistämällä virtuaalikoneeni ja avaamalla SSH-yhteyden virtuaalipalvelimelleni suorittamalla terminaalissa komennon ssh juulia@165.22.75.206 ja syöttämällä salasanani. 
+
+![2](https://github.com/user-attachments/assets/5c5e2db0-1e70-4f0f-948f-82706cda2079)
+
+Sitten käynnistin Apachen uudelleen komennolla sudo systemctl restart apache2 ja syöttämällä salasanani. Tämän jälkeen kokeilin, että sivustoni toimii, avaamalla verkkoselaimen ja kirjoittamalla osoitekenttään juuliapurho.me. Sivusto toimi normaalisti. Kokeilin hakea sivustoani kirjoittamalla osoitekenttään https://juuliapurho.me, mutta tämä ei tietenkään toiminut, sillä en ole vielä asentanut sertifikaattia.
+
+![3](https://github.com/user-attachments/assets/c5f299e0-ace6-4676-b591-4d863e704d64)
+
+![4](https://github.com/user-attachments/assets/cb17161c-113f-422e-a841-695c4256a8bb)
+
+![8](https://github.com/user-attachments/assets/51610b88-6a48-4674-b139-fb687db7b6ce)
+
+Seuraavaksi päivitin kaikki saatavilla olevat päivitykset suorittamalla ensin komennon sudo apt-get update ja sitten sudo apt-get upgrade. Asensin tämän jälkeen lego-ohjelman komennolla sudo apt-get install lego.
+
+![5](https://github.com/user-attachments/assets/87e23fb5-d6bd-497e-a9cf-69a3179c86d2)
+
+![6](https://github.com/user-attachments/assets/fc26d309-1c56-46f5-a252-01a176f009c4)
+
+![7](https://github.com/user-attachments/assets/67eca72c-ab79-4de2-8207-de833875726e)
+
+Tämän jälkeen hain sertifikaatin alla olevassa kuvassa näkyvällä komennolla. Tämä sertifikaatin hakeminen suoritettiin testipalvelimella (staging), joka syötettiin --server parametrin arvoksi.
+
+![9](https://github.com/user-attachments/assets/08391fc3-957c-4908-96fa-55d8cd04345f)
+
+Tästä tulostuneen vastauksen viimeisellä rivillä kerrottiin, että sertifikaatin haku oli onnistunut. 
+
+![10](https://github.com/user-attachments/assets/b6f15ef2-a06f-4311-8c34-f71f93016233)
+
+Seuraavaksi minun tuli poistaa --path parametrissa osoitettu hakemisto /home/juulia/lego/certificates, johon on tallentunut testitietoa. Tämän tein suorittamalla komennon rm -r /home/juulia/lego/certificates, jolla poistin hakemiston ja sen sisällön. Tämän jälkeen tarkistin vielä, lego-kansion sisällön komennolla ls /home/juulia/lego.
+
+![11](https://github.com/user-attachments/assets/24855c74-3b20-4df6-89ad-6a10bae1ee6e)
+
+![12](https://github.com/user-attachments/assets/74811c3f-fe1e-4d6b-aba5-41a9e8611e69)
+
+Tämän jälkeen oli aika hakea sertifikaatti oikealta palvelimelta. Tämän tein niin, että poistin aikaisemmin testipalvelimelle suorittamastani komennosta --server parametrin ja suoritin sitten tämän alla olevan kuvan mukaisen komennon.
+
+![13](https://github.com/user-attachments/assets/d6380ba1-867e-4826-abae-4d5ec9b1592c)
+
+Tästä tulostuneen vastauksen viimeisellä rivillä kerrottiin jälleen, että sertifikaatin haku oli onnistunut. 
+
+![14](https://github.com/user-attachments/assets/88c1a5d6-92a0-4a8b-8a4a-64d75ba33eb2)
+
+Seuraavaksi otin sertifikaatin käyttöön name based virtual host -asetuksissa eli muokkasin konfiguraatiotiedostoa. Suoritin ensin komennon cd /etc/apache2/sites-available ja sen jälkeen komennon sudoedit juuliapurho.me.conf ja syötin salasanani.
+
+![16](https://github.com/user-attachments/assets/04d8c791-87e6-4ef6-8b86-8b362572afab)
+
+Sitten muokkasin konfiguraatiotiedostoa alla olevan kuvan mukaiseksi.   
+
+![17](https://github.com/user-attachments/assets/03e30250-4861-4fb8-a959-4566d17174aa)
+
+Kävin vielä tarkistamassa, että konfiguraatiotiedostoon kirjaamani sertifikaattiin liittyvät hakemistopolut olivat oikein, eli että ne löytyivät lego-kansion sisällä olevasta certificates-kansiosta. Tämän tein alla olevan kuvan mukaisesti käyttämällä cd, ls ja pwd komentoja. Huomasin, että lego-kansion sisällä oli certificates-kansio, jonka sisällä oli toinen certificates-kansio, jossa konfiguraatiotiedostoon merkitsemäni sertifikaattiin liittyvät tiedostot olivat. 
+
+![19](https://github.com/user-attachments/assets/c0d02775-256a-474d-8e5d-a2b582967cdf)
+
+Kävin siis vielä muokkaamassa konfiguraatiotiedostoon hakemistopolut oikein. Suoritin siis komennon sudoedit /etc/apache2/sites-available/juuliapurho.me.conf ja muokkasin konfiguraatiotiedostoa alla olevan kuvan mukaiseksi. Sitten käynnistin Apachen uudelleen komennolla sudo systemctl restart apache2.
+
+![20](https://github.com/user-attachments/assets/aed29cb8-8bc7-4009-84c8-2da19885bbc1)
+
+![21](https://github.com/user-attachments/assets/34b8a4e9-d3af-4f0c-87c8-65c3b7ac8c37)
+
+Seuraavaksi suoritin ohjeen mukaisesti komennon sudo a2enmod ssl, jolla otin SSL:n käyttöön. Tämän jälkeen käynnistin Apache uudelleen komennolla sudo systemctl restart apache2, mutta tämä tulosti alla olevan kuvan kaltaisen virheilmoituksen.
+
+![22](https://github.com/user-attachments/assets/cc2f0d31-f5c2-4ad4-b83b-9ce7b3689680)
+
+![24](https://github.com/user-attachments/assets/9c68132a-a82d-4c59-ac26-659202fb5368)
+
+Virheilmoituksessa kerrottiin, että komennon suorittaminen ei onnistunut, koska ohjausprosessi poistui virhekoodilla. Suoritin virhekoodissa mainitun komennon systemctl status apache2.services. Yritin etsiä internetistä tietoa, että mistä tässä on kyse, mutta en löytänyt tähän ratkaisua.
+
+![25](https://github.com/user-attachments/assets/8930bd0a-5d97-41c3-a4d8-c057242dba56)
+
+Päätin suorittaa komennon sudo apache2ctl configtest, joka tulosti alla olevan kuvan mukaisen virheilmoituksen. Virheilmoituksessa kerrottiin juuliapurho.me.conf konfiguraatiotiedostossa olevasta syntaksivirheestä, jonka mukaan VirtualHost-tagia ei oltu suljettu. 
+
+![23](https://github.com/user-attachments/assets/ae7fc654-fa8b-4ed2-8001-399cba774c49)
+
+Siirryin muokkaamaan konfiguraatiotiedostoa komennolla sudoedit /etc/apache2/sites-available/juuliapurho.me.conf. Lisäsin VirtualHost-lopetustagin ja tallensin muutokset. Sitten suoritin uudelleen komennon sudo apache2ctl configtest, joka tulosti alla olevan kuvan mukaisen virheilmoituksen.
+
+![29](https://github.com/user-attachments/assets/70fb3b98-e4ad-427d-ae6e-2ce5fa482bde)
+
+![27](https://github.com/user-attachments/assets/a7c0ea5c-492f-4199-a1d2-b0072fdf04cd)
+
+![28](https://github.com/user-attachments/assets/a88593ef-b028-4ed5-8f7a-60d15b2d0e8d)
+
+Tässä virheilmoituksessa kerrottiin, että palvelimen täysin pätevää domain-nimeä ei voitu luotettavasti määrittää käyttämällä 127.0.1.1. Virheilmoituksessa kehotettiin asettamaan ServerName-direktiivi maailmanlaajuisesti kyseisen viestin estämiseksi. Virheilmoituksen jälkeen tuli myös ilmoitus "Syntax OK". P
+
+Tämän jälkeen avasin reiän palomuuriin prtille 443 suorittamalla komennon sudo ufw allow 443/tcp. 
+
+
+Sitten kokeilin, että sivustoni toimii. Siirryin virtuaalikoneellani verkkoselaimeen ja kirjoitin osoitekenttään https://juuliapurho.me ja sivusto toimi. Kokeilin sivuston toimivuutta vielä omalla tietokoneellani sekä puhelimellani ja se toimi näissä kaikissa. 
+
+Lopetin tehtävän tekemisen kello 19.40.
 
 ## b)
 ### A-rating
