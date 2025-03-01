@@ -140,11 +140,13 @@ Päätin suorittaa komennon sudo apache2ctl configtest, joka tulosti alla olevan
 
 ![23](https://github.com/user-attachments/assets/ae7fc654-fa8b-4ed2-8001-399cba774c49)
 
-Siirryin muokkaamaan konfiguraatiotiedostoa komennolla sudoedit /etc/apache2/sites-available/juuliapurho.me.conf. Lisäsin VirtualHost-lopetustagin ja tallensin muutokset. Sitten suoritin uudelleen komennon sudo apache2ctl configtest, joka tulosti alla olevan kuvan mukaisen virheilmoituksen.
+Siirryin muokkaamaan konfiguraatiotiedostoa komennolla sudoedit /etc/apache2/sites-available/juuliapurho.me.conf. Lisäsin VirtualHost-lopetustagin ja tallensin muutokset. 
 
 ![29](https://github.com/user-attachments/assets/70fb3b98-e4ad-427d-ae6e-2ce5fa482bde)
 
 ![27](https://github.com/user-attachments/assets/a7c0ea5c-492f-4199-a1d2-b0072fdf04cd)
+
+Sitten suoritin uudelleen komennon sudo apache2ctl configtest, joka tulosti alla olevan kuvan mukaisen virheilmoituksen.
 
 ![28](https://github.com/user-attachments/assets/a88593ef-b028-4ed5-8f7a-60d15b2d0e8d)
 
