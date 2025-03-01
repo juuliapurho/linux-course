@@ -22,7 +22,7 @@ Kun agentilla on valtuutettu avainpari, sertifikaattien pyytäminen, uusiminen j
 - Jotta verkkotunnus saa sertifikaatin, tulee agentin muodostaa PKCS#10 -sertifikaatin allekirjoituspyyntö (8Certificate Signing Request), jolla pyydetään Let's Encrypt sertifikaatin myöntäjää myöntämään sertifikaatti verkkotunnukselle määritetyllä julkisella avaimella. Tämä allekirjoituspyyntö sisältää julkista avainta vastaavalla yksityisellä avaimella tehdyn allekirjoituksen. Agentti allekirjoittaa myös koko allekirjoituspyynnön verkkotunnuksen valtuutetulla avaimella.
 - Let’s Encrypt sertifikaatin myöntäjä vastaanottaa tämän pyynnön ja tarkistaa molemmat allekirjoitukset. Jos kaikki näyttää hyvältä, se antaa sertifikaatin verkkotunnukselle julkisella avaimella ja palauttaa sen agentille. 
 
-#### Nick Lange, Lego: Obtain a Certificate: Using an existing, running web server. (https://go-acme.github.io/lego/usage/cli/obtain-a-certificate/index.html#using-an-existing-running-web-server)
+#### Nick Lange, Lego: Obtain a Certificate: Using an existing, running web server (https://go-acme.github.io/lego/usage/cli/obtain-a-certificate/index.html#using-an-existing-running-web-server)
 Nick Langen kirjoittamassa oppaassa kerrotaan erilaisista tavoista, joilla uusi sertifikaatti voidaan hankkia. Yksi oppaan kappaleista käsittelee sertifikaatin hankkimista käyttämällä olemassa olevaa ja käynnissä olevaa weppipalvelinta. Tällöin tulisi käyttää seuraavan kaltaista komentoa:
 
 lego --accept-tos --email you@example.com --http --http.webroot /path/to/webroot --domains example.com run
@@ -37,12 +37,19 @@ Tätä komentoa käytettäessä tulee ottaa huomioon seuraavia asioita:
 The Apache Software Foundationin Apache HTTP-palvelimen versiota 2.4 koskevan dokumentaation luvussa "SSL/TLS Strong Encryption: How-To" on esimerkki peruskonfiguraatiosta. Tässä kerrotaan, että SSL-konfiguraation tulee sisältää vähintään seuraavat tiedot:
 
 LoadModule ssl_module modules/mod_ssl.so
+
 Listen 443
+
 <VirtualHost *:443>
+
     ServerName www.example.com
+    
     SSLEngine on
+    
     SSLCertificateFile "/path/to/www.example.com.cert"
+    
     SSLCertificateKeyFile "/path/to/www.example.com.key"
+    
 </VirtualHost>
 
 ## Tehtävissä a-b käytetty ympäristö
