@@ -9,11 +9,11 @@ Let's Encryptin verkkosivuilla julkaistussa artikkelissa How It Works kerrotaan,
 Ensimmäinen vaihe: Verkkotunnuksen validointi
 
 - Let's Encrypt tunnistaa palvelimen ylläpitäjän julkisen avaimen perusteella. Agenttiohjelmisto luo uuden avainparin ja todistaa Let's Encrypt sertifikaatin myöntäjälle, että palvelin hallitsee verkkotunnusta.
-- Agentti kysyy Let's Encrypt sertifikaatin myöntäjältä, mitä agentin täytyy tehdä sen todistamiseksi, että se hallinnoi verkkotunnusta
+- Agentti kysyy Let's Encrypt sertifikaatin myöntäjältä, mitä agentin täytyy tehdä sen todistamiseksi, että se hallinnoi verkkotunnusta.
 - Let's Encrypt sertifikaatin myöntäjä tarkastelee pyydettyä verkkotunnusta ja antaa yhden tai useamman haasteen. Nämä haasteet ovat erilaisia tapoja, joilla agentti voi todistaa verkkotunnuksen hallinnan. Haasteiden lisäksi sertifikaatin myöntäjä tarjoaa noncen eli number used once -arvon, joka agentin tulee allekirjoittaa yksityisellä avaimellaan todistaakseen, että se hallitsee avainparia.
 - Agenttiohjelmisto suorittaa yhden näistä annetuista haasteista ja allekirjoittaa annetun noncen yksityisellä avaimellaan.
 - Agentti ilmoittaa sertifikaatin myöntäjälle, että se on valmis suorittamaan validoinnin.
-- Sertifikaatin myöntäjän tehtävänä on tarkistaa, että haasteet on täytetty ja vahvistaa noncen allekirjoituksen.
+- Sertifikaatin myöntäjän tehtävänä on tarkistaa, että haasteet on täytetty ja vahvistaa noncen allekirjoitus.
 - Jos noncen allekirjoitus on validi ja haasteet on täytetty, julkisella avaimella tunnistettu agentti valtuutetaan suorittamaan sertifikaattien hallintaa. Agentin käyttämää avainparia kutsutaan valtuutetuksi avainpariksi.
 
 Toinen vaihe: Varmenteiden myöntäminen ja peruuttaminen
