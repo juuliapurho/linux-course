@@ -192,7 +192,7 @@ Aloitusaika: Sunnuntai 2025-03-02, kello 09.20.
 
 Tässä tehtävässä testasin oman sivuni TLS:ää laadunvarmistustyökalu SSL Labsilla. Kirjoitin raporttia samanaikaisesti tehtävää tehdessäni.
 
-Siirryin SSL Labsin verkkosivuilla olevaan SSL Server Test (https://www.ssllabs.com/ssltest/) ja syötin hakukenttään sivustoni osoitteen https-muodossa eli https://juuliapurho.me ja painoin Submit-painiketta. 
+Siirryin SSL Labsin verkkosivuilla olevaan SSL Server Testiin (https://www.ssllabs.com/ssltest/) ja syötin hakukenttään sivustoni osoitteen https-muodossa eli https://juuliapurho.me ja painoin Submit-painiketta. 
 
 ![38](https://github.com/user-attachments/assets/057250ab-c02c-493f-a0a1-34dce12c7250)
 
