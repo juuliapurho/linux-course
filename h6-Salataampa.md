@@ -128,7 +128,7 @@ Kävin vielä tarkistamassa, että konfiguraatiotiedostoon kirjaamani sertifikaa
 
 ![19](https://github.com/user-attachments/assets/c0d02775-256a-474d-8e5d-a2b582967cdf)
 
-Kävin siis vielä muokkaamassa konfiguraatiotiedostoon hakemistopolut oikein. Suoritin siis komennon sudoedit /etc/apache2/sites-available/juuliapurho.me.conf ja muokkasin konfiguraatiotiedostoa alla olevan kuvan mukaiseksi. 
+Kävin siis vielä muokkaamassa konfiguraatiotiedostoon hakemistopolut oikein. Suoritin siis komennon sudoedit /etc/apache2/sites-available/juuliapurho.me.conf ja muokkasin konfiguraatiotiedostosta kohdat SSLCertificateFile ja SSLCertificateKeyFile alla olevan kuvan mukaiseksi. 
 
 ![20](https://github.com/user-attachments/assets/aed29cb8-8bc7-4009-84c8-2da19885bbc1)
 
