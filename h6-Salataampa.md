@@ -214,7 +214,7 @@ Tulosten toisessa osassa taas on tietoa konfiguraatiosta. Ensimmäisenä kohdass
 
 Toisessa kohdassa Cipher Suites oli tietoa näiden protokollien salakirjoituksesta eli cipher suiteista. En tiennyt mitä cipher suitet ovat ja löysin siihen vastauksen SSL Dragon -verkkosivuilta (https://www.ssldragon.com/blog/cipher-suites/#definition). Cipher suite on joukko salausalgoritmeja, joita käytetään verkkoviestinnän suojaamiseen SSL/TLS-protokollissa. Cipher suite määrittää miten salaus, todennus ja tietojen eheys saavutetaan avainten vaihdon, salauksen ja viestien todentamisen algoritmeja yhdistämällä. Cipher suitet varmistavat turvallisen tiedonsiirron internetissä.
 
-Testin tuloksista kävi ilmi, että TLS 1.3 -protokolla ei antanut cipher suiteista mitään huomautuksia, mutta TLS 1.2 -protokollan kohdalla kuusi cipher suitea oli väriltään oransseja ja niiden kohdalla luki WEAK. 
+Testin tuloksista kävi ilmi, että TLS 1.3 -protokolla ei antanut cipher suiteista mitään huomautuksia, mutta TLS 1.2 -protokollan kohdalla kuusi cipher suitea oli väriltään oransseja ja niiden kohdalla luki WEAK eli nämä cipher suitet olivat heikkoja.
 
 Seuraavassa kohdassa Handshake Simulation oli tietoa TLS-kättelyiden simuloinnista. Cloudflaren verkkosivuilla (https://www.cloudflare.com/learning/ssl/what-happens-in-a-tls-handshake/) kerrotaan, että TLS-kättely on prosessi, joka käynnistää TLS:ää käyttävän viestinnän. TLS-kättelyn aikana kaksi kommunikoivaa osapuolta vaihtavat viestejä tunnustaakseen toisensa, vahvistaakseen käyttämänsä salausalgoritmit ja sopiakseen istuntoavaimista. TLS-kättelyt ovat olennainen osa HTTPS:n toimintaa. 
 
