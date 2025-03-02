@@ -180,23 +180,78 @@ Lopetin tehtävän tekemisen kello 19.40.
 
 ## b)
 ### A-rating
-Aloitusaika: Torstai 2025-03-01, kello XX.XX.
+Aloitusaika: Sunnuntai 2025-03-02, kello 09.20.
 
-Tässä tehtävässä testasin oman sivuni TLS:ää laadunvarmistustyökalu SSLLabsilla. Kirjoitin raporttia samanaikaisesti tehtävää tehdessäni.
+Tässä tehtävässä testasin oman sivuni TLS:ää laadunvarmistustyökalu SSL Labsilla. Kirjoitin raporttia samanaikaisesti tehtävää tehdessäni.
+
+Siirryin SSL Labsin verkkosivuilla olevaan SSL Server Test (https://www.ssllabs.com/ssltest/) ja syötin hakukenttään sivustoni osoitteen https-muodossa eli https://juuliapurho.me ja painoin Submit-painiketta. 
+
+![38](https://github.com/user-attachments/assets/057250ab-c02c-493f-a0a1-34dce12c7250)
+
+![39](https://github.com/user-attachments/assets/979f650b-942f-44e4-b904-add184858e76)
+
+Testaus kesti hetken aikaa, jonka jälkeen testi antoi testin kokonaistulokseksi A. 
+
+![40](https://github.com/user-attachments/assets/f39275bf-236e-4060-80ec-280cfcb122f8)
+
+SSL Labsin SSL Server Rating Guidesta (https://github.com/ssllabs/research/wiki/SSL-Server-Rating-Guide) löysin apua testin tulosten tulkitsemiseen. Tulokset on jaettu siten, että ensin tarkastellaan sertifikaattia, sitten palvelimen konfiguraatiota tarkastellaan kolmessa kategoriassa (Protocol support, Key exchange support ja Cipher support).
+
+Testin tulosten ensimmäisessä osassa on tietoa sertifikaatista. Tässä kohta DNS CAA	on oranssin värinen ja sen arvo on "No". Löysin tästä lisätietoa Qualysin verkkosivuilta (https://blog.qualys.com/product-tech/2017/03/13/caa-mandated-by-cabrowser-forum?_ga=2.9683382.2009137989.1740900036-2021132117.1740900036), minne ohjauduin painettuani arvon No vieressä ollutta kohtaa (more info). CAA eli Certification Authority Authorization on ehdotus PKI:n eli Public key infrastructuren eli julkisen avaimen infrastruktuurin vahvistamiseen, jolla rajoitetaan sitä, että mitkä sertifikaatin myöntäjät voivat myöntää sertifikaatin tietylle verkkotunnukselle. CAA luo DNS-mekanismin, jonka avulla verkkotunnusten omistajat voivat lisätä sallittujen luetteloon sertifikaattien myöntäjiä, joilla on lupa myöntää sertifikaatteja isäntänimille. 
+
+![49](https://github.com/user-attachments/assets/5e174946-7468-4ea1-ac0a-cfd46e1021b5)
+
+![50](https://github.com/user-attachments/assets/f728370c-10bf-49c0-9809-5049b8a6583d)
+
+Tulosten toisessa osassa taas on tietoa konfiguraatiosta. Ensimmäisenä kohdassa Protocols oli tietoa käytetyistä protokollista. Sivustollani on käytössä protokollat TLS 1.3 ja TLS 1.2.
+
+Toisessa kohdassa Cipher Suites oli tietoa näiden protokollien salakirjoituksesta eli cipher suiteista. En tiennyt mitä cipher suitet ovat ja löysin siihen vastauksen SSL Dragon -verkkosivuilta (https://www.ssldragon.com/blog/cipher-suites/#definition). Cipher suite on joukko salausalgoritmeja, joita käytetään verkkoviestinnän suojaamiseen SSL/TLS-protokollissa. Cipher suite määrittää miten salaus, todennus ja tietojen eheys saavutetaan avainten vaihdon, salauksen ja viestien todentamisen algoritmeja yhdistämällä. Cipher suitet varmistavat turvallisen tiedonsiirron internetissä.
+
+Testin tuloksista kävi ilmi, että TLS 1.3 -protokolla ei antanut cipher suiteista mitään huomautuksia, mutta TLS 1.2 -protokollan kohdalla kuusi cipher suitea oli väriltään oransseja ja niiden kohdalla luki WEAK. 
+
+Seuraavassa kohdassa Handshake Simulation oli tietoa TLS-kättelyiden simuloinnista. Cloudflaren verkkosivuilla (https://www.cloudflare.com/learning/ssl/what-happens-in-a-tls-handshake/) kerrotaan, että TLS-kättely on prosessi, joka käynnistää TLS:ää käyttävän viestinnän. TLS-kättelyn aikana kaksi kommunikoivaa osapuolta vaihtavat viestejä tunnustaakseen toisensa, vahvistaakseen käyttämänsä salausalgoritmit ja sopiakseen istuntoavaimista. TLS-kättelyt ovat olennainen osa HTTPS:n toimintaa. 
+
+Testin tuloksissa tulee ilmi, että Chrome 49 / XP SP3 kohdalla tämä kättelyn simulointi ei ole onnistunut. 
+
+Näiden jälkeen testin tuloksissa on vielä tietoa muun muassa protokollan yksityiskohdista ja HTTP-pyynnöstä. 
+
+
+![51](https://github.com/user-attachments/assets/baac1058-7458-43ba-b724-1c2deb2efb01)
+
+![52](https://github.com/user-attachments/assets/53b346cd-0f57-4e10-88b3-4f81cfa21635)
+
+![53](https://github.com/user-attachments/assets/04b97f20-331e-4d74-a21d-d1a3f493657b)
+
+![54](https://github.com/user-attachments/assets/d56a5c14-4fcf-440c-b787-d02610158e9b)
+
+![55](https://github.com/user-attachments/assets/b77cd9e2-9032-48b9-b1de-49c3ba0551ad)
+
+![56](https://github.com/user-attachments/assets/2a12fc25-5c01-4689-9817-f01650e6ee8f)
+
+Lopetin tehtävän tekemisen ja testin tulosten tarkastelun kello 10.30.
 
 ____________________________________________________________________________________________________________________________________________________________________
 
 #### Lähteet
 
-Camisso Jamon, DigitalOcean 2022: Apache Configuration Error AH00558: Could not reliably determine the server's fully qualified domain name. Luettavissa: https://www.digitalocean.com/community/tutorials/apache-configuration-error-ah00558-could-not-reliably-determine-the-server-s-fully-qualified-domain-name. Luettu 1.3.2025.
+Cloudflare: What happens in a TLS handshake? | SSL handshake. Luettavissa: https://www.cloudflare.com/learning/ssl/what-happens-in-a-tls-handshake/. Luettu 2.3.2025.
+
+Dionisie Gitlan, SSL Dragon 2025: Cipher Suites Explained in Simple Terms: Unlocking the Code. Luettavissa: https://www.ssldragon.com/blog/cipher-suites/#definition. Luettu 2.3.2025.
+
+Ivan Ristic, Qualys 2017: CAA Mandated by CA/Browser Forum. Luettavissa: https://blog.qualys.com/product-tech/2017/03/13/caa-mandated-by-cabrowser-forum?_ga=2.9683382.2009137989.1740900036-2021132117.1740900036. Luettu 2.3.2025.
+
+Jamon Camisso, DigitalOcean 2022: Apache Configuration Error AH00558: Could not reliably determine the server's fully qualified domain name. Luettavissa: https://www.digitalocean.com/community/tutorials/apache-configuration-error-ah00558-could-not-reliably-determine-the-server-s-fully-qualified-domain-name. Luettu 1.3.2025.
 
 Let's Encrypt 2024: How It Works. Luettavissa: https://letsencrypt.org/how-it-works/. Luettu 1.3.2025.
 
 Nick Lange, Lego 2024: Obtain a Certificate. Luettavissa: https://go-acme.github.io/lego/usage/cli/obtain-a-certificate/index.html#using-an-existing-running-web-server. Luettu 1.3.2025. 
 
-Tero Karvinen 2025: Tehtävänanto h6. Luettavissa: https://terokarvinen.com/linux-palvelimet/. Luettu 1.3.2025.
+SSL Labs 2020: SSL Server Rating Guide. Luettavissa: https://github.com/ssllabs/research/wiki/SSL-Server-Rating-Guide. Luettu 2.3.2025.
+
+Tero Karvinen 2025: Tehtävänanto h6. Luettavissa: https://terokarvinen.com/linux-palvelimet/. Luettu 2.3.2025.
 
 The Apache Software Foundation 2025: Apache HTTP Server Version 2.4 Documentation: SSL/TLS Strong Encryption: How-To. Luettavissa: https://httpd.apache.org/docs/2.4/ssl/ssl_howto.html#configexample. Luettu 1.3.2025.
+
+Qualys, SSL Labs: SSL Server Test. Käytettävissä: https://www.ssllabs.com/ssltest/. 
 ____________________________________________________________________________________________________________________________________________________________________
 Tätä dokumenttia saa kopioida ja muokata GNU General Public License (versio 2 tai uudempi) mukaisesti. http://www.gnu.org/licenses/gpl.html
 
