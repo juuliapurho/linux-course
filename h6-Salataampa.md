@@ -202,7 +202,7 @@ Testaus kesti hetken aikaa, jonka jälkeen testi antoi testin kokonaistulokseksi
 
 ![40](https://github.com/user-attachments/assets/f39275bf-236e-4060-80ec-280cfcb122f8)
 
-SSL Labsin SSL Server Rating Guidesta (https://github.com/ssllabs/research/wiki/SSL-Server-Rating-Guide) löysin apua testin tulosten tulkitsemiseen. Tulokset on jaettu siten, että ensin tarkastellaan sertifikaattia, sitten palvelimen konfiguraatiota tarkastellaan kolmessa kategoriassa (Protocol support, Key exchange support ja Cipher support).
+SSL Labsin SSL Server Rating Guidesta (https://github.com/ssllabs/research/wiki/SSL-Server-Rating-Guide) löysin apua testin tulosten tulkitsemiseen. Tulokset on jaettu siten, että ensin tarkastellaan sertifikaattia ja sitten palvelimen konfiguraatiota kolmessa kategoriassa (Protocol support, Key exchange support ja Cipher support).
 
 Testin tulosten ensimmäisessä osassa on tietoa sertifikaatista. Tässä kohta DNS CAA	on oranssin värinen ja sen arvo on "No". Löysin tästä lisätietoa Qualysin verkkosivuilta (https://blog.qualys.com/product-tech/2017/03/13/caa-mandated-by-cabrowser-forum?_ga=2.9683382.2009137989.1740900036-2021132117.1740900036), minne ohjauduin painettuani arvon No vieressä ollutta kohtaa (more info). CAA eli Certification Authority Authorization on ehdotus PKI:n eli Public key infrastructuren eli julkisen avaimen infrastruktuurin vahvistamiseen, jolla rajoitetaan sitä, että mitkä sertifikaatin myöntäjät voivat myöntää sertifikaatin tietylle verkkotunnukselle. CAA luo DNS-mekanismin, jonka avulla verkkotunnusten omistajat voivat lisätä sallittujen luetteloon sertifikaattien myöntäjiä, joilla on lupa myöntää sertifikaatteja isäntänimille. 
 
