@@ -198,7 +198,7 @@ Siirryin SSL Labsin verkkosivuilla olevaan SSL Server Testiin (https://www.sslla
 
 ![39](https://github.com/user-attachments/assets/979f650b-942f-44e4-b904-add184858e76)
 
-Testaus kesti hetken aikaa, jonka jälkeen testi antoi testin kokonaistulokseksi A. 
+Testaus kesti hetken aikaa, jonka jälkeen se antoi testin kokonaistulokseksi A. 
 
 ![40](https://github.com/user-attachments/assets/f39275bf-236e-4060-80ec-280cfcb122f8)
 
