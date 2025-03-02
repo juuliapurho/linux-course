@@ -178,7 +178,7 @@ Tämän jälkeen avasin reiän palomuuriin portille 443 suorittamalla komennon s
 
 ![33](https://github.com/user-attachments/assets/8a0b1bba-0bf6-4d11-8be8-133ca17a158a)
 
-Sitten lopuksi kokeilin, että sivustoni toimii. Siirryin virtuaalikoneellani verkkoselaimeen ja kirjoitin osoitekenttään https://juuliapurho.me ja sivusto toimi. Kokeilin sivuston toimivuutta vielä omalla tietokoneellani sekä puhelimellani ja se toimi näissä kaikissa ongelmitta. 
+Sitten lopuksi kokeilin, että sivustoni toimii. Siirryin virtuaalikoneellani verkkoselaimeen ja kirjoitin osoitekenttään https://juuliapurho.me ja sivusto toimi. Kokeilin sivuston toimivuutta vielä omalla tietokoneellani sekä puhelimellani ja se toimi näissäkin ongelmitta. 
 
 ![34](https://github.com/user-attachments/assets/35ad1e89-c04c-45d9-bf0d-256ad1fbe479)
 
