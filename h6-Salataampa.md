@@ -19,7 +19,7 @@ Ensimmäinen vaihe: Verkkotunnuksen validointi
 Toinen vaihe: Varmenteiden myöntäminen ja peruuttaminen
 
 Kun agentilla on valtuutettu avainpari, sertifikaattien pyytäminen, uusiminen ja peruuttaminen on yksinkertaista. Tarvitsee vain lähettää sertifikaattien hallintaviestejä ja allekirjoittaa ne valtuutetulla avainparilla. 
-- Jotta verkkotunnus saa sertifikaatin, tulee agentin muodostaa PKCS#10 -sertifikaatin allekirjoituspyyntö (8Certificate Signing Request), jolla pyydetään Let's Encrypt sertifikaatin myöntäjää myöntämään sertifikaatti verkkotunnukselle määritetyllä julkisella avaimella. Tämä allekirjoituspyyntö sisältää julkista avainta vastaavalla yksityisellä avaimella tehdyn allekirjoituksen. Agentti allekirjoittaa myös koko allekirjoituspyynnön verkkotunnuksen valtuutetulla avaimella.
+- Jotta verkkotunnus saa sertifikaatin, tulee agentin muodostaa PKCS#10 -sertifikaatin allekirjoituspyyntö (Certificate Signing Request), jolla pyydetään Let's Encrypt sertifikaatin myöntäjää myöntämään sertifikaatti verkkotunnukselle määritetyllä julkisella avaimella. Tämä allekirjoituspyyntö sisältää julkista avainta vastaavalla yksityisellä avaimella tehdyn allekirjoituksen. Agentti allekirjoittaa myös koko allekirjoituspyynnön verkkotunnuksen valtuutetulla avaimella.
 - Let’s Encrypt sertifikaatin myöntäjä vastaanottaa tämän pyynnön ja tarkistaa molemmat allekirjoitukset. Jos kaikki näyttää hyvältä, se antaa sertifikaatin verkkotunnukselle julkisella avaimella ja palauttaa sen agentille. 
 
 #### Nick Lange, Lego: Obtain a Certificate: Using an existing, running web server (https://go-acme.github.io/lego/usage/cli/obtain-a-certificate/index.html#using-an-existing-running-web-server)
