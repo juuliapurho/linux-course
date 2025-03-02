@@ -140,7 +140,7 @@ Seuraavaksi suoritin ohjeen mukaisesti komennon sudo a2enmod ssl, jolla otin SSL
 
 ![24](https://github.com/user-attachments/assets/9c68132a-a82d-4c59-ac26-659202fb5368)
 
-Virheilmoituksessa kerrottiin, että komennon suorittaminen ei onnistunut, koska ohjausprosessi poistui virhekoodilla. Suoritin virhekoodissa mainitun komennon systemctl status apache2.services. Yritin etsiä internetistä tietoa, että mistä tässä on kyse, mutta en löytänyt tähän ratkaisua.
+Virheilmoituksessa kerrottiin, että komennon suorittaminen ei onnistunut, koska ohjausprosessi poistui virhekoodilla. Suoritin virheilmoituksessa mainitun komennon systemctl status apache2.services, joka tulosti alla olevan kuvan mukaisen vastauksen. Yritin etsiä internetistä tietoa, että mistä tässä on kyse. Käytin hakusanoina muun muassa tuota saamaani virheilmoitusta sekä komennon systemctl status apache2.services tulostamaa vastausta, mutta en nopealla googlettamisella löytänyt tähän ratkaisua.
 
 ![25](https://github.com/user-attachments/assets/8930bd0a-5d97-41c3-a4d8-c057242dba56)
 
