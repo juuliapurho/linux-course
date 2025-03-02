@@ -102,7 +102,7 @@ Tästä tulostuneen vastauksen viimeisellä rivillä kerrottiin, että sertifika
 
 ![10](https://github.com/user-attachments/assets/b6f15ef2-a06f-4311-8c34-f71f93016233)
 
-Seuraavaksi minun tuli poistaa --path parametrissa osoitettu hakemisto /home/juulia/lego/certificates, johon oli tallentunut testitietoa. Tämän tein suorittamalla komennon rm -r /home/juulia/lego/certificates, jolla poistin hakemiston ja sen sisällön. Tämän jälkeen tarkistin vielä, lego-kansion sisällön komennolla ls /home/juulia/lego.
+Seuraavaksi minun tuli poistaa --path parametrissa osoitettu hakemisto /home/juulia/lego/certificates, johon oli tallentunut testitietoa. Tämän tein suorittamalla komennon rm -r /home/juulia/lego/certificates, jolla poistin kansion ja sen sisällön. Tämän jälkeen tarkistin vielä, lego-kansion sisällön komennolla ls /home/juulia/lego ja kansio oli tyhjä.
 
 ![11](https://github.com/user-attachments/assets/24855c74-3b20-4df6-89ad-6a10bae1ee6e)
 
