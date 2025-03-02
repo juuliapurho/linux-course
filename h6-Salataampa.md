@@ -158,7 +158,7 @@ Sitten suoritin uudelleen komennon sudo apache2ctl configtest, joka tulosti alla
 
 ![28](https://github.com/user-attachments/assets/a88593ef-b028-4ed5-8f7a-60d15b2d0e8d)
 
-Tässä virheilmoituksessa kerrottiin, että palvelimen täysin pätevää domain-nimeä ei voitu luotettavasti määrittää käyttämällä 127.0.1.1. Virheilmoituksessa kehotettiin asettamaan ServerName-direktiivi maailmanlaajuisesti kyseisen viestin estämiseksi. Virheilmoituksen jälkeen tuli myös ilmoitus "Syntax OK". Löysin apua DigitalOceanin verkkosivuilta (https://www.digitalocean.com/community/tutorials/apache-configuration-error-ah00558-could-not-reliably-determine-the-server-s-fully-qualified-domain-name), jossa ohjeistettiin lisäämään Apacen kopnfiguraatiotiedostoon teksti "ServerName 127.0.0.1" virheilmoituksen korjaamiseksi. Päätin siis tehdä tämän. 
+Tässä virheilmoituksessa kerrottiin, että palvelimen täysin pätevää domain-nimeä ei voitu luotettavasti määrittää käyttämällä 127.0.1.1. Virheilmoituksessa kehotettiin asettamaan ServerName-direktiivi maailmanlaajuisesti kyseisen viestin estämiseksi. Virheilmoituksen jälkeen tuli myös ilmoitus "Syntax OK". Löysin apua DigitalOceanin verkkosivuilta (https://www.digitalocean.com/community/tutorials/apache-configuration-error-ah00558-could-not-reliably-determine-the-server-s-fully-qualified-domain-name), jossa ohjeistettiin lisäämään Apacen konfiguraatiotiedostoon teksti "ServerName 127.0.0.1" virheilmoituksen korjaamiseksi. Päätin siis tehdä tämän. 
 
 Suoritin komennon sudoedit /etc/apache2/apache2.conf ja pääsin muokkaamaan konfiguraatiotiedostoa. Lisäsin konfiguraatiotiedoston loppuun alla olevan kuvan mukaisesti tekstin ServerName 127.0.0.1 ja tallensin tekemäni muutokset. 
 
