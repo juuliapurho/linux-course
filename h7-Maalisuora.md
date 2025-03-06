@@ -109,29 +109,34 @@ Aloitusaika: Torstai 2025-03-06, kello 18.20.
 
 Tässä tehtävässä laitoin Linuxiin uuden, itse tekemäni komennon, jota kaikki käyttäjät voivat ajaa. Käytin tehtävän tekemisessä apuna Tero Karvisen kirjoittamaa artikkelia Shell Scripting. Tehtävää tehdessäni kirjoitin samalla raporttia. 
 
-Olin jo edellisen luennon aikana ladannut virtuaalikoneelleni Bash-ohjelman komennolla sudo apt-get install bash, joten aloitin uuden komennon tekemisen luomalla uuden tiedoston nimeltä ennustus.sh komennolla micro ennustus.sh. Kirjoitin tiedostoon kaksi komentoa: figlet ja fortune. Figlet-komento muuttaa tekstin isoilla kirjaimilla kirjoitetuksi banneriksi ja fortune-komento taas tulostaa satunnaisen mietelauseen, vitsin tai neuvon. Tiedostoon fortune.sh kirjoitin alla toisena olevan kuvan mukaisesti nämä komennot sekä ylimmäksi tekstin "#!/usr/bin/bash". Tallensin tekemäni muutokset ctrl + S ja suljin tiedoston ctrl + Q. Tulostin vielä tiedoston sisällön  komennolla cat ennustus.sh, jolla testasin, että tiedostoon tekemäni muutokset olivat tallentuneet.
+Olin jo edellisen luennon aikana ladannut virtuaalikoneelleni Bash-ohjelman komennolla sudo apt-get install bash, joten aloitin uuden komennon tekemisen luomalla uuden tiedoston nimeltä ennustus.sh komennolla micro ennustus.sh. Kirjoitin tiedostoon kaksi komentoa: figlet ja fortune. Figlet-komento muuttaa tekstin isoilla kirjaimilla kirjoitetuksi banneriksi ja fortune-komento taas tulostaa satunnaisen mietelauseen, vitsin tai neuvon. Tiedostoon ennustus.sh kirjoitin alla toisena olevan kuvan mukaisesti nämä komennot sekä ylimmäksi tekstin "#!/usr/bin/bash". Tallensin tekemäni muutokset ctrl + S ja suljin tiedoston ctrl + Q. Tulostin vielä tiedoston sisällön  komennolla cat ennustus.sh, jolla testasin, että tiedostoon tekemäni muutokset olivat tallentuneet.
 
-![26](https://github.com/user-attachments/assets/9a17d976-f4bf-4512-8f58-f5c9cfd65c97)
+![33](https://github.com/user-attachments/assets/0f8d3339-6a87-471a-b252-55d7d5edcf03)
 
-![25](https://github.com/user-attachments/assets/afef7494-9e7e-4726-9f02-c64d6e117f87)
+![32](https://github.com/user-attachments/assets/ee483ab6-1652-4b83-bada-67ebb5416d87)
 
-![27](https://github.com/user-attachments/assets/c1739b15-0d55-4e01-a987-ffb9dafa1a5e)
+![34](https://github.com/user-attachments/assets/7634e25c-a016-48a5-b224-7fca20c769a1)
 
-Tämän jälkeen kokeilin, että komento toimii ajamalla komennon bash fortune.sh ja toimihan se. 
+Tämän jälkeen kokeilin, että komento toimii ajamalla komennon bash ennustus.sh ja toimihan se. 
 
-![28](https://github.com/user-attachments/assets/d75f09ee-cbdc-42d0-9cef-45e9a11cd11b)
+![35](https://github.com/user-attachments/assets/16a1e096-807d-47b1-8310-7b493b076e07)
 
-Seuraavaksi kokeilin komennon ajamista komennolla ./fortune.sh, mutta se tulosti virheilmoituksen, jossa sanottiin "Permission denied" eli pääsy kielletty. Tämän jälkeen tarkastinkin kyseisen tiedoston oikeudet komennolla ls -l fortune.sh ja näin, että käyttäjällä (user) juulia oli sekä luku- että kirjoitusoikeus eli rw, mutta ryhmään kuuluvilla käyttäjillä (group) ja muilla käyttäjillä (others) oli ainoastaan lukuoikeus. Annoin kaikille käyttäjäille suoritusoikeuden komennolla chomd ugo+x fortune.sh ja tarkastin vielä, että tämä suoritusoikeuden lisääminen oli onnistunut komennolla ls -l fortune.sh. 
+Seuraavaksi kokeilin komennon ajamista komennolla ./ennustus.sh, mutta se tulosti virheilmoituksen, jossa luki "Permission denied" eli pääsy kielletty. Tämän jälkeen tarkastinkin kyseisen tiedoston oikeudet komennolla ls -l ennustus.sh ja näin, että käyttäjällä (user) juulia oli sekä luku- että kirjoitusoikeus eli rw, mutta ryhmään kuuluvilla käyttäjillä (group) ja muilla käyttäjillä (others) oli ainoastaan lukuoikeus. Annoin kaikille käyttäjäille suoritusoikeuden komennolla chomd ugo+x ennustus.sh ja tarkastin vielä, että tämä suoritusoikeuden lisääminen oli onnistunut komennolla ls -l ennustus.sh. 
 
-![29](https://github.com/user-attachments/assets/4c812752-7491-4c80-a0b7-7e77596abd6d)
+![36](https://github.com/user-attachments/assets/bf3e7cdf-3847-43dd-8dde-e7cd8aeb3f2e)
 
-![30](https://github.com/user-attachments/assets/396e1618-3d3f-4aa2-bbf6-9088aff7db55)
+Sitten kokeilin uudelleen komennon ajamista komennolla ./ennustus.sh ja nyt se onnistui. 
 
-Sitten kokeilin uudelleen komennon ajamista komennolla ./fortune.sh ja nyt se onnistui. 
+![37](https://github.com/user-attachments/assets/71d74caf-45be-4183-9236-2db5f6571b4e)
 
-![30](https://github.com/user-attachments/assets/e95d11e3-a54b-4f52-8b0c-22238c701b8b)
+Kopioin vielä pääkäyttäjänä tiedoston ennustus.sh kansioon /usr/local/bin/, jotta komennon kaikki käyttäjät voivat ajaa komennon. Tämän kopioimisen tein komennolla sudo cp -v ennustus.sh /usr/local/bin/. Tämän jäkeen testasin vielä komennon ajamista suorittamalla komennon ennustus.sh ja sehän toimi. Siirryin vielä juurihakemistoon komennolla cd / ja ajoin komennon ennustus.sh tässä hakemistossa ja se toimi tälläkin kertaa eli nyt komennon ennustus.sh pystyy ajamaan missä tahansa hakemistossa. 
 
-Kopioin vielä pääkäyttäjänä tiedoston fortune.sh kansioon /usr/local/bin/, jotta komennon kaikki käyttäjät voivat ajaa komennon. Tämän kopioimisen tein komennolla sudo cp -v fortune /usr/local/bin/
+![39](https://github.com/user-attachments/assets/e69c1e50-a5f1-4809-8b2f-9fc9893a7b60)
+
+![40](https://github.com/user-attachments/assets/8633710b-c05a-41ba-bcc6-f0494dcb905f)
+
+Lopetin tehtävän tekemisen kello 19.00.
+
 
 ## d)
 ### Vanhan laboratorioharjoituksen ratkaiseminen
