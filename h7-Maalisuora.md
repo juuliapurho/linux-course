@@ -46,3 +46,15 @@ Aloitusaika: Perjantai 2025-03-07, kello XX.XX.
 
 Tässä tehtävässä ratkaisin vanhan arvioitavan laboratorioharjoituksen soveltuvin osin. Valitsin ratkaistavaksi laboratorioharjoitukseksi XX
 
+____________________________________________________________________________________________________________________________________________________________________
+
+#### Lähteet
+
+Tero Karvinen 2025: Tehtävänanto h7. Luettavissa: https://terokarvinen.com/linux-palvelimet/. Luettu 7.3.2025.
+
+____________________________________________________________________________________________________________________________________________________________________
+Tätä dokumenttia saa kopioida ja muokata GNU General Public License (versio 2 tai uudempi) mukaisesti. http://www.gnu.org/licenses/gpl.html
+
+Pohjana Tero Karvinen 2025: Linux Palvelimet 2025 alkukevät, http://terokarvinen.com. 
+
+
