@@ -105,9 +105,33 @@ Lopetin tehtävän tekemisen kello 18.15.
 ## c)
 ### Uusi komento Linuxiin
 
-Aloitusaika: Torstai 2025-03-06, kello XX.XX
+Aloitusaika: Torstai 2025-03-06, kello 18.20.
 
 Tässä tehtävässä laitoin Linuxiin uuden, itse tekemäni komennon, jota kaikki käyttäjät voivat ajaa. Käytin tehtävän tekemisessä apuna Tero Karvisen kirjoittamaa artikkelia Shell Scripting. Tehtävää tehdessäni kirjoitin samalla raporttia. 
+
+Olin jo edellisen luennon aikana ladannut virtuaalikoneelleni Bash-ohjelman komennolla sudo apt-get install bash, joten aloitin uuden komennon tekemisen luomalla uuden tiedoston nimeltä ennustus.sh komennolla micro ennustus.sh. Kirjoitin tiedostoon kaksi komentoa: figlet ja fortune. Figlet-komento muuttaa tekstin isoilla kirjaimilla kirjoitetuksi banneriksi ja fortune-komento taas tulostaa satunnaisen mietelauseen, vitsin tai neuvon. Tiedostoon fortune.sh kirjoitin alla toisena olevan kuvan mukaisesti nämä komennot sekä ylimmäksi tekstin "#!/usr/bin/bash". Tallensin tekemäni muutokset ctrl + S ja suljin tiedoston ctrl + Q. Tulostin vielä tiedoston sisällön  komennolla cat ennustus.sh, jolla testasin, että tiedostoon tekemäni muutokset olivat tallentuneet.
+
+![26](https://github.com/user-attachments/assets/9a17d976-f4bf-4512-8f58-f5c9cfd65c97)
+
+![25](https://github.com/user-attachments/assets/afef7494-9e7e-4726-9f02-c64d6e117f87)
+
+![27](https://github.com/user-attachments/assets/c1739b15-0d55-4e01-a987-ffb9dafa1a5e)
+
+Tämän jälkeen kokeilin, että komento toimii ajamalla komennon bash fortune.sh ja toimihan se. 
+
+![28](https://github.com/user-attachments/assets/d75f09ee-cbdc-42d0-9cef-45e9a11cd11b)
+
+Seuraavaksi kokeilin komennon ajamista komennolla ./fortune.sh, mutta se tulosti virheilmoituksen, jossa sanottiin "Permission denied" eli pääsy kielletty. Tämän jälkeen tarkastinkin kyseisen tiedoston oikeudet komennolla ls -l fortune.sh ja näin, että käyttäjällä (user) juulia oli sekä luku- että kirjoitusoikeus eli rw, mutta ryhmään kuuluvilla käyttäjillä (group) ja muilla käyttäjillä (others) oli ainoastaan lukuoikeus. Annoin kaikille käyttäjäille suoritusoikeuden komennolla chomd ugo+x fortune.sh ja tarkastin vielä, että tämä suoritusoikeuden lisääminen oli onnistunut komennolla ls -l fortune.sh. 
+
+![29](https://github.com/user-attachments/assets/4c812752-7491-4c80-a0b7-7e77596abd6d)
+
+![30](https://github.com/user-attachments/assets/396e1618-3d3f-4aa2-bbf6-9088aff7db55)
+
+Sitten kokeilin uudelleen komennon ajamista komennolla ./fortune.sh ja nyt se onnistui. 
+
+![30](https://github.com/user-attachments/assets/e95d11e3-a54b-4f52-8b0c-22238c701b8b)
+
+Kopioin vielä pääkäyttäjänä tiedoston fortune.sh kansioon /usr/local/bin/, jotta komennon kaikki käyttäjät voivat ajaa komennon. Tämän kopioimisen tein komennolla sudo cp -v fortune /usr/local/bin/
 
 ## d)
 ### Vanhan laboratorioharjoituksen ratkaiseminen
