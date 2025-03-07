@@ -279,15 +279,24 @@ Tehtävän tekemiseen ja raportin kirjoittamiseen käytetty kokonaisaika: 65 min
 
 #### Tehtävä g: Salattua hallintaa
 
-Aloitusaika: Perjantai 2025-03-07, kello XX.XX.
+Aloitusaika: Perjantai 2025-03-07, kello 15.00.
 
 Tässä tehtävässä asensin SSH-palvelimen, tein uuden käyttäjän omalla nimelläni ja automatisoin SSH-kirjautumisen julkisen avaimen menetelmällä. Aikaisemmin tällä kurssilla olin kotitehtävässä h4 vuokrannut virtuaalipalvelimen DigitalOceanissa ja otin silloin käyttöön todentamismenetelmäksi salasanan. Vuokrasin tässä tehtävässä uuden virtuaalipalvelimen, jossa otin todenramismenetelmäksi SSH-avaimet, jotta pystyin suorittamaan tämän tehtävän. 
+
+Aloitin asentamalla virtuaalikoneelleni SSH:n suorittamalla ensin komennon sudo apt-get update ja syöttämällä salasanani, jonka jälkeen suoritin komennon sudo apt-get install openssh-client. SSH-avainten käyttöönotossa käytin apuna Debianin verkkosivuilta löytämääni julkaisua (https://www.debian.org/devel/passwordlessssh#:~:text=Run%20ssh-keygen%281%29%20on%20your%20machine%2C%20and%20just%20hit,generate%20both%20a%20private%20and%20a%20public%20key.) Suoritin siis komennon ssh-keygen, jonka jälkeen painoin kolme kertaa enter-painiketta. Sitten julkinen ja yksityinen avain oli luotu. Tämän jälkeen tulostin julkisen avaimen komennolla cat ~/.ssh/id_rsa.pub. 
+
+Sitten jatkoin uuden virtuaalipalvelimen vuokraamiseen DigitalOceanista. Käytin tässä samoja valintoja, kuin kotitehtävässä h4 eli kohdassa Choose Region valitsin alueeksi Frankfurtin, jonka perusteella kohtaan Datacenter datakeskukseksi valikoitu automaattisesti Frankfurtissa sijaitseva datakeskus numero 1. Choose an image valitsin käyttöjärjestelmäksi uusimman Debianin version eli Debian 12 x64. Kohdan Choose Size kohdassa Droplet Type valitsin virtuaalipalvelimen tyypiksi shared CPU, jossa ainoana vaihtoehtona oli Basic-paketti ja CPU options kohdassa taas valitsin tavallisen SSD-kovalevyn (Regular, Disk type: SSD) ja tämän alta edullisimman vaihtoehdon, joka oli 6 dollaria kuukaudessa (1 GB prosessori, 25 GB SSD-kovalevy ja 1000 GB siirtodataa). Choose Authentication Method kohdassa valitsin tällä kertaa SSH Key. Kopioin tähän aikaisemmin cat-komennolla tulostamani julkisen SSH-avaimen. 
+
+
+
 
 Lopetin tehtävän tekemisen kello XX.XX.
 
 ____________________________________________________________________________________________________________________________________________________________________
 
 #### Lähteet
+
+Software in the Public Interest, Debian: How to set up ssh so you aren't asked for a password. Luettavissa: https://www.debian.org/devel/passwordlessssh#:~:text=Run%20ssh-keygen%281%29%20on%20your%20machine%2C%20and%20just%20hit,generate%20both%20a%20private%20and%20a%20public%20key. Luettu: 7.3.2025.
 
 Tero Karvinen 2018: Hello World Python3, Bash, C, C++, Go, Lua, Ruby, Java – Programming Languages on Ubuntu 18.04. Luettavissa: https://terokarvinen.com/2018/hello-python3-bash-c-c-go-lua-ruby-java-programming-languages-on-ubuntu-18-04/. Luettu 6.3.2025.
 
