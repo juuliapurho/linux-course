@@ -279,18 +279,35 @@ Tehtävän tekemiseen ja raportin kirjoittamiseen käytetty kokonaisaika: 65 min
 
 #### Tehtävä g: Salattua hallintaa
 
-Aloitusaika: Perjantai 2025-03-07, kello 15.00.
+Aloitusaika: Perjantai 2025-03-07, kello 17.45.
 
-Tässä tehtävässä asensin SSH-palvelimen, tein uuden käyttäjän omalla nimelläni ja automatisoin SSH-kirjautumisen julkisen avaimen menetelmällä. Aikaisemmin tällä kurssilla olin kotitehtävässä h4 vuokrannut virtuaalipalvelimen DigitalOceanissa ja otin silloin käyttöön todentamismenetelmäksi salasanan. Vuokrasin tässä tehtävässä uuden virtuaalipalvelimen, jossa otin todenramismenetelmäksi SSH-avaimet, jotta pystyin suorittamaan tämän tehtävän. 
+Tässä tehtävässä asensin SSH-palvelimen, tein uuden käyttäjän omalla nimelläni ja automatisoin SSH-kirjautumisen julkisen avaimen menetelmällä. 
 
-Aloitin asentamalla virtuaalikoneelleni SSH:n suorittamalla ensin komennon sudo apt-get update ja syöttämällä salasanani, jonka jälkeen suoritin komennon sudo apt-get install openssh-client. SSH-avainten käyttöönotossa käytin apuna Debianin verkkosivuilta löytämääni julkaisua (https://www.debian.org/devel/passwordlessssh#:~:text=Run%20ssh-keygen%281%29%20on%20your%20machine%2C%20and%20just%20hit,generate%20both%20a%20private%20and%20a%20public%20key.) Suoritin siis komennon ssh-keygen, jonka jälkeen painoin kolme kertaa enter-painiketta. Sitten julkinen ja yksityinen avain oli luotu. Tämän jälkeen tulostin julkisen avaimen komennolla cat ~/.ssh/id_rsa.pub. 
+Aloitin asentamalla virtuaalikoneelleni SSH:n suorittamalla ensin komennon sudo apt-get update ja syöttämällä salasanani, jonka jälkeen suoritin komennon sudo apt-get install openssh-client. Sitten suoritin komennon ssh-keygen, jonka jälkeen painoin kolme kertaa enter-painiketta. Sitten julkinen ja yksityinen avain oli luotu. 
 
-Sitten jatkoin uuden virtuaalipalvelimen vuokraamiseen DigitalOceanista. Käytin tässä samoja valintoja, kuin kotitehtävässä h4 eli kohdassa Choose Region valitsin alueeksi Frankfurtin, jonka perusteella kohtaan Datacenter datakeskukseksi valikoitu automaattisesti Frankfurtissa sijaitseva datakeskus numero 1. Choose an image valitsin käyttöjärjestelmäksi uusimman Debianin version eli Debian 12 x64. Kohdan Choose Size kohdassa Droplet Type valitsin virtuaalipalvelimen tyypiksi shared CPU, jossa ainoana vaihtoehtona oli Basic-paketti ja CPU options kohdassa taas valitsin tavallisen SSD-kovalevyn (Regular, Disk type: SSD) ja tämän alta edullisimman vaihtoehdon, joka oli 6 dollaria kuukaudessa (1 GB prosessori, 25 GB SSD-kovalevy ja 1000 GB siirtodataa). Choose Authentication Method kohdassa valitsin tällä kertaa SSH Key. Kopioin tähän aikaisemmin cat-komennolla tulostamani julkisen SSH-avaimen. 
+![81](https://github.com/user-attachments/assets/f9950d55-9060-4c91-9a17-155df7a635e5)
+
+![112](https://github.com/user-attachments/assets/b4317339-bd7e-4bfd-8075-d659e433ed04)
+
+Tämän jälkeen loin uuden käyttäjän komennolla sudo adduser juuliate01. Annoin tälle käyttäjälle salasanan ja koko nimen kohdalle kirjoitin Juulia Purho test. Näiden lisäksi en lisännyt muita tietoja. Sitten vielä vahvistin, että antamani tiedot ovat oikein Y-painikkeella, jonka jälkeen ilmoitettiin, että käyttäjä juuliate01 oli lisätty ryhmään users.
+
+![107](https://github.com/user-attachments/assets/cc0166e9-3725-4a3f-b421-6d4adfe1d171)
+
+Löysin apua  How-To Geek verkkosivuilta SSH-kirjautumisen automatisointiin julkisen avaimen menetelmällä (https://www.howtogeek.com/devops/how-to-automate-ssh-logins-if-you-must-use-a-password/#:~:text=It%27s%20easy%20to%20generate%20a%20new%20key%20file%3A,you%20won%27t%20be%20asked%20for%20a%20password%20anymore.) Suoritin siis seuraavaksi komennon ssh-copy-id juuliate01@localhost. Tämä kuitenkin tulosti alla olevan kuvan mukaisen virheilmoituksen. 
+
+![114](https://github.com/user-attachments/assets/1e718415-869d-4b48-a180-f7aa4b4f6d75)
+
+Yritin selvittää internetistä, että mistä tässä on kyse, mutta en löytänyt ongelmaan ratkaisua. Käytin hakusanoina muun muassa Tämän jälkeen yritin käynnistää SSH:ta uudelleen komennolla sudo service ssh restart, mutta se tulosti virheilmoituksen, jossa kerrottiin, että SSH:n käynnistäminen ei onnistunut. Yritin vielä avata SSH-yhteyden localhostiin komennolla ssh localhost, mutta tämä tulosti virheilmoituksen, jossa kerrotiin, että yhteys localhostin porttiin 22 on evätty. 
+
+![115](https://github.com/user-attachments/assets/d4fb1515-ac15-4c08-bdec-0dc7e4ea5af7)
+
+![116](https://github.com/user-attachments/assets/c777c31e-7761-4c1f-94d8-c19d8bb371d0)
+
+Yritin etsiä tähänkin ratkaisua internetistä ja käytin hakusanoina muun muassa näitä virheilmoituksia, mutta en vain löytänyt ongelmaani ratkaisua. Ymmärsin, että tuon komennon ssh-copy-id juuliate01@localhost suorittamisen jälkeen minun olisi pitänyt päästä kirjautumaan julkisen avaimen menetelmällä suorittamalla komennon ssh juuliate01@localhost. 
+
+Lopetin tehtävän tekemisen ja raportin kirjoittamisen tältä päivältä kello 18.15.
 
 
-
-
-Lopetin tehtävän tekemisen kello XX.XX.
 
 ____________________________________________________________________________________________________________________________________________________________________
 
@@ -301,6 +318,8 @@ Software in the Public Interest, Debian: How to set up ssh so you aren't asked f
 Tero Karvinen 2018: Hello World Python3, Bash, C, C++, Go, Lua, Ruby, Java – Programming Languages on Ubuntu 18.04. Luettavissa: https://terokarvinen.com/2018/hello-python3-bash-c-c-go-lua-ruby-java-programming-languages-on-ubuntu-18-04/. Luettu 6.3.2025.
 
 Tero Karvinen 2024: Final Lab for Linux Palvelimet 2024 Spring. Luettavissa: https://terokarvinen.com/2024/arvioitava-laboratorioharjoitus-2024-linux-palvelimet/. Luettu 7.3.2025.
+
+Tero Karvinen 2025: Tehtävänanto h4. Luettavissa: https://terokarvinen.com/linux-palvelimet/. Luettu 7.3.2025.
 
 Tero Karvinen 2025: Tehtävänanto h7. Luettavissa: https://terokarvinen.com/linux-palvelimet/. Luettu 7.3.2025.
 
