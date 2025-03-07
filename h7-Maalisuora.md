@@ -1,4 +1,4 @@
-# h7 Maalisuora
+![image](https://github.com/user-attachments/assets/1d33731f-d2b6-47af-bd28-3422df342ab4)# h7 Maalisuora
 
 ## Johdanto
 
@@ -121,7 +121,7 @@ Tämän jälkeen kokeilin, että komento toimii ajamalla komennon bash ennustus.
 
 ![35](https://github.com/user-attachments/assets/16a1e096-807d-47b1-8310-7b493b076e07)
 
-Seuraavaksi kokeilin komennon ajamista komennolla ./ennustus.sh, mutta se tulosti virheilmoituksen, jossa luki "Permission denied" eli pääsy kielletty. Tämän jälkeen tarkastinkin kyseisen tiedoston oikeudet komennolla ls -l ennustus.sh ja näin, että käyttäjällä (user) juulia oli sekä luku- että kirjoitusoikeus eli rw, mutta ryhmään kuuluvilla käyttäjillä (group) ja muilla käyttäjillä (others) oli ainoastaan lukuoikeus. Annoin kaikille käyttäjäille suoritusoikeuden komennolla chomd ugo+x ennustus.sh ja tarkastin vielä, että tämä suoritusoikeuden lisääminen oli onnistunut komennolla ls -l ennustus.sh. 
+Seuraavaksi kokeilin komennon ajamista komennolla ./ennustus.sh, mutta se tulosti virheilmoituksen, jossa luki "Permission denied" eli pääsy kielletty. Tämän jälkeen tarkastinkin kyseisen tiedoston oikeudet komennolla ls -l ennustus.sh ja näin, että ryhmään kuuluvilla käyttäjillä (group) ja muilla käyttäjillä (others) ei ollut suoritusoikeutta eli x. Annoin kaikille käyttäjäille suoritusoikeuden komennolla chomd ugo+x ennustus.sh ja tarkastin vielä, että tämä suoritusoikeuden lisääminen oli onnistunut komennolla ls -l ennustus.sh. 
 
 ![36](https://github.com/user-attachments/assets/bf3e7cdf-3847-43dd-8dde-e7cd8aeb3f2e)
 
@@ -129,7 +129,7 @@ Sitten kokeilin uudelleen komennon ajamista komennolla ./ennustus.sh ja nyt se o
 
 ![37](https://github.com/user-attachments/assets/71d74caf-45be-4183-9236-2db5f6571b4e)
 
-Kopioin vielä pääkäyttäjänä tiedoston ennustus.sh kansioon /usr/local/bin/, jotta komennon kaikki käyttäjät voivat ajaa komennon. Tämän kopioimisen tein komennolla sudo cp -v ennustus.sh /usr/local/bin/. Tämän jäkeen testasin vielä komennon ajamista suorittamalla komennon ennustus.sh ja sehän toimi. Siirryin vielä juurihakemistoon komennolla cd / ja ajoin komennon ennustus.sh tässä hakemistossa ja se toimi tälläkin kertaa eli nyt komennon ennustus.sh pystyy ajamaan missä tahansa hakemistossa. 
+Kopioin vielä pääkäyttäjänä tiedoston ennustus.sh kansioon /usr/local/bin/, jotta kaikki käyttäjät voivat ajaa komennon. Tämän kopioimisen tein komennolla sudo cp -v ennustus.sh /usr/local/bin/. Tämän jäkeen testasin vielä komennon ajamista suorittamalla komennon ennustus.sh ja sehän toimi. Siirryin vielä juurihakemistoon komennolla cd / ja ajoin komennon ennustus.sh tässä hakemistossa ja se toimi tälläkin kertaa eli nyt komennon ennustus.sh pystyy ajamaan missä tahansa hakemistossa. 
 
 ![39](https://github.com/user-attachments/assets/e69c1e50-a5f1-4809-8b2f-9fc9893a7b60)
 
@@ -141,15 +141,155 @@ Lopetin tehtävän tekemisen kello 19.00.
 ## d)
 ### Vanhan laboratorioharjoituksen ratkaiseminen
 
+Tässä tehtävässä ratkaisin vanhan arvioitavan laboratorioharjoituksen soveltuvin osin. Valitsin ratkaistavaksi laboratorioharjoitukseksi kevään 2024 laboratorioharjoituksen (https://terokarvinen.com/2024/arvioitava-laboratorioharjoitus-2024-linux-palvelimet/). Päätin, etten aseta itselleni mitään aikarajaa tämän harjoituksen tekemiseen, koska halusin vielä kerrata asioita rauhassa ennen varsinaista ensi viikon laboratorioharjoitusta. Päätin myös laatia tästä  laboratorioharjoituksen ratkaisemisesta muiden kotitehtävien kaltaisen yksityiskohtaisen raportin, sillä tämä on osa kotitehtävää ja koen, että varsinaista  laboratorioharjoitusta tehdessäni osaan kyllä laatia tiivistetyn raportin. 
+
+Ennen laboratorioharjoituksen tekemistä loin uuden tyhjän Linux-virtuaalikoneen samalla tavalla kuin tämän kurssin ensimmäisessä kotitehtävässä h1 ja suoritin kaikki saatavilla olevat päivitykset komennoilla sudo apt-get update ja sudo apt-get dist-upgrade sekä asensin palomuurin komennolla apt-get -y install ufw ja otin sen käyttöön komennolla sudo ufw enable. 
+
+#### Tehtävät a-c: Raportin luominen kotihakemistoon ja sen suojaaminen
+
+Aloitusaika: Perjantai 2025-03-07, kello 10.40.
+
+Sovelsin laboratorioharjoituksen tehtäviä a-c siten, että loin kotihakemistooni kansion report, johon loin raporttitiedoston index.md. Sen jälkeen suojasin raportin Linux-oikeuksilla niin, että vain oma käyttäjäni pystyy katselemaan raporttia. Kirjoitin kuitenkin laboratiorioharjoituksen raportin tänne GitHubiin tuon tiedoston sijaan. Muut näiden tehtävien vaiheet jätin tekemättä. 
+
+Asensin ensimmäiseksi virtuaalikoneelle Micro-editorin suorittamalla ensin komennon sudo apt-get update ja syöttämällä salasanani ja suorittamalla sitten komennon sudo apt-get install micro. Tämän jälkeen ensin kotihakemistooni kansion report komennolla mkdir /home/juuliaharjoitus/report. Sitten loin index.md tiedoston komennolla micro /home/juuliaharjoitus/report/index.md. Kirjoitin raporttiin harjoituksen vuoksi tekstiä ja tallensin tekemäni muutokset ctrl + S ja suljin tiedoston ctrl + Q. Testasin vielä, että tiedostoon tekemäni muutokset olivat tallentuneet komennolla cat /home/juuliaharjoitus/report/index.md. 
+
+![41](https://github.com/user-attachments/assets/8fd8b711-d903-4f26-ab72-8d94f4a5e0bf)
+
+![42](https://github.com/user-attachments/assets/02b27528-c05e-4bf2-93fa-399d7ebb9c4b)
+
+![43](https://github.com/user-attachments/assets/f695dabc-d824-48c7-a136-672490167825)
+
+![45](https://github.com/user-attachments/assets/3743e958-fb06-4747-8af8-48882100147d)
+
+![44](https://github.com/user-attachments/assets/acba4513-7602-4e01-a912-b9fe567bad74)
+
+![46](https://github.com/user-attachments/assets/2976dd92-c87c-4a3b-8e22-b1fc60471f96)
+
+Tämän jälkeen tarkastelin index.md tiedoston oikeuksia komennolla ls -l /home/juuliaharjoitus/report/index.md. Tästä näin, että käyttäjän juuliaharjoitus lisäksi ryhmään kuuluvilla käyttäjillä (group) ja muilla käyttäjillä (others) oli lukuoikeus tiedostoon. Poistin käyttäjiltä group ja others lukuoikeuden komennolla chmod go-r /home/juuliaharjoitus/report/index.md. Tämän jälkeen testasin, että tämä oikeuksien poistaminen oli onnistunut tarkastelemalla tiedoston oikeuksia komennolla ls -l /home/juuliaharjoitus/report/index.md. 
+
+![48](https://github.com/user-attachments/assets/f3d38a55-6a51-49d4-8b44-da089cd3e540)
+
+Lopetin tehtävän tekemisen kello 10.50.
+
+Tehtävän tekemiseen ja raportin kirjoittamiseen käytetty kokonaisaika: 10 minuuttia.
+
+#### Tehtävä d: Howdy
+
+Aloitusaika: Perjantai 2025-03-07, kello 10.55.
+
+Tässä tehtävässä tein kaikkien käyttäjien käyttöön komennon 'howdy', joka tulostaa ajankohtaista tietoa. Tein komennon siten, että se toimi kaikilla käyttäjillä työhakemistosta riippumatta.
+
+Päätin luoda komennon, joka tulostaa tekstin "Moikka! Tänään on:" sekä päivämäärän ja kellonajan., Aloitin komennon tekemisen asentamalla Bash-ohjelman virtuaalikoneelleni komennolla sudo apt-get install bash. Jonka jälkeen loin tiedoston howdy.sh komennolla micro howdy.sh. Kirjoitin tiedostoon alla kolmantena olevan kuvan mukaiset tiedot ja tallensin tekemäni muutokset ctrl + S ja suljin tiedoston ctrl + Q. Sitten testasin vielä, että tiedostoon tekemäni muutokset olivat tallentuneet komennolla cat /home/juuliaharjoitus/howdy.sh. 
+
+![49](https://github.com/user-attachments/assets/e5fad051-53d9-4f7a-92e5-f69217a4f1d6)
+
+![51](https://github.com/user-attachments/assets/741ea7bb-cb4d-4b9d-b893-3c3312798975)
+
+![50](https://github.com/user-attachments/assets/e3f3bcef-49a0-43ec-96fa-602727b18208)
+
+![52](https://github.com/user-attachments/assets/82480de7-b2fb-4d9d-adca-be19727a343c)
+
+Tämän jälkeen tarkastinkin howdy.sh tiedoston oikeudet komennolla ls -l howdy.sh ja näin, että ryhmään kuuluvilla käyttäjillä (group) ja muilla käyttäjillä (others) ei ollut suoritusoikeutta eli x.. Annoin kaikille käyttäjäille suoritusoikeuden komennolla chomd ugo+x howdy.sh ja tarkastin vielä, että tämä suoritusoikeuden lisääminen oli onnistunut komennolla ls -l howdy.sh. 
+
+![53](https://github.com/user-attachments/assets/159031cd-2ddb-42c6-80fb-67044d772342)
+
+Sitten kopioin pääkäyttäjänä tiedoston howdy.sh kansioon /usr/local/bin/, jotta kaikki käyttäjät voivat ajaa komennon. Tämän kopioimisen tein komennolla sudo cp -v howdy.sh /usr/local/bin/ ja syötin salasanani. Lopuksi testasin vielä komennon ajamista suorittamalla komennon howdy.sh kotihakemistossani ja sehän toimi. Siirryin vielä juurihakemistoon komennolla cd / ja ajoin komennon howdy.sh tässä hakemistossa ja se toimi eli komennon howdy.sh ajaminen onnistuu riippumatta siitä, että missä työskentelyhakemistossa ollaan. 
+
+![54](https://github.com/user-attachments/assets/078c66d2-cba9-4018-ac46-29030e0d0c28)
+
+![55](https://github.com/user-attachments/assets/dc03a9a3-43ed-4a45-8985-3293da6535b4)
+
+Lopetin tehtävän tekemisen kello 11.10
+
+Tehtävän tekemiseen ja raportin kirjoittamiseen käytetty kokonaisaika: 15 minuuttia.
+
+#### Tehtävä e: Etusivu uusiksi
+
+Aloitusaika: Perjantai 2025-03-07, kello 11.15.
+
+Tässä tehtävässä asensin Apache-weppipalvelimen ja tein kotisivun yritykselle AI Kakone. Tein kotisivun siten, että se näkyi virtuaalikoneeni IP-osoitteella suoraan etusivulla ja sivua pääsi muokkaamaan ilman pääkäyttäjän oikeuksia. 
+
+Aloitin tehtävän tekemisen asentamalla Apachen komennolla sudo apt-get install apache2, jonka jälkeen käynnistin Apachen komennolla sudo systemctl start apache2. Tarkastin vielä, että Apache on käynnissä komennolla systemctl status apache2. 
+
+![56](https://github.com/user-attachments/assets/0cb3347b-dda4-4a7b-83d0-6cdcf62e4c54)
+
+![57](https://github.com/user-attachments/assets/baeee74f-6590-4e7c-a820-d30096613ba6)
+
+![59](https://github.com/user-attachments/assets/a10d5955-befc-4156-93af-5f618a2393ad)
+
+Tämän jälkeen tarkastin, että palvelimen etusivulla näkyy oletussivu eli siirryin verkkoselaimeen ja kirjoitin osoitekenttään http://localhost/ ja oletussivu avautui. Seuraavaksi korvasin oletussivun tekstillä "Testisivu", suorittamalla komennon echo "Testisivu"|sudo tee /var/www/html/index.html ja syöttämällä salasanani. Päivitin verkkoselaimessa localhost-sivun ja sivulla näkyi tämän jälkeen teksti "Testisivu". 
+
+![60](https://github.com/user-attachments/assets/62dc9f70-10dd-4fdd-9a33-7cf5c01d445b)
+
+![62](https://github.com/user-attachments/assets/d3dc4fcd-eca4-40fc-956c-1e0148698805)
+
+![63](https://github.com/user-attachments/assets/82f099de-2ebe-43a1-a196-d22174225f84)
+
+Sitten aloitin Name Based Virtual Hostin luomisen. Loin ensin kotihakemistoon public_sites kansion komennolla mkdir /home/juuliaharjoitus/public_sites. Tämän jälkeen loin konfiguraatiotiedoston suorittamalla komennon sudoedit /etc/apache2/sites-available/aikakone.com.conf. Kirjoitin tähän konfiguraatiotiedostoon alla kolmantena olevan kuvan mukaiset tiedot. Tarkstin vielä konfiguraatiotiedoston sisällön komennolla cat /etc/apache2/sites-available/aikakone.com.conf. 
+
+![61](https://github.com/user-attachments/assets/d458311f-92e5-4170-8b36-f10fd619c468)
+
+![65](https://github.com/user-attachments/assets/06549f49-4fe4-482d-802c-ba418ae79246)
+
+![64](https://github.com/user-attachments/assets/128cb787-fb64-43a7-b481-30dcf802f149)
+
+![66](https://github.com/user-attachments/assets/fe4dc9f1-6fd1-4b0b-8706-e3f771df50cd)
+
+Seuraavaksi käynnistin luomani Name Based Virtual Hostin komennolla sudo a2ensite aikakone.com ja käynnistin Apachen uudelleen komennolla sudo systemctl restart apache2. 
+
+![67](https://github.com/user-attachments/assets/70241615-8558-4847-8af3-c86bf3a11172)
+
+Tämän jälkeen loin uuden verkkosivun tavallisena käyttäjänä. Suoritin ensin komennon mkdir /home/juuliaharjoitus/public_sites/aikakone.com/, jolla loin public_sites kansioon uuden kansion aikakone.com. Tämän jälkeen loin kansioon aikakone.com html-tiedoston index.html, johon kirjoitin tekstin "Tervetuloa aikakone.comiin" komennolla echo Tervetuloa aikakone.comiin > /home/juuliaharjoitus/public_sites/aikakone.com/index.html. Tarkstin vielä tiedoston index.html sisällön komennolla cat /home/juuliaharjoitus/public_sites/aikakone.com/index.html. 
+
+![68](https://github.com/user-attachments/assets/1f6e40ce-9cc8-4fe6-bee7-d31b105da7f7)
+
+![69](https://github.com/user-attachments/assets/6c912a4f-382b-4ff9-b070-4b08225effb6)
+
+![71](https://github.com/user-attachments/assets/7a4165a0-5b4b-4113-8e7e-61efdfe9c364)
+
+Tämän jälkeen tarkastelin, että mitkä sivut ovat käynnissä komennolla ls /etc/apache2/sites-enabled/. Tästä näin, että sekä luomani sivu aikakone.com että oleussivu olivat käynnissä. Sammutin sitten oletussivun komennolla sudo a2dissite 000-default.conf ja syötin salasanani. Sitten käynnistin Apachen uudelleen komennolla sudo systemctl restart apache2. Tarkastin, että ainoastaan luomani sivu on käynnissä suorittamalla uudelleen komennon ls /etc/apache2/sites-enabled/.
+
+![70](https://github.com/user-attachments/assets/778f47ac-4e22-43ef-bcf4-b816b905e2d9)
+
+Sitten testasin verkkoselaimella, että luomani sivu näkyi localhost-osoitteessa. Avasin verkkoselaimen ja kirjoitin osoitekenttään http://localhost/, jossa näkyi index.html tiedostoon kirjoittamani teksti eli luomani sivu toimi. 
+
+![72](https://github.com/user-attachments/assets/c9d206fa-f287-4a29-9b1a-90dcedb67ec1)
+
+Seuraavaksi siirryin muokkaamaan index.html tiedostoa komennolla micro /home/juuliaharjoitus/public_sites/aikakone.com/index.html ja kirjoitin tiedostoon lyhyen HTML5-sivun tiedot. Tallensin tekemäni muutokset ctrl + S ja suljin tiedoston ctrl + Q. Tarkstin vielä tiedoston index.html sisällön komennolla cat /home/juuliaharjoitus/public_sites/aikakone.com/index.html. 
+
+![74](https://github.com/user-attachments/assets/2b55824c-d947-4c2f-95ae-86513b304d40)
+
+![77](https://github.com/user-attachments/assets/f897c3ed-2584-4299-9c69-ab677509e085)
+
+![78](https://github.com/user-attachments/assets/d73c0477-b330-49c8-a13b-f7998c0e2c40)
+
+Tämän jälkeen testasin, että sivuston muutokset olivat onnistuneet. Päivitin verkkoselaimessa localhost-sivun ja sivun näkymä oli oikeanlainen. 
+
+![76](https://github.com/user-attachments/assets/92ac975e-4e84-4860-b8a6-d91a2a8af811)
+
+Lopuksi vielä testasin vielä luomani sivun validiutta sivustolla https://validator.w3.org. Syötin html-tiedoston sisällön sivulla olevaan kenttään ja painoin Check-painiketta. Sivu ei antanut mitään virheitä eikä varoituksia. 
+
+![79](https://github.com/user-attachments/assets/8746e280-7759-4ce9-9133-f74775d5c523)
+
+Lopetin tehtävän tekemisen kello 12.20.
+
+Tehtävän tekemiseen ja raportin kirjoittamiseen käytetty kokonaisaika: 65 minuttia
+
+#### Tehtävä g: Salattua hallintaa
+
 Aloitusaika: Perjantai 2025-03-07, kello XX.XX.
 
-Tässä tehtävässä ratkaisin vanhan arvioitavan laboratorioharjoituksen soveltuvin osin. Valitsin ratkaistavaksi laboratorioharjoitukseksi XX
+Tässä tehtävässä asensin SSH-palvelimen, tein uuden käyttäjän omalla nimelläni ja automatisoin SSH-kirjautumisen julkisen avaimen menetelmällä. Aikaisemmin tällä kurssilla olin kotitehtävässä h4 vuokrannut virtuaalipalvelimen DigitalOceanissa ja otin silloin käyttöön todentamismenetelmäksi salasanan. Vuokrasin tässä tehtävässä uuden virtuaalipalvelimen, jossa otin todenramismenetelmäksi SSH-avaimet, jotta pystyin suorittamaan tämän tehtävän. 
+
+Lopetin tehtävän tekemisen kello XX.XX.
 
 ____________________________________________________________________________________________________________________________________________________________________
 
 #### Lähteet
 
 Tero Karvinen 2018: Hello World Python3, Bash, C, C++, Go, Lua, Ruby, Java – Programming Languages on Ubuntu 18.04. Luettavissa: https://terokarvinen.com/2018/hello-python3-bash-c-c-go-lua-ruby-java-programming-languages-on-ubuntu-18-04/. Luettu 6.3.2025.
+
+Tero Karvinen 2024: Final Lab for Linux Palvelimet 2024 Spring. Luettavissa: https://terokarvinen.com/2024/arvioitava-laboratorioharjoitus-2024-linux-palvelimet/. Luettu 7.3.2025.
 
 Tero Karvinen 2025: Tehtävänanto h7. Luettavissa: https://terokarvinen.com/linux-palvelimet/. Luettu 7.3.2025.
 
