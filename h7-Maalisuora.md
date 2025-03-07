@@ -62,7 +62,7 @@ Tämän jälkeen asensin C:n komennolla sudo apt-get install gcc. Tämän jälke
 
 ![11](https://github.com/user-attachments/assets/11f0d966-b90a-40bf-bda2-a27419c9b7cb)
 
-![9](https://github.com/user-attachments/assets/d6b822ce-e810-4984-b0ea-d774032792e3)
+![9](https://github.com/user-attachments/assets/207d9863-7ae1-42fa-8bd2-c599b052e253)
 
 ![10](https://github.com/user-attachments/assets/2e498f0a-9577-4965-ac0f-4dd59c2e5739)
 
