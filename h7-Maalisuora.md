@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/1d33731f-d2b6-47af-bd28-3422df342ab4)# h7 Maalisuora
+# h7 Maalisuora
 
 ## Johdanto
 
