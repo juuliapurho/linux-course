@@ -30,7 +30,7 @@ Virtuaalikone
 
 Aloitusaika: Torstai 2025-03-06, kello 17.10.
 
-Tässä tehtävässä kirjoitin ja ajoin tekstin "Hei maailma" kolmella kielellä. Valitsin kieliksi Pythonin, C:n ja Javan. Käytin tehtävän tekemisessä apuna Tero Karvisen artikkelia "Hello World Python3, Bash, C, C++, Go, Lua, Ruby, Java – Programming Languages on Ubuntu 18.04" sekä tehtävänannon yhteydessä olleita vinkkejä. Kirjoitin tehtävää tehdessäni samanaikaisesti raporttia.
+Tässä tehtävässä kirjoitin ja ajoin tekstin "Hei maailma" kolmella kielellä. Valitsin kieliksi Pythonin, C:n ja Javan. Käytin tehtävän tekemisessä apuna Tero Karvisen artikkelia "Hello World Python3, Bash, C, C++, Go, Lua, Ruby, Java – Programming Languages on Ubuntu 18.04" (https://terokarvinen.com/2018/hello-python3-bash-c-c-go-lua-ruby-java-programming-languages-on-ubuntu-18-04/) sekä tehtävänannon yhteydessä olleita vinkkejä. Kirjoitin tehtävää tehdessäni samanaikaisesti raporttia.
 
 Aloitin tehtävän tekemisen käynnistämällä virtuaalikoneeni ja siirtymällä terminaaliin. Hain ensin kaikki saatavilla olevat päivitykset komennolla sudo apt-get update ja syötin salasanani. Sitten suoritin kaikki päivitykset komennolla sudo apt-get dist-upgrade. Tämä päivittäminen kesti joitakin minuutteja.
 
