@@ -245,6 +245,8 @@ GeeksForGeeks 2024: Piping in Unix or Linux. Luettavissa: https://www.geeksforge
 
 GoLinuxCloud 2024: 20 grep command examples in Linux [Cheat Sheet]. Luettavissa: https://www.golinuxcloud.com/grep-command-in-linux/.
 
+Grep-komennon manuaali
+
 Idroot.us: lshw Command in Linux with Examples. Luettavissa: https://idroot.us/lshw-command-linux/#Understanding_lshw_Output.
 
 Installati.one: How To Install fortunes-it-off on Debian 12. Luettavissa: https://installati.one/install-fortunes-it-off-debian-12/
