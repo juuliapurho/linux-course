@@ -56,7 +56,7 @@ Tämän jälkeen ajoin komennon python3 hello.py, joka tulosti tekstin "Hei maai
 
 #### C
 
-Tämän jälkeen asensin C:n komennolla sudo apt-get install gcc. Tämän jälkeen loin tiedoston hello.c komennolla micro hello.c. Kirjoitin tiedostoon Tero Karvisen artikkelin mukaisen tekstin, joka näkyy kolmannessa alla olevassa kuvassa. Tallensin tekemäni muutokset ctrl + S ja suljin tiedoston ctrl + Q. Tulostin vielä tiedoston sisällön komennolla cat hello.py, jolla testasin, että tiedostoon tekemäni muutokset olivat tallentuneet.
+Tämän jälkeen asensin C:n komennolla sudo apt-get install gcc. Tämän jälkeen loin tiedoston hello.c komennolla micro hello.c. Kirjoitin tiedostoon Tero Karvisen artikkelin mukaisen tekstin, joka näkyy kolmannessa alla olevassa kuvassa. Tallensin tekemäni muutokset ctrl + S ja suljin tiedoston ctrl + Q. Tulostin vielä tiedoston sisällön komennolla cat hello.c, jolla testasin, että tiedostoon tekemäni muutokset olivat tallentuneet.
 
 ![8](https://github.com/user-attachments/assets/316c38f5-5d81-459f-8d70-4875906ecb3f)
 
