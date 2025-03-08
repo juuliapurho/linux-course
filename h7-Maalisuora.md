@@ -303,7 +303,7 @@ Tämän jälkeen loin uuden käyttäjän komennolla sudo adduser juuliate01. Ann
 
 ![114](https://github.com/user-attachments/assets/1e718415-869d-4b48-a180-f7aa4b4f6d75)
 
-Yritin selvittää internetistä, että mistä tässä on kyse, mutta en löytänyt ongelmaan ratkaisua. Käytin hakusanana muun muassa tuota virheilmoituksen tekstiä. Tämän jälkeen yritin käynnistää SSH:ta uudelleen komennolla sudo service ssh restart, mutta se tulosti toisen virheilmoituksen, jossa kerrottiin, että SSH:n käynnistäminen ei onnistunut. Yritin vielä avata SSH-yhteyden localhostiin komennolla ssh localhost, mutta tämä tulosti virheilmoituksen, jossa kerrotiin, että yhteys localhostin porttiin 22 on evätty. 
+Yritin selvittää internetistä, että mistä tässä on kyse, mutta en löytänyt ongelmaan ratkaisua. Käytin hakusanana muun muassa tuota virheilmoituksen tekstiä, jonka lisäksi yritin etsiä syitä sille, miksi localhostin yhteyden muodostaminen porttiin 22 ei onnistu. Tämän jälkeen yritin käynnistää SSH:ta uudelleen komennolla sudo service ssh restart, mutta se tulosti toisen virheilmoituksen, jossa kerrottiin, että SSH:n käynnistäminen ei onnistunut. Yritin vielä avata SSH-yhteyden localhostiin komennolla ssh localhost, mutta tämä tulosti virheilmoituksen, jossa kerrotiin, että yhteys localhostin porttiin 22 on evätty. 
 
 ![115](https://github.com/user-attachments/assets/d4fb1515-ac15-4c08-bdec-0dc7e4ea5af7)
 
@@ -313,17 +313,17 @@ Yritin etsiä tähänkin ratkaisua internetistä ja käytin hakusanoina muun mua
 
 ![119](https://github.com/user-attachments/assets/0aee7e00-c3ab-48d0-93dc-236d4d202ead)
 
-Kokeilin myös Stack Overflown verkkosivuilta ohjeen poistaa openssh-client ja asentaa se uudelleen (https://stackoverflow.com/questions/17335728/connect-to-host-localhost-port-22-connection-refused). Tein tämän komennoilla sudo apt-get remove openssh-client ja sudo apt-get install openssh-client, mutta sekään ei tarkaissut ongelmaa. 
+Kokeilin myös Stack Overflown verkkosivuilta löytämäni ohjeen mukaisesti poistaa openssh-clientin ja asentaa sen uudelleen (https://stackoverflow.com/questions/17335728/connect-to-host-localhost-port-22-connection-refused). Tein tämän komennoilla sudo apt-get remove openssh-client ja sudo apt-get install openssh-client, mutta sekään ei tarkaissut ongelmaa. 
 
 Lopetin tehtävän tekemisen ja raportin kirjoittamisen tältä päivältä kello 18.15. 
 
 Jatkoin ongelman ratkaisemista seuraavana päivänä eli lauantaina 2025-03-08, kello 08.40.
 
-Kokeilin vielä muodostaa SSH-yhteyden virtuaalipalvelimeeni komennolla ssh juulia@165.22.75.206, vastasin kysymykseen "yes" ja annoin virtuaalipalvelimen salasanan, jolloin SSH-yhteys avautui eli SSH siis kuitenkin toimii. Kirjauduin ulos virtuaalipalvelimeltani komennolla exit. 
+Kokeilin muodostaa SSH-yhteyden virtuaalipalvelimeeni komennolla ssh juulia@165.22.75.206, vastasin kysymykseen "yes" ja annoin virtuaalipalvelimen salasanan, jolloin SSH-yhteys avautui eli SSH siis kuitenkin toimii ja sain avattua yhteyden virtuaalipalvelimelleni. Kirjauduin ulos virtuaalipalvelimeltani komennolla exit. 
 
 ![120](https://github.com/user-attachments/assets/2e3b6f45-4e83-47b2-be5c-ba901fbe2f25)
 
-Kuten aikaisemmin saamani virheilmoitukset kertova, tämän ongelman täytyy siis liittyä tuohon porttiin 22. Tämän jälkeen päätin tarkastaa palomuurin statuksen komennolla sudo ufw status, ja näin, että portin 22 kohdalla luki "DENY". 
+Kuten aikaisemmin saamani virheilmoitukset kertovat, tämän ongelman täytyy siis liittyä tuohon porttiin 22. Tämän jälkeen päätin tarkastaa palomuurin statuksen komennolla sudo ufw status ja näin, että portin 22 kohdalla luki "DENY". 
 
 ![121](https://github.com/user-attachments/assets/28de8f3d-ca02-4a66-9d4a-0dd2a66177fd)
 
@@ -333,7 +333,7 @@ Tein palomuuriin reiän portille 22 komennolla sudo ufw allow 22/tcp, jonka jäl
 
 ![123](https://github.com/user-attachments/assets/f8294e2f-acd6-431d-807c-c38e4f7b0432)
 
-Tässä vaiheessa olin jo ylittänyt itselleni asettamani 3 tunnin aikarajan, enkä löytänyt ongelmaani ratkaisua internetistä etsimäni tiedon ja tekemieni toimenpiteiden kautta. Päätin todeta tässä vaiheessa tappioni ja lopettaa vanhan arvioitavan laboratorioharjoituksen tekemisen tähän. Tiedän kuitenkin teoriassa, että miten tämä  SSH-kirjautumisen automatisointi julkisen avaimen menetelmällä tulisi tehdä, vaikka en saanutkaan sitä onnistumaan. 
+Tässä vaiheessa olin jo ylittänyt itselleni asettamani 3 tunnin aikarajan, enkä löytänyt ongelmaani ratkaisua internetistä etsimäni tiedon ja tekemieni toimenpiteiden kautta. Minulla ei ole myöskään Linuxista niin paljon kokemusta, että keksisin muita keinoja ongelman ratkaisemiseen. Päätin todeta tässä vaiheessa tappioni ja lopettaa vanhan arvioitavan laboratorioharjoituksen tekemisen tähän. Tiedän kuitenkin teoriassa, että miten tämä SSH-kirjautumisen automatisointi julkisen avaimen menetelmällä tulisi tehdä, vaikka en saanutkaan sitä onnistumaan. 
 
 Lopetin siis tehtävän tekemisen kello 09.30. 
 
