@@ -283,7 +283,7 @@ Tehtävän tekemiseen ja raportin kirjoittamiseen käytetty kokonaisaika: 65 min
 
 Aloitusaika: Perjantai 2025-03-07, kello 17.00.
 
-Tässä tehtävässä oli tarkoituksena asentaa SSH-palvelin, tehdä uusi käyttäjä omalla nimellä ja automatisoida SSH-kirjautumisen julkisen avaimen menetelmällä. En ollut tehnyt tätä SSH-kirjautumisen automatisointia aikaisemmin, joten löysin siihen apua Tero Karvisen pitämän, keväällä 2024 toteutetun Linux-kurssin kotitehtävän h5 tehtävänannosta (https://terokarvinen.com/2024/linux-palvelimet-2024-alkukevat/). 
+Tässä tehtävässä oli tarkoituksena asentaa SSH-palvelin, tehdä uusi käyttäjä omalla nimellä ja automatisoida SSH-kirjautuminen julkisen avaimen menetelmällä. En ollut tehnyt tätä SSH-kirjautumisen automatisointia aikaisemmin, joten löysin siihen apua Tero Karvisen pitämän, keväällä 2024 toteutetun Linux-kurssin kotitehtävän h5 tehtävänannosta (https://terokarvinen.com/2024/linux-palvelimet-2024-alkukevat/). 
 
 Aloitin asentamalla virtuaalikoneelleni SSH:n suorittamalla ensin komennon sudo apt-get update ja syöttämällä salasanani, jonka jälkeen suoritin komennon sudo apt-get install openssh-client. Sitten suoritin komennon ssh-keygen, jonka jälkeen painoin kolme kertaa enter-painiketta. Tämän jälkeen julkinen ja yksityinen avain oli luotu. Tarkistin vielä, että ne löytyivät käyttäjän juuliaharjoitus kotihakemistosta komennolla cd /home/juuliaharjoitus/.ssh/ sekä ls, ja sieltä nämä avaimet löytyivät.
 
