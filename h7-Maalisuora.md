@@ -289,10 +289,11 @@ Aloitin asentamalla virtuaalikoneelleni SSH:n suorittamalla ensin komennon sudo 
 
 ![81](https://github.com/user-attachments/assets/f9950d55-9060-4c91-9a17-155df7a635e5)
 
+![82](https://github.com/user-attachments/assets/b7c2670a-a2ab-4537-a6c5-26267aa6a3a1)
+
 ![112](https://github.com/user-attachments/assets/b4317339-bd7e-4bfd-8075-d659e433ed04)
 
-![118](https://github.com/user-attachments/assets/1784d244-1450-49c6-8ed3-b79c51697722)
-
+![129](https://github.com/user-attachments/assets/b7d79a8f-5f56-4e60-b51a-a1ba07d63350)
 
 Tämän jälkeen loin uuden käyttäjän komennolla sudo adduser juuliate01. Annoin tälle käyttäjälle salasanan ja koko nimen kohdalle kirjoitin ohjeen mukaisesti Juulia Purho test. Näiden lisäksi en lisännyt muita tietoja. Sitten vielä vahvistin, että antamani tiedot ovat oikein Y-painikkeella, jonka jälkeen ilmoitettiin, että käyttäjä juuliate01 oli lisätty ryhmään users.
 
