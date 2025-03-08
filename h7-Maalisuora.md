@@ -303,11 +303,11 @@ Tämän jälkeen loin uuden käyttäjän komennolla sudo adduser juuliate01. Ann
 
 ![114](https://github.com/user-attachments/assets/1e718415-869d-4b48-a180-f7aa4b4f6d75)
 
-Yritin selvittää internetistä, että mistä tässä on kyse, mutta en löytänyt ongelmaan ratkaisua. Käytin hakusanana muun muassa tuota virheilmoituksen tekstiä, jonka lisäksi yritin etsiä syitä sille, miksi localhostin yhteyden muodostaminen porttiin 22 ei onnistu. Tämän jälkeen yritin käynnistää SSH:ta uudelleen komennolla sudo service ssh restart, mutta se tulosti toisen virheilmoituksen, jossa kerrottiin, että SSH:n käynnistäminen ei onnistunut. Yritin vielä avata SSH-yhteyden localhostiin komennolla ssh localhost, mutta tämä tulosti virheilmoituksen, jossa kerrotiin, että yhteys localhostin porttiin 22 on evätty. 
+Yritin selvittää internetistä, että mistä tässä on kyse, mutta en löytänyt ongelmaan ratkaisua. Käytin hakusanana muun muassa tuota virheilmoituksen tekstiä, jonka lisäksi yritin etsiä syitä sille, miksi localhostin yhteyden muodostaminen porttiin 22 ei onnistu. Tämän jälkeen yritin käynnistää SSH:ta uudelleen komennolla sudo service ssh restart, mutta se tulosti toisen virheilmoituksen, jossa kerrottiin, että SSH:n käynnistäminen ei onnistunut. Yritin vielä avata SSH-yhteyden localhostiin komennolla ssh juuliate01@localhost, mutta tämä tulosti virheilmoituksen, jossa kerrotiin, että yhteys localhostin porttiin 22 on evätty. 
 
 ![115](https://github.com/user-attachments/assets/d4fb1515-ac15-4c08-bdec-0dc7e4ea5af7)
 
-![116](https://github.com/user-attachments/assets/c777c31e-7761-4c1f-94d8-c19d8bb371d0)
+![130](https://github.com/user-attachments/assets/593188e0-edfd-47d9-a119-e0ead4633dcc)
 
 Yritin etsiä tähänkin ratkaisua internetistä ja käytin hakusanoina muun muassa näitä virheilmoituksia, mutta en vain löytänyt ongelmaani ratkaisua. Ymmärsin, että tuon komennon ssh-copy-id juuliate01@localhost suorittamisen jälkeen minun olisi pitänyt päästä kirjautumaan julkisen avaimen menetelmällä suorittamalla komennon ssh juuliate01@localhost. Tarkastelin vielä tuon .ssh kansion oikeuksia siirtymällä ensin tähän kansioon komennolla cd /home/juuliaharjoitus/.ssh/ ja suorittamalla sen jälkeen komennon ls -la. Oikeudet näyttivät alla olevan kuvan mukaisilta. 
 
@@ -323,15 +323,19 @@ Kokeilin muodostaa SSH-yhteyden virtuaalipalvelimeeni komennolla ssh juulia@165.
 
 ![120](https://github.com/user-attachments/assets/2e3b6f45-4e83-47b2-be5c-ba901fbe2f25)
 
-Kuten aikaisemmin saamani virheilmoitukset kertovat, tämän ongelman täytyy siis liittyä tuohon porttiin 22. Tämän jälkeen päätin tarkastaa palomuurin statuksen komennolla sudo ufw status ja näin, että portin 22 kohdalla luki "DENY". 
+Kuten aikaisemmin saamani virheilmoitukset kertovat, tämän ongelman täytyy siis liittyä tuohon porttiin 22 ja siihen localhost yhteyden muodostamiseen. Tämän jälkeen päätin tarkastaa palomuurin statuksen komennolla sudo ufw status ja näin, että portin 22 kohdalla luki "DENY". 
 
 ![121](https://github.com/user-attachments/assets/28de8f3d-ca02-4a66-9d4a-0dd2a66177fd)
 
-Tein palomuuriin reiän portille 22 komennolla sudo ufw allow 22/tcp, jonka jälkeen tarkastin, että tekemäni muutos oli onnistunut komennolla sudo ufw status. Nyt portin 22 kohdalla luki "ALLOW". Kokeilin uudelleen komennon ssh-copy-id juuliate01@localhost suorittamista, mutta sain kuitenkin edelleen saman virheilmoituksen.
+Tein palomuuriin reiän portille 22 komennolla sudo ufw allow 22/tcp, jonka jälkeen tarkastin, että tekemäni muutos oli onnistunut komennolla sudo ufw status. Nyt portin 22 kohdalla luki "ALLOW". Kokeilin uudelleen komentojen ssh juuliate01@localhost ja ssh-copy-id juuliate01@localhost suorittamista, mutta sain kuitenkin edelleen saman kaltaiset virheilmoitukset. Yritin myös avata SSH-yhteyden käyttäjällä juuliaharjoitus, mutta sekään ei onnistunut.
 
 ![122](https://github.com/user-attachments/assets/9148a171-1cd6-4a53-a67e-e4f6884e8eac)
 
 ![123](https://github.com/user-attachments/assets/f8294e2f-acd6-431d-807c-c38e4f7b0432)
+
+![130](https://github.com/user-attachments/assets/ff35a3be-55e6-452b-81b5-3ddd62967f17)
+
+![131](https://github.com/user-attachments/assets/8209a437-5541-4550-9663-2b1db6e35ccb)
 
 Tässä vaiheessa olin jo ylittänyt itselleni asettamani 3 tunnin aikarajan, enkä löytänyt ongelmaani ratkaisua internetistä etsimäni tiedon ja tekemieni toimenpiteiden kautta. Minulla ei ole myöskään Linuxista niin paljon kokemusta, että keksisin muita keinoja ongelman ratkaisemiseen. Päätin todeta tässä vaiheessa tappioni ja lopettaa vanhan arvioitavan laboratorioharjoituksen tekemisen tähän. Tiedän kuitenkin teoriassa, että miten tämä SSH-kirjautumisen automatisointi julkisen avaimen menetelmällä tulisi tehdä, vaikka en saanutkaan sitä onnistumaan. 
 
