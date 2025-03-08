@@ -363,6 +363,8 @@ Tero Karvinen 2025: Tehtävänanto h7. Luettavissa: https://terokarvinen.com/lin
 
 Tero Karvinen 2007: Shell Scripting. Luettavissa: https://terokarvinen.com/2007/12/04/shell-scripting-4/. Luettu 6.3.2025.
 
+The World Wide Web Consortium: Markup Validation Service. Käytettävissä: https://validator.w3.org/.
+
 ____________________________________________________________________________________________________________________________________________________________________
 Tätä dokumenttia saa kopioida ja muokata GNU General Public License (versio 2 tai uudempi) mukaisesti. http://www.gnu.org/licenses/gpl.html
 
