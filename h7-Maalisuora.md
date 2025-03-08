@@ -267,13 +267,13 @@ Tämän jälkeen testasin, että sivuston muutokset olivat onnistuneet. Päiviti
 
 ![76](https://github.com/user-attachments/assets/92ac975e-4e84-4860-b8a6-d91a2a8af811)
 
-Testasin vielä luomani sivun validiutta sivustolla https://validator.w3.org. Syötin html-tiedoston sisällön sivulla olevaan kenttään ja painoin Check-painiketta. Sivu ei antanut mitään virheitä eikä varoituksia. Lopuksi tarkastelin sivun muokkaamiseen tarvittavien tiedostojen ja kansioiden eli index.html tiedoston oikeuksia komennolla ls -l /home/juuliaharjoitus/public_sites/aikakone.com/index.html. Annoin kaikille käyttäjille suoritusoikeuden komennolla chmod ugo+x /home/juuliaharjoitus/public_sites/aikakone.com/index.html.
+Testasin vielä luomani sivun validiutta sivustolla https://validator.w3.org. Syötin html-tiedoston sisällön sivulla olevaan kenttään ja painoin Check-painiketta. Sivu ei antanut mitään virheitä eikä varoituksia. Lopuksi tarkastelin sivun muokkaamiseen tarvittavien tiedostojen ja kansioiden oikeuksia komennolla ls -l /home/juuliaharjoitus/public_sites/aikakone.com/. Annoin kaikille käyttäjille suoritusoikeuden komennolla chmod ugo+x /home/juuliaharjoitus/public_sites/aikakone.com/index.html. Sitten siirryin vielä public_sites kansioon komennolla cd /home/juuliaharjoitus/public_sites, ja suoritin komennon ls -la.
 
 ![79](https://github.com/user-attachments/assets/8746e280-7759-4ce9-9133-f74775d5c523)
 
 ![127](https://github.com/user-attachments/assets/f9c173d3-6f3c-4890-9e42-d93de2cb1a53)
 
-![126](https://github.com/user-attachments/assets/d294cf1c-bbb5-4f9e-9955-331c1d7dfcbb)
+![128](https://github.com/user-attachments/assets/1f59c8a4-7115-4e5e-a7c7-01e30e83804e)
 
 Lopetin tehtävän tekemisen kello 12.20.
 
