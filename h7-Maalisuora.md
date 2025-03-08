@@ -40,7 +40,7 @@ Aloitin tehtävän tekemisen käynnistämällä virtuaalikoneeni ja siirtymäll�
 
 #### Python
 
-Asensin ensin Pythonin komennolla sudo apt-get install python3. Seuraavaksi loin tiedoston hei.py komennolla micro hello.py. Tämän jälkeen kirjoitin tiedostoon Tero Karvisen artikkelin mukaisesti tekstin print("Hei maailma"). Tallensin tekemäni muutokset ctrl + S ja suljin tiedoston ctrl + Q. Tulostin vielä tiedoston sisällön komennolla cat hello.py, jolla testasin, että tiedostoon tekemäni muutokset olivat tallentuneet.
+Asensin ensin Pythonin komennolla sudo apt-get install python3. Seuraavaksi loin tiedoston hello.py komennolla micro hello.py. Tämän jälkeen kirjoitin tiedostoon Tero Karvisen artikkelin mukaisesti tekstin print("Hei maailma"). Tallensin tekemäni muutokset ctrl + S ja suljin tiedoston ctrl + Q. Tulostin vielä tiedoston sisällön komennolla cat hello.py, jolla testasin, että tiedostoon tekemäni muutokset olivat tallentuneet.
 
 ![3](https://github.com/user-attachments/assets/4d72a16c-4069-40da-9078-4e1d3acb2629)
 
