@@ -189,7 +189,7 @@ Päätin luoda komennon, joka tulostaa tekstin "Moikka! Tänään on:", jonka li
 
 ![52](https://github.com/user-attachments/assets/82480de7-b2fb-4d9d-adca-be19727a343c)
 
-Tämän jälkeen tarkastinkin howdy.sh tiedoston oikeudet komennolla ls -l howdy.sh ja näin, että ryhmään kuuluvilla käyttäjillä (group) ja muilla käyttäjillä (others) ei ollut suoritusoikeutta eli x.. Annoin kaikille käyttäjäille suoritusoikeuden komennolla chomd ugo+x howdy.sh ja tarkastin vielä, että tämä suoritusoikeuden lisääminen oli onnistunut komennolla ls -l howdy.sh. 
+Tämän jälkeen tarkastinkin howdy.sh tiedoston oikeudet komennolla ls -l howdy.sh ja näin, että ryhmään kuuluvilla käyttäjillä (group) ja muilla käyttäjillä (others) ei ollut suoritusoikeutta eli x. Annoin kaikille käyttäjäille suoritusoikeuden komennolla chomd ugo+x howdy.sh ja tarkastin vielä, että tämä suoritusoikeuden lisääminen oli onnistunut komennolla ls -l howdy.sh. 
 
 ![53](https://github.com/user-attachments/assets/159031cd-2ddb-42c6-80fb-67044d772342)
 
