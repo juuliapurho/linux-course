@@ -234,6 +234,8 @@ Tein vielä h3 kotitehtävän vapaaehtoisen tehtävän, jossa hankin GitHub Educ
 
 #### Lähteet
 
+Curl-komennon manuaali
+
 Linuxize 2019: Curl Command in Linux with Examples. Luettavissa: https://linuxize.com/post/curl-command-examples/. 
 
 MDN: HTTP headers. Luettavissa: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers.
