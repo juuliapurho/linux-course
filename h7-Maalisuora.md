@@ -330,7 +330,7 @@ Tein palomuuriin reiän portille 22 komennolla sudo ufw allow 22/tcp, jonka jäl
 
 ![123](https://github.com/user-attachments/assets/f8294e2f-acd6-431d-807c-c38e4f7b0432)
 
-Tässä vaiheessa olin jo ylittänyt itselleni asettamani 3 tunnin aikarajan, enkä löytänyt ongelmaani ratkaisua internetistä etsimäni tiedon ja tekemieni toimenpiteiden kautta. Päätin todeta tässä vaiheessa tappioni ja lopettaa vanhan arvioitavan laboratorioharjoituksen tekemisen tähän.
+Tässä vaiheessa olin jo ylittänyt itselleni asettamani 3 tunnin aikarajan, enkä löytänyt ongelmaani ratkaisua internetistä etsimäni tiedon ja tekemieni toimenpiteiden kautta. Päätin todeta tässä vaiheessa tappioni ja lopettaa vanhan arvioitavan laboratorioharjoituksen tekemisen tähän. 
 
 Lopetin siis tehtävän tekemisen kello 09.30. 
 
