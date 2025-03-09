@@ -313,7 +313,7 @@ Yritin selvittää internetistä, että mistä tässä on kyse, mutta en löytä
 
 Päätin lopettaa tehtävän tekemisen ja raportin kirjoittamisen tältä päivältä kello 18.15 ja jatkaa ongelmanratkaisua myöhemmin.
 
-Jatkoin ongelman ratkaisemista sunnuntaina 2025-03-08, kello 14.20.
+Jatkoin ongelman ratkaisemista sunnuntaina 2025-03-09, kello 14.20.
 
 Kokeilin ensimmäiseksi SSH-yhteyden muodostamista virtuaalipalvelimeeni komennolla ssh juulia@165.22.75.206, vastasin kysymykseen "yes" ja annoin virtuaalipalvelimen salasanan, jolloin SSH-yhteys avautui eli SSH siis kuitenkin toimii ja sain avattua yhteyden virtuaalipalvelimelleni. Kirjauduin ulos virtuaalipalvelimeltani komennolla exit. 
 
