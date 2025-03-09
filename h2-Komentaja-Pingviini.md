@@ -259,6 +259,8 @@ Tero Karvinen: Command Line Basics Revisited. Luettavissa: https://terokarvinen.
 
 Tero Karvinen 2025: Tehtävänanto h2. Luettavissa: https://terokarvinen.com/linux-palvelimet/.
 
+Lähdemerkinnät päivitetty 8.3.2025.
+
 ____________________________________________________________________________________________________________________________________________________________________
 Tätä dokumenttia saa kopioida ja muokata GNU General Public License (versio 2 tai uudempi) mukaisesti. http://www.gnu.org/licenses/gpl.html
 
