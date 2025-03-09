@@ -4,7 +4,7 @@
 
 Tämän harjoituksen ensimmäisessä tehtävässä kirjoitin ja ajoin tekstin "Hei maailma" kolmella eri kielellä. Toisessa tehtävässä tein täysin uuden komennon, jota kaikki käyttäjät pystyvät ajamaan. Viimeisessä tehtävässä ratkaisin soveltuvin osin vanhan arvioitavan laboratorioharjoituksen.
 
-## Tehtävissä a-d käytetty ympäristö
+## Tehtävissä a, c ja d käytetty ympäristö
 Kannettava tietokone
 
 - Lenovon ThinkBook 13s G3 ACN 
