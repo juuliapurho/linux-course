@@ -141,7 +141,7 @@ Lopetin tehtävän tekemisen kello 19.00.
 ## d)
 ### Vanhan laboratorioharjoituksen ratkaiseminen
 
-Tässä tehtävässä ratkaisin vanhan arvioitavan laboratorioharjoituksen soveltuvin osin. Valitsin ratkaistavaksi laboratorioharjoitukseksi kevään 2024 laboratorioharjoituksen (https://terokarvinen.com/2024/arvioitava-laboratorioharjoitus-2024-linux-palvelimet/). Päätin, asettaa itselleni laboratorioharjoituksen tekemiseen aikaa yhteensä 3 tuntia eli 180 minuuttia, jonka luulen olevan maksimiaika tulevalla viikolla tehtävälle oikealla laboratorioharjoitukselle. Halusin asettaa aikarajan, jotta näen kuinka paljon saan aikaan tuossa asetetussa ajassa tehdessäni toimenpiteitä ripeämmin. Päätin kuitenkin laatia tästä laboratorioharjoituksen ratkaisemisesta muiden kotitehtävien kaltaisen yksityiskohtaisen raportin laboratorioharjoituksen ohjeistuksessa olleen tiivimmän raportin sijaan.
+Tässä tehtävässä ratkaisin vanhan arvioitavan laboratorioharjoituksen soveltuvin osin. Valitsin ratkaistavaksi laboratorioharjoitukseksi kevään 2024 laboratorioharjoituksen (https://terokarvinen.com/2024/arvioitava-laboratorioharjoitus-2024-linux-palvelimet/). Päätin, etten aseta laboratorioharjoitusen ratkaisemiselle mitään aikarajaa, sillä se toimii hyvänä kertauksena tulevaa ensi viikon laboratorioharjoitusta varten. Päätin myös laatia tästä laboratorioharjoituksen ratkaisemisesta muiden kotitehtävien kaltaisen yksityiskohtaisen raportin laboratorioharjoituksen ohjeistuksessa olleen tiivimmän raportin sijaan.
 
 Ennen laboratorioharjoituksen tekemistä loin uuden tyhjän Linux-virtuaalikoneen samalla tavalla kuin tämän kurssin ensimmäisessä kotitehtävässä h1. Suoritin kaikki saatavilla olevat päivitykset komennoilla sudo apt-get update ja sudo apt-get dist-upgrade sekä asensin palomuurin komennolla apt-get -y install ufw ja otin sen käyttöön komennolla sudo ufw enable. 
 
@@ -283,7 +283,7 @@ Tehtävän tekemiseen ja raportin kirjoittamiseen käytetty kokonaisaika: 65 min
 
 Aloitusaika: Perjantai 2025-03-07, kello 17.00.
 
-Tässä tehtävässä oli tarkoituksena asentaa SSH-palvelin, tehdä uusi käyttäjä omalla nimellä ja automatisoida SSH-kirjautuminen julkisen avaimen menetelmällä. En ollut tehnyt tätä SSH-kirjautumisen automatisointia aikaisemmin, joten löysin siihen apua Tero Karvisen pitämän, keväällä 2024 toteutetun Linux-kurssin kotitehtävän h5 tehtävänannosta (https://terokarvinen.com/2024/linux-palvelimet-2024-alkukevat/). 
+Tässä tehtävässä asensin SSH-palvelimen, tein uuden käyttäjän omalla nimelläni ja automatisoin SSH-kirjautumisem julkisen avaimen menetelmällä. En ollut tehnyt tätä SSH-kirjautumisen automatisointia aikaisemmin, joten löysin siihen apua Tero Karvisen pitämän, keväällä 2024 toteutetun Linux-kurssin kotitehtävän h5 tehtävänannosta (https://terokarvinen.com/2024/linux-palvelimet-2024-alkukevat/). 
 
 Aloitin asentamalla virtuaalikoneelleni SSH:n suorittamalla ensin komennon sudo apt-get update ja syöttämällä salasanani, jonka jälkeen suoritin komennon sudo apt-get install openssh-client. Sitten suoritin komennon ssh-keygen, jonka jälkeen painoin kolme kertaa enter-painiketta. Tämän jälkeen julkinen ja yksityinen avain oli luotu. Tarkistin vielä, että ne löytyivät käyttäjän juuliaharjoitus kotihakemistosta komennolla cd /home/juuliaharjoitus/.ssh/ sekä ls, ja sieltä nämä avaimet löytyivät.
 
@@ -311,37 +311,35 @@ Yritin selvittää internetistä, että mistä tässä on kyse, mutta en löytä
 
 ![130](https://github.com/user-attachments/assets/593188e0-edfd-47d9-a119-e0ead4633dcc)
 
-Yritin etsiä tähänkin ratkaisua internetistä ja käytin hakusanoina muun muassa näitä virheilmoituksia, mutta en vain löytänyt ongelmaani ratkaisua. Ymmärsin, että tuon komennon ssh-copy-id juuliate01@localhost suorittamisen jälkeen minun olisi pitänyt päästä kirjautumaan julkisen avaimen menetelmällä suorittamalla komennon ssh juuliate01@localhost. Tarkastelin vielä tuon .ssh kansion oikeuksia siirtymällä ensin tähän kansioon komennolla cd /home/juuliaharjoitus/.ssh/ ja suorittamalla sen jälkeen komennon ls -la. Oikeudet näyttivät alla olevan kuvan mukaisilta. 
+Päätin lopettaa tehtävän tekemisen ja raportin kirjoittamisen tältä päivältä kello 18.15 ja jatkaa ongelmanratkaisua myöhemmin.
 
-![119](https://github.com/user-attachments/assets/0aee7e00-c3ab-48d0-93dc-236d4d202ead)
+Jatkoin ongelman ratkaisemista sunnuntaina 2025-03-08, kello 14.20.
 
-Kokeilin myös Stack Overflown verkkosivuilta löytämäni ohjeen mukaisesti poistaa openssh-clientin ja asentaa sen uudelleen (https://stackoverflow.com/questions/17335728/connect-to-host-localhost-port-22-connection-refused). Tein tämän komennoilla sudo apt-get remove openssh-client ja sudo apt-get install openssh-client, mutta sekään ei tarkaissut ongelmaa. 
-
-Lopetin tehtävän tekemisen ja raportin kirjoittamisen tältä päivältä kello 18.15. 
-
-Jatkoin ongelman ratkaisemista seuraavana päivänä eli lauantaina 2025-03-08, kello 08.40.
-
-Kokeilin muodostaa SSH-yhteyden virtuaalipalvelimeeni komennolla ssh juulia@165.22.75.206, vastasin kysymykseen "yes" ja annoin virtuaalipalvelimen salasanan, jolloin SSH-yhteys avautui eli SSH siis kuitenkin toimii ja sain avattua yhteyden virtuaalipalvelimelleni. Kirjauduin ulos virtuaalipalvelimeltani komennolla exit. 
+Kokeilin ensimmäiseksi SSH-yhteyden muodostamista virtuaalipalvelimeeni komennolla ssh juulia@165.22.75.206, vastasin kysymykseen "yes" ja annoin virtuaalipalvelimen salasanan, jolloin SSH-yhteys avautui eli SSH siis kuitenkin toimii ja sain avattua yhteyden virtuaalipalvelimelleni. Kirjauduin ulos virtuaalipalvelimeltani komennolla exit. 
 
 ![120](https://github.com/user-attachments/assets/2e3b6f45-4e83-47b2-be5c-ba901fbe2f25)
 
-Kuten aikaisemmin saamani virheilmoitukset kertovat, tämän ongelman täytyy siis liittyä tuohon porttiin 22 ja siihen localhost yhteyden muodostamiseen. Tein palomuuriin reiän portille 22 komennolla sudo ufw allow 22/tcp, jonka jälkeen tarkastin, että tekemäni muutos oli onnistunut komennolla sudo ufw status. Portin 22 kohdalla luki "ALLOW". Kokeilin uudelleen komentojen ssh juuliate01@localhost ja ssh-copy-id juuliate01@localhost suorittamista, mutta sain kuitenkin edelleen saman kaltaiset virheilmoitukset. Yritin myös avata SSH-yhteyden pääkäyttäjällä juuliaharjoitus, mutta sekään ei onnistunut.
+SSH siis toimi, mutta en saanut avattua yhteyttä localhostiin. Lähdin jälleen etsimään internetistä tietoa siitä, että mistä vastaani tullut ongelma voisi johtua. Löysin Stack Overflown verkkosivuilta ohjeen, jossa neuvottiin asentamaan openssh-server (https://stackoverflow.com/questions/22254756/ssh-connection-refused-to-localhost). Päätin tehdä tämän eli suoritin ensin komennon sudo apt-get update ja sitten sudo apt-get install openssh-server. Asennuksen jälkeen kokeilin SSH-yhteyden muodostamista localhostiin ensin omalla pääkäyttäjälläni juuliaharjoitus suorittamalla komennon ssh juuliaharjoitus@localhost. Syötin salasanani ja vastasin kysymykseen "Yes", jonka jälkeen yhteyden muodostaminen localhostiin onnistui! Suljin yhteyden komennolla exit. Nyt siis selvisi, että ongelmani on johtunut siitä, etten ole asentanut tehtävän alussa SSH-serveriä.
 
-![122](https://github.com/user-attachments/assets/9148a171-1cd6-4a53-a67e-e4f6884e8eac)
+![133](https://github.com/user-attachments/assets/f4df0e20-a57f-4684-b648-2c198939d826)
 
-![123](https://github.com/user-attachments/assets/f8294e2f-acd6-431d-807c-c38e4f7b0432)
+![134](https://github.com/user-attachments/assets/82bf441d-77c5-49e8-a5c6-3a117cf5fe6b)
 
-![130](https://github.com/user-attachments/assets/ff35a3be-55e6-452b-81b5-3ddd62967f17)
+Sitten yritin avata SSH-yhteyden luomallani uudella käyttäjällä juuliate01 suorittamalla komennon ssh juuliate01@localhost ja syötin käyttäjälle antamani salasanan, jolloin yhteyden muodostaminen localhostiin onnistui.
 
-![131](https://github.com/user-attachments/assets/8209a437-5541-4550-9663-2b1db6e35ccb)
+![135](https://github.com/user-attachments/assets/9482fe1c-e4d3-4fc3-b818-89626262b7cc)
 
-Tässä vaiheessa olin jo ylittänyt itselleni asettamani 3 tunnin aikarajan, enkä löytänyt ongelmaani ratkaisua internetistä etsimäni tiedon ja tekemieni toimenpiteiden kautta. Minulla ei ole myöskään Linuxista niin paljon kokemusta, että keksisin muita keinoja ongelman ratkaisemiseen. Päätin todeta tässä vaiheessa tappioni ja lopettaa vanhan arvioitavan laboratorioharjoituksen tekemisen tähän. Tiedän kuitenkin teoriassa, että miten tämä SSH-kirjautumisen automatisointi julkisen avaimen menetelmällä tulisi tehdä, vaikka en saanutkaan sitä onnistumaan. 
+Tämän jälkeen oli aika jälleen yrittää komennon ssh-copy-id juuliate01@localhost suorittamista. Komennon ajaminen toimi ja syötin käyttäjän salasanan. Tämän jälkeen kokeilin uudelleen yhteyden muodostamista localhostiin tällä käyttäjällä juuliate01 suorittamalla komennon ssh juuliate01@localhost ja yhteyden muodostaminen onnistui ilman salasanaa! Sinnikkyys siis palkittiin ja sain vihdoin SSH-kirjautuminen automatisoinnin julkisen avaimen menetelmällä onnistumaan.
 
-Lopetin siis tehtävän tekemisen kello 09.30. 
+![136](https://github.com/user-attachments/assets/5d6abfad-57d8-46e0-a3da-a44e4362ea23)
 
-Tehtävän tekemiseen ja raportin kirjoittamiseen käytetty kokonaisaika: 125 minuttia.
+![138](https://github.com/user-attachments/assets/e7f4b5cf-f68d-4502-b3cb-756ff750e113)
 
-Koko laboratorioharjoituksen tekemiseen käytetty kokonaisaika: 215 minuuttia.
+Lopetin tehtävän tekemisen kello 14.45.
+
+Tehtävän tekemiseen ja raportin kirjoittamiseen käytetty kokonaisaika: 100 minuttia.
+
+Koko laboratorioharjoituksen tekemiseen käytetty kokonaisaika: 190 minuuttia.
 
 ____________________________________________________________________________________________________________________________________________________________________
 
@@ -349,7 +347,7 @@ ________________________________________________________________________________
 
 Anthony Heddings, How-To Geek 2021: How to Automate SSH Logins If You Must Use a Password. Luettavissa: https://www.howtogeek.com/devops/how-to-automate-ssh-logins-if-you-must-use-a-password/. Luettu 7.3.2025.
 
-Stack Overflow: connect to host localhost port 22: Connection refused. Luettavissa: https://stackoverflow.com/questions/17335728/connect-to-host-localhost-port-22-connection-refused. Luettu 8.3.2025.
+Stack Overflow: SSh: Connection refused to localhost: Connection refused. Luettavissa: https://stackoverflow.com/questions/22254756/ssh-connection-refused-to-localhost.Luettu 9.3.2025.
 
 Tero Karvinen 2018: Hello World Python3, Bash, C, C++, Go, Lua, Ruby, Java – Programming Languages on Ubuntu 18.04. Luettavissa: https://terokarvinen.com/2018/hello-python3-bash-c-c-go-lua-ruby-java-programming-languages-on-ubuntu-18-04/. Luettu 6.3.2025.
 
