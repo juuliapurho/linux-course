@@ -329,7 +329,7 @@ Sitten yritin avata SSH-yhteyden luomallani uudella käyttäjällä juuliate01 s
 
 ![135](https://github.com/user-attachments/assets/9482fe1c-e4d3-4fc3-b818-89626262b7cc)
 
-Tämän jälkeen oli aika jälleen yrittää komennon ssh-copy-id juuliate01@localhost suorittamista. Komennon ajaminen toimi ja syötin käyttäjän salasanan. Tämän jälkeen kokeilin uudelleen yhteyden muodostamista localhostiin tällä käyttäjällä juuliate01 suorittamalla komennon ssh juuliate01@localhost ja yhteyden muodostaminen onnistui ilman salasanaa! Sinnikkyys siis palkittiin ja sain vihdoin SSH-kirjautuminen automatisoinnin julkisen avaimen menetelmällä onnistumaan.
+Tämän jälkeen oli aika jälleen yrittää komennon ssh-copy-id juuliate01@localhost suorittamista. Komennon ajaminen toimi ja syötin käyttäjän salasanan. Tämän jälkeen kokeilin uudelleen yhteyden muodostamista localhostiin tällä käyttäjällä juuliate01 suorittamalla komennon ssh juuliate01@localhost ja yhteyden muodostaminen onnistui nyt ilman salasanaa! SSH-kirjautumisen automatisointi julkisen avaimen menetelmällä oli siis onnistunut.
 
 ![136](https://github.com/user-attachments/assets/5d6abfad-57d8-46e0-a3da-a44e4362ea23)
 
@@ -339,7 +339,7 @@ Lopetin tehtävän tekemisen kello 14.45.
 
 Tehtävän tekemiseen ja raportin kirjoittamiseen käytetty kokonaisaika: 100 minuttia.
 
-Koko laboratorioharjoituksen tekemiseen käytetty kokonaisaika: 190 minuuttia.
+Koko laboratorioharjoituksen tekemiseen ja raportin kirjoittamiseen käytetty kokonaisaika: 190 minuuttia.
 
 ____________________________________________________________________________________________________________________________________________________________________
 
@@ -351,13 +351,11 @@ Stack Overflow: SSh: Connection refused to localhost: Connection refused. Luetta
 
 Tero Karvinen 2018: Hello World Python3, Bash, C, C++, Go, Lua, Ruby, Java – Programming Languages on Ubuntu 18.04. Luettavissa: https://terokarvinen.com/2018/hello-python3-bash-c-c-go-lua-ruby-java-programming-languages-on-ubuntu-18-04/. Luettu 6.3.2025.
 
-Tero Karvinen 2024: Final Lab for Linux Palvelimet 2024 Spring. Luettavissa: https://terokarvinen.com/2024/arvioitava-laboratorioharjoitus-2024-linux-palvelimet/. Luettu 7.3.2025.
+Tero Karvinen 2024: Final Lab for Linux Palvelimet 2024 Spring. Luettavissa: https://terokarvinen.com/2024/arvioitava-laboratorioharjoitus-2024-linux-palvelimet/. Luettu 9.3.2025.
 
-Tero Karvinen 2024: Tehtävänanto h5. Luettavissa: https://terokarvinen.com/2024/linux-palvelimet-2024-alkukevat/. Luettu 8.3.2025.
+Tero Karvinen 2024: Tehtävänanto h5. Luettavissa: https://terokarvinen.com/2024/linux-palvelimet-2024-alkukevat/. Luettu 9.3.2025.
 
-Tero Karvinen 2025: Tehtävänanto h4. Luettavissa: https://terokarvinen.com/linux-palvelimet/. Luettu 7.3.2025.
-
-Tero Karvinen 2025: Tehtävänanto h7. Luettavissa: https://terokarvinen.com/linux-palvelimet/. Luettu 7.3.2025.
+Tero Karvinen 2025: Tehtävänanto h7. Luettavissa: https://terokarvinen.com/linux-palvelimet/. Luettu 9.3.2025.
 
 Tero Karvinen 2007: Shell Scripting. Luettavissa: https://terokarvinen.com/2007/12/04/shell-scripting-4/. Luettu 6.3.2025.
 
