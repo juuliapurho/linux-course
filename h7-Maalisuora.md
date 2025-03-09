@@ -179,7 +179,7 @@ Aloitusaika: Perjantai 2025-03-07, kello 10.55.
 
 Tässä tehtävässä tein kaikkien käyttäjien käyttöön komennon 'howdy', joka tulostaa ajankohtaista tietoa. Tein komennon siten, että se toimi kaikilla käyttäjillä työhakemistosta riippumatta.
 
-Päätin luoda komennon, joka tulostaa tekstin "Moikka! Tänään on:", jonka lisäksi komento tulostaa päivämäärän ja kellonajan. Aloitin komennon tekemisen asentamalla Bash-ohjelman virtuaalikoneelleni komennolla sudo apt-get install bash. Jonka jälkeen loin tiedoston howdy.sh komennolla micro howdy.sh. Kirjoitin tiedostoon alla kolmantena olevan kuvan mukaiset tiedot ja tallensin tekemäni muutokset ctrl + S ja suljin tiedoston ctrl + Q. Sitten testasin vielä, että tiedostoon tekemäni muutokset olivat tallentuneet komennolla cat /home/juuliaharjoitus/howdy.sh. 
+Päätin luoda komennon, joka tulostaa tekstin "Moikka! Tänään on:", jonka lisäksi komento tulostaa päivämäärän ja kellonajan. Aloitin komennon tekemisen asentamalla Bash-ohjelman virtuaalikoneelleni komennolla sudo apt-get install bash, jonka jälkeen loin tiedoston howdy.sh komennolla micro howdy.sh. Kirjoitin tiedostoon alla kolmantena olevan kuvan mukaiset tiedot ja tallensin tekemäni muutokset ctrl + S ja suljin tiedoston ctrl + Q. Sitten testasin vielä, että tiedostoon tekemäni muutokset olivat tallentuneet komennolla cat /home/juuliaharjoitus/howdy.sh. 
 
 ![49](https://github.com/user-attachments/assets/e5fad051-53d9-4f7a-92e5-f69217a4f1d6)
 
