@@ -299,11 +299,13 @@ Tämän jälkeen loin uuden käyttäjän komennolla sudo adduser juuliate01. Ann
 
 ![107](https://github.com/user-attachments/assets/cc0166e9-3725-4a3f-b421-6d4adfe1d171)
 
- Suoritin seuraavaksi komennon ssh-copy-id juuliate01@localhost. Tämä kuitenkin tulosti alla olevan kuvan mukaisen virheilmoituksen. 
+Suoritin seuraavaksi komennon ssh-copy-id juuliate01@localhost. Tämä kuitenkin tulosti alla olevan kuvan mukaisen virheilmoituksen. Tämän jälkeen kokeilin vielä How-To Geekin verkkosivuilta löytämääni hieman erilaista komentoa avaimen kopioimiseen, mutta sekään ei toiminut (https://www.howtogeek.com/devops/how-to-automate-ssh-logins-if-you-must-use-a-password/). Tämä kokeilemani komento oli ssh-copy-id -i ~/.ssh/id_rsa.pub juuliate01@localhost.
 
 ![114](https://github.com/user-attachments/assets/1e718415-869d-4b48-a180-f7aa4b4f6d75)
 
-Yritin selvittää internetistä, että mistä tässä on kyse, mutta en löytänyt ongelmaan ratkaisua. Käytin hakusanana muun muassa tuota virheilmoituksen tekstiä, jonka lisäksi yritin etsiä syitä sille, miksi localhostin yhteyden muodostaminen porttiin 22 ei onnistu. Tämän jälkeen yritin käynnistää SSH:ta uudelleen komennolla sudo service ssh restart, mutta se tulosti toisen virheilmoituksen, jossa kerrottiin, että SSH:n käynnistäminen ei onnistunut. Yritin vielä avata SSH-yhteyden localhostiin komennolla ssh juuliate01@localhost, mutta tämä tulosti virheilmoituksen, jossa kerrotiin, että yhteys localhostin porttiin 22 on evätty. 
+![132](https://github.com/user-attachments/assets/45133a4e-5b1c-4d71-8d7f-cc1628796f87)
+
+Yritin selvittää internetistä, että mistä tässä on kyse, mutta en löytänyt ongelmaan ratkaisua. Käytin hakusanana muun muassa tuota virheilmoituksen tekstiä, jonka lisäksi yritin etsiä syitä sille, miksi localhostin yhteyden muodostaminen porttiin 22 ei onnistu ja miten yhteyden localhostiin saa muodostettua. Tämän jälkeen yritin käynnistää SSH:ta uudelleen komennolla sudo service ssh restart, mutta se tulosti toisen virheilmoituksen, jossa kerrottiin, että SSH:n käynnistäminen ei onnistunut. Yritin vielä avata SSH-yhteyden localhostiin komennolla ssh juuliate01@localhost, mutta tämä tulosti virheilmoituksen, jossa kerrotiin, että yhteys localhostin porttiin 22 on evätty. En siis saanut avattua SSH-yhteyttä localhostiin edes salasanaa käyttämällä. 
 
 ![115](https://github.com/user-attachments/assets/d4fb1515-ac15-4c08-bdec-0dc7e4ea5af7)
 
@@ -323,11 +325,7 @@ Kokeilin muodostaa SSH-yhteyden virtuaalipalvelimeeni komennolla ssh juulia@165.
 
 ![120](https://github.com/user-attachments/assets/2e3b6f45-4e83-47b2-be5c-ba901fbe2f25)
 
-Kuten aikaisemmin saamani virheilmoitukset kertovat, tämän ongelman täytyy siis liittyä tuohon porttiin 22 ja siihen localhost yhteyden muodostamiseen. Tämän jälkeen päätin tarkastaa palomuurin statuksen komennolla sudo ufw status ja näin, että portin 22 kohdalla luki "DENY". 
-
-![121](https://github.com/user-attachments/assets/28de8f3d-ca02-4a66-9d4a-0dd2a66177fd)
-
-Tein palomuuriin reiän portille 22 komennolla sudo ufw allow 22/tcp, jonka jälkeen tarkastin, että tekemäni muutos oli onnistunut komennolla sudo ufw status. Nyt portin 22 kohdalla luki "ALLOW". Kokeilin uudelleen komentojen ssh juuliate01@localhost ja ssh-copy-id juuliate01@localhost suorittamista, mutta sain kuitenkin edelleen saman kaltaiset virheilmoitukset. Yritin myös avata SSH-yhteyden käyttäjällä juuliaharjoitus, mutta sekään ei onnistunut.
+Kuten aikaisemmin saamani virheilmoitukset kertovat, tämän ongelman täytyy siis liittyä tuohon porttiin 22 ja siihen localhost yhteyden muodostamiseen. Tein palomuuriin reiän portille 22 komennolla sudo ufw allow 22/tcp, jonka jälkeen tarkastin, että tekemäni muutos oli onnistunut komennolla sudo ufw status. Portin 22 kohdalla luki "ALLOW". Kokeilin uudelleen komentojen ssh juuliate01@localhost ja ssh-copy-id juuliate01@localhost suorittamista, mutta sain kuitenkin edelleen saman kaltaiset virheilmoitukset. Yritin myös avata SSH-yhteyden pääkäyttäjällä juuliaharjoitus, mutta sekään ei onnistunut.
 
 ![122](https://github.com/user-attachments/assets/9148a171-1cd6-4a53-a67e-e4f6884e8eac)
 
@@ -348,6 +346,8 @@ Koko laboratorioharjoituksen tekemiseen käytetty kokonaisaika: 215 minuuttia.
 ____________________________________________________________________________________________________________________________________________________________________
 
 #### Lähteet
+
+Anthony Heddings, How-To Geek 2021: How to Automate SSH Logins If You Must Use a Password. Luettavissa: https://www.howtogeek.com/devops/how-to-automate-ssh-logins-if-you-must-use-a-password/. Luettu 7.3.2025.
 
 Stack Overflow: connect to host localhost port 22: Connection refused. Luettavissa: https://stackoverflow.com/questions/17335728/connect-to-host-localhost-port-22-connection-refused. Luettu 8.3.2025.
 
