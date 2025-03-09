@@ -64,8 +64,7 @@ Tämän jälkeen asensin C:n komennolla sudo apt-get install gcc. Tämän jälke
 
 ![9](https://github.com/user-attachments/assets/ef695b83-95d7-4578-92b8-30888ea2bb01)
 
-![Uploading 10.png…]()
-
+![10](https://github.com/user-attachments/assets/ddf1846f-1cce-4fae-a39e-3edc2b8bc03e)
 
 Tämän jälkeen suoritin komennon gcc hello.c -o helloc, jonka jälkeen ajoin komennon ./helloc ja tämä tulosti tekstin "Hei maailma".
 
