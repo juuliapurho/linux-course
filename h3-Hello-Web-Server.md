@@ -252,7 +252,7 @@ The Apache Software Foundation 2023: Apache HTTP Server Version 2.4 Documentatio
 
 The World Wide Web Consortium: Markup Validation Service. Käytettävissä: https://validator.w3.org/. 
 
-
+Lähdemerkinnät tarkistettu ja päivitetty 8.3.2025.
 ____________________________________________________________________________________________________________________________________________________________________
 Tätä dokumenttia saa kopioida ja muokata GNU General Public License (versio 2 tai uudempi) mukaisesti. http://www.gnu.org/licenses/gpl.html
 
